@@ -115,4 +115,15 @@ $(document).ready(function () {
         });
     }
 
+    // Слайдер каталог
+    if ($('.cat_slider').length) {
+        $(".cat_slider").slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            prevArrow: '<div class="cat_slider__nav cat_slider__nav-prev"></div>',
+            nextArrow: '<div class="cat_slider__nav cat_slider__nav-next"></div>',
+            dots: true
+        });
+    }
+
 });
