@@ -1,0 +1,2747 @@
+@font-face
+    font-family: Helios
+    src: url(../fonts/Helios/Helios-300.woff)
+    font-weight: 300
+    font-display: swap
+
+@font-face
+    font-family: Helios
+    src: url(../fonts/Helios/Helios-400.woff)
+    font-weight: 400
+    font-display: swap
+
+@font-face
+    font-family: Helios
+    src: url(../fonts/Helios/Helios-700.woff)
+    font-weight: 700
+    font-display: swap
+
+@font-face
+    font-family: Helios
+    src: url(../fonts/Helios/Helios-900.woff)
+    font-weight: 900
+    font-display: swap
+
+*
+    box-sizing: border-box
+    -webkit-overflow-scrolling: touch
+
+ul,
+li
+    margin: 0
+    padding: 0
+
+h1,
+h2,
+h3,
+h4,
+p
+    margin: 0
+
+a
+    color: #444
+    text-decoration: none
+
+textarea,
+input
+    outline: none
+    border: none
+    border-radius: 0
+    font-family: 'Helios'
+    color: #7A7A7A
+    box-shadow: none
+    -webkit-appearance: none
+
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder
+    color: #7A7A7A
+
+textarea
+    resize: none
+
+button
+    outline: none
+    border: none
+    cursor: pointer
+
+ul
+    list-style-type: none
+
+body
+    width: 100%
+    min-width: 320px
+    background: #fff
+    font-family: 'Helios'
+    font-size: 0
+    color: #444
+    font-weight: 400
+    overflow-x: hidden
+    margin: 0
+    -webkit-text-size-adjust: none
+
+.wrapper
+    width: 100%
+    max-width: 1460px
+    position: relative
+    padding: 0 20px
+    margin: 0 auto
+    &-banner
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+    &-header__top
+        max-width: 1960px
+        height: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-header__bottom
+        max-width: 1960px
+        height: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-breadcrumbs
+        max-width: 1960px
+        height: 100%
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+
+.header
+    width: 100%
+    background: rgba(0, 0, 0, .6)
+    z-index: 5
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    margin: 0 auto
+    &__top
+        height: 66px
+    &__bottom
+        height: 100px
+    &__left
+        display: flex
+        align-items: center
+    &__city
+        min-height: 16px
+        background: url(../img/city.svg) left center no-repeat
+        background-size: 12px 16px
+        font-size: 16px
+        color: #56C8D1
+        font-weight: 700
+        white-space: nowrap
+        padding: 0 0 0 24px
+    &__time
+        background: url(../img/time.svg) left center no-repeat
+        background-size: 16px
+        font-size: 13px
+        color: rgba(255, 255, 255, .5)
+        padding: 3px 0 0 24px
+        margin: 0 0 0 30px
+        span
+            color: #fff
+            margin: 0 8px
+    &__right
+        display: flex
+        align-items: center
+    &__callback
+        height: 36px
+        border: 1px solid #56C8D1
+        border-radius: 4px
+        font-size: 16px
+        color: #56C8D1
+        font-weight: 700
+        line-height: 38px
+        text-align: center
+        white-space: nowrap
+        cursor: pointer
+        padding: 0 10px
+        margin: 0 0 0 30px
+        transition: background .3s ease-out, color .3s ease-out
+        &:hover
+            background: #56C8D1
+            color: #fff
+    &__phone
+        background: url(../img/phone.svg) left center no-repeat
+        background-size: 16px
+        font-size: 20px
+        color: #fff
+        font-weight: 700
+        white-space: nowrap
+        padding: 0 0 0 24px
+        margin: 0 0 0 30px
+    &__email
+        background: url(../img/email.svg) left center no-repeat
+        background-size: 16px
+        font-size: 16px
+        color: #fff
+        font-weight: 700
+        padding: 0 0 0 24px
+        margin: 0 0 0 30px
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+    &__catalog
+        height: 40px
+        background: url(../img/cart.svg) left 10px center no-repeat #56C8D1
+        background-size: 16px
+        border-radius: 4px
+        font-size: 16px
+        color: #fff
+        font-weight: 700
+        line-height: 44px
+        text-transform: uppercase
+        text-align: center
+        cursor: pointer
+        padding: 0 10px 0 36px
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+    &__logo
+        img
+            width: 100px
+    &__rgt
+        display: flex
+        align-items: center
+    &__cart
+        height: 40px
+        background: url(../img/cart-2.svg) left 10px center no-repeat #56C8D1
+        background-size: 24px
+        border-radius: 4px
+        font-size: 16px
+        color: #fff
+        font-weight: 700
+        line-height: 44px
+        text-align: center
+        cursor: pointer
+        padding: 0 10px 0 46px
+        margin: 0 0 0 20px
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+    &__cabinet
+        height: 40px
+        background: url(../img/cabinet.svg) left 10px center no-repeat #56C8D1
+        background-size: 24px
+        border-radius: 4px
+        font-size: 16px
+        color: #fff
+        font-weight: 700
+        line-height: 44px
+        text-align: center
+        cursor: pointer
+        padding: 0 10px 0 46px
+        margin: 0 0 0 40px
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+    &__calculator
+        max-width: 150px
+        height: 30px
+        display: flex
+        align-items: center
+        background: url(../img/calculator.svg) left center no-repeat
+        background-size: 30px
+        font-size: 13px
+        color: #fff
+        font-weight: 700
+        line-height: 100%
+        cursor: pointer
+        padding: 4px 0 0 46px
+        margin: 0 0 0 40px
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+    &__search
+        min-width: 22px
+        height: 22px
+        display: flex
+        align-items: center
+        background: url(../img/search.svg) center no-repeat
+        background-size: 22px
+        cursor: pointer
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+    &__menu
+        display: none
+
+.nav
+    height: 100%
+    display: flex
+    align-items: center
+    margin: 0 40px
+    &__el
+        font-size: 16px
+        color: #fff
+        font-weight: 700
+        white-space: nowrap
+        position: relative
+        margin: 0 20px
+        &:before
+            content: ""
+            width: 100%
+            height: 3px
+            background: #56C8D1
+            opacity: 0
+            position: absolute
+            left: 0
+            bottom: 0
+            transition: opacity .3s ease-out
+        &:hover
+            &:before
+                opacity: 1
+    &__dots
+        font-size: 16px
+        color: #56C8D1
+        font-weight: 700
+        cursor: pointer
+        position: relative
+        transition: opacity .3s ease-out
+        display: none
+        &:hover
+            opacity: 1
+            .nav
+                &__drops
+                    transform: scale(1)
+    &__drops
+        width: 200px
+        display: flex
+        flex-direction: column
+        background: rgba(0, 0, 0, .8)
+        border-radius: 4px
+        position: absolute
+        left: 0
+        top: 18px
+        transform: scale(0)
+        transform-origin: left top
+        transition: transform .3s ease-out
+    &__drop
+        font-size: 16px
+        color: #fff
+        font-weight: 700
+        padding: 16px 10px
+        transition: background .3s ease-out
+        display: none
+        &:hover
+            background: #56C8D1
+
+.drop
+    width: 100%
+    max-height: calc(100% - 166px)
+    background: #fff
+    box-shadow: 0 42px 56px 23px rgba(0, 0, 0, .1)
+    overflow-y: auto
+    z-index: 5
+    position: fixed
+    left: 0
+    right: 0
+    top: 166px
+    padding: 40px 0 0
+    transform: scale(0)
+    transform-origin: top
+    transition: transform .3s ease-out
+    &.active
+        transform: scale(1)
+    &__title
+        font-size: 28px
+        color: #717171
+        font-weight: 700
+        margin: 0 0 40px
+    &__wrp
+        display: flex
+    &__col
+        margin: 0 100px 40px 0
+    &__cat
+        margin: 0 0 40px
+        &:last-child
+            margin: 0
+    &__ttl
+        display: block
+        font-size: 20px
+        color: #717171
+        font-weight: 700
+        margin: 0 0 20px
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+    &__el
+        margin: 0 0 20px
+        &:last-child
+            margin: 0
+    &__link
+        display: block
+        font-size: 16px
+        color: #56C8D1
+        font-weight: 700
+        margin: 0 0 10px
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+        &:last-child
+            margin: 0
+        &-small
+            font-size: 15px
+            font-weight: 400
+            padding: 0 0 0 10px
+
+.banner
+    overflow: hidden
+    &__slide
+        width: 100%
+        height: 825px
+        max-height: calc(100vh - 70px)
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: self-start
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        padding: 180px 0 120px
+    &__title
+        max-width: 800px
+        font-size: 56px
+        color: #fff
+        font-weight: 700
+        margin: 0 0 30px
+    &__text
+        max-width: 400px
+        font-size: 18px
+        color: #fff
+        line-height: 150%
+        margin: 0 0 50px
+    &__button
+        max-width: 100%
+        height: 56px
+        background: url(../img/arrow.svg) right 24px center no-repeat #56C8D1
+        background-size: 16px
+        border-radius: 8px
+        font-size: 16px
+        color: #fff
+        line-height: 56px
+        text-align: center
+        cursor: pointer
+        padding: 0 56px 0 24px
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .9
+    &__nav
+        width: 24px
+        height: 24px
+        background: url(../img/nav.svg) center no-repeat
+        background-size: contain
+        cursor: pointer
+        z-index: 1
+        position: absolute
+        bottom: 200px
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+        &-prev
+            right: 60px
+            transform: scale(-1, 1)
+        &-next
+            right: 20px
+    .slick
+        &-list
+            overflow: visible
+        &-dots
+            display: flex
+            position: absolute
+            right: 120px
+            bottom: 200px
+            li
+                margin: 0 8px 0 0
+                &:last-child
+                    margin: 0
+            button
+                width: 8px
+                height: 8px
+                background: #fff
+                border-radius: 16px
+                font-size: 0
+                cursor: pointer
+                padding: 0
+                transition: width .3s ease-out, background .3s ease-out
+                &:hover
+                    background: #56C8D1
+        &-active
+            button
+                width: 40px
+
+.utp
+    display: flex
+    justify-content: space-between
+    position: relative
+    top: -100px
+    &__el
+        width: calc((100% - 150px) / 6)
+        background: #fff
+        border-radius: 8px
+        box-shadow: 0 -46px 39px rgba(0, 0, 0, .25)
+    &__top
+        height: 110px
+        display: flex
+        justify-content: center
+        align-items: center
+    &__img
+        width: 40px
+    &__text
+        font-size: 13px
+        line-height: 150%
+        text-align: center
+        padding: 0 30px 30px
+
+.footer
+    background: url(../img/footer.svg) right top no-repeat #454545
+    background-size: 520px
+    padding: 80px 0 40px
+    &__top
+        display: flex
+        justify-content: space-between
+        border-bottom: 1px solid rgba(255, 255, 255, .2)
+        padding: 0 0 70px
+        margin: 0 0 50px
+    &__logo
+        img
+            width: 180px
+    &__center
+        margin: 0 100px
+    &__block
+        margin: 0 0 30px
+        &:last-child
+            margin: 0
+    &__title
+        font-size: 20px
+        color: #fff
+        font-weight: 700
+        margin: 0 0 16px
+    &__navs
+        display: flex
+        flex-wrap: wrap
+    &__nav
+        font-size: 16px
+        color: #fff
+        margin: 0 20px 10px 0
+        transition: color .3s ease-out
+        &:hover
+            color: #56C8D1
+    &__right
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+    &__socials
+        display: flex
+        margin: 0 0 40px
+    &__social
+        width: 40px
+        height: 40px
+        background-position: center
+        background-size: contain
+        background-repeat: no-repeat
+        margin: 0 30px 0 0
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+        &:last-child
+            margin: 0
+        &-vk
+            background-image: url(../img/footer__social-vk.svg)
+        &-tg
+            background-image: url(../img/footer__social-tg.svg)
+    &__address
+        max-width: 230px
+        font-size: 15px
+        color: #fff
+        line-height: 140%
+        margin: 0 0 40px
+    &__phone
+        background: url(../img/phone.svg) left center no-repeat
+        background-size: 16px
+        font-size: 16px
+        color: #fff
+        font-weight: 700
+        white-space: nowrap
+        padding: 2px 0 0 24px
+        margin: 0 0 30px
+    &__email
+        background: url(../img/email.svg) left center no-repeat
+        background-size: 16px
+        font-size: 16px
+        color: #fff
+        font-weight: 700
+        padding: 2px 0 0 24px
+        margin: 0 0 30px
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+    &__callback
+        font-size: 16px
+        color: #fff
+        font-weight: 700
+        cursor: pointer
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+    &__bottom
+        display: flex
+        justify-content: space-between
+    &__copy
+        font-size: 13px
+        color: #fff
+    &__rgt
+        display: flex
+    &__link
+        font-size: 13px
+        color: #fff
+        margin: 0 70px 0 0
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+        &:last-child
+            margin: 0
+
+.mobile_menu
+    width: 375px
+    max-width: 100%
+    height: 100%
+    background: #fff
+    overflow-y: auto
+    box-shadow: 0 -46px 39px rgba(0, 0, 0, .25)
+    z-index: 5
+    position: fixed
+    left: 0
+    top: 0
+    padding: 20px 20px 40px
+    transform: translateX(-100%)
+    transition: transform .3s ease-out
+    &.active
+        transform: translateX(0)
+    &__top
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin: 0 0 40px
+    &__close
+        width: 16px
+        height: 16px
+        background: url(../img/close.svg) center no-repeat
+        background-size: contain
+    &__city
+        min-height: 16px
+        background: url(../img/city.svg) left center no-repeat
+        background-size: 12px 16px
+        font-size: 16px
+        color: #56C8D1
+        font-weight: 700
+        white-space: nowrap
+        padding: 0 0 0 24px
+    &__navs
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        margin: 0 0 40px
+    &__nav
+        font-size: 16px
+        font-weight: 700
+        margin: 0 0 30px
+        &:last-child
+            margin: 0
+    &__time
+        background: url(../img/time.svg) left center no-repeat
+        background-size: 16px
+        font-size: 13px
+        color: rgba(0, 0, 0, .5)
+        padding: 3px 0 0 24px
+        margin: 0 0 20px
+        span
+            color: #444
+            margin: 0 8px
+    &__email
+        display: block
+        background: url(../img/email.svg) left center no-repeat
+        background-size: 16px
+        font-size: 16px
+        font-weight: 700
+        padding: 0 0 0 24px
+        margin: 0 0 20px
+    &__phone
+        display: block
+        background: url(../img/phone.svg) left center no-repeat
+        background-size: 16px
+        font-size: 20px
+        font-weight: 700
+        white-space: nowrap
+        padding: 0 0 0 24px
+        margin: 0 0 30px
+    &__callback
+        width: 100%
+        height: 40px
+        border: 1px solid #56C8D1
+        border-radius: 4px
+        font-size: 16px
+        color: #56C8D1
+        font-weight: 700
+        line-height: 40px
+        text-align: center
+
+.cats
+    margin: 0 0 100px
+    &__el
+        min-height: 340px
+        display: flex
+        flex-wrap: wrap
+        background: linear-gradient(270deg, #DCEFEF 36.09%, #F3F3F3 57.27%)
+        border-radius: 4px
+        overflow: hidden
+        position: relative
+        padding: 40px 40px 80px
+        margin: 0 0 30px
+        &:last-child
+            margin: 0
+        &-small
+            width: calc((100% - 60px) / 3)
+            min-height: 550px
+            flex-direction: column
+            background: linear-gradient(0deg, #DCEFEF 40.51%, #F3F3F3 94.12%)
+            margin: 0 30px 30px 0
+            &:nth-child(3n)
+                margin: 0 0 30px
+            .cats
+                &__img
+                    max-width: 100%
+                    left: 0
+                    margin: 0 auto
+    &__img
+        width: 550px
+        max-width: calc(100% - 700px)
+        pointer-events: none
+        position: absolute
+        right: 0
+        bottom: 0
+        &-mobile
+            display: none
+    &__title
+        width: 100%
+        font-size: 40px
+        color: #717171
+        font-weight: 700
+        line-height: 100%
+        margin: 0 0 40px
+    &__block
+        margin: 0 0 20px
+    &__links
+        min-width: 240px
+        margin: 0 100px 0 0
+        &:last-child
+            margin: 0
+    &__link
+        display: block
+        font-size: 20px
+        color: #56C8D1
+        font-weight: 700
+        margin: 0 0 10px
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+        &:last-child
+            margin: 0
+        &-small
+            font-size: 18px
+            color: #717171
+            font-weight: 400
+            padding: 0 0 0 10px
+    &__els
+        display: flex
+        flex-wrap: wrap
+
+.title
+    font-size: 56px
+    color: #717171
+    font-weight: 700
+    margin: 0 0 70px
+    &-map
+        margin: 0
+    &-text
+        color: #1E3B3E
+        margin: 0 0 30px
+    &-h2
+        font-size: 40px
+        color: #1E3B3E
+        &_margin
+            margin: 0 0 30px
+
+.production
+    margin: 0 0 200px
+    &__els
+        display: flex
+        flex-wrap: wrap
+    &__el
+        width: calc((100% - 60px) / 3)
+        height: 560px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: flex-start
+        border-radius: 4px
+        overflow: hidden
+        position: relative
+        padding: 40px
+        margin: 0 30px 30px 0
+        &:nth-child(3n)
+            margin: 0 0 30px
+        &:hover
+            .production
+                &__image
+                    transform: scale(1.1)
+            &:before
+                opacity: 1
+        &:before
+            content: ""
+            width: 100%
+            height: 100%
+            background: linear-gradient(0deg, #72CBD2 0%, rgba(0, 0, 0, 0) 31.78%), linear-gradient(0deg, rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.57)), url(image.png), url(image.png), transparent
+            box-shadow: 0 42px 56px 23px rgba(0, 0, 0, .1)
+            opacity: 0
+            z-index: 1
+            position: absolute
+            left: 0
+            bottom: 0
+            transition: opacity .3s ease-out
+    &__image
+        width: 100%
+        height: 100%
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        margin: auto
+        transition: transform .3s ease-out
+    &__top
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        z-index: 1
+    &__title
+        font-size: 40px
+        color: #fff
+        font-weight: 700
+        position: relative
+        margin: 0 0 20px
+    &__city
+        background: rgba(0, 0, 0, .6)
+        border-radius: 4px
+        font-size: 18px
+        color: #BEBEBE
+        position: relative
+        padding: 10px 20px
+    &__bottom
+        z-index: 1
+    &__text
+        font-size: 15px
+        color: #fff
+        line-height: 140%
+        position: relative
+        margin: 0 0 20px
+    &__more
+        font-size: 16px
+        color: #56C8D1
+        font-weight: 700
+        position: relative
+
+.map
+    background: url(../img/map.jpg) center no-repeat
+    background-size: 2200px auto
+    padding: 0 0 200px
+    &__top
+        display: flex
+        align-items: baseline
+        margin: 0 0 70px
+    &__link
+        font-size: 16px
+        color: #56C8D1
+        margin: 0 0 0 40px
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+    &__map
+        position: relative
+        svg
+            width: 100%
+            height: auto
+            .checked
+                fill: #56C8D1
+                cursor: pointer
+                transition: fill .3s ease-out
+                &:hover
+                    fill: #fff
+            .icon
+                fill: #56C8D1
+                pointer-events: none
+            .icon-2
+                fill: #fff
+                pointer-events: none
+    &_window
+        width: 220px
+        min-height: 140px
+        background: #fff
+        border-radius: 10px 0px 0px 0px
+        font-size: 13px
+        color: #717171
+        line-height: 150%
+        box-shadow: 0 2px 10px 10px rgba(0, 0, 0, .05)
+        opacity: 0
+        pointer-events: none
+        position: absolute
+        padding: 15px
+        &.active
+            opacity: 1
+            pointer-events: auto
+        &__city
+            font-size: 16px
+            color: #238ECE
+            font-weight: 700
+            margin: 0 0 6px
+        &__email
+            color: #238ECE
+            transition: opacity .3s ease-out
+            &:hover
+                opacity: .7
+        &__address
+            font-size: 11px
+
+.news
+    margin: 0 0 200px
+    &__els
+        display: flex
+        flex-wrap: wrap
+    &__el
+        width: calc((100% - 90px) / 4)
+        background: #FAFAFA
+        border-radius: 4px
+        overflow: hidden
+        position: relative
+        padding: 220px 0 0
+        margin: 0 30px 30px 0
+        transition: box-shadow .3s ease-out, padding .3s ease-out
+        &:hover
+            box-shadow: 0 42px 56px 23px rgba(0, 0, 0, .1)
+            padding: 0 0 220px
+            .news
+                &__content
+                    background: transparent
+                    justify-content: flex-start
+                &__date
+                    color: #eee
+                &__title
+                    color: #fff
+                &__text
+                    color: #eee
+                &__image
+                    height: 100%
+                    &:before
+                        opacity: 1
+        &:nth-child(4n)
+            margin: 0 0 30px
+    &__image
+        width: 100%
+        height: 220px
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        margin: auto
+        transition: height .3s ease-out
+        &:before
+            content: ""
+            width: 100%
+            height: 100%
+            background: linear-gradient(0deg, #72CBD2 0%, rgba(0, 0, 0, 0) 31.78%), linear-gradient(0deg, rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.57)), url(image.png)
+            opacity: 0
+            position: absolute
+            left: 0
+            top: 0
+            transition: opacity .3s ease-out
+    &__content
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        background: linear-gradient(0deg, #DCEFEF 10.11%, #F3F3F3 67.16%)
+        position: relative
+        padding: 30px 20px
+        transition: background .3s ease-out
+    &__date
+        font-size: 11px
+        color: #7A7A7A
+        font-weight: 500
+        text-transform: uppercase
+        margin: 0 0 10px
+        transition: color .3s ease-out
+    &__title
+        font-size: 20px
+        color: #56C8D1
+        font-weight: 700
+        margin: 0 0 20px
+        transition: color .3s ease-out
+    &__text
+        font-size: 17px
+        line-height: 140%
+        transition: color .3s ease-out
+
+.provider
+    overflow: hidden
+    margin: 0 0 100px
+    &__slider
+        width: calc(100% + 100px)
+        position: relative
+        padding: 0 0 120px
+        margin: 0 0 0 -50px
+    &__slide
+        height: 100px
+        background-position: center bottom
+        background-size: contain
+        background-repeat: no-repeat
+        margin: 0 50px
+    &__nav
+        width: 24px
+        height: 24px
+        background: url(../img/nav-blue.svg) center no-repeat
+        background-size: contain
+        cursor: pointer
+        z-index: 1
+        position: absolute
+        bottom: 0
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+        &-prev
+            right: 90px
+            transform: scale(-1, 1)
+        &-next
+            right: 50px
+    .slick
+        &-list
+            overflow: visible
+        &-dots
+            display: flex
+            position: absolute
+            left: 50px
+            bottom: 0
+            li
+                margin: 0 8px 0 0
+                &:last-child
+                    margin: 0
+            button
+                width: 8px
+                height: 8px
+                background: #eee
+                border-radius: 16px
+                font-size: 0
+                cursor: pointer
+                padding: 0
+                transition: width .3s ease-out, background .3s ease-out
+                &:hover
+                    background: #56C8D1
+        &-active
+            button
+                width: 40px
+                background: #56C8D1
+
+.subscribe
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background: linear-gradient(270deg, #DCEFEF 36.09%, #F3F3F3 57.27%)
+    border-radius: 4px
+    padding: 60px 100px
+    margin: 0 0 100px
+    &__left
+        width: 360px
+        max-width: 100%
+    &__title
+        font-size: 28px
+        color: #717171
+        font-weight: 700
+        line-height: 130%
+        margin: 0 0 10px
+    &__text
+        font-size: 18px
+        line-height: 150%
+    &__form
+        width: 490px
+        max-width: 100%
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &__input
+        width: calc(100% - 170px)
+        height: 56px
+        background: #fff
+        border-radius: 4px
+        font-size: 13px
+        color: #7A7A7A
+        font-weight: 700
+        padding: 0 20px
+    &__button
+        width: 150px
+        height: 56px
+        background: #56C8D1
+        border-radius: 4px
+        font-size: 16px
+        color: #fff
+        font-weight: 700
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+    &__txt
+        margin: 30px 0 0
+        font-size: 11px
+        color: #7A7A7A
+        line-height: 150%
+        a
+            color: #56C8D1
+            transition: opacity .3s ease-out
+            &:hover
+                opacity: .7
+
+.page
+    padding: 166px 0 0
+
+.breadcrumbs
+    width: 100%
+    border-bottom: 1px solid #eee
+    font-size: 11px
+    padding: 13px 0 7px
+    margin: 0 0 30px
+    &__arrow
+        width: 8px
+        height: 8px
+        background: url(../img/breadcrumbs__arrow.svg) center no-repeat
+        background-size: contain
+        margin: 0 0 8px 12px
+    a
+        color: #56C8D1
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+    a,
+    span
+        margin: 0 0 6px 12px
+        &:first-child
+            margin: 0 0 6px
+
+.page_links
+    max-width: 1000px
+    display: flex
+    flex-wrap: wrap
+    margin: 0 0 50px
+    &__el
+        height: 32px
+        background: #FAFAFA
+        border-radius: 4px
+        font-size: 13px
+        line-height: 34px
+        padding: 0 10px
+        margin: 0 6px 10px 0
+        transition: background .3s ease-out, color .3s ease-out
+        &:hover,
+        &.active
+            background: #56C8D1
+            color: #fff
+
+.about
+    &__banner
+        width: 100%
+        height: 600px
+        display: flex
+        align-items: flex-end
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        position: relative
+        padding: 45px 60px
+        margin: 0 0 60px
+        &:before
+            content: ""
+            width: 100%
+            height: 100%
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(image.png)
+            position: absolute
+            left: 0
+            bottom: 0
+    &__text
+        font-size: 40px
+        color: #fff
+        font-weight: 700
+        line-height: 140%
+        z-index: 1
+    &__txt
+        font-size: 18px
+        line-height: 150%
+        margin: 0 0 90px
+
+.cooperation
+    margin: 0 0 60px
+    &__els
+        display: flex
+        flex-wrap: wrap
+    &__el
+        width: calc(100% / 3)
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin: 0 0 80px
+    &__img
+        width: 80px
+        margin: 0 0 60px
+    &__text
+        font-size: 18px
+        line-height: 150%
+        text-align: center
+
+.reputation
+    display: flex
+    justify-content: space-between
+    margin: 0 0 100px
+    &__left
+        width: 50%
+    &__text
+        font-size: 28px
+        line-height: 130%
+        margin: 0 0 60px
+    &__img
+        width: 190px
+    &__right
+        width: 40%
+    &__banner
+        width: 100%
+        margin: 0 0 30px
+
+.pdf
+    min-height: 40px
+    display: block
+    background: url(../img/pdf.svg) left top no-repeat
+    background-size: 32px 40px
+    padding: 0 0 0 48px
+    transition: opacity .3s ease-out
+    &:hover
+        opacity: .7
+    &__title
+        font-size: 20px
+        color: #56C8D1
+        font-weight: 700
+        margin: 0 0 2px
+    &__text
+        font-size: 15px
+
+.you_can
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background: #FAFAFA
+    border-radius: 4px
+    padding: 60px
+    margin: 0 0 100px
+    &__left
+        max-width: 660px
+    &__title
+        font-size: 40px
+        color: #1E3B3E
+        font-weight: 700
+        line-height: 130%
+    &__text
+        font-size: 18px
+        color: #7A7A7A
+    &__right
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        margin: 0 0 0 60px
+    &__phone
+        font-size: 40px
+        color: #56C8D1
+        font-weight: 700
+        white-space: nowrap
+        margin: 0 0 30px
+    &__button
+        height: 36px
+        border: 1px solid #56C8D1
+        border-radius: 4px
+        font-size: 16px
+        color: #56C8D1
+        font-weight: 700
+        line-height: 36px
+        cursor: pointer
+        padding: 0 10px
+        transition: background .3s ease-out, color .3s ease-out
+        &:hover
+            background: #56C8D1
+            color: #fff
+
+.targets
+    margin: 0 0 100px
+    &__els
+        display: flex
+        flex-wrap: wrap
+    &__el
+        width: 25%
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 0 10px
+    &__number
+        width: 80px
+        height: 80px
+        border: 1px solid #56C8D1
+        border-radius: 100%
+        font-size: 40px
+        font-weight: 700
+        line-height: 84px
+        text-align: center
+        margin: 0 0 60px
+    &__text
+        font-size: 18px
+        line-height: 150%
+        text-align: center
+
+.value
+    margin: 0 0 100px
+    &__els
+        display: flex
+        flex-wrap: wrap
+    &__el
+        width: calc((100% - 60px) / 3)
+        background: #FAFAFA
+        border-radius: 4px
+        padding: 40px
+        margin: 0 30px 0 0
+        &:last-child
+            margin: 0
+    &__top
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin: 0 0 30px
+    &__title
+        font-size: 28px
+        color: #1E3B3E
+        font-weight: 700
+        margin: 0 20px 0 0
+    &__img
+        min-width: 48px
+        height: 48px
+    &__content
+        p,
+        ul
+            line-height: 150%
+        p
+            font-size: 18px
+            color: #1E3B3E
+            margin: 0 0 30px
+        ul
+            list-style-type: disc
+            font-size: 15px
+            padding: 0 0 0 12px
+        li
+            margin: 0 0 10px
+            &:last-child
+                margin: 0
+
+.prod
+    margin: 0 0 200px
+    &__el
+        width: 100%
+        background: rgba(114, 203, 210, .1)
+        padding: 30px
+        margin: 0 0 40px
+        &:last-child
+            margin: 0
+    &__top
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        margin: 0 0 40px
+    &__title
+        font-size: 40px
+        color: #1E3B3E
+        font-weight: 700
+    &__city
+        height: 50px
+        background: #FAFAFA
+        border-radius: 4px
+        font-size: 18px
+        line-height: 50px
+        text-align: center
+        padding: 0 15px
+        margin: 0 0 0 30px
+    &__wrp
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        margin: 0 0 40px
+    &__right
+        width: calc(50% - 80px)
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+    &__text
+        font-size: 18px
+        color: #1E3B3E
+        line-height: 150%
+        margin: 0 0 40px
+    &__button
+        height: 48px
+        background: #56C8D1
+        border-radius: 8px
+        font-size: 16px
+        color: #fff
+        line-height: 52px
+        text-align: center
+        cursor: pointer
+        padding: 0 25px
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+    &__wp
+        overflow: hidden
+        position: relative
+        padding: 0 0 60px
+    &__slider
+        width: 77.4%
+        position: static
+        padding: 0
+        margin: 0 0 0 -10px
+        .slick
+            &-list
+                overflow: visible
+            &-dots
+                display: flex
+                position: absolute
+                left: 0
+                bottom: 0
+                li
+                    margin: 0 8px 0 0
+                    &:last-child
+                        margin: 0
+                button
+                    width: 8px
+                    height: 8px
+                    background: #eee
+                    border-radius: 16px
+                    font-size: 0
+                    cursor: pointer
+                    padding: 0
+                    transition: width .3s ease-out, background .3s ease-out
+                    &:hover
+                        background: #56C8D1
+            &-active
+                button
+                    width: 40px
+                    background: #56C8D1
+    &__slide
+        height: 340px
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        margin: 0 10px
+    &__nav
+        width: 24px
+        height: 24px
+        background: url(../img/nav-blue.svg) center no-repeat
+        background-size: contain
+        cursor: pointer
+        z-index: 1
+        position: absolute
+        bottom: 0
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+        &-prev
+            right: 40px
+            transform: scale(-1, 1)
+        &-next
+            right: 0
+    iframe
+        width: 50%
+        height: 420px
+    &_text
+        font-size: 18px
+        color: #1E3B3E
+        line-height: 150%
+        margin: 0 0 30px
+
+.factory
+    margin: 0 0 60px
+    &__els
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &__el
+        width: calc((100% - 20px) / 2)
+        display: flex
+        justify-content: space-between
+        border: 1px solid #eee
+        border-radius: 4px
+        padding: 20px
+        margin: 0 20px 20px 0
+        transition: border .3s ease-out
+        &:nth-child(2n)
+            margin: 0 0 20px
+        &:hover
+            border: 1px solid #56C8D1
+            .factory
+                &__title
+                    color: #56C8D1
+    &__img
+        width: 120px
+        height: 120px
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+    &__content
+        width: calc(100% - 140px)
+    &__title
+        font-size: 28px
+        font-weight: 700
+        margin: 0 0 10px
+        transition: color .3s ease-out
+    &__ul
+        font-size: 15px
+        line-height: 140%
+        li
+            margin: 0 0 8px
+            &:last-child
+                margin: 0
+
+    &__image
+        width: 100%
+        border: 1px solid #eee
+        text-align: center
+        padding: 20px
+        margin: 0 0 200px
+        img
+            width: 1200px
+            max-width: 100%
+
+.regions
+    margin: 0 0 100px
+    &__el
+        width: 100%
+        display: flex
+        justify-content: space-between
+        border: 1px solid #eee
+        border-radius: 4px
+        padding: 20px 10px
+        margin: 0 0 20px
+        &:last-child
+            margin: 0
+    &__col
+        width: calc(100% / 3)
+        padding: 0 10px
+    &__title
+        font-size: 28px
+        color: #1E3B3E
+        font-weight: 700
+        margin: 0 0 10px
+    &__link
+        font-size: 13px
+        color: #56C8D1
+        font-weight: 700
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+    &__phone
+        display: block
+        background: url(../img/phone.svg) left top no-repeat
+        background-size: 16px
+        font-size: 18px
+        color: #1E3B3E
+        padding: 2px 0 0 32px
+        margin: 0 0 10px
+    &__email
+        display: block
+        background: url(../img/email-2.svg) left top no-repeat
+        background-size: 16px
+        font-size: 18px
+        color: #56C8D1
+        padding: 0 0 0 32px
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+    &__address
+        margin: 0 0 10px
+        &:last-child
+            margin: 0
+    &__grey
+        font-size: 13px
+        opacity: .7
+        margin: 0 0 10px
+    &__point
+        background: url(../img/point.svg) left 2px no-repeat
+        background-size: 16px
+        font-size: 18px
+        line-height: 150%
+        padding: 0 0 0 32px
+
+.city
+    &_text
+        max-width: 1000px
+        font-size: 18px
+        color: #1E3B3E
+        line-height: 150%
+        margin: 0 0 60px
+    &_block
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        margin: 0 0 60px
+        &__left
+            width: 33%
+            height: 500px
+            background: #fff
+            border-radius: 4px
+            box-shadow: 0 0 24px rgba(0, 0, 0, .1)
+            padding: 20px
+        &__title
+            font-size: 20px
+            color: #1E3B3E
+            font-weight: 700
+            margin: 0 0 20px
+        &__phone
+            display: block
+            border-top: 1px solid #eee
+            border-bottom: 1px solid #eee
+            font-size: 40px
+            color: #1E3B3E
+            font-weight: 700
+            text-align: center
+            padding: 20px 0
+            margin: 0 0 20px
+        &__email
+            display: block
+            background: url(../img/email-2.svg) left top no-repeat
+            background-size: 16px
+            font-size: 20px
+            color: #56C8D1
+            font-weight: 700
+            padding: 0 0 0 32px
+            margin: 0 0 20px
+            transition: opacity .3s ease-out
+            &:hover
+                opacity: .7
+        &__time
+            background: url(../img/time.svg) left 4px no-repeat
+            background-size: 16px
+            font-size: 18px
+            line-height: 150%
+            padding: 0 0 0 32px
+        &__right
+            width: calc(67% - 20px)
+        &__el
+            width: 100%
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            border: 1px solid #eee
+            border-radius: 4px
+            padding: 20px 10px
+            margin: 0 0 20px
+            &:last-child
+                margin: 0
+        &__top
+            width: 100%
+            font-size: 20px
+            color: #1E3B3E
+            font-weight: 700
+            padding: 0 10px
+            margin: 0 0 20px
+        &__col
+            width: 45%
+            padding: 0 10px
+            &:last-child
+                width: 55%
+    &_pdf
+        display: flex
+        align-items: center
+        border: 1px solid #eee
+        padding: 40px
+        margin: 0 0 60px
+        &__text
+            width: 850px
+            max-width: calc(100% - 320px)
+            font-size: 18px
+            color: #1E3B3E
+            line-height: 150%
+            margin: 0 150px 0 0
+    &_services
+        margin: 0 0 120px
+        &__els
+            display: flex
+            flex-wrap: wrap
+        &__el
+            width: calc((100% - 60px) / 4)
+            height: 120px
+            background-position: right 20px bottom 20px
+            background-size: auto
+            background-repeat: no-repeat
+            border: 1px solid #56C8D1
+            font-size: 20px
+            color: #1E3B3E
+            font-weight: 700
+            padding: 20px
+            margin: 0 20px 0 0
+            &:nth-child(4n)
+                margin: 0
+
+
+.assort
+    margin: 0 0 30px
+    &__els
+        display: flex
+        flex-wrap: wrap
+    &__el
+        width: calc((100% - 60px) / 4)
+        min-height: 600px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        background-color: #FAFAFA
+        background-repeat: no-repeat
+        background-position: right bottom
+        background-size: 100%
+        border-radius: 4px
+        padding: 20px
+        margin: 0 20px 0 0
+        &:nth-child(4n)
+            margin: 0
+    &__title
+        font-size: 20px
+        color: #1E3B3E
+        font-weight: 700
+        margin: 0 0 20px
+    &__count
+        height: 40px
+        background: #fff
+        font-size: 16px
+        color: #56C8D1
+        font-weight: 700
+        line-height: 40px
+        padding: 0 10px
+        margin: 0 0 40px
+    &__link
+        display: block
+        font-size: 18px
+        color: #1E3B3E
+        margin: 0 0 20px
+        transition: color .3s ease-out
+        &:hover
+            color: #56C8D1
+
+.charter
+    display: flex
+    flex-wrap: wrap
+    margin: 0 0 100px
+    &__el
+        width: calc((100% - 40px) / 3)
+        background: #FAFAFA
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+        padding: 70px 50px 50px
+        margin: 0 20px 20px 0
+        &:nth-child(3n)
+            margin: 0 0 20px
+    &__img
+        width: 260px
+        max-width: 100%
+        box-shadow: 0 42px 56px 23px rgba(0, 0, 0, .1)
+        margin: 0 0 30px
+    &__title
+        font-size: 16px
+        font-weight: 700
+        line-height: 140%
+        margin: 0 0 20px
+    &__text
+        font-size: 15px
+        line-height: 140%
+        margin: 0 0 20px
+    &__city
+        font-size: 13px
+        color: #BEBEBE
+
+.gosts
+    margin: 0 0 50px
+    &__el
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        position: relative
+        padding: 30px
+        margin: 0 0 50px
+        &:last-child
+            margin: 0
+        &:before
+            content: ""
+            width: 100%
+            height: 100%
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(.jpg), url(.jpg), transparent
+            position: absolute
+            left: 0
+            top: 0
+        *
+            z-index: 1
+    &__title
+        max-width: 270px
+        font-size: 40px
+        color: #fff
+        line-height: 140%
+    &__content
+        width: 900px
+        max-width: calc(100% - 400px)
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &__link
+        width: calc((100% - 20px) / 2)
+        background-image: url(../img/gost.svg)
+        background-position: 16px 16px
+        background-repeat: no-repeat
+        background-size: 40px
+        background-color: rgba(0, 0, 0, .7)
+        border-radius: 4px
+        padding: 16px 16px 16px 72px
+        margin: 0 20px 20px 0
+        transition: opacity .3s ease-out
+        &:nth-child(2n),
+        &:last-child
+            margin: 0 0 20px
+        &:hover
+            opacity: .7
+        &-large
+            width: 100%
+            background-image: url(../img/gost-large.svg)
+        &-instruction
+            width: calc(100% - 450px)
+            margin: 0 !important
+    &__ttl
+        font-size: 16px
+        color: #56C8D1
+        font-weight: 700
+        line-height: 140%
+        margin: 0 0 6px
+    &__size
+        font-size: 15px
+        color: #fff
+
+.instruction
+    margin: 0 0 100px
+    &__el
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        border: 1px solid #BEBEBE
+        padding: 20px
+        margin: 0 0 50px
+        &:last-child
+            margin: 0
+    &__title
+        font-size: 40px
+        font-weight: 700
+
+.gallery
+    display: flex
+    flex-wrap: wrap
+    margin: 0 0 80px
+    &__el
+        width: calc((100% - 40px) / 3)
+        height: 270px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: flex-start
+        overflow: hidden
+        position: relative
+        padding: 20px
+        margin: 0 20px 20px 0
+        &:nth-child(3n)
+            margin: 0 0 20px
+        &:hover
+            .gallery
+                &__image
+                    transform: scale(1.1)
+        &:before
+            content: ""
+            width: 100%
+            height: 100%
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(.jpg), url(.jpg), transparent
+            z-index: 1
+            position: absolute
+            left: 0
+            top: 0
+    &__image
+        width: 100%
+        height: 100%
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        position: absolute
+        left: 0
+        top: 0
+        transform: scale(1)
+        transition: transform .3s ease-out
+    &__title
+        font-size: 28px
+        color: #fff
+        font-weight: 700
+        z-index: 2
+    &__bottom
+        font-size: 15px
+        color: #fff
+        z-index: 2
+        span
+            color: #56C8D1
+            margin: 0 0 0 20px
+
+.photos
+    margin: 0 0 100px
+    &__title
+        font-size: 40px
+        font-weight: 700
+        margin: 0 0 20px
+    &__els
+        display: flex
+        flex-wrap: wrap
+        margin: 0 0 20px
+    &__el
+        width: calc((100% - 40px) / 3)
+        height: 450px
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        margin: 0 20px 20px 0
+        &:nth-child(3n)
+            margin: 0 0 20px
+        &:nth-child(2),
+        &:nth-child(4),
+        &:nth-child(9),
+        &:nth-child(11),
+        &:nth-child(13),
+        &:nth-child(18)
+            height: 250px
+        &:nth-child(3),
+        &:nth-child(6),
+        &:nth-child(7),
+        &:nth-child(10),
+        &:nth-child(14),
+        &:nth-child(17)
+            height: 350px
+        &:nth-child(4),
+        &:nth-child(5),
+        &:nth-child(6),
+        &:nth-child(10),
+        &:nth-child(11),
+        &:nth-child(12),
+        &:nth-child(16),
+        &:nth-child(17),
+        &:nth-child(18)
+            align-self: end
+            margin: -200px 20px 20px 0
+        &:nth-child(6),
+        &:nth-child(12),
+        &:nth-child(18)
+            margin: -200px 0 20px
+    &__link
+        font-size: 16px
+        color: #56C8D1
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+
+
+@media (max-height: 700px)
+    .banner
+        &__title
+            max-width: 100%
+            font-size: 44px
+            margin: 0 0 20px
+        &__text
+            font-size: 14px
+            margin: 0 0 30px
+        &__nav
+            bottom: 120px
+        .slick-dots
+            bottom: 120px
+
+@media (max-width: 1850px)
+    .header
+        &__cabinet
+            margin: 0 0 0 30px
+
+    .nav
+        &__dots
+            display: block
+        &__el
+            &:nth-last-child(2)
+                display: none
+        &__drop
+            &:nth-last-child(1)
+                display: block
+
+@media (max-width: 1700px)
+    .nav
+        &__el
+            &:nth-last-child(3)
+                display: none
+        &__drop
+            &:nth-last-child(2)
+                display: block
+                
+@media (max-width: 1550px)
+    .nav
+        &__el
+            &:nth-last-child(4)
+                display: none
+        &__drop
+            &:nth-last-child(3)
+                display: block
+
+@media (max-width: 1450px)
+    .nav
+        &__el
+            &:nth-last-child(5)
+                display: none
+        &__drop
+            &:nth-last-child(4)
+                display: block
+
+    .drop
+        &__col
+            margin: 0 60px 40px 0
+
+@media (max-width: 1350px)
+
+
+@media (max-width: 1200px)
+    .nav
+        &__el
+            &:nth-last-child(6)
+                display: none
+        &__drop
+            &:nth-last-child(5)
+                display: block
+
+@media (max-width: 1024px)
+    .wrapper
+        &-utp
+            padding: 0
+
+    .header
+        &__city
+            display: none
+        &__time
+            display: none
+        &__menu
+            width: 24px
+            height: 16px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            margin: 0 20px 0 0
+            div
+                width: 100%
+                height: 1px
+                background: #fff
+    
+    .nav
+        display: none
+
+    .utp
+        display: block
+        white-space: nowrap
+        overflow-x: auto
+        padding: 0 20px
+        &__el
+            width: 150px
+            display: inline-block
+            vertical-align: top
+            white-space: normal
+            margin: 0 30px 0 0
+            &:last-child
+                margin: 0
+
+    .cats
+        &__el
+
+    .production
+        &__els
+            display: block
+            white-space: nowrap
+            overflow-x: auto
+        &__el
+            width: 450px
+            display: inline-flex
+            white-space: normal
+            margin: 0 30px 0 0
+
+    .news
+        &__els
+            display: block
+            white-space: nowrap
+            overflow-x: auto
+        &__el
+            width: 340px
+            display: inline-flex
+            vertical-align: top
+            white-space: normal
+
+    .subscribe
+        padding: 60px 30px
+
+    .value
+        &__els
+            display: block
+            white-space: nowrap
+            overflow-x: auto
+        &__el
+            width: 40%
+            display: inline-block
+            vertical-align: top
+            white-space: normal
+
+    .factory
+        &__el
+            width: 100%
+            margin: 0 0 20px
+            &:last-child
+                margin: 0
+
+    .city
+        &_block
+            &__phone
+                font-size: 36px
+
+    .charter
+        &__el
+            width: calc((100% - 20px) / 2)
+            &:nth-child(3n)
+                margin: 0 20px 20px 0
+            &:nth-child(2n)
+                margin: 0 0 20px
+
+    .gosts
+        &__el
+            flex-direction: column
+        &__title
+            max-width: 100%
+            margin: 0 0 20px
+        &__content
+            width: 100%
+            max-width: 100%
+
+    .gallery
+        &__el
+            width: calc((100% - 20px) / 2)
+            &:nth-child(3n)
+                margin: 0 20px 20px 0
+            &:nth-child(2n)
+                margin: 0 0 20px
+
+@media (max-width: 768px)
+    .header
+        &__email
+            display: none
+
+    .footer
+        &__top
+            flex-direction: column
+        &__logo
+            order: 1
+            margin: 0 0 50px
+        &__right
+            order: 2
+            margin: 0 0 50px
+        &__center
+            order: 3
+            margin: 0
+
+    .banner
+        &__title
+            font-size: 44px
+
+    .cats
+        &__el
+            background: linear-gradient(0deg, #DCEFEF 40.51%, #F3F3F3 94.12%)
+            padding: 40px
+            &-small
+                width: 100%
+                min-height: auto
+                margin: 0 0 30px
+                &:last-child
+                    margin: 0
+                .cats
+                    &__img
+                        max-width: calc(100% - 400px)
+                        left: inherit
+        &__img
+            max-width: calc(100% - 400px)
+
+    .production
+        margin: 0 0 100px
+    
+    .map
+        padding: 0 0 100px
+
+    .news
+        margin: 0 0 100px
+
+    .subscribe
+        flex-direction: column
+        align-items: flex-start
+        background: linear-gradient(0deg, #DCEFEF 40.51%, #F3F3F3 94.12%)
+        &__left
+            margin: 0 0 30px
+
+    .reputation
+        flex-direction: column
+        &__left
+            width: 100%
+            margin: 0 0 30px
+        &__right
+            width: 100%
+
+    .you_can
+        flex-direction: column
+        align-items: flex-start
+        &__left
+            max-width: 100%
+            margin: 0 0 30px
+        &__right
+            align-items: flex-start
+            margin: 0
+
+    .targets
+        &__els
+            display: block
+            white-space: nowrap
+            overflow-x: auto
+        &__el
+            width: 280px
+            display: inline-flex
+            vertical-align: top
+            white-space: normal
+            padding: 0
+            margin: 0 30px 0 0
+            &:last-child
+                margin: 0
+
+    .value
+        &__el
+            width: 60%
+
+    .prod
+        &__wrp
+            flex-direction: column
+        &__right
+            width: 100%
+        &__slide
+            height: 240px
+        iframe
+            width: 100%
+            margin: 0 0 40px
+
+    .regions
+        &__el
+            flex-wrap: wrap
+        &__col
+            width: 50%
+            &:last-child
+                width: 100%
+                margin: 20px 0 0
+
+    .city
+        &_block
+            flex-direction: column
+            &__left
+                width: 100%
+                height: auto
+                margin: 0 0 20px
+            &__phone
+                text-align: left
+            &__right
+                width: 100%
+        &_services
+            &__el
+                width: calc((100% - 20px) / 2)
+                margin: 0 20px 20px 0
+                &:nth-child(2n)
+                    margin: 0 0 20px
+
+    .assort
+        &__el
+            width: calc((100% - 20px) / 2)
+            margin: 0 20px 20px 0
+            &:nth-child(2n)
+                margin: 0 0 20px
+
+    .charter
+        &__el
+            width: 100%
+            padding: 40px 30px 30px
+            margin: 0 0 20px
+            &:nth-child(3n)
+                margin: 0 0 20px
+
+    .gosts
+        &__link
+            &-instruction
+                width: 100%
+
+    .instruction
+        &__el
+            flex-direction: column
+            align-items: flex-start
+        &__title
+            margin: 0 0 20px
+
+    .photos
+        &__el
+            width: calc((100% - 40px) / 3)
+            height: 250px
+            margin: 0 20px 20px 0
+            &:nth-child(3n)
+                margin: 0 0 20px
+            &:nth-child(2),
+            &:nth-child(4),
+            &:nth-child(9),
+            &:nth-child(11),
+            &:nth-child(13),
+            &:nth-child(18)
+                height: 150px
+            &:nth-child(3),
+            &:nth-child(6),
+            &:nth-child(7),
+            &:nth-child(10),
+            &:nth-child(14),
+            &:nth-child(17)
+                height: 200px
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6),
+            &:nth-child(10),
+            &:nth-child(11),
+            &:nth-child(12),
+            &:nth-child(16),
+            &:nth-child(17),
+            &:nth-child(18)
+                align-self: end
+                margin: -100px 20px 20px 0
+            &:nth-child(6),
+            &:nth-child(12),
+            &:nth-child(18)
+                margin: -100px 0 20px
+
+@media (max-width: 640px)
+    .header
+        &__top
+            height: 50px
+        &__bottom
+            height: 80px
+        &__catalog
+            height: 32px
+            font-size: 13px
+            line-height: 36px
+        &__phone
+            font-size: 16px
+            padding: 4px 0 0 24px
+            margin: 0 0 0 20px
+        &__callback
+            display: none
+        &__logo
+            img
+                width: 70px
+        &__calculator
+            width: 30px
+            font-size: 0
+            padding: 0
+            margin: 0 0 0 30px
+        &__cabinet
+            width: 40px
+            background: url(../img/cabinet.svg) center no-repeat #56C8D1
+            background-size: 24px
+            font-size: 0
+            padding: 0
+            margin: 0 0 0 30px
+        &__cart
+            width: 40px
+            background: url(../img/cart-2.svg) center no-repeat #56C8D1
+            background-size: 24px
+            font-size: 0
+            padding: 0
+            margin: 0 0 0 20px
+
+    .banner
+        &__slide
+            min-height: inherit
+            padding: 150px 0 180px
+        &__title
+            font-size: 32px
+        &__text
+            margin: 0 0 30px
+        &__nav
+            display: none !important
+        .slick
+            &-dots
+                display: none !important
+
+    .utp
+        &__el
+            margin: 0 20px 0 0
+        &__text
+            padding: 0 20px 20px
+
+    .footer
+        padding: 40px 0
+        &__top
+            padding: 0 0 50px
+        &__logo
+            img
+                width: 120px
+        &__block
+            margin: 0 0 50px
+        &__bottom
+            flex-direction: column
+            align-items: flex-start
+        &__copy
+            margin: 0 0 20px
+        &__rgt
+            flex-direction: column
+        &__link
+            margin: 0 0 20px
+
+    .cats
+        margin: -50px 0 50px
+        &__el
+            min-height: auto
+            flex-direction: column
+            padding: 30px 30px 16px
+            &-small
+                .cats
+                    &__img
+                        max-width: calc(100% - 240px)
+        &__img
+            max-width: calc(100% - 240px)
+            right: 0
+            top: 20px
+            display: none
+            &-mobile
+                display: block
+        &__title
+            font-size: 24px
+            margin: 0 0 20px
+        &__block
+            margin: 0 0 14px
+        &__links
+            margin: 0
+        &__link
+            font-size: 16px
+            &-small
+                font-size: 15px
+
+    .title
+        font-size: 32px
+        margin: 0 0 30px
+        &-map
+            margin: 0 0 10px
+        &-h2
+            font-size: 24px
+
+    .production
+        &__el
+            width: 320px
+            padding: 30px
+            margin: 0 20px 0 0
+            &:last-child
+                margin: 0
+        &__title
+            font-size: 28px
+
+    .map
+        &__top
+            flex-direction: column
+            align-items: flex-start
+            margin: 0 0 30px
+        &__link
+            margin: 0
+
+    .news
+        &__el
+            width: 320px
+            margin: 0 20px 0 0
+            &:last-child
+                margin: 0
+        &__content
+            min-height: 266px
+        &__title
+            font-size: 16px
+        &__text
+            font-size: 15px
+
+    .provider
+        margin: 0 0 70px
+        &__slider
+            width: calc(100% + 30px)
+            padding: 0
+            margin: 0 0 0 -15px
+        &__slide
+            height: 70px
+            background-position: center
+            margin: 0 15px
+        &__nav
+            display: none !important
+        .slick
+            &-dots
+                display: none !important
+
+    .subscribe
+        padding: 30px
+        margin: 0 0 50px
+        &__title
+            font-size: 24px
+        &__text
+            font-size: 15px
+        &__input
+            width: 100%
+            margin: 0 0 20px
+        &__button
+            width: 100%
+
+    .page
+        padding: 130px 0 0
+
+    .page_links
+        display: block
+        white-space: nowrap
+        overflow-x: auto
+        margin: 0 0 30px
+        &__el
+            display: inline-block
+            margin: 0 6px 0 0
+
+    .about
+        &__banner
+            min-height: 300px
+            height: auto
+            padding: 20px 30px
+        &__text
+            font-size: 24px
+            br
+                display: none
+        &__txt
+            font-size: 14px
+            margin: 0 0 50px
+
+    .cooperation
+        margin: 0 0 30px
+        &__el
+            width: 50%
+            margin: 0 0 30px
+        &__img
+            width: 40px
+            margin: 0 0 20px
+        &__text
+            font-size: 14px
+
+    .reputation
+        margin: 0 0 50px
+        &__text
+            font-size: 20px
+            margin: 0 0 30px
+
+    .you_can
+        padding: 30px
+        margin: 0 0 50px
+        &__title
+            font-size: 24px
+        &__phone
+            font-size: 24px
+            margin: 0 0 10px
+
+    .targets
+        margin: 0 0 50px
+        &__el
+            width: 200px
+        &__number
+            width: 60px
+            height: 60px
+            font-size: 24px
+            line-height: 64px
+            margin: 0 0 20px
+        &__text
+            font-size: 14px
+
+    .value
+        &__el
+            width: 80%
+            padding: 20px
+        &__top
+            flex-direction: column-reverse
+            align-items: flex-start
+            margin: 0 0 20px
+        &__title
+            font-size: 20px
+            margin: 10px 0 0
+        &__content
+            p
+                font-size: 14px
+                margin: 0 0 20px
+            ul
+                font-size: 14px
+
+    .prod
+        margin: 0 0 100px
+        &__top
+            flex-direction: column-reverse
+            align-items: flex-start
+            margin: 0 0 20px
+        &__title
+            font-size: 24px
+        &__city
+            margin: 0 0 10px
+        &__text
+            font-size: 14px
+            margin: 0 0 20px
+        &__wp
+            padding: 0 0 40px
+        &__slide
+            height: 220px
+        iframe
+            height: 240px
+            margin: 0 0 20px
+        &_text
+            font-size: 14px
+
+    .factory
+        margin: 0 0 30px
+        &__img
+            width: 80px
+            height: 80px
+            margin: 0 0 20px
+        &__content
+            width: calc(100% - 100px)
+        &__title
+            font-size: 20px
+        &__ul
+            font-size: 14px
+        &__image
+            margin: 0 0 100px
+
+    .regions
+        &__col
+            width: 100%
+            margin: 0 0 20px
+            &:last-child
+                margin: 0
+
+    .city
+        &_text
+            font-size: 14px
+            margin: 0 0 30px
+        &_block
+            &__col
+                width: 100%
+                margin: 0 0 20px
+                &:last-child
+                    width: 100%
+                    margin: 0
+        &_pdf
+            flex-direction: column
+            align-items: flex-start
+            padding: 20px
+            margin: 0 0 30px
+            &__text
+                max-width: 100%
+                margin: 0 0 20px
+        &_services
+            margin: 0 0 60px
+            &__el
+                width: 100%
+                margin: 0 0 20px
+                &:last-child
+                    margin: 0
+
+    .assort
+        &__el
+            width: 100%
+            min-height: auto
+            padding: 20px 20px 220px
+            margin: 0 0 20px
+            &:last-child
+                margin: 0
+        &__count
+            margin: 0 0 20px
+
+    .gosts
+        &__title
+            font-size: 32px
+        &__link
+            width: 100%
+            margin: 0 0 20px
+            &:last-child
+                margin: 0
+
+    .instruction
+        &__title
+            font-size: 32px
+
+    .gallery
+        &__el
+            width: 100%
+            height: 220px
+            margin: 0 0 20px
+            &:nth-child(3n)
+                margin: 0 0 20px
+
+
+    .photos
+        margin: 0 0 50px
+        &__title
+            font-size: 32px
+        &__el
+            width: 100%
+            height: 250px !important
+            margin: 0 0 20px !important
+            &:last-child
+                margin: 0 !important
+
+@media (max-width: 320px)
+    .header
+        &__phone
+            width: 40px
+            height: 40px
+            background: url(../img/phone.svg) center no-repeat
+            background-size: 24px
+            font-size: 0
+            padding: 0
+            margin: 0 0 0 20px
+        &__cabinet
+            margin: 0 0 0 20px
+        &__calculator
+            margin: 0 0 0 20px

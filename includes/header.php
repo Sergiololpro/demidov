@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="js/libs/slick/slick.css">
+  <link rel="stylesheet" href="css/styles.css?v=7">
+  <title>Demidov</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__top">
+      <div class="wrapper wrapper-header__top">
+        <div class="header__left">
+          <div class="header__menu">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="header__city">г. Москва</div>
+          <div class="header__time">Пн-Чт <span>9:00 - 18:00</span> Пт <span>9:00 - 17:00</span></div>
+        </div>
+        <div class="header__right">
+          <div class="header__catalog">КАТАЛОГ</div>
+          <a href="mailto:zakaz@demidovsteel.ru" class="header__email">zakaz@demidovsteel.ru</a>
+          <a href="tel:+7(495)775-38-96" class="header__phone">+7 (495) 775-38-96</a>
+          <div class="header__callback">Обратный звонок</div>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+     <div class="wrapper wrapper-header__bottom">
+        <a href="#" class="header__logo">
+          <img src="img/logo.svg" alt="">
+        </a>
+        <nav class="nav">
+          <a data-id="1" href="#" class="nav__el">Продукция</a>
+          <a href="#" class="nav__el">О компании</a>
+          <a href="#" class="nav__el">Доставка и оплата</a>
+          <a href="#" class="nav__el">Услуги</a>
+          <a href="#" class="nav__el">Покупателю</a>
+          <a href="#" class="nav__el">Вакансии</a>
+          <a href="#" class="nav__el">Электронная очередь</a>
+          <a href="#" class="nav__el">Контакты</a>
+          <div class="nav__dots">
+            ...
+            <div class="nav__drops">
+              <a href="#" class="nav__drop">Услуги</a>
+              <a href="#" class="nav__drop">Покупателю</a>
+              <a href="#" class="nav__drop">Вакансии</a>
+              <a href="#" class="nav__drop">Электронная очередь</a>
+              <a href="#" class="nav__drop">Контакты</a>
+            </div>
+          </div>
+        </nav>
+        <div class="header__rgt">
+          <div class="header__search"></div>
+          <div class="header__calculator">Калькулятор металла</div>
+          <div class="header__cabinet">Войти</div>
+          <a href="#" class="header__cart">Корзина</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div data-id="1" class="drop">
+    <div class="wrapper">
+      <div class="drop__title">Продукция</div>
+      <div class="drop__wrp">
+        <div class="drop__col">
+          <div class="drop__cat">
+            <a href="#" class="drop__ttl">Трубный прокат</a>
+            <div class="drop__el">
+              <a href="#" class="drop__link">Трубы профильные</a>
+              <a href="#" class="drop__link drop__link-small">Трубы профильные г/к</a>
+              <a href="#" class="drop__link drop__link-small">Трубы профильные х/к</a>
+            </div>
+            <div class="drop__el">
+              <a href="#" class="drop__link">Трубы электросварные</a>
+            </div>
+            <div class="drop__el">
+              <a href="#" class="drop__link">Трубы водогазопроводные</a>
+            </div>
+            <div class="drop__el">
+              <a href="#" class="drop__link">Трубы оцинкованные</a>
+              <a href="#" class="drop__link drop__link-small">Трубы профильные оцинкованные</a>
+              <a href="#" class="drop__link drop__link-small">Трубы электросварные оцинкованные</a>
+            </div>
+          </div>
+        </div>
+        <div class="drop__col">
+          <div class="drop__cat">
+            <a href="#" class="drop__ttl">Сортовой прокат</a>
+            <div class="drop__el">
+              <a href="#" class="drop__link">Арматура</a>
+            </div>
+            <div class="drop__el">
+              <a href="#" class="drop__link">Квадрат</a>
+            </div>
+            <div class="drop__el">
+              <a href="#" class="drop__link">Круг</a>
+            </div>
+            <div class="drop__el">
+              <a href="#" class="drop__link">Поковка</a>
+            </div>
+            <div class="drop__el">
+              <a href="#" class="drop__link">Полоса</a>
+            </div>
+            <div class="drop__el">
+              <a href="#" class="drop__link">Шестигранник</a>
+            </div>
+          </div>
+        </div>
+        <div class="drop__col">
+          <div class="drop__cat">
+            <a href="#" class="drop__ttl">Сетка сварная</a>
+            <div class="drop__el">
+              <a href="#" class="drop__link">Сетка сварная кладочная</a>
+            </div>
+            <div class="drop__el">
+              <a href="#" class="drop__link">Сетка сварная дорожная</a>
+            </div>
+            <div class="drop__el">
+              <a href="#" class="drop__link">Сетка сварная арматурная</a>
+            </div>
+          </div>
+          <div class="drop__cat">
+            <a href="#" class="drop__ttl">Фасонный прокат</a>
+            <div class="drop__el">
+              <a href="#" class="drop__link">Уголок</a>
+            </div>
+            <div class="drop__el">
+              <a href="#" class="drop__link">Швеллер</a>
+              <a href="#" class="drop__link drop__link-small">Швеллер г/к</a>
+              <a href="#" class="drop__link drop__link-small">Швеллер гнутый</a>
+            </div>
+            <div class="drop__el">
+              <a href="#" class="drop__link">Балка горячекатаная</a>
+            </div>
+          </div>
+        </div>
+        <div class="drop__col">
+          <div class="drop__cat">
+            <a href="#" class="drop__ttl">Листовой прокат</a>
+            <div class="drop__el">
+              <a href="#" class="drop__link">Лист горячекатаный</a>
+              <a href="#" class="drop__link drop__link-small">Лист г/к ст3</a>
+              <a href="#" class="drop__link drop__link-small">Лист низколегированный</a>
+              <a href="#" class="drop__link drop__link-small">Лист конструкционный</a>
+            </div>
+            <div class="drop__el">
+              <a href="#" class="drop__link">Лист рифленый </a>
+            </div>
+            <div class="drop__el">
+              <a href="#" class="drop__link">Лист холоднокатаный</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile_menu">
+    <div class="mobile_menu__top">
+      <div class="mobile_menu__close"></div>
+      <div class="mobile_menu__city">г. Москва</div>
+    </div>
+    <nav class="mobile_menu__navs">
+      <a href="#" class="mobile_menu__nav">Продукция</a>
+      <a href="#" class="mobile_menu__nav">О компании</a>
+      <a href="#" class="mobile_menu__nav">Доставка и оплата</a>
+      <a href="#" class="mobile_menu__nav">Услуги</a>
+      <a href="#" class="mobile_menu__nav">Покупателю</a>
+      <a href="#" class="mobile_menu__nav">Вакансии</a>
+      <a href="#" class="mobile_menu__nav">Электронная очередь</a>
+      <a href="#" class="mobile_menu__nav">Контакты</a>
+    </nav>
+    <div class="mobile_menu__time">Пн-Чт <span>9:00 - 18:00</span> Пт <span>9:00 - 17:00</span></div>
+    <a href="mailto:zakaz@demidovsteel.ru" class="mobile_menu__email">zakaz@demidovsteel.ru</a>
+    <a href="tel:+7(495)775-38-96" class="mobile_menu__phone">+7 (495) 775-38-96</a>
+    <div class="mobile_menu__callback">Обратный звонок</div>
+  </div>
+  
