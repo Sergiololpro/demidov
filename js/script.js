@@ -126,4 +126,28 @@ $(document).ready(function () {
         });
     }
 
+    // Фото в карточке
+    $(".card__img").on("click", function() {
+        $(".card__img").removeClass("active");
+
+        $(this).addClass("active");
+
+        $(".card__image").attr("style", $(this).attr("style"));
+    });
+
+    // Переключатель в карточке
+    $(".card_switch").on("click", function() {
+        $(this).toggleClass("active");
+    });
+
+    // Табы в карточке
+    $(".card_tabs__tab").on("click", function() {
+        var id = $(this).data("id");
+
+        $(".card_tabs__tab, .card_cont__el").removeClass("active");
+
+        $(this).addClass("active");
+        $(".card_cont__el[data-id=" + id + "]").addClass("active");
+    });
+
 });

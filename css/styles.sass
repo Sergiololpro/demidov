@@ -2180,6 +2180,257 @@ body
         padding: 0 0 0 24px
         margin: 0 0 0 30px
 
+.card
+    &__wrp
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        margin: 0 0 50px
+    &__left
+        width: 450px
+        max-width: 100%
+    &__image
+        width: 100%
+        height: 450px
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        margin: 0 0 20px
+    &__images
+        display: flex
+        flex-wrap: wrap
+    &__img
+        width: 64px
+        height: 64px
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        border-radius: 4px
+        overflow: hidden
+        cursor: pointer
+        position: relative
+        margin: 0 20px 20px 0
+        &:hover,
+        &.active
+            &:before
+                opacity: 1
+        &:before
+            content: ""
+            width: calc(100% - 4px)
+            height: calc(100% - 4px)
+            border: 2px solid #56C8D1
+            position: absolute
+            left: 0
+            top: 0
+            opacity: 0
+            transition: opacity .3s ease-out
+    &__right
+        width: calc(100% - 600px)
+    &__ul
+        max-width: 450px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        font-size: 13px
+        line-height: 150%
+        margin: 0 0 30px
+        li
+            width: calc((100% - 100px) / 2)
+            margin: 0 0 10px
+    &__content
+        border: 1px solid #eee
+        border-radius: 4px
+        padding: 30px
+    &__row_1
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin: 0 0 30px
+    &__size
+        font-size: 28px
+        div
+            font-size: 13px
+            color: #BEBEBE
+    &__rgt
+        display: flex
+        align-items: center
+    &__fav
+        width: 32px
+        height: 32px
+        background: url(../img/star.svg) center no-repeat #FAFAFA
+        background-size: 18px
+        border-radius: 4px
+        cursor: pointer
+        margin: 0 0 0 50px
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+    &__row_2
+        display: flex
+        align-items: flex-end
+        margin: 0 0 20px
+    &__price
+        font-size: 20px
+        text-align: right
+        white-space: nowrap
+        margin: 0 0 0 20px
+    &__old_price
+        font-size: 16px
+        color: #BEBEBE
+        text-decoration-line: line-through
+    &__weight
+        font-size: 13px
+        margin: 0 0 0 20px
+        span
+            color: #BEBEBE
+    &__buttons
+        display: flex
+        margin: 0 0 20px
+    &__button
+        height: 48px
+        background: url(../img/cart-2.svg) right 20px center no-repeat #56C8D1
+        background-size: 16px
+        border-radius: 8px
+        font-size: 16px
+        color: #fff
+        font-weight: 700
+        line-height: 50px
+        cursor: pointer
+        padding: 0 60px 0 20px
+        margin: 0 20px 0 0
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+    &__row_3
+        display: flex
+        margin: 0 0 20px
+    &__stock
+        background: url(../img/check.svg) left top no-repeat
+        background-size: 16px
+        font-size: 15px
+        padding: 0 0 0 24px
+        margin: 0 20px 0 0
+    &__city
+        background: url(../img/city.svg) left top no-repeat
+        background-size: auto 16px
+        font-size: 15px
+        padding: 0 0 0 24px
+    &__self
+        background: url(../img/self.svg) left top no-repeat
+        background-size: 16px
+        font-size: 13px
+        line-height: 150%
+        padding: 0 0 0 24px
+    &_controls
+        display: flex
+        &__button
+            width: 48px
+            height: 48px
+            background-position: center
+            background-size: 12px
+            background-repeat: no-repeat
+            background-color: #FAFAFA
+            border-radius: 4px
+            cursor: pointer
+            transition: opacity .3s ease-out
+            &:hover
+                opacity: .7
+            &-minus
+                background-image: url(../img/minus.svg)
+            &-plus
+                background-image: url(../img/plus.svg)
+        &__input
+            width: 90px
+            height: 48px
+            border: 1px solid #eee
+            border-radius: 4px
+            font-size: 15px
+            text-align: center
+            margin: 0 10px
+    &_switch
+        display: flex
+        align-items: center
+        &.active
+            .card
+                &_switch
+                    &__text
+                        &:first-child
+                            font-weight: 400
+                        &:last-child
+                            font-weight: 700
+                    &__el
+                        &:before
+                            transform: translateX(19px)
+        &__text
+            font-size: 16px
+            color: #1E3B3E
+            &:first-child
+                font-weight: 700
+        &__el
+            width: 40px
+            height: 25px
+            background: #56C8D1
+            border-radius: 23px
+            cursor: pointer
+            position: relative
+            margin: 0 20px
+            &:before
+                content: ""
+                width: 17px
+                height: 17px
+                background: #fff
+                border-radius: 100%
+                position: absolute
+                left: 0
+                top: 4px
+                bottom: 4px
+                margin: 0 auto
+                transform: translateX(4px)
+                transition: transform .3s ease-out
+    &_tabs
+        display: flex
+        &__tab
+            height: 56px
+            background: #FAFAFA
+            border-radius: 8px 8px 0 0
+            font-size: 16px
+            color: #56C8D1
+            font-weight: 700
+            line-height: 58px
+            cursor: pointer
+            padding: 0 20px
+            transition: background .3s ease-out, color .3s ease-out
+            &.active,
+            &:hover
+                background: #56C8D1
+                color: #fff
+    &_cont
+        width: 100%
+        border-top: 2px solid #FAFAFA
+        margin: 0 0 100px
+        &__el
+            height: 0
+            opacity: 0
+            transform: translateX(-100%)
+            transition: transform .5s ease-out
+            &.active
+                height: auto
+                opacity: 1
+                padding: 30px 0 0
+                transform: translateX(0)
+        &__title
+            font-size: 28px
+            color: #1E3B3E
+            font-weight: 700
+            margin: 0 0 30px
+        p
+            font-size: 15px
+            color: #1E3B3E
+            line-height: 140%
+            margin: 0 0 20px
+            &:last-child
+                margin: 0
+
 
 @media (max-height: 700px)
     .banner
@@ -2377,6 +2628,24 @@ body
             display: inline-flex
             vertical-align: top
             white-space: normal
+
+    .card
+        &__left
+            width: 400px
+        &__image
+            height: 400px
+        &__right
+            width: calc(100% - 450px)
+        &__row_2
+            flex-direction: column
+            align-items: flex-start
+        &__price
+            text-align: left
+            margin: 0 0 20px
+        &__weight
+            margin: 0
+        &_controls
+            margin: 0 0 20px
 
 @media (max-width: 768px)
     .header
@@ -2582,6 +2851,14 @@ body
             display: inline-flex
             vertical-align: top
             white-space: normal
+
+    .card
+        &__wrp
+            flex-direction: column
+        &__left
+            margin: 0 0 30px
+        &__right
+            width: 100%
 
 @media (max-width: 640px)
     .header
@@ -2996,6 +3273,38 @@ body
             margin: 0 0 30px
         &__city
             margin: 10px 0 0
+
+    .card
+        &__wrp
+            margin: 0 0 30px
+        &__image
+            height: 350px
+        &__row_1
+            flex-direction: column
+            align-items: flex-start
+            margin: 0 0 20px
+        &__size
+            margin: 0 0 20px
+        &__buttons
+            flex-direction: column
+            align-items: flex-start
+        &__button
+            margin: 0 0 10px
+            &:last-child
+                margin: 0
+        &_tabs
+            display: block
+            white-space: nowrap
+            overflow-x: auto
+            &__tab
+                display: inline-block
+                vertical-align: top
+                white-space: normal
+        &_cont
+            &__title
+                margin: 0 0 20px
+            p
+                font-size: 14px
 
 @media (max-width: 320px)
     .header
