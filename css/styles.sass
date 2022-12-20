@@ -48,13 +48,13 @@ input
     border: none
     border-radius: 0
     font-family: 'Helios'
-    color: #7A7A7A
+    color: #444
     box-shadow: none
     -webkit-appearance: none
 
 textarea::-webkit-input-placeholder,
 input::-webkit-input-placeholder
-    color: #7A7A7A
+    color: #444
 
 textarea
     resize: none
@@ -727,7 +727,7 @@ body
     &__title
         width: 100%
         font-size: 40px
-        color: #717171
+        color: #1E3B3E
         font-weight: 700
         line-height: 100%
         margin: 0 0 40px
@@ -751,7 +751,7 @@ body
             margin: 0
         &-small
             font-size: 18px
-            color: #717171
+            color: #444
             font-weight: 400
             padding: 0 0 0 10px
     &__els
@@ -760,7 +760,6 @@ body
 
 .title
     font-size: 56px
-    color: #717171
     font-weight: 700
     margin: 0 0 70px
     &-map
@@ -773,6 +772,11 @@ body
         color: #1E3B3E
         &_margin
             margin: 0 0 30px
+    &-page
+        color: #1E3B3E
+        margin: 0 0 50px
+        &_small
+            font-size: 40px
 
 .production
     margin: 0 0 200px
@@ -894,7 +898,6 @@ body
         background: #fff
         border-radius: 10px 0px 0px 0px
         font-size: 13px
-        color: #717171
         line-height: 150%
         box-shadow: 0 2px 10px 10px rgba(0, 0, 0, .05)
         opacity: 0
@@ -1071,7 +1074,6 @@ body
         max-width: 100%
     &__title
         font-size: 28px
-        color: #717171
         font-weight: 700
         line-height: 130%
         margin: 0 0 10px
@@ -1090,7 +1092,6 @@ body
         background: #fff
         border-radius: 4px
         font-size: 13px
-        color: #7A7A7A
         font-weight: 700
         padding: 0 20px
     &__button
@@ -1107,7 +1108,6 @@ body
     &__txt
         margin: 30px 0 0
         font-size: 11px
-        color: #7A7A7A
         line-height: 150%
         a
             color: #56C8D1
@@ -1974,6 +1974,172 @@ body
         transition: opacity .3s ease-out
         &:hover
             opacity: .7
+
+.cat_slider
+    position: relative
+    margin: 0 0 100px
+    &__el
+        height: 400px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        position: relative
+        padding: 50px 40px
+        &:before
+            content: ""
+            width: 100%
+            height: 100%
+            background: linear-gradient(99.48deg, rgba(0, 0, 0, 0.45) 3.67%, rgba(0, 0, 0, 0) 57.16%), url(metal-bar-3d.jpg), transparent
+            position: absolute
+            left: 0
+            top: 0
+        *
+            z-index: 1
+    &__title
+        max-width: 300px
+        font-size: 40px
+        color: #fff
+        font-weight: 700
+        line-height: 130%
+        margin: 0 0 10px
+    &__nav
+        width: 24px
+        height: 24px
+        background: url(../img/nav.svg) center no-repeat
+        background-size: contain
+        cursor: pointer
+        z-index: 1
+        position: absolute
+        bottom: 45px
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+        &-prev
+            left: 170px
+            transform: scale(-1, 1)
+        &-next
+            left: 210px
+    .slick
+        &-dots
+            display: flex
+            position: absolute
+            left: 40px
+            bottom: 50px
+            li
+                margin: 0 8px 0 0
+                &:last-child
+                    margin: 0
+            button
+                width: 8px
+                height: 8px
+                background: #fff
+                border-radius: 16px
+                font-size: 0
+                cursor: pointer
+                padding: 0
+                transition: width .3s ease-out, background .3s ease-out
+                &:hover
+                    background: #56C8D1
+        &-active
+            button
+                width: 40px
+
+.cat_utps
+    display: flex
+    justify-content: space-between
+    margin: 0 0 100px
+    &__el
+        width: 170px
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__img
+        width: 40px
+        height: 40px
+        margin: 0 0 30px
+    &__text
+        font-size: 13px
+        line-height: 150%
+        text-align: center
+
+.cat_banner
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    background-color: #444
+    border-radius: 4px
+    padding: 40px
+    margin: 0 0 100px
+    &__left
+        max-width: 470px
+    &__title
+        font-size: 40px
+        color: #fff
+        font-weight: 700
+        margin: 0 0 10px
+    &__text
+        font-size: 18px
+        color: #fff
+        line-height: 150%
+
+.treatment
+    margin: 0 0 100px
+    &__els
+        display: flex
+        flex-wrap: wrap
+    &__el
+        width: calc((100% - 40px) / 3)
+        height: 550px
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        border-radius: 4px
+        overflow: hidden
+        position: relative
+        padding: 40px
+        margin: 0 20px 0 0
+        &:nth-child(3n)
+            margin: 0
+        &:hover
+            .treatment
+                &__el
+                    transform: scale(1.1)
+        &:before
+            content: ""
+            width: 100%
+            height: 100%
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54)), url(image.png), transparent
+            z-index: 1
+            position: absolute
+            left: 0
+            top: 0
+    &__image
+        width: 100%
+        height: 100%
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        margin: auto
+        transition: transform .3s ease-out
+    &__title
+        font-size: 28px
+        color: #fff
+        font-weight: 700
+        line-height: 130%
+        z-index: 2
+        margin: 0 0 10px
 
 
 @media (max-height: 700px)
