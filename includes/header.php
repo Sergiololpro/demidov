@@ -7,6 +7,7 @@
   <meta name="format-detection" content="telephone=no">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="js/libs/slick/slick.css">
+  <link rel="stylesheet" href="js/libs/select2/select2.min.css">
   <link rel="stylesheet" href="css/styles.css?v=8">
   <title>Demidov</title>
 </head>
@@ -192,5 +193,36 @@
     <a href="mailto:zakaz@demidovsteel.ru" class="mobile_menu__email">zakaz@demidovsteel.ru</a>
     <a href="tel:+7(495)775-38-96" class="mobile_menu__phone">+7 (495) 775-38-96</a>
     <div class="mobile_menu__callback">Обратный звонок</div>
+  </div>
+
+  <div class="modal modal_cart">
+    <div class="modal__content">
+      <div class="modal__close"></div>
+      <div class="modal__title">Добавить металлобработку</div>
+      <div class="modal__input">
+        <div class="modal__label">Выберите тип обработки<span>*</span></div>
+        <select data-placeholder="Введите" class="select2 select2-modal">
+            <option value="">&nbsp;</option>
+            <option value="type_1">Тип 1</option>
+            <option value="type_2">Тип 2</option>
+        </select>
+      </div>
+      <div class="modal__input">
+        <div class="modal__label">Задание<span>*</span></div>
+        <textarea name="comment" class="textarea" placeholder="Опишите подробнее, что необходимо сделать"></textarea>
+      </div>
+      <div class="input_file">
+        <input id="file" name="file" class="input_file__input" type="file">
+        <label for="file" class="input_file__label">
+          <span class="input_file__button">Прикрепить чертеж</span>
+          <span class="input_file__text">Не обязательно. Файлы jpeg, png, pdf не более 6 мб</span>
+        </label>
+      </div>
+      <div class="modal__buttons">
+        <div class="modal__button">Отмена</div>
+        <div class="modal__button modal__button-dark">Добавить</div>
+      </div>
+      <div class="modal__operator">После оформления заказа Менеджер клиентского сервиса свяжется с Вами для уточнения деталей задания</div>
+    </div>
   </div>
   

@@ -51,10 +51,8 @@ input
     color: #444
     box-shadow: none
     -webkit-appearance: none
-
-textarea::-webkit-input-placeholder,
-input::-webkit-input-placeholder
-    color: #444
+    &::-webkit-input-placeholder
+        color: #444
 
 textarea
     resize: none
@@ -121,6 +119,7 @@ body
         height: 66px
     &__bottom
         height: 100px
+        background: rgba(0, 0, 0, .1)
     &__left
         display: flex
         align-items: center
@@ -523,7 +522,7 @@ body
         padding: 0 30px 30px
 
 .footer
-    background: url(../img/footer.svg) right top no-repeat #454545
+    background: url(../img/footer.svg) right top no-repeat #444
     background-size: 520px
     padding: 80px 0 40px
     &__top
@@ -804,6 +803,13 @@ body
         margin: 0 0 50px
         &_small
             font-size: 40px
+    &-ct
+        color: #1E3B3E
+        margin: 0 0 30px
+    &-cart
+        font-size: 40px
+        color: #1E3B3E
+        margin: 0 0 30px
 
 .production
     margin: 0 0 200px
@@ -2459,6 +2465,881 @@ body
             &:last-child
                 margin: 0
 
+.cat_banners
+    display: flex
+    margin: 0 0 50px
+    &__el
+        width: calc((100% - 40px) / 3)
+        height: 130px
+        display: flex
+        align-items: center
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        border-radius: 4px
+        position: relative
+        padding: 40px
+        margin: 0 20px 0 0
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+        &:nth-child(3n)
+            margin: 0
+        &:before
+            content: ""
+            width: 100%
+            height: 100%
+            background: linear-gradient(90.82deg, #FAFAFA 0.71%, rgba(250, 250, 250, 0.47) 58.78%, rgba(250, 250, 250, 0) 73.56%)
+            position: absolute
+            left: 0
+            top: 0
+        &-light
+            &:before
+                background: linear-gradient(90.82deg, #030301 0.71%, rgba(0, 0, 0, 0.47) 58.78%, rgba(0, 0, 0, 0) 73.56%)
+            .cat_banners
+                &__text
+                    color: #fff
+    &__text
+        max-width: 120px
+        font-size: 20px
+        line-height: 130%
+        z-index: 1
+
+.ct
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    margin: 0 0 20px
+    &__filters
+        width: 340px
+    &__content
+        width: calc(100% - 370px)
+    &__search
+        width: 100%
+        height: 48px
+        background: url(../img/search.svg) 20px center no-repeat #FAFAFA
+        background-size: 22px
+        border-radius: 4px
+        font-size: 15px
+        padding: 0 20px 0 62px
+        margin: 0 0 20px
+        &::-webkit-input-placeholder
+            color: #BEBEBE
+    &__line
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        background: #FAFAFA
+        border-radius: 4px
+        padding: 20px
+        margin: 0 0 20px
+        .select2
+            &:hover
+                border: none !important
+            &-container
+                background: transparent
+                border: none !important
+            &-selection
+                &__rendered
+                    height: auto
+                    padding: 0 40px 0 0 !important
+    &__left
+        display: flex
+        align-items: center
+    &__download
+        background: url(../img/pdf.svg) left top no-repeat
+        background-size: 16px 20px
+        font-size: 16px
+        color: #56C8D1
+        font-weight: 700
+        padding: 3px 0 0 28px
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+    &_views
+        display: flex
+        margin: 0 30px 0 0
+        &__el
+            width: 24px
+            height: 24px
+            background-position: center
+            background-size: contain
+            background-repeat: no-repeat
+            cursor: pointer
+            margin: 0 20px 0 0
+            transition: background .3s ease-out
+            &:last-child
+                margin: 0
+            &-1
+                background-image: url(../img/ct_views__el-1.svg)
+                &:hover,
+                &.active
+                    background-image: url(../img/ct_views__el-1_hover.svg)
+            &-2
+                background-image: url(../img/ct_views__el-2.svg)
+                &:hover,
+                &.active
+                    background-image: url(../img/ct_views__el-2_hover.svg)
+            &-3
+                background-image: url(../img/ct_views__el-3.svg)
+                &:hover,
+                &.active
+                    background-image: url(../img/ct_views__el-3_hover.svg)
+    &_banner
+        display: flex
+        justify-content: space-between
+        align-items: center
+        background: #444
+        border-radius: 4px
+        padding: 30px 40px
+        margin: 0 0 30px
+        &__left
+            max-width: 430px
+            margin: 0 30px 0 0
+        &__title
+            font-size: 28px
+            color: #fff
+            font-weight: 700
+            margin: 0 0 4px
+        &__text
+            font-size: 15px
+            color: #fff
+            line-height: 140%
+    &_tags
+        display: flex
+        flex-wrap: wrap
+        margin: 0 0 10px
+        &__el
+            height: 32px
+            background: #FAFAFA
+            border-radius: 4px
+            font-size: 16px
+            font-weight: 700
+            line-height: 34px
+            cursor: pointer
+            padding: 0 10px
+            margin: 0 10px 10px 0
+            transition: background .3s ease-out, color .3s ease-out
+            &:hover,
+            &.active
+                background: #56C8D1
+                color: #fff
+    &__els
+        margin: 0 0 20px
+    &__more
+        width: 160px
+        height: 48px
+        border: 2px solid #0096EB
+        border-radius: 8px
+        font-size: 16px
+        color: #0096EB
+        font-weight: 700
+        line-height: 48px
+        text-align: center
+        cursor: pointer
+        margin: 0 auto
+        transition: background .3s ease-out, color .3s ease-out
+        &:hover
+            background: #0096EB
+            color: #fff
+
+.filters
+    max-width: 100%
+    border-top: 1px solid #eee
+    margin: 0 0 100px
+    &__level_1
+        border-bottom: 1px solid #eee
+        padding: 20px 0
+        &.active
+            .filters
+                &__label_1
+                    margin: 0 0 20px
+                &__link_1
+                    color: #56C8D1
+                &__arrow_1
+                    transform: rotate(180deg)
+                &__level_2
+                    height: auto
+                    padding: 0 0 20px
+    &__label_1
+        display: flex
+    &__link_1
+        font-size: 20px
+        color: #1E3B3E
+        font-weight: 700
+        line-height: 130%
+        transition: color .3s ease-out
+        &:hover
+            color: #56C8D1
+    &__arrow_1
+        width: 24px
+        height: 24px
+        background: url(../img/arr.svg) center no-repeat #FAFAFA
+        background-size: 8px
+        border-radius: 4px
+        cursor: pointer
+        margin: 0 20px 0 0
+        transition: opacity .3s ease-out, transform .3s ease-out
+        &:hover
+            opacity: .7
+    &__level_2
+        height: 0
+        overflow: hidden
+        transition: height .3s ease-out
+        &:last-child
+            padding: 0 !important
+            margin: 0
+        &.active
+            .filters
+                &__label_2
+                    margin: 0 0 10px
+                &__link_2
+                    color: #56C8D1
+                &__arrow_2
+                    transform: rotate(180deg)
+                &__level_3
+                    height: auto
+    &__label_2
+        display: flex
+        align-items: center
+        padding: 0 0 0 20px
+    &__link_2
+        font-size: 16px
+        color: #1E3B3E
+        font-weight: 700
+        line-height: 130%
+        transition: color .3s ease-out
+        &:hover
+            color: #56C8D1
+    &__img
+        width: 30px
+        height: 30px
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        margin: 0 20px 0 0
+    &__arrow_2
+        width: 24px
+        height: 24px
+        background: url(../img/arr.svg) center no-repeat
+        background-size: 8px
+        border-radius: 4px
+        cursor: pointer
+        margin: 0 0 0 20px
+        transition: opacity .3s ease-out, transform .3s ease-out
+        &:hover
+            opacity: .7
+    &__level_3
+        height: 0
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        overflow: hidden
+        padding: 0 0 0 70px
+        transition: height .3s ease-out
+    &__link
+        font-size: 15px
+        color: #1E3B3E
+        margin: 0 0 10px
+        transition: color .3s ease-out
+        &:last-child
+            margin: 0
+        &:hover
+            color: #56C8D1
+
+.fils
+    max-width: 100%
+    &__title
+        min-height: 24px
+        background: url(../img/filter.svg) left center no-repeat
+        background-size: 24px
+        font-size: 20px
+        font-weight: 700
+        padding: 0 0 0 36px
+        margin: 0 0 30px
+    &__row
+        margin: 0 0 20px
+        &:last-child
+            margin: 0
+    &__label
+        font-size: 13px
+        font-weight: 700
+        margin: 0 0 10px
+    &__inputs
+        display: flex
+    &__ttl
+        font-size: 16px
+        font-weight: 700
+        margin: 40px 0 20px
+    &__selects
+        .select2
+            margin: 0 0 10px
+            &:last-child
+                margin: 0
+
+.textarea,
+.input
+    width: 100%
+    max-width: 100%
+    background: #fff
+    border: 1px solid #eee
+    border-radius: 4px
+    font-size: 15px
+    color: #BEBEBE
+    &::-webkit-input-placeholder
+        color: #BEBEBE
+    &-small
+        width: 110px
+        margin: 0 10px 0 0
+        &:last-child
+            margin: 0
+
+.input
+    height: 44px
+    padding: 0 10px
+    margin: 0 0 30px
+    &_file
+        &__label
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+        &__input
+            display: none
+        &__button
+            width: 210px
+            max-width: 100%
+            height: 48px
+            display: inline-block
+            border: 2px solid #56C8D1
+            border-radius: 8px
+            font-size: 16px
+            color: #56C8D1
+            font-weight: 700
+            line-height: 48px
+            text-align: center
+            cursor: pointer
+            margin: 0 0 6px
+            transition: background .3s ease-out, color .3s ease-out
+            &:hover
+                background: #56C8D1
+                color: #fff
+        &__text
+            font-size: 11px
+            color: #BEBEBE
+            line-height: 150%
+
+.textarea
+    height: 130px
+    padding: 10px
+
+.select2
+    &-container
+        &--open
+            border: 1px solid #56C8D1 !important
+    &:hover
+        border: 1px solid #56C8D1 !important
+    &-container
+        width: 100% !important
+        background: #fff
+        border: 1px solid #D8DADD !important
+        border-radius: 5px
+        font-size: 16px
+        transition: border .3s ease-out
+        .select2
+            &-selection
+                &--single
+                    height: auto
+    &--default
+        .select2-results__option--highlighted[aria-selected],
+        .select2-results__option[aria-selected=true]
+            background: #444 !important
+            color: #fff
+    &--open
+        .select2-dropdown--below
+            border: none
+            box-shadow: 0 4px 12px rgba(78, 86, 103, .08)
+    &-selection,
+    &-selection__rendered
+        background: transparent !important
+        border: none !important
+        border-radius: 0 !important
+        color: #444 !important
+        font-weight: 700
+        outline: none
+    &-selection__rendered
+        width: 100%
+        height: 44px
+        display: flex !important
+        align-items: center
+        line-height: inherit !important
+        padding: 4px 70px 0 20px !important
+    &-selection__arrow
+        width: 44px !important
+        height: 44px !important
+        background: url(../img/arr-2.svg) center no-repeat
+        background-size: 16px
+        right: 0 !important
+        top: 0 !important
+        bottom: 0
+        margin: auto
+        transition: transform .3s ease-out
+        b
+            display: none
+    &-selection__placeholder
+        color: #BEBEBE !important
+    &-results
+        &__options
+            max-height: 210px !important
+            border: 1px solid #D8DADD
+            border-top: none
+            border-radius: 0 0 5px 5px
+        &__option
+            height: 40px
+            display: flex
+            align-items: center
+            border-bottom: 1px solid #D8DADD
+            white-space: nowrap
+            position: relative
+            padding: 0 20px
+            transition: background .3s ease-out
+            &:last-child
+                border-bottom: none
+            &--highlighted[aria-selected]
+                background: #444 !important
+    &-dropdown
+        top: -1px
+
+.element
+    width: 100%
+    display: flex
+    justify-content: space-between
+    border: 1px solid #eee
+    border-radius: 4px
+    padding: 20px
+    margin: 0 0 20px
+    &:last-child
+        margin: 0
+    &__image
+        width: 160px
+        height: 160px
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        border-radius: 4px
+    &__content
+        width: calc(100% - 180px)
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &__left
+        width: 60%
+    &__top
+        display: flex
+        margin: 0 0 6px
+    &__art
+        font-size: 13px
+        color: #BEBEBE
+        font-weight: 700
+        margin: 0 20px 0 0
+    &__stock
+        font-size: 13px
+        color: #56C8D1
+        font-weight: 700
+    &__title
+        display: block
+        font-size: 28px
+        font-weight: 700
+        margin: 0 0 10px
+        transition: color .3s ease-out
+        &:hover
+            color: #56C8D1
+    &__ul
+        li
+            font-size: 15px
+            margin: 0 0 6px
+            &:last-child
+                margin: 0
+    &__right
+        width: 40%
+        text-align: right
+        padding: 0 0 0 20px
+    &__old_price
+        font-size: 16px
+        color: #BEBEBE
+        text-decoration-line: line-through
+    &__price
+        font-size: 28px
+        font-weight: 700
+    &__bottom
+        width: 100%
+        display: flex
+        justify-content: flex-end
+        margin: 20px 0 0
+    &__button
+        height: 32px
+        background-image: url(../img/cart-2.svg)
+        background-position: right 12px center
+        background-repeat: no-repeat
+        background-color: #56C8D1
+        background-size: 16px
+        border-radius: 4px
+        font-size: 16px
+        color: #fff
+        line-height: 34px
+        white-space: nowrap
+        cursor: pointer
+        padding: 0 40px 0 20px
+        margin: 0 20px 0 0
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+        &-click
+            background-image: url(../img/click.svg)
+    &__fav
+        min-width: 32px
+        height: 32px
+        background: url(../img/star.svg) center no-repeat #FAFAFA
+        background-size: 18px
+        border-radius: 4px
+        cursor: pointer
+        position: relative
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+    &_controls
+        display: flex
+        margin: 0 20px 0 0
+        &__button
+            width: 32px
+            height: 32px
+            background-position: center
+            background-size: 12px
+            background-repeat: no-repeat
+            background-color: #FAFAFA
+            border-radius: 4px
+            cursor: pointer
+            transition: opacity .3s ease-out
+            &:hover
+                opacity: .7
+            &-minus
+                background-image: url(../img/minus.svg)
+            &-plus
+                background-image: url(../img/plus.svg)
+        &__input
+            width: 50px
+            height: 32px
+            font-size: 13px
+            text-align: center
+            padding: 0 10px
+
+.grey_text
+    background: #FAFAFA
+    font-size: 15px
+    line-height: 140%
+    padding: 100px 0
+
+.cart
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    margin: 0 0 100px
+    &__left
+        width: calc(100% - 470px)
+    &__els
+        margin: 0 0 20px
+    &__right
+        width: 450px
+        background: #fff
+        border-radius: 4px
+        box-shadow: 0 0 24px rgba(0, 0, 0, .1)
+        padding: 20px
+    &__more
+        height: 40px
+        display: inline-block
+        border: 2px solid #56C8D1
+        border-radius: 8px
+        font-size: 16px
+        color: #56C8D1
+        font-weight: 700
+        line-height: 40px
+        text-align: center
+        cursor: pointer
+        padding: 0 20px
+        transition: background .3s ease-out, color .3s ease-out
+        &:hover
+            background: #56C8D1
+            color: #fff
+    &__title
+        font-size: 28px
+        font-weight: 700
+        margin: 0 0 20px
+    &__row
+        display: flex
+        justify-content: space-between
+        align-items: center
+        font-size: 13px
+        color: #1E3B3E
+        margin: 0 0 20px
+    &__bold
+        font-size: 16px
+        font-weight: 700
+    &__total
+        font-size: 28px
+        color: #56C8D1
+        font-weight: 700
+    &__ul
+        font-size: 15px
+        color: #1E3B3E
+        line-height: 140%
+        margin: 0 0 20px
+    &__button
+        width: 100%
+        height: 56px
+        background: #56C8D1
+        border-radius: 8px
+        font-size: 16px
+        color: #fff
+        font-weight: 700
+        line-height: 60px
+        text-align: center
+        cursor: pointer
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+    &_el
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        border: 1px solid #eee
+        border-radius: 4px
+        padding: 30px
+        margin: 0 0 10px
+        &:last-child
+            margin: 0
+        &__left
+            width: 100%
+            max-width: 660px
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            padding: 0 20px 0 0
+        &__row
+            width: 100%
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin: 0 0 10px
+        &__lft
+            display: flex
+            align-items: center
+        &__image
+            width: 60px
+            height: 60px
+            background-position: center
+            background-size: cover
+            background-repeat: no-repeat
+            border-radius: 4px
+            margin: 0 20px 0 0
+        &__col
+            margin: 0 30px 0 0
+        &__title
+            display: block
+            font-size: 20px
+            font-weight: 700
+            margin: 0 0 6px
+            transition: color .3s ease-out
+            &:hover
+                color: #56C8D1
+        &__text
+            font-size: 15px
+        &__line
+            display: flex
+            margin: 0 0 6px
+        &__info
+            font-size: 13px
+            span
+                color: #BEBEBE
+        &__add
+            height: 32px
+            border: 1px solid #eee
+            font-size: 15px
+            color: #56C8D1
+            line-height: 34px
+            cursor: pointer
+            padding: 0 10px
+            transition: opacity .3s ease-out
+            &:hover
+                opacity: .7
+            &-del
+                background: url(../img/cross.svg) right 13px center no-repeat
+                background-size: 14px
+                padding: 0 40px 0 10px
+            span
+                color: #444
+        &__right
+            display: flex
+            align-items: center
+        &__prices
+            white-space: nowrap
+            text-align: right
+        &__old_price
+            font-size: 16px
+            color: #BEBEBE
+            text-decoration-line: line-through
+        &__price
+            font-size: 20px
+            font-weight: 700
+        &__del
+            width: 14px
+            height: 14px
+            background: url(../img/cross.svg) center no-repeat
+            background-size: contain
+            cursor: pointer
+            margin: 0 0 0 30px
+            transition: opacity .3s ease-out
+            &:hover
+                opacity: .7
+        &_controls
+            display: flex
+            margin: 0 0 0 10px
+            &__button
+                width: 32px
+                height: 32px
+                background-position: center
+                background-size: 12px
+                background-repeat: no-repeat
+                background-color: #FAFAFA
+                border-radius: 4px
+                cursor: pointer
+                transition: opacity .3s ease-out
+                &:hover
+                    opacity: .7
+                &-minus
+                    background-image: url(../img/minus.svg)
+                &-plus
+                    background-image: url(../img/plus.svg)
+            &__input
+                width: 50px
+                height: 32px
+                font-size: 13px
+                text-align: center
+                padding: 0 10px
+    .select2
+        &-selection
+            &__rendered
+                height: 32px
+                font-weight: 400
+                padding: 4px 40px 0 10px !important
+            &__arrow
+                width: 34px !important
+                background: url(../img/arr-grey.svg) center no-repeat
+                background-size: 12px
+        &-results
+            &__option
+                padding: 0 10px
+
+.modal
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    background: rgba(255, 255, 255, .5)
+    opacity: 0
+    pointer-events: none
+    z-index: 10
+    position: fixed
+    left: 0
+    top: 0
+    transition: opacity .3s ease-out
+    &.active
+        opacity: 1
+        pointer-events: auto
+    &__content
+        width: 500px
+        max-width: 90%
+        max-height: 90%
+        background: #FAFAFA
+        border-radius: 4px
+        overflow-y: auto
+        position: relative
+        padding: 40px
+    &__close
+        width: 16px
+        height: 16px
+        background: url(../img/cross.svg) center no-repeat
+        background-size: contain
+        cursor: pointer
+        position: absolute
+        right: 20px
+        top: 20px
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+    &__title
+        font-size: 28px
+        color: #1E3B3E
+        font-weight: 700
+        margin: 0 0 30px
+    &__input
+        margin: 0 0 30px
+    &__label
+        font-size: 13px
+        color: #1E3B3E
+        margin: 0 0 4px
+        span
+            color: #EB3333
+            position: relative
+            top: 4px
+    &__buttons
+        display: flex
+        justify-content: space-between
+        margin: 30px 0
+    &__button
+        width: calc((100% - 30px) /2)
+        max-width: 100%
+        height: 56px
+        display: inline-block
+        border: 2px solid #56C8D1
+        border-radius: 8px
+        font-size: 16px
+        color: #56C8D1
+        font-weight: 700
+        line-height: 56px
+        text-align: center
+        cursor: pointer
+        transition: background .3s ease-out, color .3s ease-out, opacity .3s ease-out
+        &:hover
+            background: #56C8D1
+            color: #fff
+        &-dark
+            background: #56C8D1
+            color: #fff
+            &:hover
+                opacity: .7
+    &__operator
+        background: url(../img/operator.svg) left 4px no-repeat
+        background-size: 24px
+        font-size: 13px
+        olor: #BEBEBE
+        line-height: 150%
+        padding: 0 0 0 40px
+    .select2
+        &-selection
+            &__rendered
+                height: 48px
+                font-weight: 400
+                padding: 4px 40px 0 10px !important
+            &__arrow
+                width: 44px !important
+                background: url(../img/arr-grey.svg) center no-repeat
+                background-size: 12px
+        &-results
+            &__option
+                padding: 0 10px
+
 
 @media (max-height: 700px)
     .banner
@@ -3348,6 +4229,26 @@ body
                 margin: 0 0 20px
             p
                 font-size: 14px
+
+    .modal
+        &__content
+            padding: 30px
+        &__title
+            font-size: 24px
+            margin: 0 0 20px
+        &__buttons
+            flex-direction: column
+            margin: 20px 0
+        &__button
+            width: 100%
+            margin: 0 0 10px
+            &:last-child
+                margin: 0
+
+    .input
+        &_file
+            &__button
+                width: 100%
 
 @media (max-width: 375px)
     .header

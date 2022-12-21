@@ -150,4 +150,36 @@ $(document).ready(function () {
         $(".card_cont__el[data-id=" + id + "]").addClass("active");
     });
 
+    // Фильрры 1 уровень
+    $(".filters__arrow_1").on("click", function() {
+        var $el = $(this).closest(".filters__level_1");
+
+        $el.toggleClass("active");
+    });
+
+    // Фильрры 2 уровень
+    $(".filters__arrow_2").on("click", function() {
+        var $el = $(this).closest(".filters__level_2");
+
+        $el.toggleClass("active");
+    });
+
+    // Select2
+    if ($.fn.select2) {
+        $('.select2').select2({
+            minimumResultsForSearch: -1,
+            placeholder: $(this).data("placeholder")
+        });
+    }
+
+    // Закрыть окно
+    $(".modal__close").on("click", function() {
+        $(this).closest(".modal").removeClass("active");
+    });
+
+    // Открыть окно
+    $(".cart_el-add").on("click", function() {
+        $(".modal_cart").addClass("active");
+    });
+
 });
