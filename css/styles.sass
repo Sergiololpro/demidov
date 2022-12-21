@@ -163,6 +163,9 @@ body
         &:hover
             background: #56C8D1
             color: #fff
+    &__contacts
+        display: flex
+        align-items: center
     &__phone
         background: url(../img/phone.svg) left center no-repeat
         background-size: 16px
@@ -196,6 +199,7 @@ body
         text-align: center
         cursor: pointer
         padding: 0 10px 0 36px
+        margin: 0 0 0 30px
         transition: opacity .3s ease-out
         &:hover
             opacity: .7
@@ -216,6 +220,7 @@ body
         line-height: 44px
         text-align: center
         cursor: pointer
+        position: relative
         padding: 0 10px 0 46px
         margin: 0 0 0 20px
         transition: opacity .3s ease-out
@@ -250,7 +255,6 @@ body
         line-height: 100%
         cursor: pointer
         padding: 4px 0 0 46px
-        margin: 0 0 0 40px
         transition: opacity .3s ease-out
         &:hover
             opacity: .7
@@ -265,6 +269,29 @@ body
         transition: opacity .3s ease-out
         &:hover
             opacity: .7
+    &__fav
+        min-width: 40px
+        height: 40px
+        background: url(../img/star.svg) center no-repeat
+        background-size: 18px
+        border: 1px solid #56C8D1
+        border-radius: 4px
+        position: relative
+        margin: 0 0 0 20px
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+    &__label
+        height: 20px
+        background: #569BBE
+        border-radius: 6px
+        font-size: 13px
+        color: #fff
+        line-height: 22px
+        padding: 0 6px
+        position: absolute
+        right: -5px
+        top: -10px
     &__menu
         display: none
 
@@ -2398,6 +2425,7 @@ body
             font-weight: 700
             line-height: 58px
             cursor: pointer
+            overflow: hidden
             padding: 0 20px
             transition: background .3s ease-out, color .3s ease-out
             &.active,
@@ -2492,7 +2520,22 @@ body
         &__col
             margin: 0 60px 40px 0
 
-@media (max-width: 1350px)
+@media (max-width: 1300px)
+    .header
+        &__contacts
+            flex-direction: column-reverse
+            align-items: flex-end
+            margin: 0 0 0 30px
+        &__phone
+            margin: 0 0 5px
+        &__email
+            margin: 0
+        &__calculator
+            width: 40px
+            height: 40px
+            background-size: 40px
+            font-size: 0
+            padding: 0
 
 
 @media (max-width: 1200px)
@@ -2542,9 +2585,6 @@ body
             margin: 0 30px 0 0
             &:last-child
                 margin: 0
-
-    .cats
-        &__el
 
     .production
         &__els
@@ -2651,6 +2691,8 @@ body
     .header
         &__email
             display: none
+        &__phone
+            margin: 0
 
     .footer
         &__top
@@ -2870,19 +2912,18 @@ body
             height: 32px
             font-size: 13px
             line-height: 36px
+            margin: 0 0 0 20px
+        &__contacts
+            margin: 0 0 0 20px
         &__phone
             font-size: 16px
             padding: 4px 0 0 24px
-            margin: 0 0 0 20px
         &__callback
             display: none
         &__logo
             img
                 width: 70px
         &__calculator
-            width: 30px
-            font-size: 0
-            padding: 0
             margin: 0 0 0 30px
         &__cabinet
             width: 40px
@@ -2890,7 +2931,7 @@ body
             background-size: 24px
             font-size: 0
             padding: 0
-            margin: 0 0 0 30px
+            margin: 0 0 0 20px
         &__cart
             width: 40px
             background: url(../img/cart-2.svg) center no-repeat #56C8D1
@@ -2978,6 +3019,7 @@ body
     .production
         &__el
             width: 320px
+            max-width: 80%
             padding: 30px
             margin: 0 20px 0 0
             &:last-child
@@ -2996,11 +3038,12 @@ body
     .news
         &__el
             width: 320px
+            max-width: 80%
             margin: 0 20px 0 0
             &:last-child
                 margin: 0
         &__content
-            min-height: 266px
+            min-height: 300px
         &__title
             font-size: 16px
         &__text
@@ -3256,7 +3299,7 @@ body
     .treatment
         margin: 0 0 50px
         &__el
-            width: 70%
+            width: 80%
             height: 400px
             padding: 20px
         &__title
@@ -3306,6 +3349,11 @@ body
             p
                 font-size: 14px
 
+@media (max-width: 375px)
+    .header
+        &__phone
+            font-size: 12px
+
 @media (max-width: 320px)
     .header
         &__phone
@@ -3315,8 +3363,7 @@ body
             background-size: 24px
             font-size: 0
             padding: 0
-            margin: 0 0 0 20px
         &__cabinet
             margin: 0 0 0 20px
-        &__calculator
-            margin: 0 0 0 20px
+        &__fav
+            display: none

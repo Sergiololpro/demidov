@@ -7,7 +7,7 @@
   <meta name="format-detection" content="telephone=no">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="js/libs/slick/slick.css">
-  <link rel="stylesheet" href="css/styles.css?v=7">
+  <link rel="stylesheet" href="css/styles.css?v=8">
   <title>Demidov</title>
 </head>
 
@@ -26,9 +26,12 @@
           <div class="header__time">Пн-Чт <span>9:00 - 18:00</span> Пт <span>9:00 - 17:00</span></div>
         </div>
         <div class="header__right">
+          <div class="header__search"></div>
           <div class="header__catalog">КАТАЛОГ</div>
-          <a href="mailto:zakaz@demidovsteel.ru" class="header__email">zakaz@demidovsteel.ru</a>
-          <a href="tel:+7(495)775-38-96" class="header__phone">+7 (495) 775-38-96</a>
+          <div class="header__contacts">
+            <a href="mailto:zakaz@demidovsteel.ru" class="header__email">zakaz@demidovsteel.ru</a>
+            <a href="tel:+7(495)775-38-96" class="header__phone">+7 (495) 775-38-96</a>
+          </div>
           <div class="header__callback">Обратный звонок</div>
         </div>
       </div>
@@ -59,10 +62,15 @@
           </div>
         </nav>
         <div class="header__rgt">
-          <div class="header__search"></div>
           <div class="header__calculator">Калькулятор металла</div>
           <div class="header__cabinet">Войти</div>
-          <a href="#" class="header__cart">Корзина</a>
+          <a href="#" class="header__cart">
+            Корзина
+            <div class="header__label">123</div>
+          </a>
+          <a href="#" class="header__fav">
+            <div class="header__label">5</div>
+          </a>
         </div>
       </div>
     </div>
