@@ -225,4 +225,109 @@
       <div class="modal__operator">После оформления заказа Менеджер клиентского сервиса свяжется с Вами для уточнения деталей задания</div>
     </div>
   </div>
+
+  <div class="modal modal_cabinet">
+    <div class="modal__content">
+      <div class="modal__close"></div>
+      <div class="modal__title">Войдите <br>или зарегистриуйтесь</div>
+      <div class="modal__input">
+        <div class="modal__label">Ваш e-mail</div>
+        <input id="email" name="email" placeholder="Sample@sample.com" class="input" type="email">
+      </div>
+      <div class="modal__input">
+        <div class="modal__label">Пароль</div>
+        <input id="password" name="password" placeholder="Введите" class="input" type="password">
+      </div>
+      <div class="modal__buttons">
+        <div class="modal__button modal__button-dark">Добавить</div>
+        <div class="modal__button modal__button-empty">Забыли пароль?</div>
+      </div>
+      <div class="modal__text">
+        Еще нет аккаунта? Зарегистрируйтесь
+        и получайте индивидуальные предложения
+      </div>
+      <div class="modal__button">Зарегистрироваться</div>
+    </div>
+  </div>
+
+  <div class="modal modal_reg">
+    <div class="modal__content">
+      <div class="modal__close"></div>
+      <div class="modal__title">Регистрация</div>
+      <div class="modal__input">
+        <div class="modal__label">ФИО<span>*</span></div>
+        <input id="name" name="name" placeholder="Введите" class="input" type="text">
+      </div>
+      <div class="modal__input">
+        <div class="modal__label">Наименование компании<span>*</span></div>
+        <input id="title" name="title" placeholder="Введите" class="input" type="text">
+      </div>
+      <div class="modal__input">
+        <div class="modal__label">Ваш e-mail<span>*</span></div>
+        <input id="email" name="email" placeholder="Sample@sample.com" class="input" type="email">
+      </div>
+      <div class="modal__input">
+        <div class="modal__label">Номер телефона<span>*</span></div>
+        <input id="phone" name="phone" placeholder="Введите" class="input" type="text">
+      </div>
+      <div class="modal__input">
+        <div class="modal__label">Пароль<span>*</span></div>
+        <input id="password" name="password" placeholder="Введите" class="input" type="password">
+      </div>
+      <div class="modal__input">
+        <div class="modal__label">Повторите пароль<span>*</span></div>
+        <input id="password_2" name="password_2" placeholder="Введите" class="input" type="password">
+      </div>
+      <div class="modal__button modal__button-dark modal__button-full">Зарегистрироваться</div>
+      <div class="checkbox">
+          <input id="agree" value="agree" name="agree" type="checkbox">
+          <label for="agree">
+            Нажимая кнопку «Зарегистрироваться» вы соглашаетесь с условиями <a href="#" target="_blank">Пользовательского соглашения</a> и <a href="#" target="_blank">Условиями обработки персональных данных</a>
+          </label>
+      </div>
+      <div class="modal__buttons">
+        <div class="modal__question">Есть аккаунт?</div>
+        <div class="modal__button">Войти</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal_ren">
+    <div class="modal__content">
+      <div class="modal__close"></div>
+      <div class="modal__title">Востановление пароля</div>
+      <div class="modal__text modal__text-full">Введите ваш e-mail указанный при регистрации и мы вышлем на него инструкцию по востановлению пароля</div>
+      <div class="modal__input">
+        <div class="modal__label">Ваш e-mail<span>*</span></div>
+        <input id="email" name="email" placeholder="Sample@sample.com" class="input" type="email">
+      </div>
+      <div class="modal__button modal__button-dark modal__button-full">Востановить пароль</div>
+    </div>
+  </div>
+
+  <div class="modal modal_ren_2">
+    <div class="modal__content">
+      <div class="modal__close"></div>
+      <div class="modal__title">Востановление пароля</div>
+      <div class="modal__ttl">Введите новые данные</div>
+      <div class="modal__input">
+        <div class="modal__label">Новый пароль<span>*</span></div>
+        <input id="password" name="password" placeholder="Введите" class="input" type="password">
+      </div>
+      <div class="modal__input">
+        <div class="modal__label">Повторите пароль<span>*</span></div>
+        <input id="password_2" name="password_2" placeholder="Введите" class="input err" type="password">
+        <div class="input__alert">Пароли не совпадают</div>
+      </div>
+      <div class="modal__button modal__button-dark modal__button-full">Востановить пароль</div>
+    </div>
+  </div>
+
+  <div class="modal modal_success">
+    <div class="modal__content">
+      <div class="modal__close"></div>
+      <div class="modal__title">Заказ Е-787863 от 14.12.22 <br>Успешно завершен!</div>
+      <div class="modal__button modal__button-dark modal__button-full close_modal">Хорошо</div>
+    </div>
+  </div>
   

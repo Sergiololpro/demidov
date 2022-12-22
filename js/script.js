@@ -173,13 +173,33 @@ $(document).ready(function () {
     }
 
     // Закрыть окно
-    $(".modal__close").on("click", function() {
+    $(".modal__close, .close_modal").on("click", function() {
         $(this).closest(".modal").removeClass("active");
     });
 
     // Открыть окно
     $(".cart_el-add").on("click", function() {
         $(".modal_cart").addClass("active");
+    });
+
+    // Открыть заказ
+    $(".cabinet__el").on("click", function() {
+        $(this).toggleClass("opened");
+    });
+
+    // Кабинет, переключение заказов
+    $(".cabinet__filter").on("click", function() {
+        var id = $(this).data("id");
+
+        $(".cabinet__filter, .cabinet__el").removeClass("active");
+
+        $(this).addClass("active");
+
+        if (id == 1) {
+            $(".cabinet__el").addClass("active");
+        } else {
+            $(".cabinet__el[data-id=" + id + "]").addClass("active");
+        }
     });
 
 });
