@@ -202,4 +202,14 @@ $(document).ready(function () {
         }
     });
 
+    // Открыть фильтры
+    $(".ct__filt").on("click", function() {
+        $(".ct__filters").addClass("active");
+    });
+
+    // Закрыть фильтры
+    $(".ct__filt_close").on("click", function() {
+        $(".ct__filters").removeClass("active");
+    });
+
 });

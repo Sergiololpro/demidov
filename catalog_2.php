@@ -25,6 +25,7 @@
 
         <div class="ct">
             <div class="ct__filters">
+                <div class="ct__filt_close"></div>
                 <div class="filters">
                     <div class="filters__level_1 active">
                         <div class="filters__label_1">
@@ -223,6 +224,7 @@
                 </div>
                 <div class="ct__line">
                     <div class="ct__left">
+                        <div class="ct__filt"></div>
                         <div class="ct_views">
                             <div class="ct_views__el ct_views__el-1"></div>
                             <div class="ct_views__el ct_views__el-2 active"></div>
