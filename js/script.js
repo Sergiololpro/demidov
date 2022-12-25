@@ -170,6 +170,22 @@ $(document).ready(function () {
             minimumResultsForSearch: -1,
             placeholder: $(this).data("placeholder")
         });
+          
+        $(".select2images").select2({
+            templateResult: formatState
+        });
+
+        function formatState (state) {
+            if (!state.id) {
+              return state.text;
+            }
+
+            var $state = $(
+                '<span><img src="img/production__image-' + state.element.value.toLowerCase() + '.jpg" class="select_img" /> ' + state.text + '</span>'
+            );
+
+            return $state;
+        };
     }
 
     // Закрыть окно
@@ -210,6 +226,21 @@ $(document).ready(function () {
     // Закрыть фильтры
     $(".ct__filt_close").on("click", function() {
         $(".ct__filters").removeClass("active");
+    });
+
+    // Вакансии, переключение заказов
+    $(".vacancy_list__nav").on("click", function() {
+        var id = $(this).data("id");
+
+        $(".vacancy_list__nav, .vacancy_list__el").removeClass("active");
+
+        $(this).addClass("active");
+
+        if (id == 1) {
+            $(".vacancy_list__el").addClass("active");
+        } else {
+            $(".vacancy_list__el[data-id=" + id + "]").addClass("active");
+        }
     });
 
 });

@@ -449,6 +449,7 @@ body
         color: #fff
         line-height: 56px
         text-align: center
+        white-space: nowrap
         cursor: pointer
         padding: 0 56px 0 24px
         transition: opacity .3s ease-out
@@ -1450,6 +1451,19 @@ body
         overflow: hidden
         position: relative
         padding: 0 0 60px
+        &-vacancy
+            padding: 60px 0 0
+            margin: -30px 0 0
+            .prod
+                &__nav
+                    bottom: inherit
+                    top: 0
+            .slick
+                &-dots
+                    left: inherit !important
+                    right: 100px
+                    top: 8px
+                    bottom: inherit !important
     &__slider
         width: 77.4%
         position: static
@@ -3692,6 +3706,332 @@ body
         height: 0
         overflow: hidden
 
+.delivery
+    display: flex
+    justify-content: space-between
+    margin: 0 0 100px
+    &__col
+        width: calc((100% - 20px) / 2)
+    &__title
+        background: url(../img/delivery.svg) left top no-repeat
+        background-size: 32px
+        font-size: 28px
+        font-weight: 700
+        margin: 0 0 20px
+        padding: 0 0 0 50px
+        &-payment
+            background: url(../img/payment.svg) left top no-repeat
+    &__block
+        width: 100%
+        border: 1px solid #eee
+        border-radius: 4px
+        padding: 40px
+        margin: 0 0 20px
+        &:last-child
+            margin: 0
+        &-filled
+            background: #FAFAFA
+            border: none
+    &__city
+        background: url(../img/city.svg) left top no-repeat
+        background-size: 12px 16px
+        font-size: 16px
+        font-weight: 700
+        padding: 0 0 0 22px
+        margin: 0 0 20px
+    &__text
+        font-size: 15px
+        line-height: 140%
+        margin: 0 0 20px
+        ul,
+        p
+            margin: 0 0 20px
+            &:last-child
+                margin: 0
+        li
+            margin: 0 0 10px
+            &:last-child
+                margin: 0
+        a
+            color: #56C8D1
+            transition: opacity .3s ease-out
+            &:hover
+                opacity: .7
+    &__phone
+        display: block
+        background: url(../img/phone.svg) left top no-repeat
+        background-size: 16px
+        font-size: 16px
+        color: #56C8D1
+        font-weight: 700
+        padding: 0 0 0 28px
+        margin: 0 0 20px
+        &:last-child
+            margin: 0
+    &__email
+        display: block
+        background: url(../img/email.svg) left top no-repeat
+        background-size: 16px
+        font-size: 16px
+        color: #56C8D1
+        font-weight: 700
+        padding: 0 0 0 28px
+        margin: 0 0 20px
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+        &:last-child
+            margin: 0
+
+.services
+    margin: 0 0 100px
+    &__row
+        display: flex
+        flex-wrap: wrap
+    &__el
+        width: calc((100% - 40px) / 3)
+        height: 300px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: flex-start
+        overflow: hidden
+        position: relative
+        padding: 20px
+        margin: 0 20px 20px 0
+        &:hover
+            .services
+                &__image
+                    transform: scale(1.1)
+        &:nth-child(3n)
+            margin: 0 0 20px
+        &:nth-child(4n),
+        &:nth-child(5n)
+            width: calc((100% - 20px) / 2)
+        &:nth-child(5n)
+            margin: 0 0 20px
+        &-large
+            width: 100%
+            justify-content: flex-start
+            padding: 40px
+            margin: 0 0 20px
+        &:before
+            content: ""
+            width: 100%
+            height: 100%
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54)), url(image.png), url(image.png), url(image.png), transparent
+            z-index: 1
+            position: absolute
+            left: 0
+            bottom: 0
+    &__image
+        width: 100%
+        height: 100%
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        margin: auto
+        transition: transform .3s ease-out
+    &__title
+        max-width: 240px
+        font-size: 28px
+        color: #fff
+        font-weight: 700
+        position: relative
+        z-index: 1
+        &-large
+            max-width: 100%
+            font-size: 40px
+            margin: 0 0 30px
+    &__links
+        max-width: 800px
+        display: grid
+        grid-template-columns: 1fr 2fr
+    &__link
+        font-size: 16px
+        color: #56C8D1
+        font-weight: 700
+        position: relative
+        z-index: 1
+        &-large
+            font-size: 20px
+            padding: 0 20px 0 0
+            margin: 0 0 20px
+            transition: opacity .3s ease-out
+            &:hover
+                opacity: .7
+
+.vacancy
+    &_banner
+        min-height: 410px
+        display: flex
+        align-items: self-end
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        position: relative
+        padding: 40px
+        margin: 0 0 50px
+        &:before
+            content: ""
+            width: 100%
+            height: 100%
+            background: linear-gradient(3.79deg, rgba(0, 0, 0, 0.45) 17.62%, rgba(0, 0, 0, 0) 41.17%), url(factory-worker-wearing-hardhat-uniform-showing-new-metal-products-manager-supervisor.jpg), url(metal-bar-3d.jpg), transparent
+            position: absolute
+            left: 0
+            bottom: 0
+        &__text
+            font-size: 28px
+            color: #fff
+            font-weight: 700
+            line-height: 140%
+            z-index: 1
+    &_utps
+        margin: 0 0 50px
+        &__title
+            max-width: 1100px
+            font-size: 40px
+            color: #1E3B3E
+            font-weight: 700
+            line-height: 130%
+            text-align: center
+            margin: 0 auto 50px
+        &__els
+            display: flex
+            justify-content: space-between
+        &__el
+            width: calc((100% - 60px) / 4)
+            display: flex
+            flex-direction: column
+            align-items: center
+            text-align: center
+        &__number
+            width: 80px
+            height: 80px
+            border: 1px solid #56C8D1
+            border-radius: 100%
+            font-size: 40px
+            font-weight: 700
+            line-height: 86px
+            margin: 0 0 50px
+        &__text
+            font-size: 15px
+            line-height: 140%
+    &_list
+        display: flex
+        justify-content: space-between
+        margin: 0 0 100px
+        &__navs
+            width: 340px
+            border-top: 1px solid #eee
+        &__nav
+            background: url(../img/arr-right.svg) right 4px center no-repeat
+            background-size: 8px
+            border-bottom: 1px solid #eee
+            font-size: 16px
+            color: #1E3B3E
+            font-weight: 700
+            cursor: pointer
+            padding: 16px 16px 16px 0
+            transition: color .3s ease-out
+            &:hover,
+            &.active
+                color: #56C8D1
+            span
+                color: #56C8D1
+                margin: 0 0 0 4px
+        &__rgt
+            width: calc(100% - 360px)
+        &__els
+            width: 100%
+            overflow: hidden
+        &__el
+            width: 100%
+            height: 0
+            display: flex
+            justify-content: space-between
+            border: 1px solid #eee
+            border-radius: 4px
+            opacity: 0
+            transform: translateX(100%)
+            transition: transform .5s ease-out
+            &.active
+                height: auto
+                opacity: 1
+                padding: 20px
+                margin: 0 0 20px
+                transform: translateX(0)
+        &__city
+            font-size: 13px
+            color: #BEBEBE
+            margin: 0 0 20px
+        &__title
+            font-size: 20px
+            color: #56C8D1
+            font-weight: 700
+            margin: 0 0 20px
+        &__button
+            width: 140px
+            height: 48px
+            display: block
+            background: #56C8D1
+            border-radius: 4px
+            font-size: 16px
+            color: #fff
+            font-weight: 700
+            line-height: 48px
+            text-align: center
+            transition: opacity .3s ease-out
+            &:hover
+                opacity: .7
+        &__right
+            max-width: 160px
+            text-align: right
+        &__text
+            font-size: 13px
+            color: #1E3B3E
+            line-height: 150%
+            margin: 0 0 10px
+        &__phone
+            font-size: 16px
+            color: #56C8D1
+            font-weight: 700
+    &_ban
+        width: 100%
+        min-height: 140px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        background: #569BBE
+        border-radius: 4px
+        padding: 20px
+        &__left
+            padding: 0 30px 0 0
+        &__title
+            font-size: 28px
+            color: #fff
+            font-weight: 700
+            margin: 0 0 10px
+        &__text
+            font-size: 15px
+            color: #fff
+            line-height: 140%
+            a
+                color: #fff
+
+.gal_block
+    background: #FAFAFA
+    padding: 100px 0
+    &__title
+        font-size: 40px
+        color: #1E3B3E
+        font-weight: 700
+
 
 @media (max-height: 700px)
     .banner
@@ -4230,6 +4570,49 @@ body
         &__right
             padding: 0 0 0 40px
 
+    .delivery
+        flex-direction: column
+        &__col
+            width: 100%
+            margin: 0 0 20px
+            &:last-child
+                margin: 0
+
+    .services
+        &__title
+            word-break: break-word
+
+    .vacancy
+        &_utps
+            &__els
+                display: block
+                white-space: nowrap
+                overflow-x: auto
+            &__el
+                width: 35%
+                display: inline-flex
+                white-space: normal
+                margin: 0 30px 0 0
+                &:last-child
+                    margin: 0
+        &_list
+            flex-direction: column
+            &__navs
+                width: 100%
+                display: block
+                border-bottom: 1px solid #eee
+                white-space: nowrap
+                overflow-x: auto
+                margin: 0 0 20px
+            &__nav
+                display: inline-flex
+                border: none
+                margin: 0 20px 0 0
+                &:last-child
+                    margin: 0
+            &__rgt
+                width: 100%
+
 @media (max-width: 640px)
     .header
         &__top
@@ -4503,6 +4886,15 @@ body
             margin: 0 0 20px
         &__wp
             padding: 0 0 40px
+            &-vacancy
+                padding: 0
+                margin: 20px 0 0
+                .prod
+                    &__nav
+                        display: none !important
+                .slick
+                    &-dots
+                        display: none !important
         &__slide
             height: 220px
         iframe
@@ -4779,6 +5171,67 @@ body
             margin: 0 0 10px
         &__right
             padding: 0 0 0 30px
+
+    .delivery
+        &__block
+            padding: 20px
+
+    .services
+        &__el
+            width: 100% !important
+            height: auto
+            min-height: 200px
+            margin: 0 0 20px !important
+            &-large
+                padding: 20px
+        &__title
+            font-size: 24px
+            word-break: normal
+            &-large
+                font-size: 32px
+                margin: 0 0 20px
+        &__links
+            grid-template-columns: 1fr
+
+    .vacancy
+        &_banner
+            padding: 20px
+            &__text
+                font-size: 20px
+        &_utps
+            &__title
+                font-size: 24px
+            &__el
+                width: 60%
+            &__number
+                width: 60px
+                height: 60px
+                font-size: 24px
+                line-height: 68px
+                margin: 0 0 20px
+        &_list
+            margin: 0 0 50px
+            &__el
+                flex-direction: column
+            &__left
+                margin: 0 0 20px
+            &__right
+                text-align: left
+        &_ban
+            flex-direction: column
+            align-items: self-start
+            &__left
+                padding: 0
+                margin: 0 0 20px
+            &__title
+                font-size: 24px
+
+    .gal_block
+        padding: 50px 0
+        &__title
+            font-size: 24px
+
+
 
 @media (max-width: 375px)
     .header
