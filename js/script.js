@@ -171,7 +171,9 @@ $(document).ready(function () {
             placeholder: $(this).data("placeholder")
         });
           
-        $(".select2images").select2({
+        $(".select2_images").select2({
+            minimumResultsForSearch: -1,
+            placeholder: $(this).data("placeholder"),
             templateResult: formatState
         });
 
@@ -179,9 +181,8 @@ $(document).ready(function () {
             if (!state.id) {
               return state.text;
             }
-
             var $state = $(
-                '<span><img src="img/production__image-' + state.element.value.toLowerCase() + '.jpg" class="select_img" /> ' + state.text + '</span>'
+                '<span><span style="background-image: url(img/select2_image-' + state.element.value.toLowerCase() + '.jpg)" class="select2__img"></span>' + state.text + '</span>'
             );
 
             return $state;
@@ -228,7 +229,7 @@ $(document).ready(function () {
         $(".ct__filters").removeClass("active");
     });
 
-    // Вакансии, переключение заказов
+    // Вакансии, переключение
     $(".vacancy_list__nav").on("click", function() {
         var id = $(this).data("id");
 
@@ -241,6 +242,16 @@ $(document).ready(function () {
         } else {
             $(".vacancy_list__el[data-id=" + id + "]").addClass("active");
         }
+    });
+
+    // Калькулятор, переключение
+    $(".calculator__tab").on("click", function() {
+        var id = $(this).data("id");
+
+        $(".calculator__tab, .calculator__wp").removeClass("active");
+
+        $(this).addClass("active");
+        $(".calculator__wp[data-id=" + id + "]").addClass("active");
     });
 
 });

@@ -2894,7 +2894,6 @@ body
         border: none !important
         border-radius: 0 !important
         color: #444 !important
-        font-weight: 700
         outline: none
     &-selection__rendered
         width: 100%
@@ -2935,9 +2934,19 @@ body
             &:last-child
                 border-bottom: none
             &--highlighted[aria-selected]
-                background: #444 !important
+                background: #BEBEBE !important
+            span
+                display: flex
+                align-items: center
     &-dropdown
         top: -1px
+    &__img
+        width: 24px
+        height: 24px
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        margin: 0 16px 0 0
 
 .element
     width: 100%
@@ -3062,6 +3071,36 @@ body
             font-size: 13px
             text-align: center
             padding: 0 10px
+    &_del
+        width: 32px
+        height: 32px
+        background: url(../img/cross-w.svg) center no-repeat #56C8D1
+        background-size: 18px
+        border-radius: 4px
+        cursor: pointer
+        position: relative
+        &:hover
+            .element
+                &_del
+                    &__text
+                        opacity: 1
+        &__text
+            width: 60px
+            height: 24px
+            background: #fff
+            border-radius: 4px
+            font-size: 11px
+            line-height: 24px
+            text-align: center
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, .1))
+            opacity: 0
+            pointer-events: none
+            position: absolute
+            left: 40px
+            top: 0
+            bottom: 0
+            margin: auto
+            transition: opacity .3s ease-out
 
 .grey_text
     background: #FAFAFA
@@ -3368,6 +3407,7 @@ body
         font-weight: 700
         margin: 0 0 30px
     &__input
+        position: relative
         margin: 0 0 30px
         &:last-child
             margin: 0
@@ -3382,6 +3422,11 @@ body
             position: relative
             top: 4px
             margin: 0 0 0 2px
+    &__txt
+        font-size: 11px
+        position: absolute
+        right: 12px
+        top: 36px
     &__buttons
         display: flex
         justify-content: space-between
@@ -4032,6 +4077,160 @@ body
         color: #1E3B3E
         font-weight: 700
 
+.favorites
+    margin: 0 0 100px
+    &__button
+        width: 220px
+        height: 40px
+        border: 1px solid #56C8D1
+        border-radius: 4px
+        font-size: 16px
+        color: #56C8D1
+        font-weight: 700
+        line-height: 40px
+        text-align: center
+        cursor: pointer
+        padding: 0 10px
+        margin: 0 0 20px
+        transition: background .3s ease-out, color .3s ease-out
+        &:hover
+            background: #56C8D1
+            color: #fff
+    &__wrp
+        max-width: 1100px
+
+.error_page
+    text-align: center
+    margin: 100px 0
+    &__title
+        font-size: 350px
+        color: #56C8D1
+        font-weight: 700
+        line-height: 100%
+    &__ttl
+        font-size: 40px
+        color: #1E3B3E
+        font-weight: 700
+        margin: 0 0 6px
+    &__text
+        font-size: 18px
+        color: #1E3B3E
+        line-height: 150%
+        margin: 0 0 50px
+    &__buttons
+        display: flex
+        justify-content: center
+    &__button
+        width: 301px
+        max-width: 100%
+        height: 56px
+        background: #56C8D1
+        border-radius: 8px
+        font-size: 16px
+        color: #fff
+        line-height: 56px
+        text-align: center
+        cursor: pointer
+        margin: 0 20px
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+
+.calculator
+    margin: 0 0 100px
+    &__wrp
+        display: flex
+        justify-content: space-between
+        margin: 0 0 30px
+    &__col
+        width: calc((100% - 20px) / 2)
+        background: #FAFAFA
+        border-radius: 4px
+        padding: 30px
+    &__inputs
+        display: flex
+        flex-wrap: wrap
+        margin: 0 0 30px
+        .modal
+            &__input
+                width: calc((100% - 40px) / 3)
+                margin: 0 20px 20px 0
+                &:nth-child(3n)
+                    margin: 0
+    &__bold
+        font-size: 20px
+        color: #1E3B3E
+        font-weight: 700
+        margin: 0 0 10px
+    &__grey
+        font-size: 15px
+        color: #BEBEBE
+        margin: 0 0 50px
+    &__button
+        width: 240px
+        max-width: 100%
+        height: 56px
+        background: #56C8D1
+        border-radius: 8px
+        font-size: 16px
+        color: #fff
+        line-height: 56px
+        text-align: center
+        cursor: pointer
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+    &__tabs
+        display: flex
+    &__tab
+        height: 48px
+        background: #fff
+        border: 1px solid #eee
+        border-radius: 8px
+        font-size: 13px
+        line-height: 48px
+        cursor: pointer
+        position: relative
+        padding: 0 12px 0 40px
+        margin: 0 10px 0 0
+        transition: background .3s ease-out, border .3s ease-out
+        &:last-child
+            margin: 0
+        &:before
+            content: ""
+            width: 16px
+            height: 16px
+            background: #fff
+            border: 1px solid #56C8D1
+            border-radius: 100%
+            position: absolute
+            left: 12px
+            top: 0
+            bottom: 0
+            margin: auto
+        &.active,
+        &:hover
+            background: rgba(114, 203, 210, .1)
+            border: 1px solid #56C8D1
+            &:before
+                width: 12px
+                height: 12px
+                border: 4px solid #56C8D1
+    &__wp
+        display: none
+        &.active
+            display: block
+    &__img
+        width: 100%
+        margin: 0 0 100px
+    &__text
+        font-size: 15px
+        line-height: 140%
+    &__txt
+        max-width: 1100px
+        font-size: 18px
+        line-height: 150%
+
 
 @media (max-height: 700px)
     .banner
@@ -4613,6 +4812,23 @@ body
             &__rgt
                 width: 100%
 
+    .error_page
+        &__title
+            font-size: 240px
+        &__ttl
+            font-size: 28px
+        &__text
+            font-size: 15px
+
+    .calculator
+        &__wrp
+            flex-direction: column
+        &__col
+            width: 100%
+            margin: 0 0 30px
+            &:last-child
+                margin: 0
+
 @media (max-width: 640px)
     .header
         &__top
@@ -5123,6 +5339,8 @@ body
             position: absolute
             right: 40px
             top: 40px
+        &_del
+            margin: 0 auto
 
     .cart_el
         flex-direction: column
@@ -5231,6 +5449,45 @@ body
         &__title
             font-size: 24px
 
+    .error_page
+        margin: 50px 0
+        &__title
+            font-size: 120px
+        &__ttl
+            font-size: 20px
+        &__text
+            margin: 0 0 20px
+        &__buttons
+            flex-direction: column
+            align-items: center
+        &__button
+            margin: 0 0 10px
+            &:last-child
+                margin: 0
+
+    .calculator
+        &__col
+            padding: 20px
+        &__tabs
+            flex-direction: column
+        &__tab
+            margin: 0 0 10px
+            &:last-child
+                margin: 0
+        &__inputs
+            margin: 0 0 20px
+            .modal
+                &__input
+                    width: 100%
+                    margin: 0 0 20px !important
+                    &:last-child
+                        margin: 0 !important
+        &__grey
+            margin: 0 0 20px
+        &__img
+            margin: 0 0 20px
+        &__txt
+            font-size: 15px
 
 
 @media (max-width: 375px)
