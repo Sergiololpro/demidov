@@ -254,4 +254,24 @@ $(document).ready(function () {
         $(".calculator__wp[data-id=" + id + "]").addClass("active");
     });
 
+    // Контакты, переключение
+    $(".contacts__tab").on("click", function() {
+        var id = $(this).data("id");
+
+        $(".contacts__tab, .contacts__wrp").removeClass("active");
+
+        $(this).addClass("active");
+        $(".contacts__wrp[data-id=" + id + "]").addClass("active");
+    });
+
+    // Контакты, город, переключение
+    $(".contacts__city").on("click", function() {
+        var id = $(this).data("id");
+
+        $(".contacts__city, .contacts__c").removeClass("active");
+
+        $(this).addClass("active");
+        $(".contacts__c[data-id=" + id + "]").addClass("active");
+    });
+
 });

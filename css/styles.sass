@@ -3035,6 +3035,10 @@ body
             opacity: .7
         &-click
             background-image: url(../img/click.svg)
+        &-empty
+            background: #56C8D1
+            text-align: center
+            padding: 0 20px 
     &__fav
         min-width: 32px
         height: 32px
@@ -4231,6 +4235,278 @@ body
         font-size: 18px
         line-height: 150%
 
+.search
+    margin: 0 0 50px
+    &__under
+        font-size: 15px
+        color: #1E3B3E
+        margin: 0 0 30px
+    &__wrp
+        max-width: 1100px
+        margin: 0 0 30px
+
+.pagination
+    display: flex
+    flex-wrap: wrap
+    &__el
+        width: 40px
+        height: 40px
+        background: #fff
+        border: 1px solid #56C8D1
+        border-radius: 4px
+        font-size: 15px
+        line-height: 40px
+        text-align: center
+        cursor: pointer
+        margin: 0 16px 0 0
+        transition: background .3s ease-out, opacity .3s ease-out
+        &:hover
+            background: rgba(114, 203, 210, .24)
+        &:last-child
+            margin: 0
+        &-next,
+        &-prev
+            background: url(../img/arr-w.svg) center no-repeat #56C8D1
+            background-size: 10px
+        &-next
+            transform: scale(-1, 1)
+            &:hover
+                background: url(../img/arr-w.svg) center no-repeat #56C8D1
+                background-size: 10px
+                opacity: .7
+    &__dots
+        font-size: 15px
+        padding: 14px 0 0
+        margin: 0 16px 0 0
+
+.contacts
+    margin: 0 0 100px
+    &__top
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+        margin: 0 0 50px
+    &__tabs
+        display: flex
+    &__tab
+        border-bottom: 1px solid #56C8D1
+        font-size: 28px
+        color: #56C8D1
+        font-weight: 700
+        cursor: pointer
+        padding: 0 0 4px
+        margin: 0 50px 0 0
+        transition: border .3s ease-out, color .3s ease-out
+        &.active,
+        &:hover
+            border-bottom: 1px solid transparent
+            color: #1E3B3E
+        &:last-child
+            margin: 0
+    &__socials
+        display: flex
+    &__social
+        width: 40px
+        height: 40px
+        margin: 0 30px 0 0
+        transition: background .3s ease-out
+        &:last-child
+            margin: 0
+        &-vk
+            background: url(../img/contacts__social-vk.svg) center no-repeat
+            background-size: contain
+            &:hover
+                background: url(../img/contacts__social-vk_hover.svg) center no-repeat
+        &-tg
+            background: url(../img/contacts__social-tg.svg) center no-repeat
+            background-size: contain
+            &:hover
+                background: url(../img/contacts__social-tg_hover.svg) center no-repeat
+    &__wrp
+        width: 100%
+        height: 0
+        overflow: hidden
+        opacity: 0
+        transform: translateX(-100%)
+        transition: transform .5s ease-out
+        &.active
+            height: auto
+            opacity: 1
+            transform: translateX(0)
+    &__block
+        background: #FAFAFA
+        padding: 40px
+        margin: 0 0 40px
+        &:last-child
+            margin: 0
+    &__ttl
+        font-size: 28px
+        color: #1E3B3E
+        font-weight: 700
+        margin: 0 0 30px
+    &__wp
+        display: flex
+        justify-content: space-between
+    &__map
+        width: 42%
+        iframe
+            width: 100%
+            height: 440px
+            border: none
+    &__content
+        width: 42%
+    &__row
+        margin: 0 0 20px
+        &:last-child
+            margin: 0
+    &__label
+        font-size: 13px
+        color: #1E3B3E
+        margin: 0 0 8px
+    &__text
+        font-size: 20px
+        color: #1E3B3E
+        font-weight: 700
+    &__phone
+        background: url(../img/phone.svg) left center no-repeat
+        background-size: 16px
+        font-size: 20px
+        color: #1E3B3E
+        font-weight: 700
+        white-space: nowrap
+        padding: 0 0 0 24px
+    &__email
+        background: url(../img/email.svg) left center no-repeat
+        background-size: 16px
+        font-size: 16px
+        color: #1E3B3E
+        font-weight: 700
+        padding: 2px 0 0 24px
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+    &__time
+        background: url(../img/time.svg) left top no-repeat
+        background-size: 16px
+        font-size: 15px
+        color: #1E3B3E
+        padding: 3px 0 0 34px
+        span
+            color: #BEBEBE
+    &__r
+        display: inline-block
+        margin: 0 16px 8px 0
+        &:last-child
+            margin: 0
+    &__wrapper
+        display: flex
+        justify-content: space-between
+    &__cities
+        width: 200px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+    &__city
+        height: 32px
+        border: 1px solid #56C8D1
+        border-radius: 4px
+        font-size: 13px
+        color: #1E3B3E
+        font-weight: 700
+        line-height: 32px
+        cursor: pointer
+        padding: 0 10px
+        margin: 0 0 10px
+        transition: background .3s ease-out, color .3s ease-out
+        &.active,
+        &:hover
+            background: rgba(114, 203, 210, .23)
+        &:last-child
+            margin: 0
+    &__right
+        width: calc(100% - 230px)
+        overflow: hidden
+    &__c
+        width: 100%
+        height: 0
+        opacity: 0
+        transform: translateX(100%)
+        transition: transform .5s ease-out
+        &.active
+            height: auto
+            opacity: 1
+            transform: translateX(0)
+    &_reqs
+        margin: 50px 0 0
+        &__title
+            font-size: 28px
+            color: #1E3B3E
+            font-weight: 700
+            margin: 0 0 20px
+        &__ul
+            max-width: 700px
+            border-top: 1px solid #eee
+            font-size: 15px
+            color: #1E3B3E
+            li
+                display: flex
+                border-bottom: 1px solid #eee
+                padding: 18px 0
+                div
+                    min-width: 220px
+                    padding: 0 30px 0 0
+    &_staff
+        margin: 50px 0 0
+        &__title
+            font-size: 28px
+            color: #1E3B3E
+            font-weight: 700
+            margin: 0 0 20px
+        &__els
+            display: grid
+            grid-template-columns: 1fr 1fr
+        &__el
+            display: flex
+            align-items: center
+            margin: 0 100px 30px 0
+        &__image
+            min-width: 130px
+            height: 130px
+            background-position: center
+            background-size: cover
+            background-repeat: no-repeat
+        &__content
+            margin: 0 0 0 20px
+        &__name
+            font-size: 20px
+            font-weight: 700
+            margin: 0 0 8px
+        &__text
+            font-size: 15px
+            margin: 0 0 8px
+        &__phone
+            display: block
+            background: url(../img/phone.svg) left center no-repeat
+            background-size: 16px
+            font-size: 16px
+            color: #1E3B3E
+            font-weight: 700
+            white-space: nowrap
+            padding: 0 0 0 24px
+            margin: 0 0 8px
+        &__email
+            display: block
+            background: url(../img/email.svg) left center no-repeat
+            background-size: 16px
+            font-size: 16px
+            color: #1E3B3E
+            font-weight: 700
+            padding: 2px 0 0 24px
+            transition: opacity .3s ease-out
+            &:hover
+                opacity: .7
+
+
 
 @media (max-height: 700px)
     .banner
@@ -4464,6 +4740,35 @@ body
         &__left
             width: 100%
             margin: 0 0 30px
+
+    .contacts
+        &__top
+            flex-direction: column-reverse
+            align-items: flex-start
+        &__socials
+            margin: 0 0 30px
+        &__wrapper
+            flex-direction: column
+        &__tabs
+            width: 100%
+            display: block
+            white-space: nowrap
+            overflow-x: auto
+        &__tab
+            display: inline-block
+            vertical-align: top
+        &__cities
+            width: 100%
+            display: block
+            white-space: nowrap
+            overflow-x: auto
+            margin: 0 0 30px
+        &__city
+            display: inline-block
+            vertical-align: top
+            margin: 0 16px 0 0
+        &__right
+            width: 100%
 
 @media (max-width: 768px)
     .header
@@ -4828,6 +5133,21 @@ body
             margin: 0 0 30px
             &:last-child
                 margin: 0
+
+    .contacts
+        &__map
+            width: calc((100% - 30px) / 2)
+            iframe
+                height: 350px
+        &__content
+            width: calc((100% - 30px) / 2)
+        &_staff
+            &__els
+                grid-template-columns: 1fr
+            &__el
+                margin: 0 0 30px
+                &:last-child
+                    margin: 0
 
 @media (max-width: 640px)
     .header
@@ -5489,6 +5809,47 @@ body
         &__txt
             font-size: 15px
 
+    .pagination
+        display: block
+        white-space: nowrap
+        overflow-x: auto
+        padding: 0 0 10px
+        &__dots,
+        &__el
+            display: inline-block
+            vertical-align: top
+            white-space: normal
+
+    .contacts
+        &__top
+            margin: 0 0 30px
+        &__tab
+            font-size: 24px
+            margin: 0 30px 0 0
+        &__block
+            padding: 20px
+        &__wp
+            flex-direction: column
+        &__map
+            width: 100%
+            margin: 0 0 20px
+            iframe
+                height: 300px
+        &__content
+            width: 100%
+        &_reqs
+            &__ul
+                li
+                    div
+                        min-width: 50%
+                        width: 50%
+                        padding: 0 20px 0 0
+        &_staff
+            &__image
+                min-width: 100px
+                height: 100px
+            &__name
+                font-size: 18px
 
 @media (max-width: 375px)
     .header
