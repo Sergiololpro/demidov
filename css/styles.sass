@@ -4506,6 +4506,258 @@ body
             &:hover
                 opacity: .7
 
+.videos
+    display: flex
+    flex-wrap: wrap
+    margin: 0 0 100px
+    &__el
+        width: calc((100% - 20px) / 2)
+        height: 390px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: flex-start
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        border-radius: 4px
+        cursor: pointer
+        position: relative
+        padding: 20px
+        margin: 0 20px 20px 0
+        &:nth-child(2n)
+            margin: 0 0 20px
+        &:before
+            content: ""
+            width: 100%
+            height: 100%
+            background: linear-gradient(0deg, rgba(0,0,0,0.54), rgba(0,0,0,0.54)),url(image.png),url(image.png),url(image.png),transparent
+            z-index: 1
+            position: absolute
+            left: 0
+            bottom: 0
+        &:hover
+            .videos
+                &__play
+                    transform: scale(1.1)
+    &__title
+        max-width: 400px
+        font-size: 28px
+        color: #fff
+        font-weight: 700
+        line-height: 130%
+        z-index: 1
+        position: relative
+    &__date
+        font-size: 15px
+        color: #fff
+        z-index: 1
+        position: relative
+    &__play
+        width: 55px
+        height: 55px
+        background: url(../img/play.svg) center no-repeat
+        background-size: contain
+        z-index: 1
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        margin: auto
+        transition: transform .3s ease-out
+
+.news_page
+    margin: 0 0 100px
+    &__wrp
+        display: flex
+        flex-wrap: wrap
+    &__more
+        width: 160px
+        height: 48px
+        border: 2px solid #56C8D1
+        border-radius: 4px
+        font-size: 16px
+        color: #56C8D1
+        font-weight: 700
+        line-height: 48px
+        text-align: center
+        cursor: pointer
+        padding: 0 10px
+        margin: 0 auto
+        transition: background .3s ease-out, color .3s ease-out
+        &:hover
+            background: #56C8D1
+            color: #fff
+    &_filters
+        width: 100%
+        display: flex
+        align-items: center
+        background: #FAFAFA
+        border-radius: 4px
+        padding: 20px
+        margin: 0 0 20px
+        &__text
+            font-size: 13px
+            color: #1E3B3E
+            font-weight: 700
+        &__els
+            display: flex
+            margin: 0 0 0 20px
+        &__el
+            height: 32px
+            border: 1px solid #56C8D1
+            border-radius: 4px
+            font-size: 13px
+            color: #1E3B3E
+            font-weight: 700
+            line-height: 32px
+            cursor: pointer
+            padding: 0 10px
+            margin: 0 10px 0 0
+            transition: background .3s ease-out
+            &.active,
+            &:hover
+                background: rgba(114, 203, 210, .23)
+            &:last-child
+                margin: 0
+    &_el
+        width: calc((100% - 40px) / 3)
+        height: 550px
+        margin: 0 20px 20px 0
+        display: none
+        &:hover
+            .news_page
+                &_el
+                    &__image
+                        transform: scale(1.1)
+        &.active
+            display: block
+        &:nth-child(3n)
+            margin: 0 0 20px
+        &__img
+            width: 100%
+            height: 280px
+            overflow: hidden
+            position: relative
+        &__image
+            width: 100%
+            height: 100%
+            background-position: center
+            background-size: cover
+            background-repeat: no-repeat
+            position: absolute
+            left: 0
+            right: 0
+            top: 0
+            bottom: 0
+            margin: auto
+            transition: transform .3s ease-out
+        &__content
+            width: 100%
+            height: 270px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: flex-start
+            background: #FAFAFA
+            padding: 20px
+        &__top
+            margin: 0 0 20px
+        &__title
+            font-size: 20px
+            color: #56C8D1
+            font-weight: 700
+            margin: 0 0 20px
+        &__text
+            font-size: 15px
+            line-height: 140%
+        &__date
+            font-size: 13px
+            color: #BEBEBE
+
+.press
+    overflow: hidden
+    &__el
+        width: 100%
+        height: 0
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        border: 1px solid #eee
+        border-radius: 4px
+        opacity: 0
+        transform: translateX(-100%)
+        transition: transform .5s ease-out
+        &.active
+            height: auto
+            opacity: 1
+            padding: 20px
+            margin: 0 0 20px
+            transform: translateX(0)
+    &__left
+        max-width: 1100px
+        padding: 0 30px 0 0
+    &__title
+        font-size: 20px
+        color: #56C8D1
+        font-weight: 700
+        margin: 0 0 10px
+    &__text
+        font-size: 15px
+        line-height: 140%
+        margin: 0 0 20px
+    &__date
+        font-size: 13px
+        color: #BEBEBE
+    &__image
+        width: 210px
+
+.partners
+    margin: 0 0 100px
+    &__block
+        margin: 0 0 50px
+        &:last-child
+            margin: 0
+    &__ttl
+        font-size: 40px
+        color: #1E3B3E
+        font-weight: 700
+        margin: 0 0 30px
+    &__text
+        font-size: 18px
+        line-height: 150%
+        margin: 0 0 30px
+    &__el
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        border: 1px solid #eee
+        border-radius: 4px
+        padding: 20px
+        margin: 0 0 20px
+    &__img
+        width: 220px
+    &__content
+        width: calc(100% - 250px)
+        max-width: 1100px
+        margin: 0 0 0 30px
+    &__title
+        font-size: 20px
+        color: #56C8D1
+        font-weight: 700
+        margin: 0 0 20px
+    &__txt
+        font-size: 15px
+        line-height: 140%
+        margin: 0 0 20px
+    &__link
+        font-size: 13px
+        color: #56C8D1
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
 
 
 @media (max-height: 700px)
@@ -4769,6 +5021,10 @@ body
             margin: 0 16px 0 0
         &__right
             width: 100%
+            
+    .videos
+        &__el
+            height: 350px
 
 @media (max-width: 768px)
     .header
@@ -5148,6 +5404,29 @@ body
                 margin: 0 0 30px
                 &:last-child
                     margin: 0
+
+    .videos
+        &__el
+            width: 100% !important
+            margin: 0 0 20px !important
+
+    .news_page
+        &_el
+            width: calc((100% - 20px) / 2)
+            height: 550px
+            margin: 0 20px 20px 0
+            &:nth-child(3n)
+                margin: 0 20px 20px 0
+            &:nth-child(2n)
+                margin: 0 0 20px
+
+    .partners
+        &__el
+            flex-direction: column
+            align-items: flex-start
+        &__content
+            width: 100%
+            margin: 20px 0 0
 
 @media (max-width: 640px)
     .header
@@ -5850,6 +6129,40 @@ body
                 height: 100px
             &__name
                 font-size: 18px
+
+    .videos
+        &__el
+            height: 300px
+        &__title
+            font-size: 20px
+        &__play
+            width: 40px
+            height: 40px
+
+    .news_page
+        &_filters
+            display: block
+            padding: 20px 20px 10px
+            &__els
+                display: block
+                white-space: nowrap
+                overflow-x: auto
+                padding: 0 0 10px
+                margin: 10px 0 0
+            &__el
+                display: inline-block
+                vertical-align: top
+                white-space: normal
+        &_el
+            width: 100%
+            margin: 0 0 20px !important
+
+    .press
+        &__el
+            flex-direction: column-reverse
+        &__left
+            padding: 0
+            margin: 20px 0 0
 
 @media (max-width: 375px)
     .header

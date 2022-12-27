@@ -89,10 +89,10 @@
                                 <div class="contacts__time">
                                     <div class="contacts__r">
                                         <span>Пн-Чт</span> 8:00 - 20:00, заезд до 18:00
-                                    </div><br />
+                                    </div><br>
                                     <div class="contacts__r">
                                         <span>Обед</span> 12:00 - 13:00
-                                    </div><br />
+                                    </div><br>
                                     <div class="contacts__r">
                                         <span>Сб-Вс</span> заезд до 14:00
                                     </div>
@@ -187,10 +187,10 @@
                                             <div class="contacts__time">
                                                 <div class="contacts__r">
                                                     <span>Пн-Чт</span> 8:00 - 20:00, заезд до 18:00
-                                                </div><br />
+                                                </div><br>
                                                 <div class="contacts__r">
                                                     <span>Обед</span> 12:00 - 13:00
-                                                </div><br />
+                                                </div><br>
                                                 <div class="contacts__r">
                                                     <span>Сб-Вс</span> заезд до 14:00
                                                 </div>
@@ -307,10 +307,10 @@
                                             <div class="contacts__time">
                                                 <div class="contacts__r">
                                                     <span>Пн-Чт</span> 8:00 - 20:00, заезд до 18:00
-                                                </div><br />
+                                                </div><br>
                                                 <div class="contacts__r">
                                                     <span>Обед</span> 12:00 - 13:00
-                                                </div><br />
+                                                </div><br>
                                                 <div class="contacts__r">
                                                     <span>Сб-Вс</span> заезд до 14:00
                                                 </div>
@@ -427,10 +427,10 @@
                                             <div class="contacts__time">
                                                 <div class="contacts__r">
                                                     <span>Пн-Чт</span> 8:00 - 20:00, заезд до 18:00
-                                                </div><br />
+                                                </div><br>
                                                 <div class="contacts__r">
                                                     <span>Обед</span> 12:00 - 13:00
-                                                </div><br />
+                                                </div><br>
                                                 <div class="contacts__r">
                                                     <span>Сб-Вс</span> заезд до 14:00
                                                 </div>

@@ -74,6 +74,7 @@
   <script src="js/libs/jquery/jquery.js"></script>
   <script src="js/libs/slick/slick.min.js"></script>
   <script src="js/libs/select2/select2.min.js"></script>
+  <script src="js/libs/modal_video/modal_video.min.js"></script>
   <script src="js/script.js?v=9"></script>
 </body>
 

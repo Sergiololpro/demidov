@@ -274,4 +274,23 @@ $(document).ready(function () {
         $(".contacts__c[data-id=" + id + "]").addClass("active");
     });
 
+    // Modal video
+    $(".modal_video").modalVideo();
+
+    // Фильтр новостей
+    $(".news_page_filters__el").on("click", function() {
+        var year = $(this).data("year");
+
+        $(".news_page_filters__el, .news_page_el, .press__el").removeClass("active");
+
+        $(this).addClass("active");
+
+        if (year == 1) {
+            $(".news_page_el, .press__el").addClass("active");
+        } else {
+            $(".news_page_el[data-year=" + year + "]").addClass("active");
+            $(".press__el[data-year=" + year + "]").addClass("active");
+        }
+    });
+
 });
