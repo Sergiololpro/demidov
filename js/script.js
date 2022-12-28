@@ -199,9 +199,14 @@ $(document).ready(function () {
         $(".modal_cart").addClass("active");
     });
 
-    // Открыть заказ
-    $(".cabinet__el").on("click", function() {
-        $(this).toggleClass("opened");
+    // Открыть отзыв
+    $(".reviews__button").on("click", function() {
+        $(".modal_reviews").addClass("active");
+    });
+
+    // Открыть добавить отзыв
+    $(".reviews__add").on("click", function() {
+        $(".modal_reviews_add").addClass("active");
     });
 
     // Кабинет, переключение заказов
@@ -291,6 +296,33 @@ $(document).ready(function () {
             $(".news_page_el[data-year=" + year + "]").addClass("active");
             $(".press__el[data-year=" + year + "]").addClass("active");
         }
+    });
+
+    // Оценка
+    $(".quality__el").on("click", function() {
+        var id = $(this).data("id");
+
+        $(".quality__el").removeClass("active");
+
+        $(this).addClass("active");
+
+        $(this).closest(".quality__els").find("input").val(id);
+        
+        if (id == 0) {
+            $(this).closest(".quality__row").find(".modal__input input")[0].setAttribute("disabled", "disabled");
+        } else {
+            $(this).closest(".quality__row").find(".modal__input input")[0].removeAttribute("disabled"); 
+        }
+    });
+
+    // Открыть поиск
+    $(".header__search").on("click", function() {
+        $(".nav_search").toggleClass("active");
+    });
+
+    // Закрыть поиск
+    $(".search_block__close").on("click", function() {
+        $(".nav_search").removeClass("active");
     });
 
 });

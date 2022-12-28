@@ -43,7 +43,7 @@
         <a href="#" class="header__logo">
           <img src="img/logo.svg" alt="">
         </a>
-        <nav class="nav">
+        <nav class="nav nav_search">
           <a data-id="1" href="#" class="nav__el">Продукция</a>
           <a href="#" class="nav__el">О компании</a>
           <a href="#" class="nav__el">Доставка и оплата</a>
@@ -60,6 +60,46 @@
               <a href="#" class="nav__drop">Вакансии</a>
               <a href="#" class="nav__drop">Электронная очередь</a>
               <a href="#" class="nav__drop">Контакты</a>
+            </div>
+          </div>
+          <div class="search_block active">
+            <input name="search_row" placeholder="Поиск по сайту" class="search_block__input" type="text">
+            <div class="search_block__close"></div>
+            <div class="search_block__wrp active">
+              <div class="search_block__block">
+                <div class="search_block__title">Категории</div>
+                <div class="search_block__els">
+                  <a href="#" class="search_block__el">
+                    <div class="search_block__img" style="background-image: url(img/card__image-1.jpg)"></div>
+                    <div class="search_block__text">Арматура рифленая</div>
+                  </a>
+                  <a href="#" class="search_block__el">
+                    <div class="search_block__img" style="background-image: url(img/card__image-1.jpg)"></div>
+                    <div class="search_block__text">Арматура рифленая</div>
+                  </a>
+                  <a href="#" class="search_block__el">
+                    <div class="search_block__img" style="background-image: url(img/card__image-1.jpg)"></div>
+                    <div class="search_block__text">Арматура рифленая</div>
+                  </a>
+                </div>
+              </div>
+              <div class="search_block__block">
+                <div class="search_block__title">Товары</div>
+                <div class="search_block__els">
+                  <a href="#" class="search_block__el">
+                    <div class="search_block__img" style="background-image: url(img/card__image-2.jpg)"></div>
+                    <div class="search_block__text">Арматура рифленая 12 2Ф а500С ГОСТ 34028-2016</div>
+                  </a>
+                  <a href="#" class="search_block__el">
+                    <div class="search_block__img" style="background-image: url(img/card__image-2.jpg)"></div>
+                    <div class="search_block__text">Арматура рифленая 12 2Ф а500С ГОСТ 34028-2016</div>
+                  </a>
+                  <a href="#" class="search_block__el">
+                    <div class="search_block__img" style="background-image: url(img/card__image-2.jpg)"></div>
+                    <div class="search_block__text">Арматура рифленая 12 2Ф а500С ГОСТ 34028-2016</div>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </nav>
@@ -329,6 +369,60 @@
       <div class="modal__close"></div>
       <div class="modal__title">Заказ Е-787863 от 14.12.22 <br>Успешно завершен!</div>
       <div class="modal__button modal__button-dark modal__button-full close_modal">Хорошо</div>
+    </div>
+  </div>
+
+  <div class="modal modal_reviews">
+    <div class="modal__content">
+      <div class="modal__close"></div>
+      <div class="modal_reviews__wrp">
+        <img class="modal_reviews__img" src="img/modal_reviews__img.jpg" alt="">
+        <div class="modal_reviews__right">
+          <div class="reviews__title">ООО «Липецкая металлургическая компания»</div>
+          <div class="reviews__small">Генеральный директор</div>
+          <div class="reviews__name">Кривенкова А.В.</div>
+          <div class="reviews__text">
+            <p>Предприятие ООО «Металл-Сервис НК» выражает огромную благодарность и признательность компании «ГК Демидов» за качественную и высокопрофессиональную работу по поставкам металлопроката для нужд нашего предприятия.
+              Особо следует отметить компетентность и высокую квалификацию сотрудников компании, в частности менеджера Устинова Максима за добросовестное отношение к заказам и работе в целом. Все поставки металлопроката осуществляется своевременно, качественно и в полном объеме.</p>
+            <p>Благодарим Вас за взаимовыгодное и плодотворное сотрудничество и желаем коллективу «ГК Демидов» уверенного роста и процветания.Предприятие ООО «Металл-Сервис НК» выражает огромную благодарность и признательность компании «ГК Демидов» за качественную и высокопрофессиональную работу по поставкам металлопроката для нужд нашего предприятия.
+              Особо следует отметить компетентность и высокую квалификацию сотрудников компании, в частности менеджера Устинова Максима за добросовестное отношение к заказам и работе в целом. Все поставки металлопроката осуществляется своевременно, качественно и в полном объеме.</p>
+            <p>Благодарим Вас за взаимовыгодное и плодотворное сотрудничество и желаем коллективу «ГК Демидов» уверенного роста и процветания.Предприятие ООО «Металл-Сервис НК» выражает огромную благодарность и признательность компании «ГК Демидов» за качественную и высокопрофессиональную работу по поставкам металлопроката для нужд нашего предприятия.</p>
+            <p>Особо следует отметить компетентность и высокую квалификацию сотрудников компании, в частности менеджера Устинова Максима за добросовестное отношение к заказам и работе в целом. Все поставки металлопроката осуществляется своевременно, качественно и в полном объеме.</p>
+            <p>Благодарим Вас за взаимовыгодное и плодотворное сотрудничество и желаем коллективу «ГК Демидов» уверенного роста и процветания</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal_reviews_add">
+    <div class="modal__content">
+      <div class="modal__close"></div>
+      <div class="modal__title">Добавить отзыв</div>
+      <div class="modal__input">
+        <div class="modal__label">Компания<span>*</span></div>
+        <input name="company" placeholder="Введите" class="input" type="text">
+      </div>
+      <div class="modal__input">
+        <div class="modal__label">ФИО<span>*</span></div>
+        <input name="name" placeholder="Введите" class="input" type="text">
+      </div>
+      <div class="modal__input">
+        <div class="modal__label">Ваш отзыв<span>*</span></div>
+        <textarea name="comment" class="textarea" placeholder="Введите"></textarea>
+      </div>
+      <div class="input_file">
+        <input id="file_2" name="file_2" class="input_file__input" type="file">
+        <label for="file_2" class="input_file__label">
+          <span class="input_file__button">Прикрепить документ</span>
+          <span class="input_file__text">Не обязательно. Файлы jpeg, png, pdf не более 6 мб</span>
+        </label>
+      </div>
+      <div class="modal__button modal__button-dark modal__button-full">Добавить отзыв</div>
+      <div class="modal__under">
+        Нажимая кнопку «Добавить отзыв» вы соглашаетесь с условиями<br>
+        <a href="#">Пользовательского соглашения</a> и <a href="#">Условиями обработки персональных данных</a>
+      </div>
     </div>
   </div>
   
