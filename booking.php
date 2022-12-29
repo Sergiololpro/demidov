@@ -1,0 +1,118 @@
+<?php include 'includes/header.php'; ?>
+
+<div class="page">
+    <div class="breadcrumbs">
+        <div class="wrapper wrapper-breadcrumbs">
+            <a href="#">Главная</a>
+            <div class="breadcrumbs__arrow"></div>
+            <a href="#">О компании</a>
+            <div class="breadcrumbs__arrow"></div>
+            <span>Бронирование</span>
+        </div>
+    </div>
+    <div class="wrapper">
+        <h1 class="title title-text">Бронирование</h1>
+
+        <div class="booking">
+            <div class="booking__ttl">Уважаемые клиенты и партнеры компании!</div>
+            <div class="booking__text">В случае если у вас возникли проблемы, появились вопросы, либо просто есть пожелания или комментарии по поводу качества нашей продукции или уровня обслуживания, просим Вас заполнить форму-анкету на этой странице. Отдел контроля качества обязательно ответит на ваши вопросы и учтет все пожелания.</div>
+            <div class="booking__wrp">
+                <div class="booking__top">Анкета на бронирование</div>
+                <div class="booking__left">
+                    <div class="quality__block">
+                        <div class="quality__ttl">Данные о компании</div>
+                        <div class="quality__inputs">
+                            <div class="modal__input">
+                                <div class="modal__label">Телефон<span>*</span></div>
+                                <input name="phone" placeholder="Введите" class="input" type="text">
+                            </div>
+                            <div class="modal__input">
+                                <div class="modal__label">E-mail<span>*</span></div>
+                                <input name="email" placeholder="Введите" class="input" type="email">
+                            </div>
+                        </div>
+                        <div class="quality__inputs">
+                            <div class="modal__input">
+                                <div class="modal__label">ФИО Клиента<span>*</span></div>
+                                <input name="name" placeholder="Введите" class="input" type="text">
+                            </div>
+                            <div class="modal__input">
+                                <div class="modal__label">Наименование организации<span>*</span></div>
+                                <input name="organization" placeholder="Введите" class="input" type="text">
+                            </div>
+                        </div>
+                        <div class="quality__inputs">
+                            <div class="modal__input">
+                                <div class="modal__label">E-mail<span>*</span></div>
+                                <input name="email" placeholder="Sample@sample.com" class="input" type="email">
+                            </div>
+                            <div class="modal__input">
+                                <div class="modal__label">Телефон<span>*</span></div>
+                                <input name="phone" placeholder="+_ ___ ___ __ __" class="input" type="text">
+                            </div>
+                        </div>
+                        <div class="quality__inputs">
+                            <div class="modal__input">
+                                <div class="modal__label">Номер счета<span>*</span></div>
+                                <input name="number" placeholder="Введите" class="input" type="text">
+                            </div>
+                            <div class="modal__input">
+                                <div class="modal__label">Регистрационный номер автомобиля<span>*</span></div>
+                                <input name="car" placeholder="Введите" class="input" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quality__block">
+                        <div class="quality__ttl">Водитель</div>
+                        <div class="quality__inputs">
+                            <div class="modal__input">
+                                <div class="modal__label">ФИО Водителя<span>*</span></div>
+                                <input name="driver" placeholder="Введите" class="input" type="text">
+                            </div>
+                            <div class="modal__input">
+                                <div class="modal__label">Серия и номер паспорта водителя<span>*</span></div>
+                                <input name="passport" placeholder="Введите" class="input" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__input">
+                        <div class="modal__label">Дополнительная иформация</div>
+                        <textarea name="comment" class="textarea" placeholder="Введите"></textarea>
+                    </div>
+                </div>
+                <div class="booking__right">
+                    <div class="quality__ttl">Дата и время погрузки</div>
+                    <div id="calendar" class="calendar"></div>
+                    <div class="booking__calendar">
+
+                    </div>
+                    <div class="booking__times">
+                        <div class="booking__time">12:00</div>
+                        <div class="booking__time">12:00</div>
+                        <div class="booking__time">12:00</div>
+                        <div class="booking__time active">12:00</div>
+                        <div class="booking__time">12:00</div>
+                        <div class="booking__time">12:00</div>
+                        <div class="booking__time">12:00</div>
+                        <div class="booking__time">12:00</div>
+                        <div class="booking__time">12:00</div>
+                        <div class="booking__time">12:00</div>
+                    </div>
+                    <div class="booking__t">
+                        Ваше вреямя: 
+                        <span>8 апреля 2023 в 12:00</span>
+                    </div>
+                </div>
+                <div class="booking__bottom">
+                    <div class="booking__button">Получить номер талона</div>
+                    <div class="quality__txt">
+                        Нажимая кнопку «Подписаться» вы соглашаетесь с условиями <a href="#">Пользовательского соглашения</a> и <a href="#">Условиями обработки персональных данных</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<?php include 'includes/footer.php'; ?>

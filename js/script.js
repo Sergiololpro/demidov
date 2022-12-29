@@ -325,4 +325,17 @@ $(document).ready(function () {
         $(".nav_search").removeClass("active");
     });
 
+    // Календарь
+    $('#calendar').dateRangePicker({
+        startOfWeek: 'monday',
+        language: "ru",
+        singleMonth: true,
+        showTopbar: false,
+        separator: ',',
+        customArrowPrevSymbol: '&lsaquo;',
+        customArrowNextSymbol: '&rsaquo;',
+        startDate: moment(),
+        container: $(".booking__calendar")
+    });
+
 });

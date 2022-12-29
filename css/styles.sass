@@ -5041,6 +5041,122 @@ body
         color: #1E3B3E
         transition: color .3s ease-out
 
+.booking
+    margin: 0 0 100px
+    &__ttl
+        font-size: 20px
+        font-weight: 700
+        margin: 0 0 30px
+    &__text
+        font-size: 18px
+        line-height: 130%
+        margin: 0 0 30px
+    &__wrp
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: flex-start
+        background: #FAFAFA
+        border-radius: 4px
+        padding: 40px
+    &__top
+        width: 100%
+        font-size: 28px
+        color: #1E3B3E
+        font-weight: 700
+        margin: 0 0 30px
+    &__left
+        width: calc(100% - 430px)
+    &__right
+        width: 400px
+        max-width: 100%
+    &__calendar
+        .date-picker-wrapper
+            height: auto !important
+            display: block !important
+            background: #fff
+            border: 1px solid #eee
+            border-radius: 8px
+            box-shadow: none !important
+            position: static
+            padding: 0 0 20px !important
+            margin: 40px 0 0 !important
+        .month-wrapper
+            width: 100% !important
+        .month-name
+            font-size: 20px
+            color: #4E5F68
+        .prev,
+        .next
+            color: #BBBBBB
+        .week-name
+            height: 60px !important
+            font-size: 16px
+            font-weight: 700
+            color: #4E5F68 !important
+        .day
+            border-radius: 100% !important
+            box-shadow: none !important
+            font-size: 16px !important
+            &.real-today
+                border: 2px solid #56C8D1 !important
+            &.checked
+                background-color: #56C8D1 !important
+               
+        table
+            width: 100% !important
+            .caption
+                height: 52px
+                background: #FAFAFA
+                border-bottom: 1px solid #eee
+    &__times
+        display: flex
+        flex-wrap: wrap
+        margin: 20px 0
+    &__time
+        width: calc((100% - 50px) / 6)
+        height: 40px
+        background: #fff
+        border: 1px solid #eee
+        border-radius: 4px
+        font-size: 16px
+        color: #1E3B3E
+        font-weight: 700
+        line-height: 40px
+        text-align: center
+        cursor: pointer
+        margin: 0 10px 10px 0
+        transition: background .3s ease-out, border .3s ease-out
+        &.active,
+        &:hover
+            background: rgba(114, 203, 210, .3)
+            border: 1px solid #56C8D1
+        &:nth-child(6n)
+            margin: 0 0 10px
+    &__t
+        font-size: 15px
+        span
+            font-size: 20px
+            font-weight: 700
+    &__bottom
+        width: 100%
+        display: flex
+        align-items: center
+        margin: 30px 0 0
+    &__button
+        width: 240px
+        height: 56px
+        background: #56C8D1
+        border-radius: 4px
+        font-size: 16px
+        color: #fff
+        font-weight: 700
+        line-height: 56px
+        text-align: center
+        cursor: pointer
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
 
 
 @media (max-height: 700px)
@@ -5739,6 +5855,11 @@ body
                 width: 150px
             &__right
                 width: calc(100% - 180px)
+
+    .booking
+        &__left
+            width: 100%
+            margin: 0 0 30px
 
 @media (max-width: 640px)
     .header
@@ -6525,6 +6646,22 @@ body
     .nav
         &_search
             top: 69px
+
+    .booking
+        &__wrp
+            padding: 30px 20px
+        &__top
+            font-size: 24px
+        &__bottom
+            flex-direction: column
+            align-items: flex-start
+        &__time
+            width: calc((100% - 40px) / 5)
+            font-size: 14px
+            &:nth-child(6n)
+                margin: 0 10px 10px 0
+            &:nth-child(5n)
+                margin: 0 0 10px
 
 @media (max-width: 375px)
     .header
