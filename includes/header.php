@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="js/libs/select2/select2.min.css">
   <link rel="stylesheet" href="js/libs/modal_video/modal_video.min.css">
   <link rel="stylesheet" href="js/libs/datepicker/datepicker.css">
-  <link rel="stylesheet" href="css/styles.css?v=10">
+  <link rel="stylesheet" href="css/styles.css?v=11">
   <title>Demidov</title>
 </head>
 
@@ -361,6 +361,7 @@
         <input name="password_2" placeholder="Введите" class="input err" type="password">
         <div class="input__alert">Пароли не совпадают</div>
       </div>
+      <div class="modal__alert">Неверный логин или пароль!</div>
       <div class="modal__button modal__button-dark modal__button-full">Востановить пароль</div>
     </div>
   </div>

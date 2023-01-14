@@ -3440,6 +3440,10 @@ body
         position: absolute
         right: 12px
         top: 36px
+    &__alert
+        font-size: 15px
+        color: #EB3333
+        margin: 0 0 30px
     &__buttons
         display: flex
         justify-content: space-between
@@ -5182,16 +5186,16 @@ body
         &__dots
             display: block
         &__el
-            &:nth-last-child(2)
+            &:nth-last-child(3),
                 display: none
         &__drop
             &:nth-last-child(1)
                 display: block
 
-@media (max-width: 1700px)
+@media (max-width: 1720px)
     .nav
         &__el
-            &:nth-last-child(3)
+            &:nth-last-child(4)
                 display: none
         &__drop
             &:nth-last-child(2)
@@ -5200,7 +5204,7 @@ body
 @media (max-width: 1550px)
     .nav
         &__el
-            &:nth-last-child(4)
+            &:nth-last-child(5)
                 display: none
         &__drop
             &:nth-last-child(3)
@@ -5209,7 +5213,7 @@ body
 @media (max-width: 1450px)
     .nav
         &__el
-            &:nth-last-child(5)
+            &:nth-last-child(6)
                 display: none
         &__drop
             &:nth-last-child(4)
@@ -5240,7 +5244,7 @@ body
 @media (max-width: 1200px)
     .nav
         &__el
-            &:nth-last-child(6)
+            &:nth-last-child(7)
                 display: none
         &__drop
             &:nth-last-child(5)
