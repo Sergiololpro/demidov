@@ -302,7 +302,7 @@ $(document).ready(function () {
     $(".quality__el").on("click", function() {
         var id = $(this).data("id");
 
-        $(".quality__el").removeClass("active");
+        $(this).closest(".quality__els").find(".quality__el").removeClass("active");
 
         $(this).addClass("active");
 
@@ -326,16 +326,77 @@ $(document).ready(function () {
     });
 
     // Календарь
-    $('#calendar').dateRangePicker({
-        startOfWeek: 'monday',
-        language: "ru",
-        singleMonth: true,
-        showTopbar: false,
-        separator: ',',
-        customArrowPrevSymbol: '&lsaquo;',
-        customArrowNextSymbol: '&rsaquo;',
-        startDate: moment(),
-        container: $(".booking__calendar")
-    });
+    if (typeof dates !== 'undefined') {
+        var vue = new Vue({
+            el: '#vue',
+            data: {
+                dates: dates.length ? dates : [],
+                curDate: "",
+                curDateFull: "",
+                times: ["12:00", "12:30", "13:00", "13:30", "14:00", "14:30", "15:00", "15:30", "16:00", "16:30"],
+                activeTimes: [],
+                dateRow: "",
+                selectedDate: "",
+                selectedTime: "",
+            },
+            mounted: function() {
+                var self = this;
+
+                $('#calendar').dateRangePicker({
+                    startOfWeek: 'monday',
+                    language: "ru",
+                    singleMonth: true,
+                    showTopbar: false,
+                    separator: ',',
+                    customArrowPrevSymbol: '&lsaquo;',
+                    customArrowNextSymbol: '&rsaquo;',
+                    startDate: moment(),
+                    container: $(".booking__calendar")
+                }).bind('datepicker-change',function(event, obj) {
+                    self.curDate = moment(obj.date1).format('DDMMYYYY');
+                    self.curDateFull = obj.date1;
+
+                    self.showTime();
+
+                    $(".booking__time").removeClass("active");
+                });
+            },
+            computed: {
+    
+            },
+            methods:{
+                showTime() {
+                    var self = this;
+
+                    self.activeTimes = [];
+
+                    self.dates.forEach((date) => {
+                        if (date.date == self.curDate) {
+                            console.log()
+                            self.times.forEach((time) => {
+                                if (!date.times.includes(time)) {
+                                    self.activeTimes.push(time)
+                                }
+                            });
+                        }
+                    });
+                },
+
+                chooseTime(time) {
+                    var self = this;
+
+                    moment.locale('ru');
+
+                    self.dateRow = moment(self.curDateFull).format('D MMMM YYYY') + " в " + time;
+
+                    $(".booking__time").removeClass("active");
+                    $(".booking__time[data-time='" + time + "']").addClass("active");
+
+                    self.selectedDate = self.curDate;
+                    self.selectedTime = time;
+                },
+            }
+        });
+    }
 
 });

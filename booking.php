@@ -80,27 +80,28 @@
                         <textarea name="comment" class="textarea" placeholder="Введите"></textarea>
                     </div>
                 </div>
-                <div class="booking__right">
+                <div id="vue" class="booking__right">
                     <div class="quality__ttl">Дата и время погрузки</div>
                     <div id="calendar" class="calendar"></div>
                     <div class="booking__calendar">
 
                     </div>
                     <div class="booking__times">
-                        <div class="booking__time">12:00</div>
-                        <div class="booking__time">12:00</div>
-                        <div class="booking__time">12:00</div>
-                        <div class="booking__time active">12:00</div>
-                        <div class="booking__time">12:00</div>
-                        <div class="booking__time">12:00</div>
-                        <div class="booking__time">12:00</div>
-                        <div class="booking__time">12:00</div>
-                        <div class="booking__time">12:00</div>
-                        <div class="booking__time">12:00</div>
+                        <div
+                            v-for="time in activeTimes"
+                            class="booking__time"
+                            :class="{ 'active' : selectedDate == curDate && selectedTime == time }"
+                            :data-time="time"
+                            @click="chooseTime(time)"
+                        >
+                            {{ time }}
+                        </div>
                     </div>
-                    <div class="booking__t">
+                    <div v-if="dateRow" class="booking__t">
                         Ваше вреямя: 
-                        <span>8 апреля 2023 в 12:00</span>
+                        <span>{{ dateRow }}</span>
+                        <input name="date" type="hidden" :value="selectedDate">
+                        <input name="time" type="hidden" :value="selectedTime">
                     </div>
                 </div>
                 <div class="booking__bottom">
@@ -114,5 +115,55 @@
 
     </div>
 </div>
+
+<script>
+    var dates = [
+        {
+            date: "21012023",
+            times: ["12:00", "12:30", "13:00"],
+        },
+        {
+            date: "22012023",
+            times: ["13:00", "13:30", "14:00"],
+        },
+        {
+            date: "23012023",
+            times: ["15:00", "15:30", "16:00"],
+        },
+        {
+            date: "24012023",
+            times: ["12:00", "12:30", "13:00"],
+        },
+        {
+            date: "25012023",
+            times: ["13:00", "13:30", "14:00"],
+        },
+        {
+            date: "26012023",
+            times: ["12:00", "12:30", "13:00"],
+        },
+        {
+            date: "27012023",
+            times: ["13:00", "13:30", "14:00"],
+        },
+        {
+            date: "28012023",
+            times: ["15:00", "15:30", "16:00"],
+        },
+        {
+            date: "29012023",
+            times: ["15:00", "15:30", "16:00"],
+        },
+        {
+            date: "30012023",
+            times: ["15:00", "15:30", "16:00"],
+        },
+        {
+            date: "31012023",
+            times: ["15:00", "15:30", "16:00"],
+        },
+    ]
+</script>
+
 
 <?php include 'includes/footer.php'; ?>
