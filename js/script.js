@@ -361,9 +361,6 @@ $(document).ready(function () {
                     $(".booking__time").removeClass("active");
                 });
             },
-            computed: {
-    
-            },
             methods:{
                 showTime() {
                     var self = this;
@@ -388,9 +385,6 @@ $(document).ready(function () {
                     moment.locale('ru');
 
                     self.dateRow = moment(self.curDateFull).format('D MMMM YYYY') + " в " + time;
-
-                    $(".booking__time").removeClass("active");
-                    $(".booking__time[data-time='" + time + "']").addClass("active");
 
                     self.selectedDate = self.curDate;
                     self.selectedTime = time;
