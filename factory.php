@@ -99,9 +99,9 @@
             </div>
         </div>
 
-        <div class="factory__image">
+        <a href="img/factory__image.jpg" class="factory__image fancybox">
             <img src="img/factory__image.jpg" alt="">
-        </div>
+        </a>
     </div>
 </div>
 

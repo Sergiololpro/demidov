@@ -393,4 +393,20 @@ $(document).ready(function () {
         });
     }
 
+    // Открыть цель
+    $(".value__more").on("click", function() {
+        $(this).closest(".value__el").find(".value__content").addClass("active");
+        $(this).hide();
+    });
+
+    // Fancybox
+    if ($(".fancybox").length) {
+        $(".fancybox").fancybox();
+    }
+
+    // Избранное
+    $(".card__fav").on("click", function() {
+        $(this).toggleClass("active");
+    });
+
 });

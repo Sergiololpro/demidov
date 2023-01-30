@@ -22,7 +22,8 @@
             <h2 class="title title-h2 title-h2_margin">Ассортимент</h2>
             <div class="city_text">Количество наименований металлопроката на складе Ногинска – более 2000, из них:</div>
             <div class="assort__els">
-                <div class="assort__el" style="background-image: url(img/assort__el-1.png)">
+                <div class="assort__el">
+                    <img class="assort__image" src="img/assort__el-1.png" alt="">
                     <div class="assort__title">Трубный прокат собственного производства</div>
                     <div class="assort__count">170 наименований</div>
                     <div class="assort__links">
@@ -32,7 +33,8 @@
                         <a href="#" class="assort__link">Трубы оцинкованные</a>
                     </div>
                 </div>
-                <div class="assort__el" style="background-image: url(img/assort__el-2.png)">
+                <div class="assort__el">
+                    <img class="assort__image" src="img/assort__el-2.png" alt="">
                     <div class="assort__title">Листовой прокат</div>
                     <div class="assort__count">170 наименований</div>
                     <div class="assort__links">
@@ -41,7 +43,8 @@
                         <a href="#" class="assort__link">Лист рифленый</a>
                     </div>
                 </div>
-                <div class="assort__el" style="background-image: url(img/assort__el-3.png)">
+                <div class="assort__el">
+                    <img class="assort__image" src="img/assort__el-3.png" alt="">
                     <div class="assort__title">Сортовой прокат</div>
                     <div class="assort__count">170 наименований</div>
                     <div class="assort__links">
@@ -51,7 +54,8 @@
                         <a href="#" class="assort__link">Арматура</a>
                     </div>
                 </div>
-                <div class="assort__el" style="background-image: url(img/assort__el-4.png)">
+                <div class="assort__el">
+                    <img class="assort__image" src="img/assort__el-4.png" alt="">
                     <div class="assort__title">Фасонный прокат</div>
                     <div class="assort__count">170 наименований</div>
                     <div class="assort__links">
@@ -72,16 +76,20 @@
         <div class="city_services">
             <h2 class="title title-h2 title-h2_margin">Услуги</h2>
             <div class="city_services__els">
-                <div class="city_services__el" style="background-image: url(img/city_services__el-1.svg)">
+                <div class="city_services__el">
+                    <img class="city_services__image" src="img/city_services__el-1.svg" alt="">
                     Резка в размер
                 </div>
-                <div class="city_services__el" style="background-image: url(img/city_services__el-2.svg)">
+                <div class="city_services__el">
+                    <img class="city_services__image" src="img/city_services__el-2.svg" alt="">
                     Перфорирование
                 </div>
-                <div class="city_services__el" style="background-image: url(img/city_services__el-3.svg)">
+                <div class="city_services__el">
+                    <img class="city_services__image" src="img/city_services__el-3.svg" alt="">
                     Токарная обработка
                 </div>
-                <div class="city_services__el" style="background-image: url(img/city_services__el-4.svg)">
+                <div class="city_services__el">
+                    <img class="city_services__image" src="img/city_services__el-4.svg" alt="">
                     Упаковка
                 </div>
             </div>
