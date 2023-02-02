@@ -45,6 +45,7 @@
         <a href="#" class="header__logo">
           <img src="img/logo.svg" alt="">
         </a>
+        <div class="header__search header__search-short"></div>
         <nav class="nav nav_search">
           <a data-id="1" href="#" class="nav__el">Продукция</a>
           <a href="#" class="nav__el">О компании</a>
@@ -105,6 +106,7 @@
             </div>
           </div>
         </nav>
+        <a href="tel:+7(495)775-38-96" class="header__phone header__phone-short">+7 (495) 775-38-96</a>
         <div class="header__rgt">
           <div class="header__calculator">Калькулятор металла</div>
           <div class="header__cabinet">Войти</div>

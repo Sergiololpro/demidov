@@ -1,5 +1,13 @@
 $(document).ready(function () {
 
+    $(window).on('scroll load', function() {
+        if ($(this).scrollTop() > 0) {
+            $('.header').addClass('short');
+        } else {
+            $('.header').removeClass('short');
+        }
+    });
+
     // Меню
     $(".header__menu").on("click", function() {
         $(".mobile_menu").addClass("active");

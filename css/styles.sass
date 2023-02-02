@@ -115,6 +115,36 @@ body
     right: 0
     top: 0
     margin: 0 auto
+    &.short
+        .header
+            &__top
+                display: none
+            &__search
+                &-short
+                    display: block
+                    margin: 0 0 0 40px
+            &__calculator
+                width: 30px
+                height: 30px
+                background-size: 30px
+                font-size: 0
+                padding: 0
+                margin: 0 0 0 40px
+            &__cabinet
+                width: 40px
+                height: 40px
+                background-position: center
+                font-size: 0
+                padding: 0
+            &__cart
+                width: 40px
+                height: 40px
+                background-position: center
+                font-size: 0
+                padding: 0
+            &__phone
+                &-short
+                    display: block
     &__top
         height: 66px
     &__bottom
@@ -174,6 +204,8 @@ body
         white-space: nowrap
         padding: 0 0 0 24px
         margin: 0 0 0 30px
+        &-short
+            display: none
     &__email
         background: url(../img/email.svg) left center no-repeat
         background-size: 16px
@@ -268,6 +300,8 @@ body
         transition: opacity .3s ease-out
         &:hover
             opacity: .7
+        &-short
+            display: none
     &__fav
         min-width: 40px
         height: 40px
@@ -299,7 +333,7 @@ body
     display: flex
     align-items: center
     position: relative
-    margin: 0 40px
+    margin: 0 20px
     &.active
         .search_block
             height: 42px
@@ -5505,6 +5539,13 @@ body
 
 @media (max-width: 1300px)
     .header
+        &.short
+            .nav
+                &_search
+                    top: 100px
+                    .nav
+                        &__el
+                            display: none
         &__contacts
             flex-direction: column-reverse
             align-items: flex-end
@@ -5519,7 +5560,6 @@ body
             background-size: 40px
             font-size: 0
             padding: 0
-
 
 @media (max-width: 1200px)
     .nav
@@ -6178,6 +6218,36 @@ body
 
 @media (max-width: 640px)
     .header
+        &.short
+            .header
+                &__search
+                    &-short
+                        margin: 0 0 0 20px
+                &__phone
+                    &-short
+                        min-width: 22px
+                        height: 22px
+                        background-size: 22px
+                        font-size: 0
+                        margin: 0 0 0 20px
+                &__calculator
+                    margin: 0 0 0 20px
+                &__logo
+                    img
+                        width: 50px
+                &__fav
+                    display: none
+                &__cabinet
+                    width: 30px
+                    height: 30px
+                    background-size: 16px
+                &__cart
+                    width: 30px
+                    height: 30px
+                    background-size: 16px
+            .nav
+                &_search
+                    top: 80px
         &__top
             height: 50px
         &__bottom
