@@ -165,28 +165,11 @@ $(document).ready(function () {
     });
 
     // Select2
-    if ($.fn.select2) {
+    if ($.fn.select2 && !$("#calculator").length) {
         $('.select2').select2({
             minimumResultsForSearch: -1,
             placeholder: $(this).data("placeholder")
         });
-          
-        $(".select2_images").select2({
-            minimumResultsForSearch: -1,
-            placeholder: $(this).data("placeholder"),
-            templateResult: formatState
-        });
-
-        function formatState (state) {
-            if (!state.id) {
-              return state.text;
-            }
-            var $state = $(
-                '<span><span style="background-image: url(img/select2_image-' + state.element.value.toLowerCase() + '.jpg)" class="select2__img"></span>' + state.text + '</span>'
-            );
-
-            return $state;
-        };
     }
 
     // Закрыть окно
@@ -247,16 +230,6 @@ $(document).ready(function () {
         } else {
             $(".vacancy_list__el[data-id=" + id + "]").addClass("active");
         }
-    });
-
-    // Калькулятор, переключение
-    $(".calculator__tab").on("click", function() {
-        var id = $(this).data("id");
-
-        $(".calculator__tab, .calculator__wp").removeClass("active");
-
-        $(this).addClass("active");
-        $(".calculator__wp[data-id=" + id + "]").addClass("active");
     });
 
     // Контакты, переключение
@@ -436,5 +409,47 @@ $(document).ready(function () {
             $(".ct__content").addClass("table");
         }
     });
+
+    // Калькулятор
+    if (typeof types !== 'undefined') {
+        var vue = new Vue({
+            el: '#calculator',
+            data: {
+                types: types.length ? types : [],
+                type_selected: 1,
+                p: 3.1415926535,
+                armatura_diameters: armatura_diameters.length ? armatura_diameters : [],
+                armatura_diameter: "",
+                armatura_length: "",
+                armatura_weight: "",
+            },
+            mounted: function() {
+                var self = this;
+                
+                $(".select2_images").select2({
+                    minimumResultsForSearch: -1,
+                    placeholder: $(this).data("placeholder"),
+                    templateResult: formatState
+                }).on('change', function () {
+                    self.type_selected = this.value;
+                });
+        
+                function formatState (state) {
+                    if (!state.id) {
+                      return state.text;
+                    }
+
+                    var $state = $('<span><span style="background-image: url(img/select2_image-' + state.element.value.toLowerCase() + '.jpg)" class="select2__img"></span>' + state.text + '</span>');
+        
+                    return $state;
+                };
+            },
+            methods:{
+                calcAramturaWeight() {
+                    this.armatura_weight = (this.p * Math.pow(parseInt(this.armatura_diameter) * 0.001, 2) / 4 * 7850 * parseInt(this.armatura_length)).toFixed(3);
+                },
+            }
+        });
+    }
 
 });
