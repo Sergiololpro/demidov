@@ -282,7 +282,7 @@
                                 <div class="element__left">
                                     <div class="element__top">
                                         <div class="element__art">Арт: 45648996</div>
-                                        <div class="element__stock">В наличии</div>
+                                        <div class="element__stock element__stock-inactive">Нет</div>
                                     </div>
                                     <a href="#" class="element__title">Труба профильная 25х25х3</a>
                                     <ul class="element__ul">
