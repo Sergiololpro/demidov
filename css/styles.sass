@@ -3076,6 +3076,9 @@ body
         transition: opacity .3s ease-out
         &:hover
             opacity: .7
+    &__city
+        font-size: 15px
+        display: none
     &_controls
         display: flex
         margin: 0 20px 0 0
@@ -3399,7 +3402,7 @@ body
     display: flex
     justify-content: center
     align-items: center
-    background: rgba(255, 255, 255, .5)
+    background: rgba(0, 0, 0, .5)
     opacity: 0
     pointer-events: none
     z-index: 10
@@ -3544,6 +3547,36 @@ body
         .modal
             &__content
                 width: 1200px
+    &_sfera
+        &__wrp
+            display: flex
+            justify-content: space-between
+            align-items: flex-start
+        &__left
+            width: 320px
+            max-width: 50%
+        &__image
+            width: 320px
+            max-width: 40%
+            margin: 100px 0 0
+        &__links
+            display: flex
+            flex-direction: column
+            align-items: self-start
+        &__link
+            font-size: 16px
+            color: #56C8D1
+            font-weight: 700
+            margin: 0 0 16px
+            transition: opacity .3s ease-out
+            &:hover
+                opacity: .7
+            &:last-child
+                margin: 0
+        .modal
+            &__content
+                width: 984px
+                min-height: 427px
     .select2
         &-selection
             &__rendered
@@ -5182,12 +5215,14 @@ body
 .sfera
     display: flex
     flex-wrap: wrap
+    justify-content: center
     &__el
         width: calc((100% - 60px) / 4)
         height: 400px
         background: linear-gradient(0deg, #DCEFEF 40.51%, #F3F3F3 94.12%)
         border-radius: 4px
         overflow: hidden
+        cursor: pointer
         position: relative
         padding: 20px
         margin: 0 20px 20px 0
@@ -5215,6 +5250,171 @@ body
         bottom: 60px
         margin: 0 auto
         transition: transform .3s ease-out
+    &_banner
+        width: 100%
+        min-height: 400px
+        display: flex
+        align-items: flex-end
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        border-radius: 4px
+        position: relative
+        padding: 40px
+        margin: 0 0 20px
+        &:before
+            content: ""
+            width: 100%
+            height: 100%
+            background: linear-gradient(3.79deg, rgba(0, 0, 0, 0.45) 17.62%, rgba(0, 0, 0, 0) 41.17%), linear-gradient(99.48deg, rgba(0, 0, 0, 0.45) 3.67%, rgba(0, 0, 0, 0) 57.16%)
+            position: absolute
+            left: 0
+            top: 0
+        &__text
+            font-size: 28px
+            color: #fff
+            font-weight: 700
+            line-height: 130%
+            z-index: 1
+
+.tiles
+    .ct
+        &__els
+            display: flex
+            flex-wrap: wrap
+    .element
+        width: calc((100% - 40px) / 3)
+        flex-direction: column
+        align-items: flex-start
+        position: relative
+        margin: 0 20px 20px 0
+        &:nth-child(3n)
+            margin: 0 0 20px
+        &__image
+            width: 100%
+            height: 290px
+            margin: 0 0 20px
+        &__content
+            width: 100%
+            flex-direction: column
+            align-items: flex-start
+        &__left
+            width: 100%
+        &__title
+            font-size: 20px
+        &__ul
+            margin: 0 0 20px
+        &__right
+            width: 100%
+            padding: 0 0 0 130px
+        &__price
+            font-size: 20px
+        &__bottom
+            justify-content: space-between
+        &__button
+            width: calc(100% - 90px)
+            max-width: 200px
+            order: 2
+            margin: 0
+            &:not(.element__button-click)
+                min-width: 32px
+                width: 32px
+                order: 3
+                background-position: center
+                font-size: 0
+                padding: 0
+        &__fav
+            order: 1
+        &_controls
+            position: absolute
+            left: 20px
+            bottom: 72px
+            margin: 0
+
+.table
+    &_title
+        display: none
+        padding: 0 140px 0 56px
+        margin: 32px 0 16px
+        &__col
+            font-size: 13px
+            color: #BEBEBE
+            &-title
+                width: calc((100% - 150px) * .5)
+            &-city,
+            &-stock
+                width: calc((100% - 150px) * .25)
+            &-price
+                width: 150px
+                text-align: right
+    .table
+        &_title
+            display: flex
+    .element
+        border: none
+        border-bottom: 1px solid #eee
+        border-radius: 0
+        justify-content: flex-start
+        position: relative
+        padding: 12px 140px 12px 0
+        margin: 0
+        &__image
+            width: 40px
+            height: 40px
+        &__content
+            width: 100%
+            align-items: center
+            padding: 0 0 0 16px
+        &__bottom
+            width: 96px
+            height: 40px
+            position: absolute
+            right: 0
+            top: 0
+            bottom: 0
+            margin: auto
+        &__fav
+            width: 40px
+            height: 40px
+            order: 1
+        &__button
+            width: 40px
+            max-width: 40px
+            height: 40px
+            order: 2
+            font-size: 0
+            padding: 0
+            margin: 0 0 0 16px
+            &-click
+                display: none
+        &__right
+            width: 150px
+            padding: 0
+        &__price
+            font-size: 20px
+        &__title
+            width: 50%
+            order: 1
+            font-size: 16px
+            padding: 0 16px 0 0
+            margin: 0
+        &__city
+            width: 25%
+            display: block
+            order: 2
+        &__top
+            width: 25%
+            display: block
+            order: 3
+            margin: 0
+        &__left
+            width: calc(100% - 150px)
+            display: flex
+            align-items: center
+        &__art,
+        &__ul,
+        &_controls
+            display: none
 
 
 @media (max-height: 700px)
@@ -5276,6 +5476,14 @@ body
     .drop
         &__col
             margin: 0 60px 40px 0
+
+    .tiles
+        .element
+            width: calc((100% - 20px) / 2)
+            &:nth-child(3n)
+                margin: 0 20px 20px 0
+            &:nth-child(2n)
+                margin: 0 0 20px
 
 @media (max-width: 1300px)
     .header
@@ -5508,6 +5716,51 @@ body
             &:nth-child(3n)
                 margin: 0 0 20px
 
+    .ct
+        &__filters
+            height: 100vh
+            background: #fff
+            z-index: 5
+            overflow-y: auto
+            position: fixed
+            left: -100%
+            top: 0
+            padding: 0 20px 50px
+            transition: left .3s ease-out
+            &.active
+                left: 0
+        &__content
+            width: 100%
+        &__filt
+            min-width: 24px
+            height: 24px
+            display: block
+            background: url(../img/filt.svg) center no-repeat
+            background-size: contain
+            margin: 0 30px 0 0
+        &__filt_close
+            width: 16px
+            height: 16px
+            display: block
+            background: url(../img/cross.svg) center no-repeat
+            background-size: contain
+            position: absolute
+            right: 20px
+            top: 20px
+            transition: opacity .3s ease-out
+        &__line
+            flex-direction: column
+            align-items: flex-start
+            .select2
+                &-container
+                    width: 100%
+                    max-width: 220px
+                    margin: 20px 0 0
+        &__left
+            flex-wrap: wrap
+            align-items: flex-start
+            margin: 0 0 20px
+
 @media (max-width: 768px)
     .header
         &__email
@@ -5729,50 +5982,6 @@ body
             vertical-align: top
             white-space: normal
 
-    .ct
-        &__filters
-            height: 100vh
-            background: #fff
-            z-index: 5
-            overflow-y: auto
-            position: fixed
-            left: -100%
-            top: 0
-            padding: 0 20px 50px
-            transition: left .3s ease-out
-            &.active
-                left: 0
-        &__content
-            width: 100%
-        &__filt
-            min-width: 24px
-            height: 24px
-            display: block
-            background: url(../img/filt.svg) center no-repeat
-            background-size: contain
-            margin: 0 30px 0 0
-        &__filt_close
-            width: 16px
-            height: 16px
-            display: block
-            background: url(../img/cross.svg) center no-repeat
-            background-size: contain
-            position: absolute
-            right: 20px
-            top: 20px
-            transition: opacity .3s ease-out
-        &__line
-            flex-direction: column
-            align-items: flex-start
-            .select2
-                &-container
-                    width: 100%
-                    margin: 20px 0 0
-        &__left
-            flex-wrap: wrap
-            align-items: flex-start
-            margin: 0 0 20px
-
     .element
         &__bottom
             flex-wrap: wrap
@@ -5915,6 +6124,14 @@ body
                 width: 150px
             &__right
                 width: calc(100% - 180px)
+        &_sfera
+            .modal
+                &__content
+                    min-height: inherit
+            &__left
+                max-width: 100%
+            &__image
+                display: none
 
     .booking
         &__left
@@ -5928,6 +6145,18 @@ body
                 margin: 0 20px 20px 0
             &:nth-child(2n)
                 margin: 0 0 20px
+
+
+    .ct
+        &__wrp
+            overflow-y: auto
+
+    .table
+        &_title
+            width: 700px
+        .ct
+            &__els
+                width: 700px
 
 @media (max-width: 640px)
     .header
@@ -6750,6 +6979,51 @@ body
         &__el
             width: 100%
                 margin: 0 0 20px !important
+        &_banner
+            min-height: 300px
+            padding: 20px
+            &__text
+                font-size: 20px
+
+    .tiles
+        .element
+            width: 100%
+            margin: 0 0 20px !important
+            &__image
+                height: 240px
+            &__right
+                text-align: right
+            &__button
+                width: 100%
+                height: 32px
+                background-position: right 12px center
+                background-size: 16px
+                line-height: 32px
+            &__fav
+                position: static
+
+    .ct
+        &_banner
+            padding: 20px
+
+    .table
+        .element
+            flex-direction: row
+            &__image
+                margin: 0
+            &__content
+                flex-direction: row
+            &__left
+                margin: 0
+            &__button
+                height: 40px
+                background-size: 16px
+                background-position: center
+            &__fav
+                position: static
+            &__right
+                text-align: right
+
 
 @media (max-width: 375px)
     .header
@@ -6769,3 +7043,8 @@ body
             margin: 0 0 0 20px
         &__fav
             display: none
+
+    .tiles
+        .element
+            &__fav
+                display: none

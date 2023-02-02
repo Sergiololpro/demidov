@@ -409,4 +409,32 @@ $(document).ready(function () {
         $(this).toggleClass("active");
     });
 
+    // Сфера открыть
+    $(".sfera__el").on("click", function() {
+        var id = $(this).data("id");
+
+        $(".modal_sfera").removeClass("active");
+
+        $(".modal_sfera[data-id=" + id + "]").addClass("active");
+    });
+
+    // Виды списка
+    $(".ct_views__el").on("click", function() {
+        var type = $(this).data("type");
+
+        $(".ct_views__el").removeClass("active");
+
+        $(this).addClass("active");
+
+        $(".ct__content").removeClass("tiles").removeClass("table");
+
+        if (type == "tiles") {
+            $(".ct__content").addClass("tiles");
+        }
+
+        if (type == "table") {
+            $(".ct__content").addClass("table");
+        }
+    });
+
 });
