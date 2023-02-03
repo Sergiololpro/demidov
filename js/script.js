@@ -424,12 +424,81 @@ $(document).ready(function () {
             el: '#calculator',
             data: {
                 types: types.length ? types : [],
-                type_selected: 1,
+                metall_types: metall_types.length ? metall_types : [],
+                type_selected: '',
                 p: 3.1415926535,
+                density: 7850,
+
                 armatura_diameters: armatura_diameters.length ? armatura_diameters : [],
                 armatura_diameter: "",
                 armatura_length: "",
                 armatura_weight: "",
+
+                beam__types: beam__types.length ? beam__types : [],
+                beam__normal: beam__normal.length ? beam__normal : [],
+                beam__slope: beam__slope.length ? beam__slope : [],
+                beam__number: [],
+                beam__type: "",
+                beam__id: "",
+                beam_length: "",
+                beam__weight: "",
+
+                channel_types: channel_types.length ? channel_types : [],
+                channel_normal: channel_normal.length ? channel_normal : [],
+                channel_slope: channel_slope.length ? channel_slope : [],
+                channel_number: [],
+                channel_type: "",
+                channel_id: "",
+                channel_length: "",
+                channel_weight: "",
+
+                corner_type: "",
+                corner_width: "",
+                corner_height: "",
+                corner_thickness: "",
+                corner_length: "",
+                corner_weight: "",
+
+                pipe_type: "",
+                pipe_diameter: "",
+                pipe_thickness: "",
+                pipe_length: "",
+                pipe_weight: "",
+
+                profile_pipe_type: "",
+                profile_pipe_width: "",
+                profile_pipe_height: "",
+                profile_pipe_thickness: "",
+                profile_pipe_length: "",
+                profile_pipe_weight: "",
+
+                circle_type: "",
+                circle_diameter: "",
+                circle_length: "",
+                circle_weight: "",
+
+                square_type: "",
+                square_side: "",
+                square_length: "",
+                square_weight: "",
+
+                six_type: "",
+                six_number: "",
+                six_length: "",
+                six_weight: "",
+
+                ribbon_type: "",
+                ribbon_width: "",
+                ribbon_thickness: "",
+                ribbon_length: "",
+                ribbon_weight: "",
+
+                sheet_type: "",
+                sheet_width: "",
+                sheet_thickness: "",
+                sheet_length: "",
+                sheet_quantity: "",
+                sheet_weight: "",
             },
             mounted: function() {
                 var self = this;
@@ -454,7 +523,63 @@ $(document).ready(function () {
             },
             methods:{
                 calcAramturaWeight() {
-                    this.armatura_weight = (this.p * Math.pow(parseInt(this.armatura_diameter) * 0.001, 2) / 4 * 7850 * parseInt(this.armatura_length)).toFixed(3);
+                    this.armatura_weight = (this.p * Math.pow(this.armatura_diameter * 0.001, 2) / 4 * this.density * this.armatura_length).toFixed(3);
+                },
+
+                calcBeamWeight() {
+                    if (this.beam__type == 1) {
+                        this.beam__number = this.beam__normal[this.beam__id];
+                    }
+
+                    if (this.beam__type == 2) {
+                        this.beam__number = this.beam__slope[this.beam__id];
+                    }
+                
+                    this.beam__weight = (this.density * (2 * this.beam__number.b * 0.001 * this.beam__number.t * 0.001 + (this.beam__number.h * 0.001 - 2 * this.beam__number.t * 0.001) * this.beam__number.s * 0.001) * this.beam_length).toFixed(3);
+                },
+
+                calcChannelWeight() {
+                    if (this.channel_type == 1) {
+                        this.channel_number = this.channel_normal[this.channel_id];
+                    }
+
+                    if (this.channel_type == 2) {
+                        this.channel_number = this.channel_slope[this.channel_id];
+                    }
+                
+                    this.channel_weight = (this.density * (2 * this.channel_number.b * 0.001 * this.channel_number.t * 0.001 + (this.channel_number.h * 0.001 - 2 * this.channel_number.t * 0.001) * this.channel_number.s * 0.001) * this.channel_length).toFixed(3);
+                },
+
+                calcCornerWeight() {
+                    this.corner_weight = (((this.corner_width + this.corner_height - this.corner_thickness) * this.corner_thickness + (1 - this.p / 4)) * this.density * 0.000001).toFixed(3);
+                },
+
+                calcPipeWeight() {
+                    this.pipe_weight = (this.p * 0.001 * (this.pipe_diameter - this.pipe_thickness) * this.pipe_thickness * this.pipe_type * 0.001).toFixed(3);
+                },
+
+                calcProfilePipeWeight() {
+                    this.profile_pipe_weight = (this.profile_pipe_type / 7850 * 0.0157 * this.profile_pipe_thickness * (+this.profile_pipe_width + +this.profile_pipe_height - 2.86 * this.profile_pipe_thickness) * this.profile_pipe_length).toFixed(3);
+                },
+
+                calcCircleWeight() {
+                    this.circle_weight = (this.p * Math.pow(this.circle_diameter * 0.001, 2) / 4 * this.circle_type * this.circle_length).toFixed(3);
+                },
+
+                calcSquareWeight() {
+                    this.square_weight = (Math.pow(this.square_side * 0.001, 2) * this.square_type * this.square_length).toFixed(3);
+                },
+
+                calcSixWeight() {
+                    this.six_weight = (2 * Math.sqrt(3 * Math.pow(this.six_number * 0.001, 2)) * this.six_type * this.six_length * 0.001).toFixed(3);
+                },
+
+                calcRibbonWeight() {
+                    this.ribbon_weight = (this.ribbon_width * 0.001 * this.ribbon_thickness * 0.001 * this.ribbon_type * this.ribbon_length).toFixed(3);
+                },
+
+                calcSheetWeight() {
+                    this.sheet_weight = (this.sheet_width * 0.001 * this.sheet_thickness * 0.001 * this.sheet_length * 0.001 * this.sheet_type * this.sheet_quantity).toFixed(3);
                 },
             }
         });

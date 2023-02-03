@@ -118,7 +118,7 @@ body
     &.short
         .header
             &__top
-                display: none
+                height: 0
             &__search
                 &-short
                     display: block
@@ -147,6 +147,8 @@ body
                     display: block
     &__top
         height: 66px
+        overflow: hidden
+        transition: height .3s ease-out
     &__bottom
         height: 100px
         background: rgba(0, 0, 0, .1)
@@ -4281,13 +4283,14 @@ body
     &__inputs
         display: flex
         flex-wrap: wrap
+        align-items: flex-end
         margin: 0 0 30px
         .modal
             &__input
                 width: calc((100% - 40px) / 3)
                 margin: 0 20px 20px 0
                 &:nth-child(3n)
-                    margin: 0
+                    margin: 0 0 20px
     &__bold
         font-size: 20px
         color: #1E3B3E
