@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="js/libs/modal_video/modal_video.min.css">
   <link rel="stylesheet" href="js/libs/datepicker/datepicker.css">
   <link rel="stylesheet" href="js/libs/fancybox/fancybox.css">
-  <link rel="stylesheet" href="css/styles.css?v=14">
+  <link rel="stylesheet" href="css/styles.css?v=15">
   <title>Demidov</title>
 </head>
 

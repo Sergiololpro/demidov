@@ -2854,6 +2854,9 @@ body
             margin: 0 0 10px
             &:last-child
                 margin: 0
+    .select2
+        &-container
+            width: 100% !important
 
 .textarea,
 .input
@@ -2925,18 +2928,16 @@ body
     padding: 10px
 
 .select2
-    &-container
-        &--open
-            border: 1px solid #56C8D1 !important
     &:hover
         border: 1px solid #56C8D1 !important
     &-container
-        width: 100% !important
         background: #fff
         border: 1px solid #D8DADD !important
         border-radius: 5px
         font-size: 16px
         transition: border .3s ease-out
+        &--open
+            border: 1px solid #56C8D1 !important
         .select2
             &-selection
                 &--single
@@ -4364,6 +4365,9 @@ body
         max-width: 1100px
         font-size: 18px
         line-height: 150%
+    .select2
+        &-container
+            width: 100% !important
 
 .search
     margin: 0 0 50px
