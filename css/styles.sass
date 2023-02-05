@@ -5475,6 +5475,56 @@ body
     color: #BEBEBE
     padding: 0 10px
 
+.article
+    max-width: 1060px
+    margin: 0 0 60px
+    &__bold
+        font-size: 20px
+        font-weight: 700
+        line-height: 130%
+        margin: 0 0 40px
+    &__quote
+        border-top: 1px solid #56C8D1
+        border-bottom: 1px solid #56C8D1
+        font-size: 28px
+        color: #1E3B3E
+        line-height: 130%
+        font-weight: 700
+        padding: 30px 0
+        margin: 0 0 40px
+    &__small
+        font-size: 15px
+        line-height: 140%
+    &__title
+        font-size: 28px
+        color: #1E3B3E
+        font-weight: 700
+        margin: 0 0 40px
+
+.seo_text
+    font-size: 18px
+    line-height: 150%
+    p,
+    ul,
+        margin: 0 0 30px
+        &:last-child
+            margin: 0
+    p
+        color: #1E3B3E
+    ul
+        list-style-type: disc
+        font-size: 15px
+        color: #444
+        padding: 0 0 0 12px
+    li
+        margin: 0 0 10px
+        &:last-child
+            margin: 0
+    img
+        width: 100%
+        max-width: 940px
+        margin: 0 0 40px
+
 
 @media (max-height: 700px)
     .banner
@@ -7120,6 +7170,27 @@ body
                 position: static
             &__right
                 text-align: right
+
+    .article
+        margin: 0 0 40px
+        &__bold
+            font-size: 18px
+            margin: 0 0 20px
+        &__quote
+            font-size: 20px
+            padding: 15px 0
+            margin: 0 0 20px
+        &__small
+            font-size: 13px
+        &__title
+            margin: 0 0 20px
+
+    .seo_text
+        font-size: 15px
+        p,
+        ul,
+        img
+            margin: 0 0 20px
 
 
 @media (max-width: 375px)
