@@ -240,6 +240,11 @@ $(document).ready(function () {
         }
     });
 
+    // Вакансии, раскрытие
+    $(".vacancy_list__button").on("click", function() {
+        $(this).closest(".vacancy_list__el").toggleClass("opened");
+    });
+
     // Контакты, переключение
     $(".contacts__tab").on("click", function() {
         var id = $(this).data("id");

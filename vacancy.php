@@ -51,7 +51,14 @@
                         <div class="vacancy_list__left">
                             <div class="vacancy_list__city">Белгород</div>
                             <div class="vacancy_list__title">Машинист крана</div>
-                            <a href="#" class="vacancy_list__button">Подробнее</a>
+                            <div class="vacancy_list__content">
+                                <p>«ГК Демидов» ведет свою деятельность с 1992 года. За это время был создан ассортимент, удовлетворяющий запросы максимального числа клиентов, и оформлены надежные партнерские отношения с другими компаниями. В Центральном Федеральном Округе находятся 2 главные металлобазы – в Ногинске и отделение в Рязани. «ГК Демидов» эксклюзивный дилер одного</p>
+                                <div class="vacancy_list__small">Постоянное обучение способствует повышению профессионализма сотрудников, постановка новых задач убирает рутину в работе Эффективная система менеджмента, дружный молодой коллектив формируют комфортные условия для работы  способностей и усилий сотрудника</div>
+                            </div>
+                            <div class="vacancy_list__button">
+                                <span>Подробнее</span>
+                                <span>Скрыть</span>
+                            </div>
                         </div>
                         <div class="vacancy_list__right">
                             <div class="vacancy_list__text">
@@ -64,9 +71,16 @@
                     </div>
                     <div data-id="3" class="vacancy_list__el active">
                         <div class="vacancy_list__left">
-                            <div class="vacancy_list__city">Казань</div>
-                            <div class="vacancy_list__title">Стропальщик</div>
-                            <a href="#" class="vacancy_list__button">Подробнее</a>
+                            <div class="vacancy_list__city">Белгород</div>
+                            <div class="vacancy_list__title">Машинист крана</div>
+                            <div class="vacancy_list__content">
+                                <p>«ГК Демидов» ведет свою деятельность с 1992 года. За это время был создан ассортимент, удовлетворяющий запросы максимального числа клиентов, и оформлены надежные партнерские отношения с другими компаниями. В Центральном Федеральном Округе находятся 2 главные металлобазы – в Ногинске и отделение в Рязани. «ГК Демидов» эксклюзивный дилер одного</p>
+                                <div class="vacancy_list__small">Постоянное обучение способствует повышению профессионализма сотрудников, постановка новых задач убирает рутину в работе Эффективная система менеджмента, дружный молодой коллектив формируют комфортные условия для работы  способностей и усилий сотрудника</div>
+                            </div>
+                            <div class="vacancy_list__button">
+                                <span>Подробнее</span>
+                                <span>Скрыть</span>
+                            </div>
                         </div>
                         <div class="vacancy_list__right">
                             <div class="vacancy_list__text">
@@ -79,39 +93,16 @@
                     </div>
                     <div data-id="4" class="vacancy_list__el active">
                         <div class="vacancy_list__left">
-                            <div class="vacancy_list__city">Воронеж</div>
-                            <div class="vacancy_list__title">Менеджер отдела продаж</div>
-                            <a href="#" class="vacancy_list__button">Подробнее</a>
-                        </div>
-                        <div class="vacancy_list__right">
-                            <div class="vacancy_list__text">
-                                Узнать подробности
-                                по вакансии вы можете
-                                по телефону HR-отдела:
-                            </div>
-                            <a href="tel:+74912465028" class="vacancy_list__phone">+7 4912 46 50 28</a>
-                        </div>
-                    </div>
-                    <div data-id="5" class="vacancy_list__el active">
-                        <div class="vacancy_list__left">
-                            <div class="vacancy_list__city">Краснодар</div>
-                            <div class="vacancy_list__title">Менеджер отдела продаж</div>
-                            <a href="#" class="vacancy_list__button">Подробнее</a>
-                        </div>
-                        <div class="vacancy_list__right">
-                            <div class="vacancy_list__text">
-                                Узнать подробности
-                                по вакансии вы можете
-                                по телефону HR-отдела:
-                            </div>
-                            <a href="tel:+74912465028" class="vacancy_list__phone">+7 4912 46 50 28</a>
-                        </div>
-                    </div>
-                    <div data-id="5" class="vacancy_list__el active">
-                        <div class="vacancy_list__left">
-                            <div class="vacancy_list__city">Краснодар</div>
+                            <div class="vacancy_list__city">Белгород</div>
                             <div class="vacancy_list__title">Машинист крана</div>
-                            <a href="#" class="vacancy_list__button">Подробнее</a>
+                            <div class="vacancy_list__content">
+                                <p>«ГК Демидов» ведет свою деятельность с 1992 года. За это время был создан ассортимент, удовлетворяющий запросы максимального числа клиентов, и оформлены надежные партнерские отношения с другими компаниями. В Центральном Федеральном Округе находятся 2 главные металлобазы – в Ногинске и отделение в Рязани. «ГК Демидов» эксклюзивный дилер одного</p>
+                                <div class="vacancy_list__small">Постоянное обучение способствует повышению профессионализма сотрудников, постановка новых задач убирает рутину в работе Эффективная система менеджмента, дружный молодой коллектив формируют комфортные условия для работы  способностей и усилий сотрудника</div>
+                            </div>
+                            <div class="vacancy_list__button">
+                                <span>Подробнее</span>
+                                <span>Скрыть</span>
+                            </div>
                         </div>
                         <div class="vacancy_list__right">
                             <div class="vacancy_list__text">
@@ -124,9 +115,16 @@
                     </div>
                     <div data-id="5" class="vacancy_list__el active">
                         <div class="vacancy_list__left">
-                            <div class="vacancy_list__city">Краснодар</div>
-                            <div class="vacancy_list__title">Стропальщик</div>
-                            <a href="#" class="vacancy_list__button">Подробнее</a>
+                            <div class="vacancy_list__city">Белгород</div>
+                            <div class="vacancy_list__title">Машинист крана</div>
+                            <div class="vacancy_list__content">
+                                <p>«ГК Демидов» ведет свою деятельность с 1992 года. За это время был создан ассортимент, удовлетворяющий запросы максимального числа клиентов, и оформлены надежные партнерские отношения с другими компаниями. В Центральном Федеральном Округе находятся 2 главные металлобазы – в Ногинске и отделение в Рязани. «ГК Демидов» эксклюзивный дилер одного</p>
+                                <div class="vacancy_list__small">Постоянное обучение способствует повышению профессионализма сотрудников, постановка новых задач убирает рутину в работе Эффективная система менеджмента, дружный молодой коллектив формируют комфортные условия для работы  способностей и усилий сотрудника</div>
+                            </div>
+                            <div class="vacancy_list__button">
+                                <span>Подробнее</span>
+                                <span>Скрыть</span>
+                            </div>
                         </div>
                         <div class="vacancy_list__right">
                             <div class="vacancy_list__text">
@@ -139,9 +137,16 @@
                     </div>
                     <div data-id="6" class="vacancy_list__el active">
                         <div class="vacancy_list__left">
-                            <div class="vacancy_list__city">Нижний новгород</div>
-                            <div class="vacancy_list__title">Менеджер отдела продаж</div>
-                            <a href="#" class="vacancy_list__button">Подробнее</a>
+                            <div class="vacancy_list__city">Белгород</div>
+                            <div class="vacancy_list__title">Машинист крана</div>
+                            <div class="vacancy_list__content">
+                                <p>«ГК Демидов» ведет свою деятельность с 1992 года. За это время был создан ассортимент, удовлетворяющий запросы максимального числа клиентов, и оформлены надежные партнерские отношения с другими компаниями. В Центральном Федеральном Округе находятся 2 главные металлобазы – в Ногинске и отделение в Рязани. «ГК Демидов» эксклюзивный дилер одного</p>
+                                <div class="vacancy_list__small">Постоянное обучение способствует повышению профессионализма сотрудников, постановка новых задач убирает рутину в работе Эффективная система менеджмента, дружный молодой коллектив формируют комфортные условия для работы  способностей и усилий сотрудника</div>
+                            </div>
+                            <div class="vacancy_list__button">
+                                <span>Подробнее</span>
+                                <span>Скрыть</span>
+                            </div>
                         </div>
                         <div class="vacancy_list__right">
                             <div class="vacancy_list__text">
@@ -154,9 +159,82 @@
                     </div>
                     <div data-id="7" class="vacancy_list__el active">
                         <div class="vacancy_list__left">
-                            <div class="vacancy_list__city">Ногинск</div>
-                            <div class="vacancy_list__title">Менеджер отдела продаж</div>
-                            <a href="#" class="vacancy_list__button">Подробнее</a>
+                            <div class="vacancy_list__city">Белгород</div>
+                            <div class="vacancy_list__title">Машинист крана</div>
+                            <div class="vacancy_list__content">
+                                <p>«ГК Демидов» ведет свою деятельность с 1992 года. За это время был создан ассортимент, удовлетворяющий запросы максимального числа клиентов, и оформлены надежные партнерские отношения с другими компаниями. В Центральном Федеральном Округе находятся 2 главные металлобазы – в Ногинске и отделение в Рязани. «ГК Демидов» эксклюзивный дилер одного</p>
+                                <div class="vacancy_list__small">Постоянное обучение способствует повышению профессионализма сотрудников, постановка новых задач убирает рутину в работе Эффективная система менеджмента, дружный молодой коллектив формируют комфортные условия для работы  способностей и усилий сотрудника</div>
+                            </div>
+                            <div class="vacancy_list__button">
+                                <span>Подробнее</span>
+                                <span>Скрыть</span>
+                            </div>
+                        </div>
+                        <div class="vacancy_list__right">
+                            <div class="vacancy_list__text">
+                                Узнать подробности
+                                по вакансии вы можете
+                                по телефону HR-отдела:
+                            </div>
+                            <a href="tel:+74912465028" class="vacancy_list__phone">+7 4912 46 50 28</a>
+                        </div>
+                    </div>
+                    <div data-id="5" class="vacancy_list__el active">
+                        <div class="vacancy_list__left">
+                            <div class="vacancy_list__city">Белгород</div>
+                            <div class="vacancy_list__title">Машинист крана</div>
+                            <div class="vacancy_list__content">
+                                <p>«ГК Демидов» ведет свою деятельность с 1992 года. За это время был создан ассортимент, удовлетворяющий запросы максимального числа клиентов, и оформлены надежные партнерские отношения с другими компаниями. В Центральном Федеральном Округе находятся 2 главные металлобазы – в Ногинске и отделение в Рязани. «ГК Демидов» эксклюзивный дилер одного</p>
+                                <div class="vacancy_list__small">Постоянное обучение способствует повышению профессионализма сотрудников, постановка новых задач убирает рутину в работе Эффективная система менеджмента, дружный молодой коллектив формируют комфортные условия для работы  способностей и усилий сотрудника</div>
+                            </div>
+                            <div class="vacancy_list__button">
+                                <span>Подробнее</span>
+                                <span>Скрыть</span>
+                            </div>
+                        </div>
+                        <div class="vacancy_list__right">
+                            <div class="vacancy_list__text">
+                                Узнать подробности
+                                по вакансии вы можете
+                                по телефону HR-отдела:
+                            </div>
+                            <a href="tel:+74912465028" class="vacancy_list__phone">+7 4912 46 50 28</a>
+                        </div>
+                    </div>
+                    <div data-id="5" class="vacancy_list__el active">
+                        <div class="vacancy_list__left">
+                            <div class="vacancy_list__city">Белгород</div>
+                            <div class="vacancy_list__title">Машинист крана</div>
+                            <div class="vacancy_list__content">
+                                <p>«ГК Демидов» ведет свою деятельность с 1992 года. За это время был создан ассортимент, удовлетворяющий запросы максимального числа клиентов, и оформлены надежные партнерские отношения с другими компаниями. В Центральном Федеральном Округе находятся 2 главные металлобазы – в Ногинске и отделение в Рязани. «ГК Демидов» эксклюзивный дилер одного</p>
+                                <div class="vacancy_list__small">Постоянное обучение способствует повышению профессионализма сотрудников, постановка новых задач убирает рутину в работе Эффективная система менеджмента, дружный молодой коллектив формируют комфортные условия для работы  способностей и усилий сотрудника</div>
+                            </div>
+                            <div class="vacancy_list__button">
+                                <span>Подробнее</span>
+                                <span>Скрыть</span>
+                            </div>
+                        </div>
+                        <div class="vacancy_list__right">
+                            <div class="vacancy_list__text">
+                                Узнать подробности
+                                по вакансии вы можете
+                                по телефону HR-отдела:
+                            </div>
+                            <a href="tel:+74912465028" class="vacancy_list__phone">+7 4912 46 50 28</a>
+                        </div>
+                    </div>
+                    <div data-id="7" class="vacancy_list__el active">
+                        <div class="vacancy_list__left">
+                            <div class="vacancy_list__city">Белгород</div>
+                            <div class="vacancy_list__title">Машинист крана</div>
+                            <div class="vacancy_list__content">
+                                <p>«ГК Демидов» ведет свою деятельность с 1992 года. За это время был создан ассортимент, удовлетворяющий запросы максимального числа клиентов, и оформлены надежные партнерские отношения с другими компаниями. В Центральном Федеральном Округе находятся 2 главные металлобазы – в Ногинске и отделение в Рязани. «ГК Демидов» эксклюзивный дилер одного</p>
+                                <div class="vacancy_list__small">Постоянное обучение способствует повышению профессионализма сотрудников, постановка новых задач убирает рутину в работе Эффективная система менеджмента, дружный молодой коллектив формируют комфортные условия для работы  способностей и усилий сотрудника</div>
+                            </div>
+                            <div class="vacancy_list__button">
+                                <span>Подробнее</span>
+                                <span>Скрыть</span>
+                            </div>
                         </div>
                         <div class="vacancy_list__right">
                             <div class="vacancy_list__text">

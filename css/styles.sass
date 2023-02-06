@@ -4145,6 +4145,25 @@ body
                 padding: 20px
                 margin: 0 0 20px
                 transform: translateX(0)
+            &.opened
+                .vacancy
+                    &_list
+                        &__content
+                            height: auto
+                            padding: 10px 0
+                        &__button
+                            background: transparent
+                            border: 2px solid #0096EB
+                            color: #0096EB
+                            &:hover
+                                background: #0096EB
+                                color: #fff
+                                opacity: 1
+                            span
+                                &:first-child
+                                    display: none
+                                &:last-child
+                                    display: inline
         &__city
             font-size: 13px
             color: #BEBEBE
@@ -4155,9 +4174,8 @@ body
             font-weight: 700
             margin: 0 0 20px
         &__button
-            width: 140px
             height: 48px
-            display: block
+            display: inline-block
             background: #56C8D1
             border-radius: 4px
             font-size: 16px
@@ -4165,9 +4183,16 @@ body
             font-weight: 700
             line-height: 48px
             text-align: center
-            transition: opacity .3s ease-out
+            cursor: pointer
+            padding: 0 20px
+            transition: background .3s ease-out, color .3s ease-out, opacity .3s ease-out
             &:hover
                 opacity: .7
+            span
+                &:last-child
+                    display: none
+        &__left
+            width: calc(100% - 170px)
         &__right
             max-width: 160px
             text-align: right
@@ -4180,6 +4205,19 @@ body
             font-size: 16px
             color: #56C8D1
             font-weight: 700
+        &__content
+            height: 0
+            overflow: hidden
+            p
+                font-size: 18px
+                color: #1E3B3E
+                line-height: 150%
+                margin: 0 0 10px
+                &:last-child
+                    margin: 0
+        &__small
+            font-size: 15px
+            line-height: 140%
     &_ban
         width: 100%
         min-height: 140px
@@ -6921,9 +6959,15 @@ body
             &__el
                 flex-direction: column
             &__left
+                width: 100%
                 margin: 0 0 20px
             &__right
                 text-align: left
+            &__content
+                p
+                    font-size: 15px
+            &__small
+                font-size: 13px
         &_ban
             flex-direction: column
             align-items: self-start
