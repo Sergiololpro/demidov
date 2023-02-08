@@ -13,39 +13,86 @@
         <h1 class="title title-page">Сферы применения</h1>
 
         <div class="sfera_banner" style="background-image: url('img/cat_slider__el-1.jpg');">
-            <div class="sfera_banner__text">            «Группа Компаний Демидов» – это одна из крупнейших металлотрейдерских компаний отечественного рынка. Компания поставляет широчайший сортамент черного металлопроката, который используется во многих отраслях промышленности</div>
+            <div class="sfera_banner__text">«Группа Компаний Демидов» – это одна из крупнейших металлотрейдерских компаний отечественного рынка. Компания поставляет широчайший сортамент черного металлопроката, который используется во многих отраслях промышленности</div>
         </div>
 
         <div class="sfera">
             <div data-id="1" class="sfera__el">
-                <div class="sfera__title">Легковые и грузовые автомобили 1</div>
-                <div class="sfera__text">стулья, столы, демонстрационные доски</div>
+                <div class="sfera__title">Легковые и грузовые автомобили</div>
                 <img class="sfera__image" src="img/sfera__image-1.png" alt="">
             </div>
             <div data-id="2" class="sfera__el">
-                <div class="sfera__title">Легковые и грузовые автомобили 2</div>
-                <div class="sfera__text">стулья, столы, демонстрационные доски</div>
-                <img class="sfera__image" src="img/sfera__image-1.png" alt="">
+                <div class="sfera__title">Сельскохозяйственная техника</div>
+                <img class="sfera__image" src="img/sfera__image-2.png" alt="">
             </div>
             <div data-id="3" class="sfera__el">
-                <div class="sfera__title">Легковые и грузовые автомобили 3</div>
-                <div class="sfera__text">стулья, столы, демонстрационные доски</div>
-                <img class="sfera__image" src="img/sfera__image-1.png" alt="">
+                <div class="sfera__title">Судостроение</div>
+                <img class="sfera__image" src="img/sfera__image-3.png" alt="">
             </div>
             <div data-id="4" class="sfera__el">
-                <div class="sfera__title">Легковые и грузовые автомобили 4</div>
-                <div class="sfera__text">стулья, столы, демонстрационные доски</div>
-                <img class="sfera__image" src="img/sfera__image-1.png" alt="">
+                <div class="sfera__title">Метростроение</div>
+                <img class="sfera__image" src="img/sfera__image-4.png" alt="">
             </div>
             <div data-id="5" class="sfera__el">
-                <div class="sfera__title">Легковые и грузовые автомобили 5</div>
-                <div class="sfera__text">стулья, столы, демонстрационные доски</div>
-                <img class="sfera__image" src="img/sfera__image-1.png" alt="">
+                <div class="sfera__title">Мебель</div>
+                <div class="sfera__text">стулья, столы,<br> демонстрационные доски</div>
+                <img class="sfera__image" src="img/sfera__image-5.png" alt="">
             </div>
             <div data-id="6" class="sfera__el">
-                <div class="sfera__title">Легковые и грузовые автомобили 6</div>
-                <div class="sfera__text">стулья, столы, демонстрационные доски</div>
-                <img class="sfera__image" src="img/sfera__image-1.png" alt="">
+                <div class="sfera__title">Строительство</div>
+                <img class="sfera__image" src="img/sfera__image-6.png" alt="">
+            </div>
+            <div data-id="7" class="sfera__el">
+                <div class="sfera__title">Каркасные строения</div>
+                <img class="sfera__image" src="img/sfera__image-7.png" alt="">
+            </div>
+            <div data-id="8" class="sfera__el">
+                <div class="sfera__title">Ремонт и отделка</div>
+                <img class="sfera__image" src="img/sfera__image-8.png" alt="">
+            </div>
+            <div data-id="9" class="sfera__el">
+                <div class="sfera__title">Тепличные строения, беседки, навесы</div>
+                <div class="sfera__text">ЛСТК</div>
+                <img class="sfera__image" src="img/sfera__image-9.png" alt="">
+            </div>
+            <div data-id="10" class="sfera__el">
+                <div class="sfera__title">Производство лифтов и обустройство лифтовых шахт</div>
+                <img class="sfera__image" src="img/sfera__image-10.png" alt="">
+            </div>
+            <div data-id="11" class="sfera__el">
+                <div class="sfera__title">Дорожные работы, ограждения, дорожные знаки</div>
+                <img class="sfera__image" src="img/sfera__image-11.png" alt="">
+            </div>
+            <div data-id="12" class="sfera__el">
+                <div class="sfera__title">Водоснабжение, отопление, канализация, снегодержатели</div>
+                <img class="sfera__image" src="img/sfera__image-12.png" alt="">
+            </div>
+            <div data-id="13" class="sfera__el">
+                <div class="sfera__title">Туризм</div>
+                <div class="sfera__text">Инструменты, лестницы, велосипеды, самокаты, санки</div>
+                <img class="sfera__image" src="img/sfera__image-13.png" alt="">
+            </div>
+            <div data-id="14" class="sfera__el">
+                <div class="sfera__title">Реклама</div>
+                <div class="sfera__text">Баннеры, вывески, указатели</div>
+                <img class="sfera__image" src="img/sfera__image-14.png" alt="">
+            </div>
+            <div data-id="15" class="sfera__el">
+                <div class="sfera__title">Бытовая утварь</div>
+                <div class="sfera__text">садовые тележки и инструмент, качели, бассейны, батуты, мангалы, полотенцесушители</div>
+                <img class="sfera__image" src="img/sfera__image-15.png" alt="">
+            </div>
+            <div data-id="16" class="sfera__el">
+                <div class="sfera__title">Спортивные и детские площадки</div>
+                <img class="sfera__image" src="img/sfera__image-16.png" alt="">
+            </div>
+            <div data-id="17" class="sfera__el">
+                <div class="sfera__title">Товары для торговли</div>
+                <img class="sfera__image" src="img/sfera__image-17.png" alt="">
+            </div>
+            <div data-id="18" class="sfera__el">
+                <div class="sfera__title">Военная промышленность</div>
+                <img class="sfera__image" src="img/sfera__image-18.png" alt="">
             </div>
         </div>
 
