@@ -342,8 +342,8 @@ body
             opacity: 1
             transform: scale(1)
     &__el
-        font-size: 16px
-        color: #fff
+        color: #fff !important
+        text-decoration: none !important
         font-weight: 700
         white-space: nowrap
         position: relative
@@ -5636,10 +5636,12 @@ body
     .header
         &.short
             .nav
+                width: 100%
                 &_search
-                    top: 100px
                     .nav
                         &__el
+                            display: none
+                        &__dots
                             display: none
         &__contacts
             flex-direction: column-reverse
@@ -5686,9 +5688,13 @@ body
                 width: 100%
                 height: 1px
                 background: #fff
+        &.short
+            .nav
+                width: calc(100% - 40px)
     
     .nav
         &_search
+            width: calc(100% - 40px)
             height: 42px
             z-index: 5
             opacity: 0
@@ -6382,11 +6388,14 @@ body
     .banner
         &__slide
             min-height: inherit
-            padding: 150px 0 180px
+            max-height: calc(100vh - 180px)
+            padding: 150px 0
         &__title
-            font-size: 32px
+            font-size: 28px
+            margin: 0 0 20px
         &__text
-            margin: 0 0 30px
+            font-size: 16px
+            margin: 0 0 20px
         &__nav
             display: none !important
         .slick
@@ -6525,13 +6534,9 @@ body
         padding: 130px 0 0
 
     .page_links
-        display: block
-        white-space: nowrap
-        overflow-x: auto
         margin: 0 0 30px
         &__el
-            display: inline-block
-            margin: 0 6px 0 0
+            margin: 0 6px 6px 0
 
     .about
         &__banner
@@ -7260,3 +7265,7 @@ body
         .element
             &__fav
                 display: none
+
+    .banner
+        &__slide
+            min-height: 600px

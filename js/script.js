@@ -430,14 +430,17 @@ $(document).ready(function () {
             data: {
                 types: types.length ? types : [],
                 metall_types: metall_types.length ? metall_types : [],
-                type_selected: '',
+                type_selected: '1',
                 p: 3.1415926535,
                 density: 7850,
 
+                armatura_calc: true,
                 armatura_diameters: armatura_diameters.length ? armatura_diameters : [],
                 armatura_diameter: "",
                 armatura_length: "",
                 armatura_weight: "",
+                armatura_calc_length: "",
+                armatura_calc_weight: "",
 
                 beam__types: beam__types.length ? beam__types : [],
                 beam__normal: beam__normal.length ? beam__normal : [],
@@ -527,8 +530,12 @@ $(document).ready(function () {
                 };
             },
             methods:{
-                calcAramturaWeight() {
-                    this.armatura_weight = (this.p * Math.pow(this.armatura_diameter * 0.001, 2) / 4 * this.density * this.armatura_length).toFixed(3);
+                calcAramtura() {
+                    if (this.armatura_calc) {
+                        this.armatura_calc_weight = (this.p * Math.pow(this.armatura_diameter * 0.001, 2) / 4 * this.density * this.armatura_length).toFixed(3);
+                    } else {
+                        this.armatura_calc_length = ( this.armatura_weight / (this.p * Math.pow(this.armatura_diameter * 0.001, 2) / 4 * this.density)).toFixed(3);
+                    }
                 },
 
                 calcBeamWeight() {

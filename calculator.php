@@ -21,6 +21,25 @@
                         </select>
                     </div>
                     <div v-if="type_selected == 1" class="calculator__type">
+                        <div class="modal__input">
+                            <div class="modal__label">Выберите парамметр для рассчета:</div>
+                            <div class="calculator__tabs">
+                                <div
+                                    class="calculator__tab"
+                                    :class="{ 'active' : armatura_calc }"
+                                    @click="armatura_calc = true"
+                                >
+                                    Расчет веса
+                            </div>
+                                <div
+                                    class="calculator__tab"
+                                    :class="{ 'active' : !armatura_calc }"
+                                    @click="armatura_calc = false"
+                                >
+                                    Расчет длины
+                                </div>
+                            </div>
+                        </div>
                         <div class="calculator__wp active">
                             <div class="calculator__inputs">
                                 <div class="modal__input">
@@ -29,14 +48,14 @@
                                         v-model="armatura_diameter"
                                         data-select="armatura_diameter"
                                         class="my_select"
-                                        @change="calcAramturaWeight()"
+                                        @change="calcAramtura()"
                                     >
                                         <option value="" disabled selected>Диаметр</option>
                                         <option v-for="diameter in armatura_diameters" :value="diameter.value">{{ diameter.value }}</option>
                                     </select>
                                     <div class="modal__txt">мм</div>
                                 </div>
-                                <div class="modal__input">
+                                <div v-if="armatura_calc" class="modal__input">
                                     <div class="modal__label">Длина<span>*</span></div>
                                     <input
                                         v-model="armatura_length"
@@ -45,14 +64,27 @@
                                         placeholder="0"
                                         class="input"
                                         type="text"
-                                        @input="calcAramturaWeight()"
+                                        @input="calcAramtura()"
+                                    >
+                                    <div class="modal__txt">м</div>
+                                </div>
+                                <div v-if="!armatura_calc" class="modal__input">
+                                    <div class="modal__label">Вес<span>*</span></div>
+                                    <input
+                                        v-model="armatura_weight"
+                                        id="armatura_weight"
+                                        name="armatura_weight"
+                                        placeholder="0"
+                                        class="input"
+                                        type="text"
+                                        @input="calcAramtura()"
                                     >
                                     <div class="modal__txt">м</div>
                                 </div>
                             </div>
                         </div>
-                        <div v-if="armatura_length" class="calculator__bold">Длина партии: {{ armatura_length }} м</div>
-                        <div v-if="armatura_diameter && armatura_length" class="calculator__bold">Вес партии: {{ armatura_weight }} кг</div>
+                        <div v-if="armatura_calc && armatura_calc_weight > 0" class="calculator__bold">Вес партии: {{ armatura_calc_weight }} кг</div>
+                        <div v-if="!armatura_calc && armatura_calc_length > 0" class="calculator__bold">Длина партии: {{ armatura_calc_length }} м</div>
                     </div>
                     <div v-if="type_selected == 2" class="calculator__type">
                         <div class="calculator__wp active">
@@ -636,7 +668,6 @@
                         <div v-if="sheet_width && sheet_length && sheet_quantity" class="calculator__bold">Площадь партии: {{ sheet_width * 0.001 * sheet_length * 0.001 * sheet_quantity }} м</div>
                         <div v-if="sheet_type && sheet_width && sheet_thickness && sheet_length && sheet_quantity" class="calculator__bold">Вес партии: {{ sheet_weight }} кг</div>
                     </div>
-                    <div v-if="type_selected" class="calculator__button">Экспресс заявка</div>
                 </div>
                 <div class="calculator__col">
                     <img class="calculator__img" src="img/calculator__img.png" alt="">
