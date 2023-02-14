@@ -16,7 +16,6 @@
                     <div class="modal__input">
                         <div class="modal__label">Тип продукции<span>*</span></div>
                         <select id="type" data-placeholder="Выберите тип" class="select2_images">
-                            <option value="">&nbsp;</option>
                             <option v-for="type in types" :value="type.id">{{ type.title }}</option>
                         </select>
                     </div>
@@ -30,7 +29,7 @@
                                     @click="armatura_calc = true"
                                 >
                                     Расчет веса
-                            </div>
+                                </div>
                                 <div
                                     class="calculator__tab"
                                     :class="{ 'active' : !armatura_calc }"
@@ -40,7 +39,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="calculator__wp active">
+                        <div class="calculator__wp">
                             <div class="calculator__inputs">
                                 <div class="modal__input">
                                     <div class="modal__label">Диаметр<span>*</span></div>
@@ -79,7 +78,7 @@
                                         type="text"
                                         @input="calcAramtura()"
                                     >
-                                    <div class="modal__txt">м</div>
+                                    <div class="modal__txt">кг</div>
                                 </div>
                             </div>
                         </div>
@@ -87,7 +86,26 @@
                         <div v-if="!armatura_calc && armatura_calc_length > 0" class="calculator__bold">Длина партии: {{ armatura_calc_length }} м</div>
                     </div>
                     <div v-if="type_selected == 2" class="calculator__type">
-                        <div class="calculator__wp active">
+                        <div class="modal__input">
+                            <div class="modal__label">Выберите парамметр для рассчета:</div>
+                            <div class="calculator__tabs">
+                                <div
+                                    class="calculator__tab"
+                                    :class="{ 'active' : beam_calc }"
+                                    @click="beam_calc = true"
+                                >
+                                    Расчет веса
+                                </div>
+                                <div
+                                    class="calculator__tab"
+                                    :class="{ 'active' : !beam_calc }"
+                                    @click="beam_calc = false"
+                                >
+                                    Расчет длины
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calculator__wp">
                             <div class="calculator__inputs">
                                 <div class="modal__input">
                                     <div class="modal__label">Тип балки<span>*</span></div>
@@ -107,7 +125,7 @@
                                         v-model="beam__id"
                                         data-select="beam__id"
                                         class="my_select"
-                                        @change="calcBeamWeight()"
+                                        @change="calcBeam()"
                                     >
                                         <option value="" disabled selected>Номер</option>
                                         <option v-for="(type, id) in beam__normal" :value="id">{{ type.title }}</option>
@@ -117,13 +135,13 @@
                                         v-model="beam__id"
                                         data-select="beam__id"
                                         class="my_select"
-                                        @change="calcBeamWeight()"
+                                        @change="calcBeam()"
                                     >
                                         <option value="" disabled selected>Номер</option>
                                         <option v-for="(type, id) in beam__slope" :value="id">{{ type.title }}</option>
                                     </select>
                                 </div>
-                                <div class="modal__input">
+                                <div v-if="beam_calc" class="modal__input">
                                     <div class="modal__label">Длина<span>*</span></div>
                                     <input
                                         v-model="beam_length"
@@ -132,17 +150,49 @@
                                         placeholder="0"
                                         class="input"
                                         type="text"
-                                        @input="calcBeamWeight()"
+                                        @input="calcBeam()"
                                     >
                                     <div class="modal__txt">м</div>
                                 </div>
+                                <div v-if="!beam_calc" class="modal__input">
+                                    <div class="modal__label">Вес<span>*</span></div>
+                                    <input
+                                        v-model="beam__weight"
+                                        id="beam__weight"
+                                        name="beam__weight"
+                                        placeholder="0"
+                                        class="input"
+                                        type="text"
+                                        @input="calcBeam()"
+                                    >
+                                    <div class="modal__txt">кг</div>
+                                </div>
                             </div>
                         </div>
-                        <div v-if="beam_length" class="calculator__bold">Длина партии: {{ beam_length }} м</div>
-                        <div v-if="beam_length && beam__weight" class="calculator__bold">Вес партии: {{ beam__weight }} кг</div>
+                        <div v-if="beam_calc && beam_calc_weight > 0" class="calculator__bold">Вес партии: {{ beam_calc_weight }} кг</div>
+                        <div v-if="!beam_calc && beam_calc_length > 0" class="calculator__bold">Длина партии: {{ beam_calc_length }} м</div>
                     </div>
                     <div v-if="type_selected == 3" class="calculator__type">
-                        <div class="calculator__wp active">
+                        <div class="modal__input">
+                            <div class="modal__label">Выберите парамметр для рассчета:</div>
+                            <div class="calculator__tabs">
+                                <div
+                                    class="calculator__tab"
+                                    :class="{ 'active' : channel_calc }"
+                                    @click="channel_calc = true"
+                                >
+                                    Расчет веса
+                                </div>
+                                <div
+                                    class="calculator__tab"
+                                    :class="{ 'active' : !channel_calc }"
+                                    @click="channel_calc = false"
+                                >
+                                    Расчет длины
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calculator__wp">
                             <div class="calculator__inputs">
                                 <div class="modal__input">
                                     <div class="modal__label">Тип балки<span>*</span></div>
@@ -162,7 +212,7 @@
                                         v-model="channel_id"
                                         data-select="channel_id"
                                         class="my_select"
-                                        @change="calcChannelWeight()"
+                                        @change="calcChannel()"
                                     >
                                         <option value="" disabled selected>Номер</option>
                                         <option v-for="(type, id) in channel_normal" :value="id">{{ type.title }}</option>
@@ -172,13 +222,13 @@
                                         v-model="channel_id"
                                         data-select="channel_id"
                                         class="my_select"
-                                        @change="calcChannelWeight()"
+                                        @change="calcChannel()"
                                     >
                                         <option value="" disabled selected>Номер</option>
                                         <option v-for="(type, id) in channel_slope" :value="id">{{ type.title }}</option>
                                     </select>
                                 </div>
-                                <div class="modal__input">
+                                <div v-if="channel_calc" class="modal__input">
                                     <div class="modal__label">Длина<span>*</span></div>
                                     <input
                                         v-model="channel_length"
@@ -187,17 +237,49 @@
                                         placeholder="0"
                                         class="input"
                                         type="text"
-                                        @input="calcChannelWeight()"
+                                        @input="calcChannel()"
                                     >
                                     <div class="modal__txt">м</div>
                                 </div>
+                                <div v-if="!channel_calc" class="modal__input">
+                                    <div class="modal__label">Вес<span>*</span></div>
+                                    <input
+                                        v-model="channel_weight"
+                                        id="channel_weight"
+                                        name="channel_weight"
+                                        placeholder="0"
+                                        class="input"
+                                        type="text"
+                                        @input="calcChannel()"
+                                    >
+                                    <div class="modal__txt">кг</div>
+                                </div>
                             </div>
                         </div>
-                        <div v-if="channel_length" class="calculator__bold">Длина партии: {{ channel_length }} м</div>
-                        <div v-if="channel_length && channel_weight" class="calculator__bold">Вес партии: {{ channel_weight }} кг</div>
+                        <div v-if="channel_calc && channel_calc_weight > 0" class="calculator__bold">Вес партии: {{ channel_calc_weight }} кг</div>
+                        <div v-if="!channel_calc && channel_calc_length > 0" class="calculator__bold">Длина партии: {{ channel_calc_length }} м</div>
                     </div>
                     <div v-if="type_selected == 4" class="calculator__type">
-                        <div class="calculator__wp active">
+                        <div class="modal__input">
+                            <div class="modal__label">Выберите парамметр для рассчета:</div>
+                            <div class="calculator__tabs">
+                                <div
+                                    class="calculator__tab"
+                                    :class="{ 'active' : corner_calc }"
+                                    @click="corner_calc = true"
+                                >
+                                    Расчет веса
+                                </div>
+                                <div
+                                    class="calculator__tab"
+                                    :class="{ 'active' : !corner_calc }"
+                                    @click="corner_calc = false"
+                                >
+                                    Расчет длины
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calculator__wp">
                             <div class="calculator__inputs">
                                 <div class="modal__input">
                                     <div class="modal__label">Марка стали<span>*</span></div>
@@ -205,7 +287,7 @@
                                         v-model="corner_type"
                                         data-select="corner_type"
                                         class="my_select"
-                                        @change="calcCornerWeight()"
+                                        @change="calcCorner()"
                                     >
                                         <option value="" disabled selected>Марка стали</option>
                                         <option v-for="type in metall_types" :value="type.value">{{ type.title }}</option>
@@ -220,7 +302,7 @@
                                         placeholder="0"
                                         class="input"
                                         type="text"
-                                        @input="calcCornerWeight()"
+                                        @input="calcCorner()"
                                     >
                                     <div class="modal__txt">мм</div>
                                 </div>
@@ -233,7 +315,7 @@
                                         placeholder="0"
                                         class="input"
                                         type="text"
-                                        @input="calcCornerWeight()"
+                                        @input="calcCorner()"
                                     >
                                     <div class="modal__txt">мм</div>
                                 </div>
@@ -246,11 +328,11 @@
                                         placeholder="0"
                                         class="input"
                                         type="text"
-                                        @input="calcCornerWeight()"
+                                        @input="calcCorner()"
                                     >
                                     <div class="modal__txt">мм</div>
                                 </div>
-                                <div class="modal__input">
+                                <div v-if="corner_calc" class="modal__input">
                                     <div class="modal__label">Длина<span>*</span></div>
                                     <input
                                         v-model="corner_length"
@@ -259,17 +341,49 @@
                                         placeholder="0"
                                         class="input"
                                         type="text"
-                                        @input="calcCornerWeight()"
+                                        @input="calcCorner()"
                                     >
                                     <div class="modal__txt">м</div>
                                 </div>
+                                <div v-if="!corner_calc" class="modal__input">
+                                    <div class="modal__label">Вес<span>*</span></div>
+                                    <input
+                                        v-model="corner_weight"
+                                        id="corner_weight"
+                                        name="corner_weight"
+                                        placeholder="0"
+                                        class="input"
+                                        type="text"
+                                        @input="calcCorner()"
+                                    >
+                                    <div class="modal__txt">кг</div>
+                                </div>
                             </div>
                         </div>
-                        <div v-if="corner_length" class="calculator__bold">Длина партии: {{ corner_length }} м</div>
-                        <div v-if="corner_width && corner_height && corner_thickness && corner_length && corner_weight" class="calculator__bold">Вес партии: {{ corner_weight }} кг</div>
+                        <div v-if="corner_calc && corner_calc_weight > 0" class="calculator__bold">Вес партии: {{ corner_calc_weight }} кг</div>
+                        <div v-if="!corner_calc && corner_calc_length > 0" class="calculator__bold">Длина партии: {{ corner_calc_length }} м</div>
                     </div>
                     <div v-if="type_selected == 5" class="calculator__type">
-                        <div class="calculator__wp active">
+                        <div class="modal__input">
+                            <div class="modal__label">Выберите парамметр для рассчета:</div>
+                            <div class="calculator__tabs">
+                                <div
+                                    class="calculator__tab"
+                                    :class="{ 'active' : pipe_calc }"
+                                    @click="pipe_calc = true"
+                                >
+                                    Расчет веса
+                                </div>
+                                <div
+                                    class="calculator__tab"
+                                    :class="{ 'active' : !pipe_calc }"
+                                    @click="pipe_calc = false"
+                                >
+                                    Расчет длины
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calculator__wp">
                             <div class="calculator__inputs">
                                 <div class="modal__input">
                                     <div class="modal__label">Марка стали<span>*</span></div>
@@ -277,7 +391,7 @@
                                         v-model="pipe_type"
                                         data-select="pipe_type"
                                         class="my_select"
-                                        @change="calcPipeWeight()"
+                                        @change="calcPipe()"
                                     >
                                         <option value="" disabled selected>Марка стали</option>
                                         <option v-for="type in metall_types" :value="type.value">{{ type.title }}</option>
@@ -292,7 +406,7 @@
                                         placeholder="0"
                                         class="input"
                                         type="text"
-                                        @input="calcPipeWeight()"
+                                        @input="calcPipe()"
                                     >
                                     <div class="modal__txt">мм</div>
                                 </div>
@@ -305,11 +419,11 @@
                                         placeholder="0"
                                         class="input"
                                         type="text"
-                                        @input="calcPipeWeight()"
+                                        @input="calcPipe()"
                                     >
                                     <div class="modal__txt">мм</div>
                                 </div>
-                                <div class="modal__input">
+                                <div v-if="pipe_calc" class="modal__input">
                                     <div class="modal__label">Длина<span>*</span></div>
                                     <input
                                         v-model="pipe_length"
@@ -318,17 +432,49 @@
                                         placeholder="0"
                                         class="input"
                                         type="text"
-                                        @input="calcPipeWeight()"
+                                        @input="calcPipe()"
                                     >
                                     <div class="modal__txt">м</div>
                                 </div>
+                                <div v-if="!pipe_calc" class="modal__input">
+                                    <div class="modal__label">Вес<span>*</span></div>
+                                    <input
+                                        v-model="pipe_weight"
+                                        id="pipe_weight"
+                                        name="pipe_weight"
+                                        placeholder="0"
+                                        class="input"
+                                        type="text"
+                                        @input="calcPipe()"
+                                    >
+                                    <div class="modal__txt">кг</div>
+                                </div>
                             </div>
                         </div>
-                        <div v-if="pipe_length" class="calculator__bold">Длина партии: {{ pipe_length }} м</div>
-                        <div v-if="pipe_type && pipe_diameter && pipe_thickness && pipe_length && pipe_weight" class="calculator__bold">Вес партии: {{ pipe_weight }} кг</div>
+                        <div v-if="pipe_calc && pipe_calc_weight > 0" class="calculator__bold">Вес партии: {{ pipe_calc_weight }} кг</div>
+                        <div v-if="!pipe_calc && pipe_calc_length > 0" class="calculator__bold">Длина партии: {{ pipe_calc_length }} м</div>
                     </div>
                     <div v-if="type_selected == 6" class="calculator__type">
-                        <div class="calculator__wp active">
+                        <div class="modal__input">
+                            <div class="modal__label">Выберите парамметр для рассчета:</div>
+                            <div class="calculator__tabs">
+                                <div
+                                    class="calculator__tab"
+                                    :class="{ 'active' : profile_pipe_calc }"
+                                    @click="profile_pipe_calc = true"
+                                >
+                                    Расчет веса
+                                </div>
+                                <div
+                                    class="calculator__tab"
+                                    :class="{ 'active' : !profile_pipe_calc }"
+                                    @click="profile_pipe_calc = false"
+                                >
+                                    Расчет длины
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calculator__wp">
                             <div class="calculator__inputs">
                                 <div class="modal__input">
                                     <div class="modal__label">Марка стали<span>*</span></div>
@@ -336,7 +482,7 @@
                                         v-model="profile_pipe_type"
                                         data-select="profile_pipe_type"
                                         class="my_select"
-                                        @change="calcProfilePipeWeight()"
+                                        @change="calcProfilePipe()"
                                     >
                                         <option value="" disabled selected>Марка стали</option>
                                         <option v-for="type in metall_types" :value="type.value">{{ type.title }}</option>
@@ -351,7 +497,7 @@
                                         placeholder="0"
                                         class="input"
                                         type="text"
-                                        @input="calcProfilePipeWeight()"
+                                        @input="calcProfilePipe()"
                                     >
                                     <div class="modal__txt">мм</div>
                                 </div>
@@ -364,12 +510,12 @@
                                         placeholder="0"
                                         class="input"
                                         type="text"
-                                        @input="calcProfilePipeWeight()"
+                                        @input="calcProfilePipe()"
                                     >
                                     <div class="modal__txt">мм</div>
                                 </div>
                                 <div class="modal__input">
-                                    <div class="modal__label">Толщина<span>*</span></div>
+                                    <div class="modal__label">Толщина стенки<span>*</span></div>
                                     <input
                                         v-model="profile_pipe_thickness"
                                         id="profile_pipe_thickness"
@@ -377,11 +523,11 @@
                                         placeholder="0"
                                         class="input"
                                         type="text"
-                                        @input="calcProfilePipeWeight()"
+                                        @input="calcProfilePipe()"
                                     >
                                     <div class="modal__txt">мм</div>
                                 </div>
-                                <div class="modal__input">
+                                <div v-if="profile_pipe_calc" class="modal__input">
                                     <div class="modal__label">Длина<span>*</span></div>
                                     <input
                                         v-model="profile_pipe_length"
@@ -390,17 +536,49 @@
                                         placeholder="0"
                                         class="input"
                                         type="text"
-                                        @input="calcProfilePipeWeight()"
+                                        @input="calcProfilePipe()"
                                     >
                                     <div class="modal__txt">м</div>
                                 </div>
+                                <div v-if="!profile_pipe_calc" class="modal__input">
+                                    <div class="modal__label">Вес<span>*</span></div>
+                                    <input
+                                        v-model="profile_pipe_weight"
+                                        id="profile_pipe_weight"
+                                        name="profile_pipe_weight"
+                                        placeholder="0"
+                                        class="input"
+                                        type="text"
+                                        @input="calcProfilePipe()"
+                                    >
+                                    <div class="modal__txt">кг</div>
+                                </div>
                             </div>
                         </div>
-                        <div v-if="profile_pipe_length" class="calculator__bold">Длина партии: {{ profile_pipe_length }} м</div>
-                        <div v-if="profile_pipe_type && profile_pipe_width && profile_pipe_height && profile_pipe_thickness && profile_pipe_length" class="calculator__bold">Вес партии: {{ profile_pipe_weight }} кг</div>
+                        <div v-if="profile_pipe_calc && profile_pipe_calc_weight > 0" class="calculator__bold">Вес партии: {{ profile_pipe_calc_weight }} кг</div>
+                        <div v-if="!profile_pipe_calc && profile_pipe_calc_length > 0" class="calculator__bold">Длина партии: {{ profile_pipe_calc_length }} м</div>
                     </div>
                     <div v-if="type_selected == 7" class="calculator__type">
-                        <div class="calculator__wp active">
+                        <div class="modal__input">
+                            <div class="modal__label">Выберите парамметр для рассчета:</div>
+                            <div class="calculator__tabs">
+                                <div
+                                    class="calculator__tab"
+                                    :class="{ 'active' : circle_calc }"
+                                    @click="circle_calc = true"
+                                >
+                                    Расчет веса
+                                </div>
+                                <div
+                                    class="calculator__tab"
+                                    :class="{ 'active' : !circle_calc }"
+                                    @click="circle_calc = false"
+                                >
+                                    Расчет длины
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calculator__wp">
                             <div class="calculator__inputs">
                                 <div class="modal__input">
                                     <div class="modal__label">Марка стали<span>*</span></div>
@@ -408,7 +586,7 @@
                                         v-model="circle_type"
                                         data-select="circle_type"
                                         class="my_select"
-                                        @change="calcCircleWeight()"
+                                        @change="calcCircle()"
                                     >
                                         <option value="" disabled selected>Марка стали</option>
                                         <option v-for="type in metall_types" :value="type.value">{{ type.title }}</option>
@@ -423,11 +601,11 @@
                                         placeholder="0"
                                         class="input"
                                         type="text"
-                                        @input="calcCircleWeight()"
+                                        @input="calcCircle()"
                                     >
                                     <div class="modal__txt">мм</div>
                                 </div>
-                                <div class="modal__input">
+                                <div v-if="circle_calc" class="modal__input">
                                     <div class="modal__label">Длина<span>*</span></div>
                                     <input
                                         v-model="circle_length"
@@ -436,17 +614,49 @@
                                         placeholder="0"
                                         class="input"
                                         type="text"
-                                        @input="calcCircleWeight()"
+                                        @input="calcCircle()"
                                     >
                                     <div class="modal__txt">м</div>
                                 </div>
+                                <div v-if="!circle_calc" class="modal__input">
+                                    <div class="modal__label">Вес<span>*</span></div>
+                                    <input
+                                        v-model="circle_weight"
+                                        id="circle_weight"
+                                        name="circle_weight"
+                                        placeholder="0"
+                                        class="input"
+                                        type="text"
+                                        @input="calcCircle()"
+                                    >
+                                    <div class="modal__txt">кг</div>
+                                </div>
                             </div>
                         </div>
-                        <div v-if="circle_length" class="calculator__bold">Длина партии: {{ circle_length }} м</div>
-                        <div v-if="circle_type && circle_diameter && circle_length" class="calculator__bold">Вес партии: {{ circle_weight }} кг</div>
+                        <div v-if="circle_calc && circle_calc_weight > 0" class="calculator__bold">Вес партии: {{ circle_calc_weight }} кг</div>
+                        <div v-if="!circle_calc && circle_calc_length > 0" class="calculator__bold">Длина партии: {{ circle_calc_length }} м</div>
                     </div>
                     <div v-if="type_selected == 8" class="calculator__type">
-                        <div class="calculator__wp active">
+                        <div class="modal__input">
+                            <div class="modal__label">Выберите парамметр для рассчета:</div>
+                            <div class="calculator__tabs">
+                                <div
+                                    class="calculator__tab"
+                                    :class="{ 'active' : square_calc }"
+                                    @click="square_calc = true"
+                                >
+                                    Расчет веса
+                                </div>
+                                <div
+                                    class="calculator__tab"
+                                    :class="{ 'active' : !square_calc }"
+                                    @click="square_calc = false"
+                                >
+                                    Расчет длины
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calculator__wp">
                             <div class="calculator__inputs">
                                 <div class="modal__input">
                                     <div class="modal__label">Марка стали<span>*</span></div>
@@ -454,7 +664,7 @@
                                         v-model="square_type"
                                         data-select="square_type"
                                         class="my_select"
-                                        @change="calcSquareWeight()"
+                                        @change="calcSquare()"
                                     >
                                         <option value="" disabled selected>Марка стали</option>
                                         <option v-for="type in metall_types" :value="type.value">{{ type.title }}</option>
@@ -469,11 +679,11 @@
                                         placeholder="0"
                                         class="input"
                                         type="text"
-                                        @input="calcSquareWeight()"
+                                        @input="calcSquare()"
                                     >
                                     <div class="modal__txt">мм</div>
                                 </div>
-                                <div class="modal__input">
+                                <div v-if="square_calc" class="modal__input">
                                     <div class="modal__label">Длина<span>*</span></div>
                                     <input
                                         v-model="square_length"
@@ -482,17 +692,49 @@
                                         placeholder="0"
                                         class="input"
                                         type="text"
-                                        @input="calcSquareWeight()"
+                                        @input="calcSquare()"
                                     >
                                     <div class="modal__txt">м</div>
                                 </div>
+                                <div v-if="!square_calc" class="modal__input">
+                                    <div class="modal__label">Вес<span>*</span></div>
+                                    <input
+                                        v-model="square_weight"
+                                        id="square_weight"
+                                        name="square_weight"
+                                        placeholder="0"
+                                        class="input"
+                                        type="text"
+                                        @input="calcSquare()"
+                                    >
+                                    <div class="modal__txt">кг</div>
+                                </div>
                             </div>
                         </div>
-                        <div v-if="square_length" class="calculator__bold">Длина партии: {{ square_length }} м</div>
-                        <div v-if="square_type && square_side && square_length" class="calculator__bold">Вес партии: {{ square_weight }} кг</div>
+                        <div v-if="square_calc && square_calc_weight > 0" class="calculator__bold">Вес партии: {{ square_calc_weight }} кг</div>
+                        <div v-if="!square_calc && square_calc_length > 0" class="calculator__bold">Длина партии: {{ square_calc_length }} м</div>
                     </div>
                     <div v-if="type_selected == 9" class="calculator__type">
-                        <div class="calculator__wp active">
+                        <div class="modal__input">
+                            <div class="modal__label">Выберите парамметр для рассчета:</div>
+                            <div class="calculator__tabs">
+                                <div
+                                    class="calculator__tab"
+                                    :class="{ 'active' : six_calc }"
+                                    @click="six_calc = true"
+                                >
+                                    Расчет веса
+                                </div>
+                                <div
+                                    class="calculator__tab"
+                                    :class="{ 'active' : !six_calc }"
+                                    @click="six_calc = false"
+                                >
+                                    Расчет длины
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calculator__wp">
                             <div class="calculator__inputs">
                                 <div class="modal__input">
                                     <div class="modal__label">Марка стали<span>*</span></div>
@@ -500,7 +742,7 @@
                                         v-model="six_type"
                                         data-select="six_type"
                                         class="my_select"
-                                        @change="calcSixWeight()"
+                                        @change="calcSix()"
                                     >
                                         <option value="" disabled selected>Марка стали</option>
                                         <option v-for="type in metall_types" :value="type.value">{{ type.title }}</option>
@@ -515,11 +757,11 @@
                                         placeholder="0"
                                         class="input"
                                         type="text"
-                                        @input="calcSixWeight()"
+                                        @input="calcSix()"
                                     >
                                     <div class="modal__txt">мм</div>
                                 </div>
-                                <div class="modal__input">
+                                <div v-if="six_calc" class="modal__input">
                                     <div class="modal__label">Длина<span>*</span></div>
                                     <input
                                         v-model="six_length"
@@ -528,17 +770,49 @@
                                         placeholder="0"
                                         class="input"
                                         type="text"
-                                        @input="calcSixWeight()"
+                                        @input="calcSix()"
                                     >
                                     <div class="modal__txt">м</div>
                                 </div>
+                                <div v-if="!six_calc" class="modal__input">
+                                    <div class="modal__label">Вес<span>*</span></div>
+                                    <input
+                                        v-model="six_weight"
+                                        id="six_weight"
+                                        name="six_weight"
+                                        placeholder="0"
+                                        class="input"
+                                        type="text"
+                                        @input="calcSix()"
+                                    >
+                                    <div class="modal__txt">кг</div>
+                                </div>
                             </div>
                         </div>
-                        <div v-if="six_length" class="calculator__bold">Длина партии: {{ square_length }} м</div>
-                        <div v-if="six_type && six_number && six_length" class="calculator__bold">Вес партии: {{ six_weight }} кг</div>
+                        <div v-if="six_calc && six_calc_weight > 0" class="calculator__bold">Вес партии: {{ six_calc_weight }} кг</div>
+                        <div v-if="!six_calc && six_calc_length > 0" class="calculator__bold">Длина партии: {{ six_calc_length }} м</div>
                     </div>
                     <div v-if="type_selected == 10" class="calculator__type">
-                        <div class="calculator__wp active">
+                        <div class="modal__input">
+                            <div class="modal__label">Выберите парамметр для рассчета:</div>
+                            <div class="calculator__tabs">
+                                <div
+                                    class="calculator__tab"
+                                    :class="{ 'active' : ribbon_calc }"
+                                    @click="ribbon_calc = true"
+                                >
+                                    Расчет веса
+                                </div>
+                                <div
+                                    class="calculator__tab"
+                                    :class="{ 'active' : !ribbon_calc }"
+                                    @click="ribbon_calc = false"
+                                >
+                                    Расчет длины
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calculator__wp">
                             <div class="calculator__inputs">
                                 <div class="modal__input">
                                     <div class="modal__label">Марка стали<span>*</span></div>
@@ -546,7 +820,7 @@
                                         v-model="ribbon_type"
                                         data-select="ribbon_type"
                                         class="my_select"
-                                        @change="calcRibbonWeight()"
+                                        @change="calcRibbon()"
                                     >
                                         <option value="" disabled selected>Марка стали</option>
                                         <option v-for="type in metall_types" :value="type.value">{{ type.title }}</option>
@@ -561,7 +835,7 @@
                                         placeholder="0"
                                         class="input"
                                         type="text"
-                                        @input="calcRibbonWeight()"
+                                        @input="calcRibbon()"
                                     >
                                     <div class="modal__txt">мм</div>
                                 </div>
@@ -574,11 +848,11 @@
                                         placeholder="0"
                                         class="input"
                                         type="text"
-                                        @input="calcRibbonWeight()"
+                                        @input="calcRibbon()"
                                     >
                                     <div class="modal__txt">мм</div>
                                 </div>
-                                <div class="modal__input">
+                                <div v-if="ribbon_calc" class="modal__input">
                                     <div class="modal__label">Длина<span>*</span></div>
                                     <input
                                         v-model="ribbon_length"
@@ -587,17 +861,30 @@
                                         placeholder="0"
                                         class="input"
                                         type="text"
-                                        @input="calcRibbonWeight()"
+                                        @input="calcRibbon()"
                                     >
                                     <div class="modal__txt">м</div>
                                 </div>
+                                <div v-if="!ribbon_calc" class="modal__input">
+                                    <div class="modal__label">Вес<span>*</span></div>
+                                    <input
+                                        v-model="ribbon_weight"
+                                        id="ribbon_weight"
+                                        name="ribbon_weight"
+                                        placeholder="0"
+                                        class="input"
+                                        type="text"
+                                        @input="calcRibbon()"
+                                    >
+                                    <div class="modal__txt">кг</div>
+                                </div>
                             </div>
                         </div>
-                        <div v-if="ribbon_length" class="calculator__bold">Длина партии: {{ ribbon_length }} м</div>
-                        <div v-if="ribbon_type && ribbon_width && ribbon_thickness && ribbon_length" class="calculator__bold">Вес партии: {{ ribbon_weight }} кг</div>
+                        <div v-if="ribbon_calc && ribbon_calc_weight > 0" class="calculator__bold">Вес партии: {{ ribbon_calc_weight }} кг</div>
+                        <div v-if="!ribbon_calc && ribbon_calc_length > 0" class="calculator__bold">Длина партии: {{ ribbon_calc_length }} м</div>
                     </div>
                     <div v-if="type_selected == 11" class="calculator__type">
-                        <div class="calculator__wp active">
+                        <div class="calculator__wp">
                             <div class="calculator__inputs">
                                 <div class="modal__input">
                                     <div class="modal__label">Марка стали<span>*</span></div>
@@ -605,7 +892,7 @@
                                         v-model="sheet_type"
                                         data-select="sheet_type"
                                         class="my_select"
-                                        @change="calcSheetWeight()"
+                                        @change="calcSheet()"
                                     >
                                         <option value="" disabled selected>Марка стали</option>
                                         <option v-for="type in metall_types" :value="type.value">{{ type.title }}</option>
@@ -620,7 +907,7 @@
                                         placeholder="0"
                                         class="input"
                                         type="text"
-                                        @input="calcSheetWeight()"
+                                        @input="calcSheet()"
                                     >
                                     <div class="modal__txt">мм</div>
                                 </div>
@@ -633,7 +920,7 @@
                                         placeholder="0"
                                         class="input"
                                         type="text"
-                                        @input="calcSheetWeight()"
+                                        @input="calcSheet()"
                                     >
                                     <div class="modal__txt">мм</div>
                                 </div>
@@ -646,7 +933,7 @@
                                         placeholder="0"
                                         class="input"
                                         type="text"
-                                        @input="calcSheetWeight()"
+                                        @input="calcSheet()"
                                     >
                                     <div class="modal__txt">мм</div>
                                 </div>
@@ -659,7 +946,7 @@
                                         placeholder="0"
                                         class="input"
                                         type="text"
-                                        @input="calcSheetWeight()"
+                                        @input="calcSheet()"
                                     >
                                     <div class="modal__txt">шт</div>
                                 </div>

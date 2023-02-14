@@ -442,6 +442,7 @@ $(document).ready(function () {
                 armatura_calc_length: "",
                 armatura_calc_weight: "",
 
+                beam_calc: true,
                 beam__types: beam__types.length ? beam__types : [],
                 beam__normal: beam__normal.length ? beam__normal : [],
                 beam__slope: beam__slope.length ? beam__slope : [],
@@ -450,7 +451,10 @@ $(document).ready(function () {
                 beam__id: "",
                 beam_length: "",
                 beam__weight: "",
+                beam_calc_length: "",
+                beam_calc_weight: "",
 
+                channel_calc: true,
                 channel_types: channel_types.length ? channel_types : [],
                 channel_normal: channel_normal.length ? channel_normal : [],
                 channel_slope: channel_slope.length ? channel_slope : [],
@@ -459,47 +463,70 @@ $(document).ready(function () {
                 channel_id: "",
                 channel_length: "",
                 channel_weight: "",
+                channel_calc_length: "",
+                channel_calc_weight: "",
 
+                corner_calc: true,
                 corner_type: "",
                 corner_width: "",
                 corner_height: "",
                 corner_thickness: "",
                 corner_length: "",
                 corner_weight: "",
+                corner_calc_length: "",
+                corner_calc_weight: "",
 
+                pipe_calc: true,
                 pipe_type: "",
                 pipe_diameter: "",
                 pipe_thickness: "",
                 pipe_length: "",
                 pipe_weight: "",
+                pipe_calc_length: "",
+                pipe_calc_weight: "",
 
+                profile_pipe_calc: true,
                 profile_pipe_type: "",
                 profile_pipe_width: "",
                 profile_pipe_height: "",
                 profile_pipe_thickness: "",
                 profile_pipe_length: "",
                 profile_pipe_weight: "",
+                profile_pipe_calc_length: "",
+                profile_pipe_calc_weight: "",
 
+                circle_calc: true,
                 circle_type: "",
                 circle_diameter: "",
                 circle_length: "",
                 circle_weight: "",
+                circle_calc_length: "",
+                circle_calc_weight: "",
 
+                square_calc: true,
                 square_type: "",
                 square_side: "",
                 square_length: "",
                 square_weight: "",
+                square_calc_length: "",
+                square_calc_weight: "",
 
+                six_calc: true,
                 six_type: "",
                 six_number: "",
                 six_length: "",
                 six_weight: "",
+                six_calc_length: "",
+                six_calc_weight: "",
 
+                ribbon_calc: true,
                 ribbon_type: "",
                 ribbon_width: "",
                 ribbon_thickness: "",
                 ribbon_length: "",
                 ribbon_weight: "",
+                ribbon_calc_length: "",
+                ribbon_calc_weight: "",
 
                 sheet_type: "",
                 sheet_width: "",
@@ -538,7 +565,7 @@ $(document).ready(function () {
                     }
                 },
 
-                calcBeamWeight() {
+                calcBeam() {
                     if (this.beam__type == 1) {
                         this.beam__number = this.beam__normal[this.beam__id];
                     }
@@ -546,11 +573,15 @@ $(document).ready(function () {
                     if (this.beam__type == 2) {
                         this.beam__number = this.beam__slope[this.beam__id];
                     }
-                
-                    this.beam__weight = (this.density * (2 * this.beam__number.b * 0.001 * this.beam__number.t * 0.001 + (this.beam__number.h * 0.001 - 2 * this.beam__number.t * 0.001) * this.beam__number.s * 0.001) * this.beam_length).toFixed(3);
+
+                    if (this.beam_calc) {
+                        this.beam_calc_weight = (this.density * (2 * this.beam__number.b * 0.001 * this.beam__number.t * 0.001 + (this.beam__number.h * 0.001 - 2 * this.beam__number.t * 0.001) * this.beam__number.s * 0.001) * this.beam_length).toFixed(3);
+                    } else {
+                        this.beam_calc_length = (this.beam__weight / (this.density * (2 * this.beam__number.b * 0.001 * this.beam__number.t * 0.001 + (this.beam__number.h * 0.001 - 2 * this.beam__number.t * 0.001) * this.beam__number.s * 0.001))).toFixed(3);
+                    }
                 },
 
-                calcChannelWeight() {
+                calcChannel() {
                     if (this.channel_type == 1) {
                         this.channel_number = this.channel_normal[this.channel_id];
                     }
@@ -558,40 +589,72 @@ $(document).ready(function () {
                     if (this.channel_type == 2) {
                         this.channel_number = this.channel_slope[this.channel_id];
                     }
-                
-                    this.channel_weight = (this.density * (2 * this.channel_number.b * 0.001 * this.channel_number.t * 0.001 + (this.channel_number.h * 0.001 - 2 * this.channel_number.t * 0.001) * this.channel_number.s * 0.001) * this.channel_length).toFixed(3);
+
+                    if (this.channel_calc) {
+                        this.channel_calc_weight = (this.density * (2 * this.channel_number.b * 0.001 * this.channel_number.t * 0.001 + (this.channel_number.h * 0.001 - 2 * this.channel_number.t * 0.001) * this.channel_number.s * 0.001) * this.channel_length).toFixed(3);
+                    } else {
+                        this.channel_calc_length = (this.channel_weight / (this.density * (2 * this.channel_number.b * 0.001 * this.channel_number.t * 0.001 + (this.channel_number.h * 0.001 - 2 * this.channel_number.t * 0.001) * this.channel_number.s * 0.001))).toFixed(3);
+                    }
                 },
 
-                calcCornerWeight() {
-                    this.corner_weight = (((this.corner_width + this.corner_height - this.corner_thickness) * this.corner_thickness + (1 - this.p / 4)) * this.density * 0.000001).toFixed(3);
+                calcCorner() {
+                    if (this.corner_calc) {
+                        this.corner_calc_weight = (((+this.corner_width + +this.corner_height - +this.corner_thickness) * this.corner_thickness + (1 - this.p / 4)) * this.density * 0.000001 * this.corner_length).toFixed(3);
+                    } else {
+                        this.corner_calc_length = (this.corner_weight / (((+this.corner_width + +this.corner_height - +this.corner_thickness) * this.corner_thickness + (1 - this.p / 4)) * this.density * 0.000001)).toFixed(3);
+                    }
                 },
 
-                calcPipeWeight() {
-                    this.pipe_weight = (this.p * 0.001 * (this.pipe_diameter - this.pipe_thickness) * this.pipe_thickness * this.pipe_type * 0.001).toFixed(3);
+                calcPipe() {
+                    if (this.pipe_calc) {
+                        this.pipe_calc_weight = (this.p * 0.001 * (this.pipe_diameter - this.pipe_thickness) * this.pipe_thickness * this.pipe_type * 0.001 * this.pipe_length).toFixed(3);
+                    } else {
+                        this.pipe_calc_length = (this.pipe_weight / (this.p * 0.001 * (this.pipe_diameter - this.pipe_thickness) * this.pipe_thickness * this.pipe_type * 0.001)).toFixed(3);
+                    }
                 },
 
-                calcProfilePipeWeight() {
-                    this.profile_pipe_weight = (this.profile_pipe_type / 7850 * 0.0157 * this.profile_pipe_thickness * (+this.profile_pipe_width + +this.profile_pipe_height - 2.86 * this.profile_pipe_thickness) * this.profile_pipe_length).toFixed(3);
+                calcProfilePipe() {
+                    if (this.profile_pipe_calc) {
+                        this.profile_pipe_calc_weight = (this.profile_pipe_type / 7850 * 0.0157 * this.profile_pipe_thickness * (+this.profile_pipe_width + +this.profile_pipe_height - 2.86 * this.profile_pipe_thickness) * this.profile_pipe_length).toFixed(3);
+                    } else {
+                        this.profile_pipe_calc_length = (this.profile_pipe_calc_weight / (this.profile_pipe_type / 7850 * 0.0157 * this.profile_pipe_thickness * (+this.profile_pipe_width + +this.profile_pipe_height - 2.86 * this.profile_pipe_thickness))).toFixed(3);
+                    }
                 },
 
-                calcCircleWeight() {
-                    this.circle_weight = (this.p * Math.pow(this.circle_diameter * 0.001, 2) / 4 * this.circle_type * this.circle_length).toFixed(3);
+                calcCircle() {
+                    if (this.circle_calc) {
+                        this.circle_calc_weight = (this.p * Math.pow(this.circle_diameter * 0.001, 2) / 4 * this.circle_type * this.circle_length).toFixed(3);
+                    } else {
+                        this.circle_calc_length = (this.circle_weight / (this.p * Math.pow(this.circle_diameter * 0.001, 2) / 4 * this.circle_type)).toFixed(3);
+                    }
                 },
 
-                calcSquareWeight() {
-                    this.square_weight = (Math.pow(this.square_side * 0.001, 2) * this.square_type * this.square_length).toFixed(3);
+                calcSquare() {
+                    if (this.square_calc) {
+                        this.square_calc_weight = (Math.pow(this.square_side * 0.001, 2) * this.square_type * this.square_length).toFixed(3);
+                    } else {
+                        this.square_calc_length = (this.square_weight / (Math.pow(this.square_side * 0.001, 2) * this.square_type)).toFixed(3);
+                    }
                 },
 
-                calcSixWeight() {
-                    this.six_weight = (2 * Math.sqrt(3 * Math.pow(this.six_number * 0.001, 2)) * this.six_type * this.six_length * 0.001).toFixed(3);
+                calcSix() {
+                    if (this.six_calc) {
+                        this.six_calc_weight = (2 * Math.sqrt(3 * Math.pow(this.six_number * 0.001, 2)) * this.six_type * 0.001 * this.six_length).toFixed(3);
+                    } else {
+                        this.six_calc_length = (this.six_weight / (2 * Math.sqrt(3 * Math.pow(this.six_number * 0.001, 2)) * this.six_type * 0.001)).toFixed(3);
+                    }
                 },
 
-                calcRibbonWeight() {
-                    this.ribbon_weight = (this.ribbon_width * 0.001 * this.ribbon_thickness * 0.001 * this.ribbon_type * this.ribbon_length).toFixed(3);
+                calcRibbon() {
+                    if (this.ribbon_calc) {
+                        this.ribbon_calc_weight = (this.ribbon_width * 0.001 * this.ribbon_thickness * 0.001 * this.ribbon_type * this.ribbon_length).toFixed(3);
+                    } else {
+                        this.ribbon_calc_length = (this.ribbon_weight / (this.ribbon_width * 0.001 * this.ribbon_thickness * 0.001 * this.ribbon_type)).toFixed(3);
+                    }
                 },
 
-                calcSheetWeight() {
-                    this.sheet_weight = (this.sheet_width * 0.001 * this.sheet_thickness * 0.001 * this.sheet_length * 0.001 * this.sheet_type * this.sheet_quantity).toFixed(3);
+                calcSheet() {
+                    this.sheet_weight = (this.sheet_width * 0.001 * this.sheet_thickness * 0.001 * this.sheet_type * this.sheet_quantity * this.sheet_length * 0.001).toFixed(3);
                 },
             }
         });
