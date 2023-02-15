@@ -445,8 +445,8 @@
       </div>
       <div class="modal__button modal__button-dark modal__button-full">Отправить</div>
       <div class="checkbox">
-          <input id="agree" value="agree" name="agree" type="checkbox">
-          <label for="agree">
+          <input id="agree_2" value="agree_2" name="agree_2" type="checkbox">
+          <label for="agree_2">
             Нажимая кнопку «Отправить» вы соглашаетесь с условиями <a href="#" target="_blank">Пользовательского соглашения</a> и <a href="#" target="_blank">Условиями обработки персональных данных</a>
           </label>
       </div>
@@ -471,8 +471,8 @@
       </div>
       <div class="modal__button modal__button-dark modal__button-full">Оформить</div>
       <div class="checkbox">
-          <input id="agree" value="agree" name="agree" type="checkbox">
-          <label for="agree">
+          <input id="agree_3" value="agree_3" name="agree_3" type="checkbox">
+          <label for="agree_3">
             Нажимая кнопку «Оформить» вы соглашаетесь с условиями <a href="#" target="_blank">Пользовательского соглашения</a> и <a href="#" target="_blank">Условиями обработки персональных данных</a>
           </label>
       </div>

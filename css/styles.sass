@@ -2612,6 +2612,7 @@ body
             &:hover
                 border: none !important
             &-container
+                width: auto !important
                 background: transparent
                 border: none !important
             &-selection
@@ -5915,7 +5916,7 @@ body
                 &-container
                     width: 100%
                     max-width: 220px
-                    margin: 20px 0 0
+                    margin: 6px 0 0
         &__left
             flex-wrap: wrap
             align-items: flex-start
@@ -7200,6 +7201,10 @@ body
                 position: static
 
     .ct
+        &__line
+            .select2
+                &-container
+                    margin: 20px 0 0
         &_banner
             padding: 20px
 
