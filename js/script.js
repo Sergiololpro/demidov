@@ -24,7 +24,9 @@ $(document).ready(function () {
             slidesToScroll: 1,
             prevArrow: '<div class="banner__nav banner__nav-prev"></div>',
             nextArrow: '<div class="banner__nav banner__nav-next"></div>',
-            dots: true
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 5000
         });
     }
 
