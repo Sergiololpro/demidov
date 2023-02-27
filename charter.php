@@ -32,42 +32,36 @@
         </div>
 
         <div class="charter">
-            <div class="charter__el">
+            <a href="img/charter__img-1.jpg" rel="charter" class="charter__el fancybox">
                 <img class="charter__img" src="img/charter__img-1.jpg" alt="">
                 <div class="charter__title">Лучшая металлобаза России 2021</div>
                 <div class="charter__text">Лауреат в номинации «Лучшая металобаза по качеству обслуживания»</div>
                 <div class="charter__city">г. Москва, 2021</div>
-            </div>
-            <div class="charter__el">
+            </a>
+            <a href="img/charter__img-1.jpg" rel="charter" class="charter__el fancybox">
                 <img class="charter__img" src="img/charter__img-1.jpg" alt="">
                 <div class="charter__title">Лучшая металлобаза России 2021</div>
                 <div class="charter__text">Лауреат в номинации «Лучшая металобаза по качеству обслуживания»</div>
                 <div class="charter__city">г. Москва, 2021</div>
-            </div>
-            <div class="charter__el">
+            </a>
+            <a href="img/charter__img-1.jpg" rel="charter" class="charter__el fancybox">
                 <img class="charter__img" src="img/charter__img-1.jpg" alt="">
                 <div class="charter__title">Лучшая металлобаза России 2021</div>
                 <div class="charter__text">Лауреат в номинации «Лучшая металобаза по качеству обслуживания»</div>
                 <div class="charter__city">г. Москва, 2021</div>
-            </div>
-            <div class="charter__el">
+            </a>
+            <a href="img/charter__img-1.jpg" rel="charter" class="charter__el fancybox">
                 <img class="charter__img" src="img/charter__img-1.jpg" alt="">
                 <div class="charter__title">Лучшая металлобаза России 2021</div>
                 <div class="charter__text">Лауреат в номинации «Лучшая металобаза по качеству обслуживания»</div>
                 <div class="charter__city">г. Москва, 2021</div>
-            </div>
-            <div class="charter__el">
+            </a>
+            <a href="img/charter__img-1.jpg" rel="charter" class="charter__el fancybox">
                 <img class="charter__img" src="img/charter__img-1.jpg" alt="">
                 <div class="charter__title">Лучшая металлобаза России 2021</div>
                 <div class="charter__text">Лауреат в номинации «Лучшая металобаза по качеству обслуживания»</div>
                 <div class="charter__city">г. Москва, 2021</div>
-            </div>
-            <div class="charter__el">
-                <img class="charter__img" src="img/charter__img-1.jpg" alt="">
-                <div class="charter__title">Лучшая металлобаза России 2021</div>
-                <div class="charter__text">Лауреат в номинации «Лучшая металобаза по качеству обслуживания»</div>
-                <div class="charter__city">г. Москва, 2021</div>
-            </div>
+            </a>
         </div>
 
     </div>

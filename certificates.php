@@ -32,36 +32,36 @@
         </div>
 
         <div class="charter">
-            <div class="charter__el">
+            <a href="img/certificates__img-1.jpg" rel="certificate" class="charter__el fancybox">
                 <img class="charter__img" src="img/certificates__img-1.jpg" alt="">
                 <div class="charter__title">Сертификат соответствия<br> ГОСТ 3262-75</div>
                 <div class="charter__city">г. Москва, 2021</div>
-            </div>
-            <div class="charter__el">
+            </a>
+            <a href="img/certificates__img-1.jpg" rel="certificate" class="charter__el fancybox">
                 <img class="charter__img" src="img/certificates__img-1.jpg" alt="">
                 <div class="charter__title">Сертификат соответствия<br> ГОСТ 3262-75</div>
                 <div class="charter__city">г. Москва, 2021</div>
-            </div>
-            <div class="charter__el">
+            </a>
+            <a href="img/certificates__img-1.jpg" rel="certificate" class="charter__el fancybox">
                 <img class="charter__img" src="img/certificates__img-1.jpg" alt="">
                 <div class="charter__title">Сертификат соответствия<br> ГОСТ 3262-75</div>
                 <div class="charter__city">г. Москва, 2021</div>
-            </div>
-            <div class="charter__el">
+            </a>
+            <a href="img/certificates__img-1.jpg" rel="certificate" class="charter__el fancybox">
                 <img class="charter__img" src="img/certificates__img-1.jpg" alt="">
                 <div class="charter__title">Сертификат соответствия<br> ГОСТ 3262-75</div>
                 <div class="charter__city">г. Москва, 2021</div>
-            </div>
-            <div class="charter__el">
+            </a>
+            <a href="img/certificates__img-1.jpg" rel="certificate" class="charter__el fancybox">
                 <img class="charter__img" src="img/certificates__img-1.jpg" alt="">
                 <div class="charter__title">Сертификат соответствия<br> ГОСТ 3262-75</div>
                 <div class="charter__city">г. Москва, 2021</div>
-            </div>
-            <div class="charter__el">
+            </a>
+            <a href="img/certificates__img-1.jpg" rel="certificate" class="charter__el fancybox">
                 <img class="charter__img" src="img/certificates__img-1.jpg" alt="">
                 <div class="charter__title">Сертификат соответствия<br> ГОСТ 3262-75</div>
                 <div class="charter__city">г. Москва, 2021</div>
-            </div>
+            </a>
         </div>
 
     </div>

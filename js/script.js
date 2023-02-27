@@ -355,7 +355,6 @@ $(document).ready(function () {
 
                     self.dates.forEach((date) => {
                         if (date.date == self.curDate) {
-                            console.log()
                             self.times.forEach((time) => {
                                 if (!date.times.includes(time)) {
                                     self.activeTimes.push(time)

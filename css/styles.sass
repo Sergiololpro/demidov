@@ -7247,6 +7247,37 @@ body
         img
             margin: 0 0 20px
 
+.fancybox
+    &-overlay
+        background: rgba(0, 0, 0, .5)
+    &-skin
+        padding: 0 !important
+    &-close
+        width: 30px
+        height: 30px
+        background: url(../img/cross-w.svg) center no-repeat
+        background-size: contain
+        right: -30px
+        top: -30px
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+    &-nav
+        span
+            width: 30px
+            height: 30px
+            background: url(../img/nav.svg) center no-repeat
+            background-size: contain
+            visibility: visible
+            opacity: 0
+            transition: opacity .3s ease-out
+        &:hover
+            span
+                opacity: 1            
+    &-prev
+        span
+            transform: scale(-1, 1)
+            
 
 @media (max-width: 375px)
     .header
