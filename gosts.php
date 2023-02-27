@@ -32,7 +32,8 @@
         </div>
 
         <div class="gosts">
-            <div class="gosts__el" style="background-image: url(img/gosts__el-1.jpg)">
+            <div class="gosts__el">
+                <img class="gosts__image" src="img/cats__img-1.png" alt="">
                 <div class="gosts__title">Трубы стальные</div>
                 <div class="gosts__content">
                     <a href="#" class="gosts__link">
@@ -65,8 +66,9 @@
                     </a>
                 </div>
             </div>
-            <div class="gosts__el" style="background-image: url(img/gosts__el-2.jpg)">
-                <div class="gosts__title">Сетка сварная</div>
+            <div class="gosts__el">
+                <img class="gosts__image" src="img/cats__img-2.png" alt="">
+                <div class="gosts__title">Трубы стальные</div>
                 <div class="gosts__content">
                     <a href="#" class="gosts__link">
                         <div class="gosts__ttl">ГОСТ 10705-80. Трубы стальные электросварные. Технические условия</div>
@@ -84,11 +86,6 @@
                         <div class="gosts__ttl">ГОСТ 10705-80. Трубы стальные электросварные. Технические условия</div>
                         <div class="gosts__size">pdf 16 mb</div>
                     </a>
-                </div>
-            </div>
-            <div class="gosts__el" style="background-image: url(img/gosts__el-3.jpg)">
-                <div class="gosts__title">Фасонный прокат</div>
-                <div class="gosts__content">
                     <a href="#" class="gosts__link">
                         <div class="gosts__ttl">ГОСТ 10705-80. Трубы стальные электросварные. Технические условия</div>
                         <div class="gosts__size">pdf 16 mb</div>
@@ -97,12 +94,8 @@
                         <div class="gosts__ttl">ГОСТ 10705-80. Трубы стальные электросварные. Технические условия</div>
                         <div class="gosts__size">pdf 16 mb</div>
                     </a>
-                    <a href="#" class="gosts__link">
-                        <div class="gosts__ttl">ГОСТ 10705-80. Трубы стальные электросварные. Технические условия</div>
-                        <div class="gosts__size">pdf 16 mb</div>
-                    </a>
-                    <a href="#" class="gosts__link">
-                        <div class="gosts__ttl">ГОСТ 10705-80. Трубы стальные электросварные. Технические условия</div>
+                    <a href="#" class="gosts__link gosts__link-large">
+                        <div class="gosts__ttl">ГОСТ 30245-2003. Профильные стальные гнутые замкнутые стальные квадратные и прямоугольные для строительных конструкций</div>
                         <div class="gosts__size">pdf 16 mb</div>
                     </a>
                 </div>
