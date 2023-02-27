@@ -42,57 +42,7 @@
                     <div class="prod__city">Россия</div>
                 </div>
                 <div class="prod__wrp">
-                    <iframe src="https://www.youtube.com/embed/YXXyy7LVvd4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div class="prod__right">
-                        <div class="prod__text">Компания имеет широкую региональную сеть от Краснодара до Новосибирска. Это позволяет налаживать сотрудничество с потенциальными партнерами по всей стране. Наши товары вы найдете на складах, которые расположены в городах: Новочеркасск, Ногинск, Рязань, Тверь, Тула, Воронеж, Казань, Уфа, Самара, Нижний Новгород, Пенза, Челябинск, Новосибирск, Краснодар, Ростов-на-Дону, Екатеринбург, Белгород</div>
-                        <div class="prod__button">Особенности</div>
-                    </div>
-                </div>
-                <div class="prod__wp">
-                    <div class="prod__slider">
-                        <div class="prod__slide" style="background-image: url(img/prod__slide-1.jpg)"></div>
-                        <div class="prod__slide" style="background-image: url(img/prod__slide-2.jpg)"></div>
-                        <div class="prod__slide" style="background-image: url(img/prod__slide-3.jpg)"></div>
-                        <div class="prod__slide" style="background-image: url(img/prod__slide-4.jpg)"></div>
-                        <div class="prod__slide" style="background-image: url(img/prod__slide-1.jpg)"></div>
-                        <div class="prod__slide" style="background-image: url(img/prod__slide-2.jpg)"></div>
-                        <div class="prod__slide" style="background-image: url(img/prod__slide-3.jpg)"></div>
-                        <div class="prod__slide" style="background-image: url(img/prod__slide-4.jpg)"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="prod__el">
-                <div class="prod__top">
-                    <div class="prod__title">Давлеканово</div>
-                    <div class="prod__city">Башкирия</div>
-                </div>
-                <div class="prod__wrp">
-                    <iframe src="https://www.youtube.com/embed/YXXyy7LVvd4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div class="prod__right">
-                        <div class="prod__text">Компания имеет широкую региональную сеть от Краснодара до Новосибирска. Это позволяет налаживать сотрудничество с потенциальными партнерами по всей стране. Наши товары вы найдете на складах, которые расположены в городах: Новочеркасск, Ногинск, Рязань, Тверь, Тула, Воронеж, Казань, Уфа, Самара, Нижний Новгород, Пенза, Челябинск, Новосибирск, Краснодар, Ростов-на-Дону, Екатеринбург, Белгород</div>
-                        <div class="prod__button">Особенности</div>
-                    </div>
-                </div>
-                <div class="prod__wp">
-                    <div class="prod__slider">
-                        <div class="prod__slide" style="background-image: url(img/prod__slide-1.jpg)"></div>
-                        <div class="prod__slide" style="background-image: url(img/prod__slide-2.jpg)"></div>
-                        <div class="prod__slide" style="background-image: url(img/prod__slide-3.jpg)"></div>
-                        <div class="prod__slide" style="background-image: url(img/prod__slide-4.jpg)"></div>
-                        <div class="prod__slide" style="background-image: url(img/prod__slide-1.jpg)"></div>
-                        <div class="prod__slide" style="background-image: url(img/prod__slide-2.jpg)"></div>
-                        <div class="prod__slide" style="background-image: url(img/prod__slide-3.jpg)"></div>
-                        <div class="prod__slide" style="background-image: url(img/prod__slide-4.jpg)"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="prod__el">
-                <div class="prod__top">
-                    <div class="prod__title">Новочеркасск</div>
-                    <div class="prod__city">Россия</div>
-                </div>
-                <div class="prod__wrp">
-                    <iframe src="https://www.youtube.com/embed/YXXyy7LVvd4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="prod__video modal_video" data-video-id="YXXyy7LVvd4" style="background-image: url(img/prod__slide-1.jpg)"></div>
                     <div class="prod__right">
                         <div class="prod__text">Компания имеет широкую региональную сеть от Краснодара до Новосибирска. Это позволяет налаживать сотрудничество с потенциальными партнерами по всей стране. Наши товары вы найдете на складах, которые расположены в городах: Новочеркасск, Ногинск, Рязань, Тверь, Тула, Воронеж, Казань, Уфа, Самара, Нижний Новгород, Пенза, Челябинск, Новосибирск, Краснодар, Ростов-на-Дону, Екатеринбург, Белгород</div>
                         <div class="prod__button">Особенности</div>
