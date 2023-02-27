@@ -1918,6 +1918,7 @@ body
     margin: 0 0 50px
     &__el
         width: 100%
+        min-height: 450px
         display: flex
         justify-content: space-between
         align-items: flex-start
@@ -1935,7 +1936,7 @@ body
         pointer-events: none
         transform: scale(-1, 1)
     &__title
-        max-width: 270px
+        max-width: 350px
         font-size: 40px
         color: #1E3B3E
         font-weight: 700
@@ -1977,6 +1978,7 @@ body
         color: #1E3B3E
         font-weight: 700
         line-height: 140%
+        word-break: break-word
         margin: 0 0 6px
     &__size
         font-size: 15px
@@ -5668,28 +5670,6 @@ body
     &:after
         display: none
 
-.shadow
-    display: flex
-    margin: 50px
-    &__el
-        width: 100px
-        height: 50px
-        background: #fff
-        border: 1px solid #eee
-        position: relative
-        &:before
-            content: ""
-            width: 5px
-            background: #000
-            height: 100%
-            box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 1)
-            z-index: 1
-            opacity: .05
-            position: absolute
-            right: -5px
-            top: 0
-            transform: rotate(5deg)
-
 @media (max-height: 700px)
     .banner
         &__title
@@ -5911,6 +5891,7 @@ body
 
     .gosts
         &__el
+            min-height: auto
             flex-direction: column
         &__image
             display: none
