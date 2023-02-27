@@ -349,26 +349,10 @@ body
         font-weight: 700
         white-space: nowrap
         position: relative
-        padding: 10px 16px
-        margin: 0 4px
-        &-1
-            transition: background .3s ease-out
-            &:hover
-                background: #56C8D1
-        &-2
-            border: 1px solid transparent
-            transition: border .3s ease-out
-            &:hover
-                border: 1px solid #56C8D1
-        &-3
-            border: 3px solid transparent
-            transition: border .3s ease-out
-            &:hover
-                border: 3px solid #56C8D1
-        &-4
-            transition: background .3s ease-out
-            &:hover
-                background: rgba(86, 200, 209, .2)
+        margin: 0 20px
+        transition: color .3s ease-out
+        &:hover
+            color: #56C8D1 !important
     &__dots
         font-size: 16px
         color: #56C8D1
@@ -5683,6 +5667,28 @@ body
     &:before,
     &:after
         display: none
+
+.shadow
+    display: flex
+    margin: 50px
+    &__el
+        width: 100px
+        height: 50px
+        background: #fff
+        border: 1px solid #eee
+        position: relative
+        &:before
+            content: ""
+            width: 5px
+            background: #000
+            height: 100%
+            box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 1)
+            z-index: 1
+            opacity: .05
+            position: absolute
+            right: -5px
+            top: 0
+            transform: rotate(5deg)
 
 @media (max-height: 700px)
     .banner

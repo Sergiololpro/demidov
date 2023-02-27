@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="js/libs/modal_video/modal_video.min.css">
   <link rel="stylesheet" href="js/libs/datepicker/datepicker.css">
   <link rel="stylesheet" href="js/libs/fancybox/fancybox.css">
-  <link rel="stylesheet" href="css/styles.css?v=22">
+  <link rel="stylesheet" href="css/styles.css?v=23">
   <title>Demidov</title>
 </head>
 
@@ -48,9 +48,9 @@
         <div class="header__search header__search-short"></div>
         <nav class="nav nav_search">
           <a data-id="1" href="#" class="nav__el nav__el-1">Продукция</a>
-          <a href="#" class="nav__el nav__el-2">О компании</a>
-          <a href="#" class="nav__el nav__el-3">Доставка и оплата</a>
-          <a href="#" class="nav__el nav__el-4">Услуги</a>
+          <a href="#" class="nav__el">О компании</a>
+          <a href="#" class="nav__el">Доставка и оплата</a>
+          <a href="#" class="nav__el">Услуги</a>
           <a href="#" class="nav__el">Покупателю</a>
           <a href="#" class="nav__el">Вакансии</a>
           <a href="#" class="nav__el">Электронная очередь</a>
