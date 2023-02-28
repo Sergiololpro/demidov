@@ -398,7 +398,7 @@
                                     </select>
                                 </div>
                                 <div class="modal__input">
-                                    <div class="modal__label">Внешний диаметр<span>*</span></div>
+                                    <div class="modal__label">Диаметр<span>*</span></div>
                                     <input
                                         v-model="pipe_diameter"
                                         id="pipe_diameter"
@@ -956,8 +956,32 @@
                         <div v-if="sheet_type && sheet_width && sheet_thickness && sheet_length && sheet_quantity" class="calculator__bold">Вес партии: {{ sheet_weight }} кг</div>
                     </div>
                 </div>
-                <div class="calculator__col">
-                    <img class="calculator__img" src="img/calculator__img.png" alt="">
+                <div v-if="type_selected == 5" class="calculator__col calculator__col-right">
+                    <div class="calculator__images">
+                        <img class="calculator__img" src="img/calc_5_1.svg" alt="">
+                        <img class="calculator__img" src="img/calc_5_2.png" alt="">
+                    </div>
+                    <div class="calculator__text">Как отметила в своем выступлении на 12-й общероссийской конференции «Стальные трубы: производство и региональный сбыт» Александра Бобкова, руководитель отдела снабжения «ГК Демидов»</div>
+                </div>
+                <div v-if="type_selected == 6" class="calculator__col calculator__col-right">
+                    <div class="calculator__images">
+                        <img class="calculator__img" src="img/calc_6_1.svg" alt="">
+                        <img class="calculator__img" src="img/calc_6_2.png" alt="">
+                    </div>
+                    <div class="calculator__text">Как отметила в своем выступлении на 12-й общероссийской конференции «Стальные трубы: производство и региональный сбыт» Александра Бобкова, руководитель отдела снабжения «ГК Демидов»</div>
+                </div>
+                <div v-if="type_selected == 7" class="calculator__col calculator__col-right">
+                    <div class="calculator__images">
+                        <img class="calculator__img" src="img/calc_7_1.svg" alt="">
+                        <img class="calculator__img" src="img/calc_7_2.png" alt="">
+                    </div>
+                    <div class="calculator__text">Как отметила в своем выступлении на 12-й общероссийской конференции «Стальные трубы: производство и региональный сбыт» Александра Бобкова, руководитель отдела снабжения «ГК Демидов»</div>
+                </div>
+                <div v-if="type_selected == 8" class="calculator__col calculator__col-right">
+                    <div class="calculator__images">
+                        <img class="calculator__img" src="img/calc_8_1.svg" alt="">
+                        <img class="calculator__img" src="img/calc_8_2.png" alt="">
+                    </div>
                     <div class="calculator__text">Как отметила в своем выступлении на 12-й общероссийской конференции «Стальные трубы: производство и региональный сбыт» Александра Бобкова, руководитель отдела снабжения «ГК Демидов»</div>
                 </div>
             </div>

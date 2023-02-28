@@ -4384,12 +4384,13 @@ body
         width: calc((100% - 20px) / 2)
         background: #FAFAFA
         border-radius: 4px
-        padding: 30px
+        padding: 30px 30px 10px
+        &-right
+            padding: 30px 0 30px 30px
     &__inputs
         display: flex
         flex-wrap: wrap
         align-items: flex-end
-        margin: 0 0 30px
         .modal
             &__input
                 width: calc((100% - 40px) / 3)
@@ -4455,12 +4456,17 @@ body
                 width: 12px
                 height: 12px
                 border: 4px solid #56C8D1
+    &__images
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin: 0 0 40px
     &__img
-        width: 100%
-        margin: 0 0 100px
+        width: calc((100% - 40px) / 2)
     &__text
         font-size: 15px
         line-height: 140%
+        padding: 0 30px 0 0
     &__txt
         max-width: 1100px
         font-size: 18px
@@ -7129,8 +7135,6 @@ body
                 margin: 0
 
     .calculator
-        &__col
-            padding: 20px
         &__tabs
             flex-direction: column
         &__tab
@@ -7138,7 +7142,6 @@ body
             &:last-child
                 margin: 0
         &__inputs
-            margin: 0 0 20px
             .modal
                 &__input
                     width: 100%
@@ -7147,8 +7150,14 @@ body
                         margin: 0 !important
         &__grey
             margin: 0 0 20px
+        &__images
+            flex-direction: column
+            margin: 0 0 30px
         &__img
-            margin: 0 0 20px
+            width: 100%
+            &:first-child
+                width: calc(100% - 30px)
+                margin: 0 30px 0 0
         &__txt
             font-size: 15px
         &__button
