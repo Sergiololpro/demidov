@@ -295,12 +295,6 @@ $(document).ready(function () {
         $(this).addClass("active");
 
         $(this).closest(".quality__els").find("input").val(id);
-        
-        if (id == 0) {
-            $(this).closest(".quality__row").find(".modal__input input")[0].setAttribute("disabled", "disabled");
-        } else {
-            $(this).closest(".quality__row").find(".modal__input input")[0].removeAttribute("disabled"); 
-        }
     });
 
     // Открыть поиск

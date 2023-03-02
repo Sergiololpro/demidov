@@ -956,6 +956,34 @@
                         <div v-if="sheet_type && sheet_width && sheet_thickness && sheet_length && sheet_quantity" class="calculator__bold">Вес партии: {{ sheet_weight }} кг</div>
                     </div>
                 </div>
+                <div v-if="type_selected == 1" class="calculator__col calculator__col-right">
+                    <div class="calculator__images">
+                        <img class="calculator__img" src="img/calc_1_1.svg" alt="">
+                        <img class="calculator__img" src="img/calc_1_2.png" alt="">
+                    </div>
+                    <div class="calculator__text">Как отметила в своем выступлении на 12-й общероссийской конференции «Стальные трубы: производство и региональный сбыт» Александра Бобкова, руководитель отдела снабжения «ГК Демидов»</div>
+                </div>
+                <div v-if="type_selected == 2" class="calculator__col calculator__col-right">
+                    <div class="calculator__images">
+                        <img class="calculator__img" src="img/calc_2_1.svg" alt="">
+                        <img class="calculator__img" src="img/calc_2_2.png" alt="">
+                    </div>
+                    <div class="calculator__text">Как отметила в своем выступлении на 12-й общероссийской конференции «Стальные трубы: производство и региональный сбыт» Александра Бобкова, руководитель отдела снабжения «ГК Демидов»</div>
+                </div>
+                <div v-if="type_selected == 3" class="calculator__col calculator__col-right">
+                    <div class="calculator__images">
+                        <img class="calculator__img" src="img/calc_3_1.svg" alt="">
+                        <img class="calculator__img" src="img/calc_3_2.png" alt="">
+                    </div>
+                    <div class="calculator__text">Как отметила в своем выступлении на 12-й общероссийской конференции «Стальные трубы: производство и региональный сбыт» Александра Бобкова, руководитель отдела снабжения «ГК Демидов»</div>
+                </div>
+                <div v-if="type_selected == 4" class="calculator__col calculator__col-right">
+                    <div class="calculator__images">
+                        <img class="calculator__img" src="img/calc_4_1.svg" alt="">
+                        <img class="calculator__img" src="img/calc_4_2.png" alt="">
+                    </div>
+                    <div class="calculator__text">Как отметила в своем выступлении на 12-й общероссийской конференции «Стальные трубы: производство и региональный сбыт» Александра Бобкова, руководитель отдела снабжения «ГК Демидов»</div>
+                </div>
                 <div v-if="type_selected == 5" class="calculator__col calculator__col-right">
                     <div class="calculator__images">
                         <img class="calculator__img" src="img/calc_5_1.svg" alt="">
@@ -981,6 +1009,27 @@
                     <div class="calculator__images">
                         <img class="calculator__img" src="img/calc_8_1.svg" alt="">
                         <img class="calculator__img" src="img/calc_8_2.png" alt="">
+                    </div>
+                    <div class="calculator__text">Как отметила в своем выступлении на 12-й общероссийской конференции «Стальные трубы: производство и региональный сбыт» Александра Бобкова, руководитель отдела снабжения «ГК Демидов»</div>
+                </div>
+                <div v-if="type_selected == 9" class="calculator__col calculator__col-right">
+                    <div class="calculator__images">
+                        <img class="calculator__img" src="img/calc_9_1.svg" alt="">
+                        <img class="calculator__img" src="img/calc_9_2.png" alt="">
+                    </div>
+                    <div class="calculator__text">Как отметила в своем выступлении на 12-й общероссийской конференции «Стальные трубы: производство и региональный сбыт» Александра Бобкова, руководитель отдела снабжения «ГК Демидов»</div>
+                </div>
+                <div v-if="type_selected == 10" class="calculator__col calculator__col-right">
+                    <div class="calculator__images">
+                        <img class="calculator__img" src="img/calc_10_1.svg" alt="">
+                        <img class="calculator__img" src="img/calc_10_2.png" alt="">
+                    </div>
+                    <div class="calculator__text">Как отметила в своем выступлении на 12-й общероссийской конференции «Стальные трубы: производство и региональный сбыт» Александра Бобкова, руководитель отдела снабжения «ГК Демидов»</div>
+                </div>
+                <div v-if="type_selected == 11" class="calculator__col calculator__col-right">
+                    <div class="calculator__images">
+                        <img class="calculator__img" src="img/calc_11_1.svg" alt="">
+                        <img class="calculator__img" src="img/calc_11_2.png" alt="">
                     </div>
                     <div class="calculator__text">Как отметила в своем выступлении на 12-й общероссийской конференции «Стальные трубы: производство и региональный сбыт» Александра Бобкова, руководитель отдела снабжения «ГК Демидов»</div>
                 </div>

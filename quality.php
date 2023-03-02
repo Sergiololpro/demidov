@@ -47,47 +47,26 @@
                             <input name="company" placeholder="Введите" class="input" type="text">
                         </div>
                         <div class="modal__input">
-                            <div class="modal__label">Город<span>*</span></div>
-                            <input name="city" placeholder="Введите" class="input" type="text">
+                            <div class="modal__label">ИНН<span>*</span></div>
+                            <input name="inn" placeholder="Введите" class="input" type="text">
                         </div>
                     </div>
-                    <div class="quality__inputs">
-                        <div class="modal__input">
-                            <div class="modal__label">ФИО<span>*</span></div>
-                            <input name="name" placeholder="Введите" class="input" type="text">
-                        </div>
-                        <div class="modal__input">
-                            <div class="modal__label">ФИО вашего менеджера<span>*</span></div>
-                            <input name="manager" placeholder="Введите" class="input" type="text">
-                        </div>
+                    <div class="modal__input">
+                        <div class="modal__label">Филиал «ГК Демидов»<span>*</span></div>
+                        <input name="filial" placeholder="Введите" class="input" type="text">
                     </div>
                 </div>
                 <div class="quality__block">
-                    <div class="quality__ttl">Контактная информация</div>
-                    <div class="quality__inputs">
-                        <div class="modal__input">
-                            <div class="modal__label">Телефон<span>*</span></div>
-                            <input name="phone" placeholder="Введите" class="input" type="text">
-                        </div>
-                        <div class="modal__input">
-                            <div class="modal__label">E-mail<span>*</span></div>
-                            <input name="email" placeholder="Введите" class="input" type="email">
-                        </div>
-                    </div>
-                </div>
-                <div class="quality__block">
-                    <div class="quality__ttl">Оцените качество продукции производства Рязанский ТЗ, по 5-ти бальной системе</div>
                     <div class="quality__row">
+                        <div class="quality__ttl">Качество продукции</div>
                         <div class="quality__left">
-                            <div class="modal__label">Труба э/с профильная<span>*</span></div>
                             <div class="quality__els">
-                                <div data-id="0" class="quality__el">-</div>
-                                <div data-id="1" class="quality__el">1</div>
-                                <div data-id="2" class="quality__el">2</div>
-                                <div data-id="3" class="quality__el">3</div>
-                                <div data-id="4" class="quality__el">4</div>
-                                <div data-id="5" class="quality__el active">5</div>
-                                <input name="mark_1" class="input" type="hidden" value="5">
+                                <div data-id="Отлично" class="quality__el active">Отлично</div>
+                                <div data-id="Хорошо" class="quality__el">Хорошо</div>
+                                <div data-id="Удовлетворительно" class="quality__el">Удовлетворительно</div>
+                                <div data-id="Плохо" class="quality__el">Плохо</div>
+                                <div data-id="Очень плохо" class="quality__el">Очень плохо</div>
+                                <input name="mark_1" class="input" type="hidden" value="Отлично">
                             </div>
                         </div>
                         <div class="modal__input">
@@ -96,16 +75,15 @@
                         </div>
                     </div>
                     <div class="quality__row">
+                        <div class="quality__ttl">Сортамент продукции</div>
                         <div class="quality__left">
-                            <div class="modal__label">Труба электросварная<span>*</span></div>
                             <div class="quality__els">
-                                <div data-id="0" class="quality__el">-</div>
-                                <div data-id="1" class="quality__el">1</div>
-                                <div data-id="2" class="quality__el">2</div>
-                                <div data-id="3" class="quality__el">3</div>
-                                <div data-id="4" class="quality__el">4</div>
-                                <div data-id="5" class="quality__el active">5</div>
-                                <input name="mark_2" class="input" type="hidden" value="5">
+                                <div data-id="Отлично" class="quality__el active">Отлично</div>
+                                <div data-id="Хорошо" class="quality__el">Хорошо</div>
+                                <div data-id="Удовлетворительно" class="quality__el">Удовлетворительно</div>
+                                <div data-id="Плохо" class="quality__el">Плохо</div>
+                                <div data-id="Очень плохо" class="quality__el">Очень плохо</div>
+                                <input name="mark_2" class="input" type="hidden" value="Отлично">
                             </div>
                         </div>
                         <div class="modal__input">
@@ -114,16 +92,15 @@
                         </div>
                     </div>
                     <div class="quality__row">
+                        <div class="quality__ttl">Металлообработка</div>
                         <div class="quality__left">
-                            <div class="modal__label">Труба водогазопроводная<span>*</span></div>
                             <div class="quality__els">
-                                <div data-id="0" class="quality__el">-</div>
-                                <div data-id="1" class="quality__el">1</div>
-                                <div data-id="2" class="quality__el">2</div>
-                                <div data-id="3" class="quality__el">3</div>
-                                <div data-id="4" class="quality__el">4</div>
-                                <div data-id="5" class="quality__el active">5</div>
-                                <input name="mark_3" class="input" type="hidden" value="5">
+                                <div data-id="Отлично" class="quality__el active">Отлично</div>
+                                <div data-id="Хорошо" class="quality__el">Хорошо</div>
+                                <div data-id="Удовлетворительно" class="quality__el">Удовлетворительно</div>
+                                <div data-id="Плохо" class="quality__el">Плохо</div>
+                                <div data-id="Очень плохо" class="quality__el">Очень плохо</div>
+                                <input name="mark_3" class="input" type="hidden" value="Отлично">
                             </div>
                         </div>
                         <div class="modal__input">
@@ -132,16 +109,15 @@
                         </div>
                     </div>
                     <div class="quality__row">
+                        <div class="quality__ttl">Отгрузка продукции</div>
                         <div class="quality__left">
-                            <div class="modal__label">Сетка сварная<span>*</span></div>
                             <div class="quality__els">
-                                <div data-id="0" class="quality__el">-</div>
-                                <div data-id="1" class="quality__el">1</div>
-                                <div data-id="2" class="quality__el">2</div>
-                                <div data-id="3" class="quality__el">3</div>
-                                <div data-id="4" class="quality__el">4</div>
-                                <div data-id="5" class="quality__el active">5</div>
-                                <input name="mark_4" class="input" type="hidden" value="5">
+                                <div data-id="Отлично" class="quality__el active">Отлично</div>
+                                <div data-id="Хорошо" class="quality__el">Хорошо</div>
+                                <div data-id="Удовлетворительно" class="quality__el">Удовлетворительно</div>
+                                <div data-id="Плохо" class="quality__el">Плохо</div>
+                                <div data-id="Очень плохо" class="quality__el">Очень плохо</div>
+                                <input name="mark_4" class="input" type="hidden" value="Отлично">
                             </div>
                         </div>
                         <div class="modal__input">
@@ -150,16 +126,15 @@
                         </div>
                     </div>
                     <div class="quality__row">
+                        <div class="quality__ttl">Доставка</div>
                         <div class="quality__left">
-                            <div class="modal__label">Лист-просечно - вытяжной<span>*</span></div>
                             <div class="quality__els">
-                                <div data-id="0" class="quality__el">-</div>
-                                <div data-id="1" class="quality__el">1</div>
-                                <div data-id="2" class="quality__el">2</div>
-                                <div data-id="3" class="quality__el">3</div>
-                                <div data-id="4" class="quality__el">4</div>
-                                <div data-id="5" class="quality__el active">5</div>
-                                <input name="mark_5" class="input" type="hidden" value="5">
+                                <div data-id="Отлично" class="quality__el active">Отлично</div>
+                                <div data-id="Хорошо" class="quality__el">Хорошо</div>
+                                <div data-id="Удовлетворительно" class="quality__el">Удовлетворительно</div>
+                                <div data-id="Плохо" class="quality__el">Плохо</div>
+                                <div data-id="Очень плохо" class="quality__el">Очень плохо</div>
+                                <input name="mark_5" class="input" type="hidden" value="Отлично">
                             </div>
                         </div>
                         <div class="modal__input">
@@ -168,16 +143,15 @@
                         </div>
                     </div>
                     <div class="quality__row">
+                        <div class="quality__ttl">Качество работы менеджеров</div>
                         <div class="quality__left">
-                            <div class="modal__label">Оцените качество упаковки<span>*</span></div>
                             <div class="quality__els">
-                                <div data-id="0" class="quality__el">-</div>
-                                <div data-id="1" class="quality__el">1</div>
-                                <div data-id="2" class="quality__el">2</div>
-                                <div data-id="3" class="quality__el">3</div>
-                                <div data-id="4" class="quality__el">4</div>
-                                <div data-id="5" class="quality__el active">5</div>
-                                <input name="mark_6" class="input" type="hidden" value="5">
+                                <div data-id="Отлично" class="quality__el active">Отлично</div>
+                                <div data-id="Хорошо" class="quality__el">Хорошо</div>
+                                <div data-id="Удовлетворительно" class="quality__el">Удовлетворительно</div>
+                                <div data-id="Плохо" class="quality__el">Плохо</div>
+                                <div data-id="Очень плохо" class="quality__el">Очень плохо</div>
+                                <input name="mark_6" class="input" type="hidden" value="Отлично">
                             </div>
                         </div>
                         <div class="modal__input">
@@ -185,8 +159,25 @@
                             <input name="comment_6" placeholder="Введите" class="input" type="text">
                         </div>
                     </div>
+                    <div class="quality__row">
+                        <div class="quality__ttl">Качество работы сотрудников склада</div>
+                        <div class="quality__left">
+                            <div class="quality__els">
+                                <div data-id="Отлично" class="quality__el active">Отлично</div>
+                                <div data-id="Хорошо" class="quality__el">Хорошо</div>
+                                <div data-id="Удовлетворительно" class="quality__el">Удовлетворительно</div>
+                                <div data-id="Плохо" class="quality__el">Плохо</div>
+                                <div data-id="Очень плохо" class="quality__el">Очень плохо</div>
+                                <input name="mark_7" class="input" type="hidden" value="Отлично">
+                            </div>
+                        </div>
+                        <div class="modal__input">
+                            <div class="modal__label">Ваш комментарий<span>*</span></div>
+                            <input name="comment_7" placeholder="Введите" class="input" type="text">
+                        </div>
+                    </div>
                     <div class="modal__input">
-                        <div class="modal__label">Рекомендации по улучшению качества продукции и упаковки<span>*</span></div>
+                        <div class="modal__label">Ваши пожелания, замечания<span>*</span></div>
                         <textarea name="comment" class="textarea" placeholder="Введите"></textarea>
                     </div>
                     <div class="quality__bottom">

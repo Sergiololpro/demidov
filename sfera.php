@@ -96,12 +96,12 @@
             </div>
         </div>
 
-        <div class="cat_banner" style="background-image: url(img/cat_banner.jpg)">
+        <div class="cat_banner" style="background-image: url(img/cat_banner.png)">
             <div class="cat_banner__left">
                 <div class="cat_banner__title">Акции</div>
                 <div class="cat_banner__text">Тут мы собрали самые актуальные скидки и акции успейте воспользоваться выгодными предложениями</div>
             </div>
-            <a href="#" class="banner__button">Подробнее</a>
+            <a href="#" class="banner__button">Перейти</a>
         </div>
 
     </div>

@@ -100,4 +100,20 @@
             <img class="cats__img cats__img-mobile" src="img/cats__img_mobile-5.png" alt="">
         </div>
     </div>
+    <div class="cats__el cats__el-6">
+        <div class="cats__title">Нестандартные профили по чертежам заказчика</div>
+        <div class="cats__links">
+            <div class="cats__block">
+                <a href="#" class="cats__link">Плоскоовальная труба</a>
+            </div>
+            <div class="cats__block">
+                <a href="#" class="cats__link">Треугольная труба</a>
+            </div>
+            <div class="cats__block">
+                <a href="#" class="cats__link">Т-образный профиль</a>
+            </div>
+        </div>
+        <img class="cats__img" src="img/cats__img-6.png" alt="">
+        <img class="cats__img cats__img-mobile" src="img/cats__img_mobile-6.png" alt="">
+    </div>
 </div>
