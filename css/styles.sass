@@ -1213,6 +1213,8 @@ body
     display: flex
     flex-wrap: wrap
     margin: 0 0 50px
+    &-full
+        max-width: 100%
     &__el
         height: 32px
         background: #FAFAFA
@@ -5682,6 +5684,129 @@ body
     &:after
         display: none
 
+.customers
+    margin: 0 0 100px
+    &__block
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin: 100px 0
+    &__left
+        width: 50%
+        font-size: 28px
+        font-weight: 700
+        line-height: 130%
+    &__image
+        width: 42%
+        height: 320px
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+    &_slider
+        border-radius: 4px
+        overflow: hidden
+        margin: 0 0 40px
+        &__el
+            height: 600px
+            display: flex
+            align-items: flex-end
+            background-position: center
+            background-size: cover
+            background-repeat: no-repeat
+            position: relative
+            padding: 60px
+            &:before
+                content: ""
+                width: 100%
+                height: 100%
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(.jpg)
+                position: absolute
+                left: 0
+                top: 0
+        &__title
+            max-width: calc(100% - 300px)
+            font-size: 40px
+            color: #fff
+            font-weight: 700
+            position: relative
+        &__nav
+            width: 24px
+            height: 24px
+            background: url(../img/nav.svg) center no-repeat
+            background-size: contain
+            cursor: pointer
+            z-index: 1
+            position: absolute
+            bottom: 60px
+            transition: opacity .3s ease-out
+            &:hover
+                opacity: .7
+            &-prev
+                right: 100px
+                transform: scale(-1, 1)
+            &-next
+                right: 60px
+        .slick
+            &-list
+                overflow: visible
+            &-dots
+                display: flex
+                position: absolute
+                right: 150px
+                bottom: 68px
+                li
+                    margin: 0 8px 0 0
+                    &:last-child
+                        margin: 0
+                button
+                    width: 8px
+                    height: 8px
+                    background: #fff
+                    border-radius: 16px
+                    font-size: 0
+                    cursor: pointer
+                    padding: 0
+                    transition: width .3s ease-out, background .3s ease-out
+                    &:hover
+                        background: #56C8D1
+            &-active
+                button
+                    width: 40px
+
+.presentations
+    display: flex
+    flex-wrap: wrap
+    margin: 0 0 100px
+    &__el
+        width: calc((100% - 40px) / 3)
+        background: #FAFAFA
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 40px
+        margin: 0 20px 20px 0
+        &:nth-child(3n)
+            margin: 0 0 20px
+    &__img
+        width: 220px
+        max-width: 100%
+        margin: 0 0 50px
+    &_pdf
+        min-height: 40px
+        background: url(../img/presentations_pdf.svg) left center no-repeat
+        background-size: 32px 40px
+        padding: 0 0 0 50px
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+        &__title
+            font-size: 20px
+            color: #56C8D1
+            font-weight: 700
+            margin: 0 0 4px
+        &__size
+            font-size: 15px
+
 @media (max-height: 700px)
     .banner
         &__title
@@ -5901,6 +6026,14 @@ body
             &:nth-child(2n)
                 margin: 0 0 20px
 
+    .presentations
+        &__el
+            width: calc((100% - 20px) / 2)
+            &:nth-child(3n)
+                margin: 0 20px 20px 0
+            &:nth-child(2n)
+                margin: 0 0 20px
+
     .gosts
         &__el
             min-height: auto
@@ -6044,6 +6177,11 @@ body
     .cat_banner
         background: #eee !important
 
+    .customers
+        &_slider
+            &__el
+                height: 400px
+
 @media (max-width: 768px)
     .header
         &__email
@@ -6182,6 +6320,14 @@ body
                 margin: 0 0 20px
 
     .charter
+        &__el
+            width: 100%
+            padding: 40px 30px 30px
+            margin: 0 0 20px
+            &:nth-child(3n)
+                margin: 0 0 20px
+
+    .presentations
         &__el
             width: 100%
             padding: 40px 30px 30px
@@ -6445,6 +6591,32 @@ body
         .ct
             &__els
                 width: 700px
+
+    .customers
+        &__block
+            flex-direction: column
+            align-items: flex-start
+        &__left
+            width: 100%
+            font-size: 24px
+            margin: 0 0 40px
+        &__image
+            width: 100%
+        &_slider
+            &__el
+                padding: 40px
+            &__title
+                font-size: 32px
+            &__nav
+                bottom: 40px
+                &-prev
+                    right: 80px
+                &-next
+                    right: 40px
+            .slick
+                &-dots
+                    right: 130px
+                    bottom: 48px
 
 @media (max-width: 640px)
     .header
@@ -7397,6 +7569,37 @@ body
         ul,
         img
             margin: 0 0 20px
+
+    .customers
+        &__block
+            margin: 50px 0
+        &__left
+            font-size: 18px
+            margin: 0 0 20px
+        &__image
+            height: 240px
+        &_slider
+            &__el
+                height: 300px
+                align-items: flex-start
+                padding: 30px
+            &__title
+                max-width: 100%
+                font-size: 24px
+            &__nav
+                bottom: 30px
+                &-prev
+                    right: 70px
+                &-next
+                    right: 30px
+            .slick
+                &-dots
+                    right: 120px
+                    bottom: 38px
+
+    .presentations
+        &__img
+            margin: 0 0 30px
 
 @media (max-width: 375px)
     .header

@@ -655,4 +655,17 @@ $(document).ready(function () {
         });
     }
 
+    // Слайдер покупателям
+    if ($('.customers_slider').length) {
+        $(".customers_slider").slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            prevArrow: '<div class="customers_slider__nav customers_slider__nav-prev"></div>',
+            nextArrow: '<div class="customers_slider__nav customers_slider__nav-next"></div>',
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 5000
+        });
+    }
+
 });
