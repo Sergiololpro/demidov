@@ -20,26 +20,59 @@
                             Доставка
                         </div>
                         <div class="order__buttons">
-                            <div class="order__button active">Самовоз</div>
-                            <div class="order__button">Доставка</div>
+                            <div data-id="1" class="order__button order__button-address active">Самовоз</div>
+                            <div data-id="2" class="order__button order__button-address">Доставка</div>
                         </div>
                         <div class="order__wp">
-                            <div class="order__lft">
-                                <div class="order__address">
-                                    <div class="order__city">Москва Розница</div>
-                                    300057, г. Москва, Алексинское шоссе, дом 36
-                                    <div class="order__change">Изменить</div>
+                            <div data-id="2" class="order__wrp">
+                                <div class="calculator__inputs calculator__inputs-order">
+                                    <div class="modal__input">
+                                        <div class="modal__label">Край / Область<span>*</span></div>
+                                        <input id="order_district" name="order_district" placeholder="Введите" class="input" type="text">
+                                    </div>
+                                    <div class="modal__input">
+                                        <div class="modal__label">Район<span>*</span></div>
+                                        <input id="order_area" name="order_area" placeholder="Введите" class="input" type="text">
+                                    </div>
+                                    <div class="modal__input">
+                                        <div class="modal__label">Населенный пункт<span>*</span></div>
+                                        <input id="order_city" name="order_city" placeholder="Введите" class="input" type="text">
+                                    </div>
+                                    <div class="modal__input">
+                                        <div class="modal__label">Улица<span>*</span></div>
+                                        <input id="order_street" name="order_street" placeholder="Введите" class="input" type="text">
+                                    </div>
+                                    <div class="modal__input">
+                                        <div class="modal__label">Номер дома<span>*</span></div>
+                                        <input id="order_house" name="order_house" placeholder="Введите" class="input" type="text">
+                                    </div>
                                 </div>
-                                <div class="modal__input">
+                            </div>
+                            <div class="order__lft">
+                                <div data-id="1" class="order__wrp active">
+                                    <div class="order__address">
+                                        <div class="order__address_wrp"></div>
+                                        <div class="order__change">Изменить</div>
+                                    </div>
+                                    <div class="modal__input modal__input-full_select">
+                                        <div class="modal__label">Выберите адрес самовывоза<span>*</span></div>
+                                        <select id="order_address" data-placeholder="Введите" class="select2">
+                                            <option value="">&nbsp;</option>
+                                            <option value="<div class='order__city'>Москва Розница</div> 300057, г. Москва, Алексинское шоссе, дом 36">г. Москва, Алексинское шоссе, дом 36</option>
+                                            <option  value="<div class='order__city'>Тула</div>">г. Тула</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="modal__input booking__calendar booking__calendar">
                                     <div class="modal__label">Выберите удобный день<span>*</span></div>
                                     <input id="date" name="date" placeholder="Введите" class="input input-calendar" type="text">
                                 </div>
-                                <div class="modal__input">
+                                <div class="modal__input modal__input-order">
                                     <div class="modal__label">Временной интервал<span>*</span></div>
                                     <select data-placeholder="Введите" class="select2">
                                         <option value="">&nbsp;</option>
-                                        <option value="time_1">Время 1</option>
-                                        <option value="time_1">Время 2</option>
+                                        <option value="time_1">с 10:00 до 15:00</option>
+                                        <option value="time_2">с 15:00 до 20:00</option>
                                     </select>
                                 </div>
                             </div>
@@ -86,8 +119,14 @@
                             Оплата
                         </div>
                         <div class="order__buttons">
-                            <div class="order__button active">Картой онлайн</div>
-                            <div class="order__button">Оплата по счету</div>
+                            <div class="order__button active">
+                                <span>Картой онлайн</span>
+                                <span>Карта</span>
+                            </div>
+                            <div class="order__button">
+                                <span>Оплата по счету</span>
+                                <span>По счету</span>
+                            </div>
                         </div>
                     </div>
                     <div class="order__block">
@@ -97,6 +136,57 @@
                         </div>
                         <div class="modal__input">
                             <textarea name="comment" class="textarea" placeholder="Введите"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="order_els">
+                    <div class="order_els__title">Состав заказа</div>
+                    <div class="order_els__top">
+                        <div class="order_els__name order_els__name-title">Наименование</div>
+                        <div class="order_els__name">В продаже</div>
+                        <div class="order_els__name">Склад</div>
+                        <div class="order_els__name">Количество</div>
+                        <div class="order_els__name order_els__name-price">Цена</div>
+                    </div>
+                    <div class="order_els__wrp">
+                        <div class="order_els__el">
+                            <div class="order_els__left">
+                                <a href="#" class="order_els__image" style="background-image: url(img/card__image-1.jpg)"></a>
+                                <div class="order_els__col">
+                                    <a href="#" class="order_els__ttl">Труба профильная 25х25х3</a>
+                                    <div class="order_els__text">Длина: 6м</div>
+                                </div>
+                            </div>
+                            <div class="order_els__txt">999</div>
+                            <div class="order_els__txt">Мск</div>
+                            <div class="order_els__txt">7</div>
+                            <div class="order_els__price">15 500 р</div>
+                        </div>
+                        <div class="order_els__el">
+                            <div class="order_els__left">
+                                <a href="#" class="order_els__image" style="background-image: url(img/card__image-1.jpg)"></a>
+                                <div class="order_els__col">
+                                    <a href="#" class="order_els__ttl">Труба профильная 25х25х3</a>
+                                    <div class="order_els__text">Длина: 6м</div>
+                                </div>
+                            </div>
+                            <div class="order_els__txt">999</div>
+                            <div class="order_els__txt">Мск</div>
+                            <div class="order_els__txt">7</div>
+                            <div class="order_els__price">15 500 р</div>
+                        </div>
+                        <div class="order_els__el">
+                            <div class="order_els__left">
+                                <a href="#" class="order_els__image" style="background-image: url(img/card__image-1.jpg)"></a>
+                                <div class="order_els__col">
+                                    <a href="#" class="order_els__ttl">Труба профильная 25х25х3</a>
+                                    <div class="order_els__text">Длина: 6м</div>
+                                </div>
+                            </div>
+                            <div class="order_els__txt">999</div>
+                            <div class="order_els__txt">Мск</div>
+                            <div class="order_els__txt">7</div>
+                            <div class="order_els__price">15 500 р</div>
                         </div>
                     </div>
                 </div>

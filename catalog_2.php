@@ -203,6 +203,10 @@
                             <option value="gost_2">465435</option>
                         </select>
                     </div>
+                    <div class="fils__bottom">
+                        <input class="fils__button" type="button" id="set_filter" name="set_filter" value="Показать">
+						<input class="fils__button fils__button-clear" type="button" id="del_filter" name="del_filter" value="Сбросить">
+                    </div>
                 </div>
             </div>
             <div class="ct__content">

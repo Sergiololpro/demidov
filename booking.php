@@ -83,7 +83,7 @@
                 <div id="vue" class="booking__right">
                     <div class="quality__ttl">Дата и время погрузки</div>
                     <div id="calendar" class="calendar"></div>
-                    <div class="booking__calendar">
+                    <div class="booking__calendar booking__calendar-static">
 
                     </div>
                     <div class="booking__times">

@@ -2570,7 +2570,7 @@
                     day: today.getDate(),
                     time: today.getTime(),
                     valid: valid,
-					weekend: [0,6].indexOf(moment(today).weekday()) == -1 ? '' : 'weekend'
+					weekend: moment(today).isoWeekday() > 5 ? 'weekend' : ''
                 });
             }
             var html = [];

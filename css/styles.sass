@@ -48,7 +48,7 @@ input
     border: none
     border-radius: 0
     font-family: 'Helios'
-    color: #444
+    color: #1E3B3E
     box-shadow: none
     -webkit-appearance: none
     &::-webkit-input-placeholder
@@ -2645,6 +2645,7 @@ body
     margin: 0 0 20px
     &__filters
         width: 340px
+        max-width: 100%
     &__content
         width: calc(100% - 370px)
     &__search
@@ -2915,10 +2916,34 @@ body
         font-weight: 700
         margin: 40px 0 20px
     &__selects
+        margin: 0 0 30px
         .select2
             margin: 0 0 10px
             &:last-child
                 margin: 0
+    &__bottom
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &__button
+        height: 44px
+        width: calc((100% - 20px) / 2)
+        background: #56C8D1
+        border-radius: 4px
+        font-size: 15px
+        color: #fff
+        cursor: pointer
+        transition: background .3s ease-out, color .3s ease-out, opacity .3s ease-out
+        &:hover
+            opacity: .7
+        &-clear
+            background: #fff
+            border: 2px solid #56C8D1
+            color: #56C8D1
+            &:hover
+                background: #56C8D1
+                color: #fff
+                opacity: 1
     .select2
         &-container
             width: 100% !important
@@ -2931,7 +2956,7 @@ body
     border: 1px solid #eee
     border-radius: 4px
     font-size: 15px
-    color: #BEBEBE
+    color: #1E3B3E
     transition: border .3s ease-out
     &::-webkit-input-placeholder
         color: #BEBEBE
@@ -3421,6 +3446,9 @@ body
         &__line
             display: flex
             margin: 0 0 6px
+            .select2
+                &-container
+                    width: 124px !important
         &__info
             font-size: 13px
             line-height: 150%
@@ -3555,6 +3583,13 @@ body
             margin: 0
         .input
             margin: 0
+        &-order
+            .select2-container
+                width: 230px !important
+        &-full_select
+            margin: 0 0 30px !important
+            .select2-container
+                width: 100% !important
     &__label
         font-size: 13px
         color: #1E3B3E
@@ -3689,6 +3724,8 @@ body
                 width: 984px
                 min-height: 427px
     .select2
+        &-container
+            width: 100% !important
         &-selection
             &__rendered
                 height: 48px
@@ -3766,8 +3803,13 @@ body
             margin: 0
     &__wp
         display: flex
+        flex-wrap: wrap
         justify-content: space-between
         align-items: flex-start
+    &__wrp
+        display: none
+        &.active
+            display: block
     &__lft
         width: calc((100% - 20px) / 2)
     &__rgt
@@ -3815,6 +3857,9 @@ body
             &:hover
                 background: #56C8D1
                 color: #fff
+        span
+            &:last-child
+                display: none
     &__address
         background: url(../img/city.svg) left top no-repeat
         background-size: 12px 16px
@@ -3823,6 +3868,9 @@ body
         line-height: 130%
         padding: 0 0 0 30px
         margin: 0 0 20px
+        display: none
+        &.active
+            display: block
     &__city
         font-weight: 700
     &__change
@@ -3842,9 +3890,68 @@ body
         .modal
             &__input
                 width: calc((100% - 40px) / 3)
+    &_els
+        margin: 30px 0 0
+        &__title
+            font-size: 20px
+            color: #1E3B3E
+            font-weight: 700
+            margin: 0 0 20px
+        &__top
+            display: flex
+            justify-content: space-between
+            padding: 0 20px
+            margin: 0 0 20px
+        &__name
+            width: calc((100% - 120px) * .5 / 3)
+            font-size: 13px
+            color: #BEBEBE
+            &-title
+                width: calc((100% - 120px) * .5)
+            &-price
+                width: 120px
+                text-align: right
+        &__el
+            width: 100%
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border: 1px solid #eee
+            border-radius: 4px
+            padding: 20px
+            margin: 0 0 10px
+            &:last-child
+                margin: 0
+        &__left
+            width: calc((100% - 120px) * .5)
+            display: flex
+            align-items: center
+        &__image
+            min-width: 44px
+            height: 44px
+            background-position: center
+            background-size: cover
+            background-repeat: no-repeat
+            border-radius: 4px
+            margin: 0 20px 0 0
+        &__ttl
+            font-size: 16px
+            font-weight: 700
+            margin: 0 0 6px
+        &__text
+            font-size: 15px
+            line-height: 140%
+        &__price
+            width: 120px
+            font-size: 20px
+            font-weight: 700
+            text-align: right
+            white-space: nowrap
+        &__txt
+            width: calc((100% - 120px) * .5 / 3)
+            font-size: 15px
+            line-height: 140%
     .select2
-        &-container
-            width: 230px !important
         &-selection
             &__rendered
                 height: 44px
@@ -4391,6 +4498,7 @@ body
         &-right
             padding: 30px 0 30px 30px
     &__inputs
+        width: 100%
         display: flex
         flex-wrap: wrap
         align-items: flex-end
@@ -5288,15 +5396,12 @@ body
         max-width: 100%
     &__calendar
         .date-picker-wrapper
-            height: auto !important
-            display: block !important
             background: #fff
             border: 1px solid #eee
             border-radius: 8px
             box-shadow: none !important
-            position: static
-            padding: 0 0 20px !important
-            margin: 40px 0 0 !important
+            left: inherit !important
+            right: 0 !important
         .month-wrapper
             width: 100% !important
         .month-name
@@ -5318,13 +5423,15 @@ body
                 border: 2px solid #56C8D1 !important
             &.checked
                 background-color: #56C8D1 !important
-               
         table
             width: 100% !important
             .caption
                 height: 52px
                 background: #FAFAFA
                 border-bottom: 1px solid #eee
+        &-static
+            .date-picker-wrapper
+                position: static !important
     &__times
         display: flex
         flex-wrap: wrap
@@ -7214,6 +7321,26 @@ body
             .modal
                 &__input
                     width: 100%
+        &__button
+            span
+                &:first-child
+                    display: none
+                &:last-child
+                    display: inline
+        &_els
+            &__top
+                display: none
+            &__el
+                flex-wrap: wrap
+            &__left
+                width: 100%
+                margin: 0 0 16px
+            &__txt
+                width: calc(100% / 3)
+            &__price
+                width: 100%
+                text-align: left
+                margin: 16px 0 0
 
     .cabinet
         &__el
@@ -7323,6 +7450,8 @@ body
             &:last-child
                 margin: 0
         &__inputs
+            &-order
+                margin: 0 0 20px
             .modal
                 &__input
                     width: 100%

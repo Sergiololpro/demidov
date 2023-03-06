@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="js/libs/modal_video/modal_video.min.css">
   <link rel="stylesheet" href="js/libs/datepicker/datepicker.css">
   <link rel="stylesheet" href="js/libs/fancybox/fancybox.css">
-  <link rel="stylesheet" href="css/styles.css?v=25">
+  <link rel="stylesheet" href="css/styles.css?v=27">
   <title>Demidov</title>
 </head>
 
@@ -475,6 +475,25 @@
           <label for="agree_3">
             Нажимая кнопку «Оформить» вы соглашаетесь с условиями <a href="#" target="_blank">Пользовательского соглашения</a> и <a href="#" target="_blank">Условиями обработки персональных данных</a>
           </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal change_address">
+    <div class="modal__content">
+      <div class="modal__close"></div>
+      <div class="modal__title">Изменить адрес самовывоза</div>
+      <div class="modal__input">
+          <div class="modal__label">Выберите адрес самовывоза<span>*</span></div>
+          <select id="order_address_modal" data-placeholder="Введите" class="select2">
+              <option value="">&nbsp;</option>
+              <option value="<div class='order__city'>Москва Розница</div> 300057, г. Москва, Алексинское шоссе, дом 36">г. Москва, Алексинское шоссе, дом 36</option>
+              <option  value="<div class='order__city'>Тула</div>">г. Тула</option>
+          </select>
+      </div>
+      <div class="modal__buttons">
+        <div class="modal__button close_modal">Отмена</div>
+        <div class="modal__button modal__button-dark change_address_choose">Выбрать</div>
       </div>
     </div>
   </div>

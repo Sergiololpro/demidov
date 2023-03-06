@@ -329,6 +329,7 @@ $(document).ready(function () {
                     language: "ru",
                     singleMonth: true,
                     showTopbar: false,
+                    alwaysOpen: true,
                     separator: ',',
                     customArrowPrevSymbol: '&lsaquo;',
                     customArrowNextSymbol: '&rsaquo;',
@@ -667,5 +668,70 @@ $(document).ready(function () {
             autoplaySpeed: 5000
         });
     }
+
+    // Оформление заказа
+    $(".order__button-address").on("click", function() {
+        var id = $(this).data("id");
+
+        $(".order__button-address, .order__wrp").removeClass("active");
+
+        $(this).addClass("active");
+        $(".order__wrp[data-id=" + id + "]").addClass("active");
+
+        if (id == 1) {
+            $(".order__rgt").show();
+        } else {
+            $(".order__rgt").hide();
+        }
+    });
+
+    // Калькулятор заказ
+    if ($('#date').length) {
+        $('#date').dateRangePicker({
+            startOfWeek: 'monday',
+            language: "ru",
+            singleMonth: true,
+            showTopbar: false,
+            separator: ',',
+            autoClose: true,
+            singleDate: true,
+            customArrowPrevSymbol: '&lsaquo;',
+            customArrowNextSymbol: '&rsaquo;',
+            startDate: moment(),
+            container: $(".booking__calendar")
+        });
+    }
+
+    // Выбор адреса
+    $("#order_address").change(function() {
+        var value = $("#order_address").val();
+
+        $(".modal__input-full_select").hide();
+
+        $(".order__address_wrp").html(value);
+        $(".order__address").addClass("active");
+
+        $("#order_address_modal").val(value);
+
+        $('#order_address_modal').select2({
+            minimumResultsForSearch: -1,
+            placeholder: $(this).data("placeholder")
+        });
+    });
+
+    // Открыть выбор адреса
+    $(".order__change").on("click", function() {
+        $(".change_address").addClass("active");
+    });
+
+    // Выбор адреса в окне
+    $(".change_address_choose").on("click", function() {
+        var value = $("#order_address_modal").val();
+
+        $(".order__address_wrp").html(value);
+        $(".order__address").addClass("active");
+
+        $(".change_address").removeClass("active");
+    });
 
 });
