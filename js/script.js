@@ -2,9 +2,9 @@ $(document).ready(function () {
 
     $(window).on('scroll load', function() {
         if ($(this).scrollTop() > 0) {
-            $('.header').addClass('short');
+            $('.header, .drop, .drop_about').addClass('short');
         } else {
-            $('.header').removeClass('short');
+            $('.header, .drop, .drop_about').removeClass('short');
         }
     });
 
@@ -34,24 +34,40 @@ $(document).ready(function () {
     $(".nav__el").on("mouseenter", function() {
         var id = $(this).data("id");
 
-        $(".nav__el, .drop").removeClass("active");
+        $(".nav__el, .drop, .drop_about").removeClass("active");
 
-        $(this).addClass("active");
-        $(".drop[data-id=" + id + "]").addClass("active");
+        if (id == 1) {
+            $(".drop").addClass("active");
+        }
+
+        if (id == 2) {
+            $(".drop_about").addClass("active");
+        }
     });
 
-    $(".nav__el, .drop").on("mouseleave", function() {
-        var check = true;
+    $(".nav__el, .drop, .drop_about").on("mouseleave", function() {
+        var check_1 = true,
+            check_2 = true;
 
         setTimeout(function(){
             document.querySelectorAll(':hover').forEach(function(em){
                 if (em.className.includes("nav") || em.className.includes("drop")) {
-                    check = false;
+                    check_1 = false;
                 }
             });
 
-            if (check) {
+            document.querySelectorAll(':hover').forEach(function(em){
+                if (em.className.includes("nav") || em.className.includes("drop_about")) {
+                    check_2 = false;
+                }
+            });
+
+            if (check_1) {
                 $(".nav__el, .drop").removeClass("active");
+            }
+
+            if (check_2) {
+                $(".nav__el, .drop_about").removeClass("active");
             }
         }, 100)
     });
@@ -732,6 +748,8 @@ $(document).ready(function () {
         $(".order__address").addClass("active");
 
         $(".change_address").removeClass("active");
+
+        $("#order_address").val(value);
     });
 
 });

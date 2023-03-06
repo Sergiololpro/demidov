@@ -48,7 +48,7 @@
         <div class="header__search header__search-short"></div>
         <nav class="nav nav_search">
           <a data-id="1" href="#" class="nav__el nav__el-1">Продукция</a>
-          <a href="#" class="nav__el">О компании</a>
+          <a data-id="2" href="#" class="nav__el">О компании</a>
           <a href="#" class="nav__el">Доставка и оплата</a>
           <a href="#" class="nav__el">Услуги</a>
           <a href="#" class="nav__el">Покупателю</a>
@@ -217,6 +217,26 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="drop_about">
+    <div class="drop_about__title">О компании</div>
+    <nav class="drop_about__navs">
+      <a href="#" class="drop_about__nav">Миссия</a>
+      <a href="#" class="drop_about__nav">Отзывы и достижения</a>
+      <a href="#" class="drop_about__nav">Видео</a>
+      <a href="#" class="drop_about__nav">Региональная сеть</a>
+      <a href="#" class="drop_about__nav">ГОСТы</a>
+      <a href="#" class="drop_about__nav">Партнеры</a>
+      <a href="#" class="drop_about__nav">Производство</a>
+      <a href="#" class="drop_about__nav">Грамоты и награды</a>
+      <a href="#" class="drop_about__nav">Контроль качества</a>
+      <a href="#" class="drop_about__nav">Пресса о нас</a>
+      <a href="#" class="drop_about__nav">Сертификаты</a>
+      <a href="#" class="drop_about__nav">Реквизиты</a>
+      <a href="#" class="drop_about__nav">Новости компании</a>
+      <a href="#" class="drop_about__nav">Фотогалерея</a>
+    </nav>
   </div>
 
   <div class="mobile_menu">

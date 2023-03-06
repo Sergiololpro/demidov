@@ -405,9 +405,11 @@ body
     transition: transform .5s ease-out
     &.active
         transform: scale(1)
+    &.short
+        top: 100px
     &__title
         font-size: 28px
-        color: #717171
+        color: #1E3B3E
         font-weight: 700
         margin: 0 0 40px
     &__wrp
@@ -421,7 +423,7 @@ body
     &__ttl
         display: block
         font-size: 20px
-        color: #717171
+        color: #1E3B3E
         font-weight: 700
         margin: 0 0 20px
         transition: opacity .3s ease-out
@@ -3495,8 +3497,12 @@ body
             &:hover
                 opacity: .7
         &_controls
+            width: 20%
             display: flex
             margin: 0 0 0 10px
+            &-catalog
+                order: 3
+                margin: 0
             &__button
                 width: 32px
                 height: 32px
@@ -5609,10 +5615,11 @@ body
             font-size: 13px
             color: #BEBEBE
             &-title
-                width: calc((100% - 150px) * .5)
-            &-city,
+                width: calc((100% - 150px) * .4)
+            &-city
+                width: calc((100% - 150px) * .2)
             &-stock
-                width: calc((100% - 150px) * .25)
+                width: calc((100% - 150px) * .4)
             &-price
                 width: 150px
                 text-align: right
@@ -5662,17 +5669,17 @@ body
         &__price
             font-size: 20px
         &__title
-            width: 50%
+            width: 40%
             order: 1
             font-size: 16px
             padding: 0 16px 0 0
             margin: 0
         &__city
-            width: 25%
+            width: 20%
             display: block
             order: 2
         &__top
-            width: 25%
+            width: 20%
             display: block
             order: 3
             margin: 0
@@ -5913,6 +5920,41 @@ body
             margin: 0 0 4px
         &__size
             font-size: 15px
+
+.drop_about
+    width: 1000px
+    background: #fff
+    z-index: 1
+    padding: 40px 40px 20px
+    position: fixed
+    left: 0
+    right: 0
+    top: 166px
+    margin: 0 auto
+    transform: scale(0)
+    transform-origin: top
+    transition: transform .5s ease-out
+    &.active
+        transform: scale(1)
+    &.short
+        top: 100px
+    &__title
+        font-size: 28px
+        color: #1E3B3E
+        font-weight: 700
+        margin: 0 0 40px
+    &__navs
+        display: flex
+        flex-wrap: wrap
+    &__nav
+        width: calc(100% / 3)
+        font-size: 16px
+        color: #1E3B3E
+        font-weight: 700
+        margin: 0 0 20px
+        transition: color .3s ease-out
+        &:hover
+            color: #56C8D1
 
 @media (max-height: 700px)
     .banner
@@ -6530,6 +6572,8 @@ body
             margin: 0 0 20px
 
     .ct
+        &__wrp
+            overflow-y: auto
         &_banner
             flex-direction: column
             align-items: flex-start
@@ -6687,17 +6731,12 @@ body
             &:nth-child(2n)
                 margin: 0 0 20px
 
-
-    .ct
-        &__wrp
-            overflow-y: auto
-
     .table
         &_title
-            width: 700px
+            width: 900px
         .ct
             &__els
-                width: 700px
+                width: 900px
 
     .customers
         &__block
@@ -7729,6 +7768,16 @@ body
     .presentations
         &__img
             margin: 0 0 30px
+
+    .drop
+        top: 130px
+        &.short
+            top: 80px
+
+    .drop_about
+        top: 130px
+        &.short
+            top: 80px
 
 @media (max-width: 375px)
     .header
