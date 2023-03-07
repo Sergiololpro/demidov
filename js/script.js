@@ -40,8 +40,8 @@ $(document).ready(function () {
             $(".drop").addClass("active");
         }
 
-        if (id == 2) {
-            $(".drop_about").addClass("active");
+        if (id != 1) {
+            $(".drop_about[data-id=" + id + "]").addClass("active");
         }
     });
 

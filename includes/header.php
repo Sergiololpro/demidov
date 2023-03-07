@@ -51,7 +51,7 @@
           <a data-id="2" href="#" class="nav__el">О компании</a>
           <a href="#" class="nav__el">Доставка и оплата</a>
           <a href="#" class="nav__el">Услуги</a>
-          <a href="#" class="nav__el">Покупателю</a>
+          <a data-id="3" href="#" class="nav__el">Покупателю</a>
           <a href="#" class="nav__el">Вакансии</a>
           <a href="#" class="nav__el">Электронная очередь</a>
           <a href="#" class="nav__el">Контакты</a>
@@ -219,7 +219,7 @@
     </div>
   </div>
 
-  <div class="drop_about">
+  <div class="drop_about" data-id="2">
     <div class="drop_about__title">О компании</div>
     <nav class="drop_about__navs">
       <a href="#" class="drop_about__nav">Миссия</a>
@@ -236,6 +236,20 @@
       <a href="#" class="drop_about__nav">Реквизиты</a>
       <a href="#" class="drop_about__nav">Новости компании</a>
       <a href="#" class="drop_about__nav">Фотогалерея</a>
+    </nav>
+  </div>
+
+  <div class="drop_about" data-id="3">
+    <div class="drop_about__title">Покупателю</div>
+    <nav class="drop_about__navs">
+      <a href="#" class="drop_about__nav">Покупателю</a>
+      <a href="#" class="drop_about__nav">Типовой договор</a>
+      <a href="#" class="drop_about__nav">Каталоги и презентации</a>
+      <a href="#" class="drop_about__nav">Грамоты и награды</a>
+      <a href="#" class="drop_about__nav">Сертификаты соответствия</a>
+      <a href="#" class="drop_about__nav">ГОСТы</a>
+      <a href="#" class="drop_about__nav">Контроль качества</a>
+      <a href="#" class="drop_about__nav">Реквизиты</a>
     </nav>
   </div>
 
