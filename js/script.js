@@ -719,7 +719,7 @@ $(document).ready(function () {
     }
 
     // Выбор адреса
-    $("#order_address").change(function() {
+    $("#order_address").on("change", function() {
         var value = $("#order_address").val();
 
         $(".modal__input-full_select").hide();
@@ -733,6 +733,8 @@ $(document).ready(function () {
             minimumResultsForSearch: -1,
             placeholder: $(this).data("placeholder")
         });
+
+        console.log($('#order_address option[value="' + $("#order_address").val() + '"]').data("id"))
     });
 
     // Открыть выбор адреса
@@ -749,7 +751,8 @@ $(document).ready(function () {
 
         $(".change_address").removeClass("active");
 
-        $("#order_address").val(value);
+        $("#order_address").val(value).trigger('change');
     });
+    
 
 });

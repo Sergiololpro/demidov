@@ -58,8 +58,8 @@
                                         <div class="modal__label">Выберите адрес самовывоза<span>*</span></div>
                                         <select id="order_address" data-placeholder="Введите" class="select2">
                                             <option value="">&nbsp;</option>
-                                            <option value="<div class='order__city'>Москва Розница</div> 300057, г. Москва, Алексинское шоссе, дом 36">г. Москва, Алексинское шоссе, дом 36</option>
-                                            <option  value="<div class='order__city'>Тула</div>">г. Тула</option>
+                                            <option data-id="city_1" value="<div class='order__city'>Москва Розница</div> 300057, г. Москва, Алексинское шоссе, дом 36">г. Москва, Алексинское шоссе, дом 36</option>
+                                            <option data-id="city_2" value="<div class='order__city'>Тула</div>">г. Тула</option>
                                         </select>
                                     </div>
                                 </div>
