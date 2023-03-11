@@ -734,7 +734,11 @@ $(document).ready(function () {
             placeholder: $(this).data("placeholder")
         });
 
-        console.log($('#order_address option[value="' + $("#order_address").val() + '"]').data("id"))
+        var id = $('#order_address option[value="' + $("#order_address").val() + '"]').data("id");
+
+        $.post('/local/ajax/upd_map.php', 'add2cart=y&id='+ id + '', function (data_up) {
+            $('#map_place').html(data_up);
+        });
     });
 
     // Открыть выбор адреса
@@ -752,6 +756,12 @@ $(document).ready(function () {
         $(".change_address").removeClass("active");
 
         $("#order_address").val(value).trigger('change');
+        
+        var id = $('#order_address_modal option[value="' + $("#order_address_modal").val() + '"]').data("id");
+
+        $.post('/local/ajax/upd_map.php', 'add2cart=y&id='+ id + '', function (data_up) {
+            $('#map_place').html(data_up);
+        });
     });
     
 
