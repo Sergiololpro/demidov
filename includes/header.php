@@ -477,6 +477,10 @@
         <div class="modal__label">Номер телефона<span>*</span></div>
         <input id="phone" name="phone" placeholder="Введите" class="input" type="text">
       </div>
+      <div class="modal__input">
+        <div class="modal__label">ИНН<span>*</span></div>
+        <input id="callback_inn" name="callback_inn" placeholder="Введите" class="input" type="text">
+      </div>
       <div class="modal__button modal__button-dark modal__button-full">Отправить</div>
       <div class="checkbox">
           <input id="agree_2" value="agree_2" name="agree_2" type="checkbox">
@@ -502,6 +506,21 @@
       <div class="modal__input">
         <div class="modal__label">Ваш e-mail<span>*</span></div>
         <input name="email" placeholder="Sample@sample.com" class="input" type="email">
+      </div>
+      <div class="modal__input">
+        <div class="modal__label">ИНН<span>*</span></div>
+        <input id="fast_inn" name="fast_inn" placeholder="Введите" class="input" type="text">
+      </div>
+      <div class="modal__input">
+        <div class="modal__label">Комментарий</div>
+        <textarea name="fast_comment" class="textarea" placeholder="Введите"></textarea>
+      </div>
+      <div class="input_file">
+        <input id="fast_file" name="fast_file" class="input_file__input" type="file">
+        <label for="fast_file" class="input_file__label">
+          <span class="input_file__button">Прикрепить чертеж</span>
+          <span class="input_file__text">Не обязательно. Файлы jpeg, png, pdf не более 6 мб</span>
+        </label>
       </div>
       <div class="modal__button modal__button-dark modal__button-full">Оформить</div>
       <div class="checkbox">
