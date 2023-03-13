@@ -763,6 +763,10 @@ $(document).ready(function () {
             $('#map_place').html(data_up);
         });
     });
-    
+
+    // Сортировка в каталоге
+    $("#cat_sort").on("change", function() {
+        location = $("#cat_sort").val();
+    });
 
 });

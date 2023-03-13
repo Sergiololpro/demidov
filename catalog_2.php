@@ -234,9 +234,9 @@
                             <div data-type="list" class="ct_views__el ct_views__el-2 active"></div>
                             <div data-type="table" class="ct_views__el ct_views__el-3"></div>
                         </div>
-                        <select data-placeholder="Выберите" class="select2 select2-filter">
-                            <option value="filter_1">По увеличению цены</option>
-                            <option value="filter_2">По уменьшению цены</option>
+                        <select id="cat_sort" data-placeholder="Выберите" class="select2 select2-filter">
+                            <option value="?sort=price">По увеличению цены</option>
+                            <option value="?sort=price2">По уменьшению цены</option>
                         </select>
                     </div>
                     <a href="#" class="ct__download">Скачать прайс</a>
