@@ -91,6 +91,16 @@ $(document).ready(function () {
         $(".map_window").addClass("active");
     });
 
+    if ($('.map').length) {
+        $("body").on("click", function(e) {
+            var targetbox = $(this).find('.checked');
+
+            if (!targetbox.is(e.target) && targetbox.has(e.target).length === 0) {
+                $(".map_window").removeClass("active");
+            }
+        });
+    }
+
     // Слайдер поставщики
     if ($('.provider__slider').length) {
         $(".provider__slider").slick({
