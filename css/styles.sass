@@ -1186,6 +1186,7 @@ body
                 opacity: .7
 
 .page
+    overflow: hidden
     padding: 166px 0 0
 
 .breadcrumbs
@@ -3276,7 +3277,20 @@ body
     background: #FAFAFA
     font-size: 15px
     line-height: 140%
+    position: relative
     padding: 100px 0
+    &:before,
+    &:after
+        content: ''
+        width: 1000px
+        height: 100%
+        background: #FAFAFA
+        position: absolute
+        top: 0
+    &:before
+        left: -1000px
+    &:after
+        right: -1000px
 
 .cart
     display: flex
