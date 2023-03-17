@@ -22,7 +22,6 @@
             </div>
         </div>
         <img class="cats__img" src="img/cats__img-1.png" alt="">
-        <img class="cats__img cats__img-mobile" src="img/cats__img_mobile-1.png" alt="">
     </div>
     <div class="cats__el cats__el-2">
         <div class="cats__title">Сортовой прокат</div>
@@ -49,7 +48,6 @@
             </div>
         </div>
         <img class="cats__img" src="img/cats__img-2.png" alt="">
-        <img class="cats__img cats__img-mobile" src="img/cats__img_mobile-2.png" alt="">
     </div>
     <div class="cats__els">
         <div class="cats__el cats__el-3 cats__el-small">
@@ -64,7 +62,6 @@
                 <a href="#" class="cats__link">Сетка сварная арматурная</a>
             </div>
             <img class="cats__img" src="img/cats__img-3.png" alt="">
-            <img class="cats__img cats__img-mobile" src="img/cats__img_mobile-3.png" alt="">
         </div>
         <div class="cats__el cats__el-4 cats__el-small">
             <div class="cats__title">Листовой прокат</div>
@@ -81,7 +78,6 @@
                 <a href="#" class="cats__link">Лист холоднокатаный</a>
             </div>
             <img class="cats__img" src="img/cats__img-4.png" alt="">
-            <img class="cats__img cats__img-mobile" src="img/cats__img_mobile-4.png" alt="">
         </div>
         <div class="cats__el cats__el-5 cats__el-small">
             <div class="cats__title">Фасонный прокат</div>
@@ -97,7 +93,6 @@
                 <a href="#" class="cats__link">Балка горячекатаная</a>
             </div>
             <img class="cats__img" src="img/cats__img-5.png" alt="">
-            <img class="cats__img cats__img-mobile" src="img/cats__img_mobile-5.png" alt="">
         </div>
     </div>
     <div class="cats__el cats__el-6">
@@ -114,6 +109,5 @@
             </div>
         </div>
         <img class="cats__img" src="img/cats__img-6.png" alt="">
-        <img class="cats__img cats__img-mobile" src="img/cats__img_mobile-6.png" alt="">
     </div>
 </div>

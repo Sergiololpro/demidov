@@ -776,15 +776,18 @@ body
             .cats
                 &__img
                     max-width: 100%
-                    left: 0
-                    margin: 0 auto
+                    width: 80%
+                    left: inherit
+                    top: inherit
     &__img
         width: 550px
         max-width: calc(100% - 700px)
         pointer-events: none
         position: absolute
         right: 0
+        top: 0
         bottom: 0
+        margin: auto
         &-mobile
             display: none
     &__title
@@ -6393,6 +6396,7 @@ body
                     &__img
                         max-width: calc(100% - 400px)
                         left: inherit
+                        top: 0
         &__img
             max-width: calc(100% - 400px)
 
@@ -6912,13 +6916,12 @@ body
                 .cats
                     &__img
                         max-width: calc(100% - 240px)
+                        top: 60px
         &__img
             max-width: calc(100% - 240px)
             right: 0
-            top: 20px
-            display: none
-            &-mobile
-                display: block
+            top: 60px
+            bottom: inherit
         &__title
             font-size: 24px
             margin: 0 0 20px
