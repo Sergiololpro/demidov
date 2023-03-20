@@ -3224,7 +3224,7 @@ body
         display: flex
         margin: 0 20px 0 0
         &__button
-            width: 32px
+            min-width: 32px
             height: 32px
             background-position: center
             background-size: 12px
@@ -5634,11 +5634,11 @@ body
             font-size: 13px
             color: #BEBEBE
             &-title
-                width: calc((100% - 150px) * .4)
+                width: calc((100% - 270px) * .5)
             &-city
-                width: calc((100% - 150px) * .2)
+                width: calc((100% - 270px) * .25)
             &-stock
-                width: calc((100% - 150px) * .4)
+                width: calc((100% - 270px) * .45)
             &-price
                 width: 150px
                 text-align: right
@@ -5688,17 +5688,17 @@ body
         &__price
             font-size: 20px
         &__title
-            width: 40%
+            width: 50%
             order: 1
             font-size: 16px
             padding: 0 16px 0 0
             margin: 0
         &__city
-            width: 20%
+            width: 25%
             display: block
             order: 2
         &__top
-            width: 20%
+            width: 25%
             display: block
             order: 3
             margin: 0
@@ -5706,15 +5706,14 @@ body
             width: calc(100% - 150px)
             display: flex
             align-items: center
+            padding: 0 120px 0 0
         &__art,
         &__ul,
-        &_controls
             display: none
-    .cart
-        &_el
-            &_controls
-                &-catalog
-                    display: flex
+        &_controls
+            position: absolute
+            right: 300px
+            margin: 0
 
 .my_select
     width: 100%

@@ -209,7 +209,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ct__content">
+            <div class="ct__content table">
                 <div class="title title-ct">Трубы профильные</div>
                 <div class="ct_banner" style="background-image: url(img/ct_banner.png)">
                     <div class="ct_banner__left">
@@ -253,8 +253,8 @@
                         <div class="ct__filt"></div>
                         <div class="ct_views">
                             <div data-type="tiles" class="ct_views__el ct_views__el-1"></div>
-                            <div data-type="list" class="ct_views__el ct_views__el-2 active"></div>
-                            <div data-type="table" class="ct_views__el ct_views__el-3"></div>
+                            <div data-type="list" class="ct_views__el ct_views__el-2"></div>
+                            <div data-type="table" class="ct_views__el ct_views__el-3 active"></div>
                         </div>
                         <select id="cat_sort" data-placeholder="Выберите" class="select2 select2-filter">
                             <option value="?sort=price">По увеличению цены</option>
@@ -285,11 +285,6 @@
                                         <li>Склад: Москва</li>
                                     </ul>
                                     <div class="element__city">Москва</div>
-                                    <div class="cart_el_controls cart_el_controls-catalog">
-                                        <div class="cart_el_controls__button cart_el_controls__button-plus"></div>
-                                        <input class="cart_el_controls__input" value="0" type="text">
-                                        <div class="cart_el_controls__button cart_el_controls__button-minus"></div>
-                                    </div>
                                 </div>
                                 <div class="element__right">
                                     <div class="element__old_price">85 500</div>
@@ -321,11 +316,6 @@
                                         <li>Склад: Москва</li>
                                     </ul>
                                     <div class="element__city">Москва</div>
-                                    <div class="cart_el_controls cart_el_controls-catalog">
-                                        <div class="cart_el_controls__button cart_el_controls__button-plus"></div>
-                                        <input class="cart_el_controls__input" value="0" type="text">
-                                        <div class="cart_el_controls__button cart_el_controls__button-minus"></div>
-                                    </div>
                                 </div>
                                 <div class="element__right">
                                     <div class="element__old_price">85 500</div>
@@ -357,11 +347,6 @@
                                         <li>Склад: Москва</li>
                                     </ul>
                                     <div class="element__city">Москва</div>
-                                    <div class="cart_el_controls cart_el_controls-catalog">
-                                        <div class="cart_el_controls__button cart_el_controls__button-plus"></div>
-                                        <input class="cart_el_controls__input" value="0" type="text">
-                                        <div class="cart_el_controls__button cart_el_controls__button-minus"></div>
-                                    </div>
                                 </div>
                                 <div class="element__right">
                                     <div class="element__old_price">85 500</div>
@@ -393,11 +378,6 @@
                                         <li>Склад: Москва</li>
                                     </ul>
                                     <div class="element__city">Москва</div>
-                                    <div class="cart_el_controls cart_el_controls-catalog">
-                                        <div class="cart_el_controls__button cart_el_controls__button-plus"></div>
-                                        <input class="cart_el_controls__input" value="0" type="text">
-                                        <div class="cart_el_controls__button cart_el_controls__button-minus"></div>
-                                    </div>
                                 </div>
                                 <div class="element__right">
                                     <div class="element__old_price">85 500</div>
