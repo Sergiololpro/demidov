@@ -1854,9 +1854,9 @@ body
         border-radius: 4px
         position: relative
         padding: 20px
-        margin: 0 20px 0 0
+        margin: 0 20px 20px 0
         &:nth-child(4n)
-            margin: 0
+            margin: 0 0 20px
     &__image
         width: 100%
         z-index: 1
@@ -2414,6 +2414,12 @@ body
         display: flex
         align-items: flex-end
         margin: 0 0 20px
+    &__alert
+        max-width: 500px
+        font-size: 13px
+        margin: 0 0 20px
+        span
+            font-weight: 700
     &__price
         font-size: 20px
         text-align: right
@@ -5774,6 +5780,7 @@ body
     img
         width: 100%
         max-width: 940px
+        height: auto
         margin: 0 0 40px
 
 .fancybox

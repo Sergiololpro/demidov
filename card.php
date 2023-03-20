@@ -61,6 +61,9 @@
                             </div>
                             <div class="card__weight"><span>Общий вес:</span> 5 600 кг</div>
                         </div>
+                        <div class="card__alert">
+                            Внимание! <span>Цены носят ознакомительный характер</span>. Окончательную стоимость сообщит менеджер после обработки заявки.
+                        </div>
                         <div class="card__buttons">
                             <div class="card__button">Купить в один клик</div>
                             <div class="card__button">В корзину</div>
