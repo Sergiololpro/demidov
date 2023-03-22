@@ -87,6 +87,7 @@ $(document).ready(function () {
         $(".map_window__phone").html($(this).data("phone")).attr("href", "tel:" + $(this).data("phone"));
         $(".map_window__email").html($(this).data("email")).attr("href", "mailto:" + $(this).data("email"));;
         $(".map_window__address span").html($(this).data("address"));
+        $(".map_window__link").attr("href", $(this).data("link"));
 
         $(".map_window").addClass("active");
     });

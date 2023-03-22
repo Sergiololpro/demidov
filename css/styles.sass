@@ -850,6 +850,8 @@ body
         font-size: 40px
         color: #1E3B3E
         margin: 0 0 30px
+    &-card
+        font-size: 40px
 
 .production
     margin: 0 0 200px
@@ -992,6 +994,11 @@ body
                 opacity: .7
         &__address
             font-size: 11px
+        &__link
+            color: #238ECE
+            transition: opacity .3s ease-out
+            &:hover
+                opacity: .7
 
 .news
     margin: 0 0 200px
@@ -1195,7 +1202,7 @@ body
 .breadcrumbs
     width: 100%
     border-bottom: 1px solid #eee
-    font-size: 11px
+    font-size: 14px
     padding: 13px 0 7px
     margin: 0 0 30px
     &__arrow
@@ -2295,6 +2302,8 @@ body
             margin: 0
         div
             font-size: 20px
+        a
+            color: #fff
     &__link
         font-size: 16px
         color: #56C8D1
@@ -2439,7 +2448,10 @@ body
         margin: 0 0 20px
     &__button
         height: 48px
-        background: url(../img/cart-2.svg) right 20px center no-repeat #56C8D1
+        background-color: #56C8D1
+        background-image: url(../img/cart-2.svg)
+        background-position: right 20px center
+        background-repeat: no-repeat
         background-size: 16px
         border-radius: 8px
         font-size: 16px
@@ -2452,6 +2464,8 @@ body
         transition: opacity .3s ease-out
         &:hover
             opacity: .7
+        &-click
+            background-image: url(../img/click.svg)
     &__row_3
         display: flex
         margin: 0 0 20px
@@ -5778,9 +5792,7 @@ body
         &:last-child
             margin: 0
     img
-        width: 100%
-        max-width: 940px
-        height: auto
+        max-width: 100%
         margin: 0 0 40px
 
 .fancybox

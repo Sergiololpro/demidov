@@ -13,7 +13,7 @@
         </div>
     </div>
     <div class="wrapper">
-        <h1 class="title title-page">Труба профильная 25х25х3</h1>
+        <h1 class="title title-page title-card">Труба профильная 25х25х3</h1>
 
         <div class="card">
             <div class="card__wrp">
@@ -65,7 +65,7 @@
                             Внимание! <span>Цены носят ознакомительный характер</span>. Окончательную стоимость сообщит менеджер после обработки заявки.
                         </div>
                         <div class="card__buttons">
-                            <div class="card__button">Купить в один клик</div>
+                            <div class="card__button card__button-click">Купить в один клик</div>
                             <div class="card__button">В корзину</div>
                         </div>
                         <div class="card__row_3">
