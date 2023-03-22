@@ -1003,8 +1003,12 @@ body
 .news
     margin: 0 0 200px
     &__els
+        width: calc(100% + 30px)
         display: flex
         flex-wrap: wrap
+        position: relative
+        padding: 0 0 40px
+        margin: 0 0 0 -15px
     &__el
         width: calc((100% - 90px) / 4)
         background: #FAFAFA
@@ -1012,7 +1016,7 @@ body
         overflow: hidden
         position: relative
         padding: 220px 0 0
-        margin: 0 30px 30px 0
+        margin: 0 15px
         transition: box-shadow .3s ease-out, padding .3s ease-out
         &:hover
             box-shadow: 0 42px 56px 23px rgba(0, 0, 0, .1)
@@ -1031,8 +1035,6 @@ body
                     height: 100%
                     &:before
                         opacity: 1
-        &:nth-child(4n)
-            margin: 0 0 30px
     &__image
         width: 100%
         height: 220px
@@ -1081,6 +1083,48 @@ body
         font-size: 17px
         line-height: 140%
         transition: color .3s ease-out
+    &__nav
+        width: 24px
+        height: 24px
+        background: url(../img/nav-blue.svg) center no-repeat
+        background-size: contain
+        cursor: pointer
+        z-index: 1
+        position: absolute
+        bottom: 0
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+        &-prev
+            right: 90px
+            transform: scale(-1, 1)
+        &-next
+            right: 50px
+    .slick
+        &-dots
+            display: flex
+            position: absolute
+            left: 15px
+            bottom: 0
+            li
+                margin: 0 8px 0 0
+                &:last-child
+                    margin: 0
+            button
+                width: 8px
+                height: 8px
+                background: #eee
+                border-radius: 16px
+                font-size: 0
+                cursor: pointer
+                padding: 0
+                transition: width .3s ease-out, background .3s ease-out
+                &:hover
+                    background: #56C8D1
+        &-active
+            button
+                width: 40px
+                background: #56C8D1
 
 .provider
     overflow: hidden
@@ -2709,6 +2753,8 @@ body
     &__left
         display: flex
         align-items: center
+    &__r
+        display: flex
     &__download
         background: url(../img/pdf.svg) left top no-repeat
         background-size: 16px 20px
@@ -2716,6 +2762,7 @@ body
         color: #56C8D1
         font-weight: 700
         padding: 3px 0 0 28px
+        margin: 0 0 0 40px
         transition: opacity .3s ease-out
         &:hover
             opacity: .7
@@ -5688,12 +5735,8 @@ body
             top: 0
             bottom: 0
             margin: auto
-        &__fav
-            width: 40px
-            height: 40px
-            order: 1
         &__button
-            width: 40px
+            min-width: 40px
             max-width: 40px
             height: 40px
             order: 2
@@ -5701,7 +5744,29 @@ body
             padding: 0
             margin: 0 0 0 16px
             &-click
-                display: none
+                order: 1
+                position: relative
+                margin: 0
+                &:hover
+                    opacity: 1
+                    span
+                        opacity: 1
+                span
+                    background: #fff
+                    border-radius: 5px
+                    font-size: 11px
+                    color: #444
+                    line-height: 140%
+                    text-align: center
+                    white-space: normal
+                    box-shadow: 0 42px 56px 23px rgba(0, 0, 0, .1)
+                    pointer-events: none
+                    opacity: 0
+                    position: absolute
+                    left: -10px
+                    top: -55px
+                    padding: 5px 10px
+                    transition: opacity .3s ease-out
         &__right
             width: 150px
             padding: 0
@@ -5729,6 +5794,7 @@ body
             padding: 0 120px 0 0
         &__art,
         &__ul,
+        &__fav
             display: none
         &_controls
             position: absolute
@@ -6173,17 +6239,6 @@ body
             display: inline-flex
             white-space: normal
             margin: 0 30px 0 0
-
-    .news
-        &__els
-            display: block
-            white-space: nowrap
-            overflow-x: auto
-        &__el
-            width: 340px
-            display: inline-flex
-            vertical-align: top
-            white-space: normal
 
     .subscribe
         padding: 60px 30px
@@ -6986,12 +7041,6 @@ body
             margin: 0
 
     .news
-        &__el
-            width: 320px
-            max-width: 80%
-            margin: 0 20px 0 0
-            &:last-child
-                margin: 0
         &__content
             min-height: 300px
         &__title
@@ -7746,6 +7795,10 @@ body
             .select2
                 &-container
                     margin: 20px 0 0
+        &__r
+            flex-direction: column
+        &__download
+            margin: 20px 0 0
         &_banner
             background-image: none !important
             padding: 20px
@@ -7763,6 +7816,9 @@ body
                 height: 40px
                 background-size: 16px
                 background-position: center
+                &-click
+                    span
+                        display: none
             &__fav
                 position: static
             &__right

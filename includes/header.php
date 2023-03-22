@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="js/libs/modal_video/modal_video.min.css">
   <link rel="stylesheet" href="js/libs/datepicker/datepicker.css">
   <link rel="stylesheet" href="js/libs/fancybox/fancybox.css">
-  <link rel="stylesheet" href="css/styles.css?v=29">
+  <link rel="stylesheet" href="css/styles.css?v=30">
   <title>Demidov</title>
 </head>
 
@@ -219,24 +219,130 @@
     </div>
   </div>
 
-  <div class="drop_about" data-id="2">
-    <div class="drop_about__title">О компании</div>
-    <nav class="drop_about__navs">
-      <a href="#" class="drop_about__nav">Миссия</a>
-      <a href="#" class="drop_about__nav">Отзывы и достижения</a>
-      <a href="#" class="drop_about__nav">Видео</a>
-      <a href="#" class="drop_about__nav">Региональная сеть</a>
-      <a href="#" class="drop_about__nav">ГОСТы</a>
-      <a href="#" class="drop_about__nav">Партнеры</a>
-      <a href="#" class="drop_about__nav">Производство</a>
-      <a href="#" class="drop_about__nav">Грамоты и награды</a>
-      <a href="#" class="drop_about__nav">Контроль качества</a>
-      <a href="#" class="drop_about__nav">Пресса о нас</a>
-      <a href="#" class="drop_about__nav">Сертификаты</a>
-      <a href="#" class="drop_about__nav">Реквизиты</a>
-      <a href="#" class="drop_about__nav">Новости компании</a>
-      <a href="#" class="drop_about__nav">Фотогалерея</a>
-    </nav>
+  <div data-id="2" class="drop">
+    <div class="wrapper">
+      <div class="drop__title">О компании</div>
+      <div class="drop__wrp">
+        <div class="drop__col">
+          <div class="drop__cat">
+            <a href="#" class="drop__ttl">Миссия</a>
+          </div>
+        </div>
+        <div class="drop__col">
+          <div class="drop__cat">
+            <a href="#" class="drop__ttl">Отзывы и достижения</a>
+          </div>
+        </div>
+        <div class="drop__col">
+          <div class="drop__cat">
+            <a href="#" class="drop__ttl">Видео</a>
+          </div>
+        </div>
+        <div class="drop__col">
+          <div class="drop__cat">
+            <a href="#" class="drop__ttl">Региональная сеть</a>
+          </div>
+        </div>
+        <div class="drop__col">
+          <div class="drop__cat">
+            <a href="#" class="drop__ttl">ГОСТы</a>
+          </div>
+        </div>
+        <div class="drop__col">
+          <div class="drop__cat">
+            <a href="#" class="drop__ttl">Партнеры</a>
+          </div>
+        </div>
+        <div class="drop__col">
+          <div class="drop__cat">
+            <a href="#" class="drop__ttl">Производство</a>
+          </div>
+        </div>
+        <div class="drop__col">
+          <div class="drop__cat">
+            <a href="#" class="drop__ttl">Грамоты и награды</a>
+          </div>
+        </div>
+        <div class="drop__col">
+          <div class="drop__cat">
+            <a href="#" class="drop__ttl">Контроль качества</a>
+          </div>
+        </div>
+        <div class="drop__col">
+          <div class="drop__cat">
+            <a href="#" class="drop__ttl">Пресса о нас</a>
+          </div>
+        </div>
+        <div class="drop__col">
+          <div class="drop__cat">
+            <a href="#" class="drop__ttl">Сертификаты</a>
+          </div>
+        </div>
+        <div class="drop__col">
+          <div class="drop__cat">
+            <a href="#" class="drop__ttl">Реквизиты</a>
+          </div>
+        </div>
+        <div class="drop__col">
+          <div class="drop__cat">
+            <a href="#" class="drop__ttl">Новости компании</a>
+          </div>
+        </div>
+        <div class="drop__col">
+          <div class="drop__cat">
+            <a href="#" class="drop__ttl">Фотогалерея</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-id="3" class="drop">
+    <div class="wrapper">
+      <div class="drop__title">Покупателю</div>
+      <div class="drop__wrp">
+        <div class="drop__col">
+          <div class="drop__cat">
+            <a href="#" class="drop__ttl">Покупателю</a>
+          </div>
+        </div>
+        <div class="drop__col">
+          <div class="drop__cat">
+            <a href="#" class="drop__ttl">Типовой договор</a>
+          </div>
+        </div>
+        <div class="drop__col">
+          <div class="drop__cat">
+            <a href="#" class="drop__ttl">Каталоги и презентации</a>
+          </div>
+        </div>
+        <div class="drop__col">
+          <div class="drop__cat">
+            <a href="#" class="drop__ttl">Грамоты и награды</a>
+          </div>
+        </div>
+        <div class="drop__col">
+          <div class="drop__cat">
+            <a href="#" class="drop__ttl">Сертификаты соответствия</a>
+          </div>
+        </div>
+        <div class="drop__col">
+          <div class="drop__cat">
+            <a href="#" class="drop__ttl">ГОСТы</a>
+          </div>
+        </div>
+        <div class="drop__col">
+          <div class="drop__cat">
+            <a href="#" class="drop__ttl">Контроль качества</a>
+          </div>
+        </div>
+        <div class="drop__col">
+          <div class="drop__cat">
+            <a href="#" class="drop__ttl">Реквизиты</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="drop_about" data-id="3">

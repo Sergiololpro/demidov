@@ -545,6 +545,45 @@
                     </div>
                 </div>
             </a>
+            <a href="#" class="news__el">
+                <div class="news__image" style="background-image: url(img/news__image-1.jpg)"></div>
+                <div class="news__content">
+                    <div class="news__top">
+                        <div class="news__date">02 августа 2022</div>
+                        <div class="news__title">Сложная обстановка – не причина для остановки в развитии</div>
+                    </div>
+                    <div class="news__text">Как отметила в своем выступлении на 12-й общероссийской конференции «Стальные трубы...</div>
+                </div>
+            </a>
+            <a href="#" class="news__el">
+                <div class="news__image" style="background-image: url(img/news__image-2.jpg)"></div>
+                <div class="news__content">
+                    <div class="news__top">
+                        <div class="news__date">02 августа 2022</div>
+                        <div class="news__title">«ГК Демидов» открыла новый склад в Белгороде</div>
+                    </div>
+                    <div class="news__text">26 ноября была произведена первая отгрузка продукции металлопроката с нового крытого склада «Группы Компаний Демидов», который открылся в Белгороде по адресу ул.Рабочая, д.6.</div>
+                </div>
+            </a>
+            <a href="#" class="news__el">
+                <div class="news__image" style="background-image: url(img/news__image-3.jpg)"></div>
+                <div class="news__content">
+                    <div class="news__top">
+                        <div class="news__date">02 августа 2022</div>
+                        <div class="news__title">Рейтинг ведущих российских производителей и поставщиков металлопродукции за 2-е полугодие 2020 года</div>
+                    </div>
+                    <div class="news__text">Как отметила в своем выступлении на 12-й общероссийской конференции «Стальные трубы...</div>
+                </div>
+            </a>
+            <a href="#" class="news__el">
+                <div class="news__image" style="background-image: url(img/news__image-4.jpg)"></div>
+                <div class="news__content">
+                    <div class="news__top">
+                        <div class="news__date">02 августа 2022</div>
+                        <div class="news__title">Трубный рынок после падения начал движение вверх</div>
+                    </div>
+                </div>
+            </a>
         </div>
     </section>
 

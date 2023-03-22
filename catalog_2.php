@@ -262,7 +262,14 @@
                             <option value="?sort=price2">По уменьшению цены</option>
                         </select>
                     </div>
-                    <a href="#" class="ct__download">Скачать прайс</a>
+                    <div class="ct__r">
+                        <div class="card_switch">
+                            <div class="card_switch__text">Метры</div>
+                            <div class="card_switch__el"></div>
+                            <div class="card_switch__text">Тонны</div>
+                        </div>
+                        <a href="#" class="ct__download">Скачать прайс</a>
+                    </div>
                 </div>
                 <div class="ct__wrp">
                     <div class="table_title">
@@ -298,7 +305,9 @@
                                         <div class="element_controls__button element_controls__button-minus"></div>
                                     </div>
                                     <div class="element__button">В корзину</div>
-                                    <div class="element__button element__button-click">Купить в один клик</div>
+                                    <div class="element__button element__button-click">
+                                        <span>Купить в один клик</span>
+                                    </div>
                                     <div class="element__fav"></div>
                                 </div>
                             </div>
@@ -329,7 +338,9 @@
                                         <div class="element_controls__button element_controls__button-minus"></div>
                                     </div>
                                     <div class="element__button">В корзину</div>
-                                    <div class="element__button element__button-click">Купить в один клик</div>
+                                    <div class="element__button element__button-click">
+                                        <span>Купить в один клик</span>
+                                    </div>
                                     <div class="element__fav"></div>
                                 </div>
                             </div>
@@ -360,7 +371,9 @@
                                         <div class="element_controls__button element_controls__button-minus"></div>
                                     </div>
                                     <div class="element__button">В корзину</div>
-                                    <div class="element__button element__button-click">Купить в один клик</div>
+                                    <div class="element__button element__button-click">
+                                        <span>Купить в один клик</span>
+                                    </div>
                                     <div class="element__fav"></div>
                                 </div>
                             </div>
@@ -391,7 +404,9 @@
                                         <div class="element_controls__button element_controls__button-minus"></div>
                                     </div>
                                     <div class="element__button">В корзину</div>
-                                    <div class="element__button element__button-click">Купить в один клик</div>
+                                    <div class="element__button element__button-click">
+                                        <span>Купить в один клик</span>
+                                    </div>
                                     <div class="element__fav"></div>
                                 </div>
                             </div>

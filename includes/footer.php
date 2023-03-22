@@ -79,7 +79,7 @@
   <script src="js/libs/datepicker/datepicker.js"></script>
   <script src="js/libs/fancybox/fancybox.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js" integrity="sha512-PwQ5+jgXxxprNGc80ycHE3spgj6TuDieHe/yTkbEJ+U5aol7dTupi/4VbwHHzlQVW77Vb0GLOIsiYigHgC5vcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="js/script.js?v=27"></script>
+  <script src="js/script.js?v=30"></script>
 </body>
 
 </html>
