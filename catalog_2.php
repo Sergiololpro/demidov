@@ -207,6 +207,35 @@
                         <input class="fils__button" type="button" id="set_filter" name="set_filter" value="Показать">
 						<input class="fils__button fils__button-clear" type="button" id="del_filter" name="del_filter" value="Сбросить">
                     </div>
+                    <div class="ct_tags">
+                        <div class="ct_tags__el">15х15</div>
+                        <div class="ct_tags__el">20х20</div>
+                        <div class="ct_tags__el">25х25</div>
+                        <div class="ct_tags__el">40х20</div>
+                        <div class="ct_tags__el">30х30</div>
+                        <div class="ct_tags__el">40х40</div>
+                        <div class="ct_tags__el">50х50</div>
+                        <div class="ct_tags__el">60х40</div>
+                        <div class="ct_tags__el">100х50</div>
+                        <div class="ct_tags__el">100х100</div>
+                    </div>
+                    <div class="ct_tags">
+                        <div class="ct_tags__el">1 мм</div>
+                        <div class="ct_tags__el">1,35 мм</div>
+                        <div class="ct_tags__el">1,5 мм</div>
+                        <div class="ct_tags__el">1,8 мм</div>
+                        <div class="ct_tags__el">2 мм</div>
+                        <div class="ct_tags__el">2,5 мм</div>
+                        <div class="ct_tags__el">2,8 мм</div>
+                        <div class="ct_tags__el">3 мм</div>
+                        <div class="ct_tags__el">3,5 мм</div>
+                        <div class="ct_tags__el">4 мм</div>
+                        <div class="ct_tags__el">5 мм</div>
+                    </div>
+                    <div class="ct_tags">
+                        <div class="ct_tags__el">Труба холоднокатаная</div>
+                        <div class="ct_tags__el">Труба оцинкованная</div>
+                    </div>
                 </div>
             </div>
             <div class="ct__content table">
@@ -219,35 +248,7 @@
                     <div class="banner__button">Заказать</div>
                 </div>
                 <input class="ct__search" placeholder="Поиск по каталогу" type="text">
-                <div class="ct_tags">
-                    <div class="ct_tags__el">15х15</div>
-                    <div class="ct_tags__el">20х20</div>
-                    <div class="ct_tags__el">25х25</div>
-                    <div class="ct_tags__el">40х20</div>
-                    <div class="ct_tags__el">30х30</div>
-                    <div class="ct_tags__el">40х40</div>
-                    <div class="ct_tags__el">50х50</div>
-                    <div class="ct_tags__el">60х40</div>
-                    <div class="ct_tags__el">100х50</div>
-                    <div class="ct_tags__el">100х100</div>
-                </div>
-                <div class="ct_tags">
-                    <div class="ct_tags__el">1 мм</div>
-                    <div class="ct_tags__el">1,35 мм</div>
-                    <div class="ct_tags__el">1,5 мм</div>
-                    <div class="ct_tags__el">1,8 мм</div>
-                    <div class="ct_tags__el">2 мм</div>
-                    <div class="ct_tags__el">2,5 мм</div>
-                    <div class="ct_tags__el">2,8 мм</div>
-                    <div class="ct_tags__el">3 мм</div>
-                    <div class="ct_tags__el">3,5 мм</div>
-                    <div class="ct_tags__el">4 мм</div>
-                    <div class="ct_tags__el">5 мм</div>
-                </div>
-                <div class="ct_tags">
-                    <div class="ct_tags__el">Труба холоднокатаная</div>
-                    <div class="ct_tags__el">Труба оцинкованная</div>
-                </div>
+                <div class="ct_tags_wrp"></div>
                 <div class="ct__line">
                     <div class="ct__left">
                         <div class="ct__filt"></div>

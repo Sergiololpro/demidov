@@ -779,4 +779,11 @@ $(document).ready(function () {
         location = $("#cat_sort").val();
     });
 
+    // Перенос теггов
+    if ($(".ct_tags_wrp").length) {
+        $(".ct_tags").each(function() {
+            $($(this).detach()).appendTo(".ct_tags_wrp");
+        });
+    }
+
 });
