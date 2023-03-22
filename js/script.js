@@ -812,4 +812,9 @@ $(document).ready(function () {
         });
     }
 
+    // Открыть окно
+    $(".cart_el-add").on("click", function() {
+        $(".modal_cart").addClass("active");
+    });
+
 });
