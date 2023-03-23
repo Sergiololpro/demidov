@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="js/libs/modal_video/modal_video.min.css">
   <link rel="stylesheet" href="js/libs/datepicker/datepicker.css">
   <link rel="stylesheet" href="js/libs/fancybox/fancybox.css">
-  <link rel="stylesheet" href="css/styles.css?v=30">
+  <link rel="stylesheet" href="css/styles.css?v=31">
   <title>Demidov</title>
 </head>
 
@@ -214,6 +214,20 @@
               <a href="#" class="drop__link">Лист холоднокатаный</a>
             </div>
           </div>
+        </div>
+        <div class="drop__bottom">
+          <div class="drop__col">
+            <div class="drop__cat">
+              <a href="#" class="drop__ttl">Нестандартные профили по чертежам заказчика</a>
+              <div class="drop__el">
+                <a href="#" class="drop__link">Т-образный профиль</a>
+                <a href="#" class="drop__link">Треугольная труба</a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="drop__banner" style="background-image: url(img/drop__banner.jpg)">
+            Сферы применения
+          </a>
         </div>
       </div>
     </div>

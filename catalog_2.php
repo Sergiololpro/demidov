@@ -292,7 +292,13 @@
                                         <li>Длина: 6м</li>
                                         <li>Склад: Москва</li>
                                     </ul>
-                                    <div class="element__city">Москва</div>
+                                    <div class="element__city">Москва</div>      
+                                    <div class="element__under">
+                                        <div>Размер: <span>25х25мм</span></div>
+                                        <div>Толщина: <span>3мм</span></div>
+                                        <div>Длина: <span>6м</span></div>
+                                        <div>Сталь: <span>Ст09Г2С</span></div>
+                                    </div>
                                 </div>
                                 <div class="element__right">
                                     <div class="element__old_price">85 500</div>
@@ -326,6 +332,12 @@
                                         <li>Склад: Москва</li>
                                     </ul>
                                     <div class="element__city">Москва</div>
+                                    <div class="element__under">
+                                        <div>Размер: <span>25х25мм</span></div>
+                                        <div>Толщина: <span>3мм</span></div>
+                                        <div>Длина: <span>6м</span></div>
+                                        <div>Сталь: <span>Ст09Г2С</span></div>
+                                    </div>
                                 </div>
                                 <div class="element__right">
                                     <div class="element__old_price">85 500</div>
@@ -359,6 +371,12 @@
                                         <li>Склад: Москва</li>
                                     </ul>
                                     <div class="element__city">Москва</div>
+                                    <div class="element__under">
+                                        <div>Размер: <span>25х25мм</span></div>
+                                        <div>Толщина: <span>3мм</span></div>
+                                        <div>Длина: <span>6м</span></div>
+                                        <div>Сталь: <span>Ст09Г2С</span></div>
+                                    </div>
                                 </div>
                                 <div class="element__right">
                                     <div class="element__old_price">85 500</div>
@@ -392,6 +410,12 @@
                                         <li>Склад: Москва</li>
                                     </ul>
                                     <div class="element__city">Москва</div>
+                                    <div class="element__under">
+                                        <div>Размер: <span>25х25мм</span></div>
+                                        <div>Толщина: <span>3мм</span></div>
+                                        <div>Длина: <span>6м</span></div>
+                                        <div>Сталь: <span>Ст09Г2С</span></div>
+                                    </div>
                                 </div>
                                 <div class="element__right">
                                     <div class="element__old_price">85 500</div>

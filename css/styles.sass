@@ -399,7 +399,7 @@ body
     left: 0
     right: 0
     top: 166px
-    padding: 40px 0 0
+    padding: 40px 0
     transform: scale(0)
     transform-origin: top
     transition: transform .5s ease-out
@@ -449,6 +449,25 @@ body
             font-size: 15px
             font-weight: 400
             padding: 0 0 0 10px
+    &__bottom
+        width: 100%
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &__banner
+        width: 700px
+        max-width: 100%
+        height: 110px
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        border-radius: 4px
+        font-size: 28px
+        color: #fff
+        overflow: hidden
+        font-weight: 700
+        padding: 40px
+        margin: 0 0 0 100px
 
 .banner
     overflow: hidden
@@ -958,6 +977,7 @@ body
             .checked
                 fill: #56C8D1
                 cursor: pointer
+                pointer-events: auto
                 transition: fill .3s ease-out
                 &:hover
                     fill: #fff
@@ -966,6 +986,8 @@ body
                 pointer-events: none
             .icon-2
                 fill: #fff
+                pointer-events: none
+            path
                 pointer-events: none
     &_window
         width: 220px
@@ -3223,6 +3245,7 @@ body
         font-size: 13px
         color: #56C8D1
         font-weight: 700
+        white-space: nowrap
         padding: 0 0 0 22px
         &-inactive
             background: none
@@ -3299,6 +3322,17 @@ body
     &__city
         font-size: 15px
         display: none
+    &__under
+        font-size: 11px
+        color: #808080
+        display: none
+        div
+            white-space: nowrap
+            margin: 0 10px 0 0
+            &:last-child
+                margin: 0
+        span
+            font-weight: 700
     &_controls
         display: flex
         margin: 0 20px 0 0
@@ -5713,11 +5747,11 @@ body
             font-size: 13px
             color: #BEBEBE
             &-title
-                width: calc((100% - 270px) * .5)
+                width: calc((100% - 196px) * .65)
             &-city
-                width: calc((100% - 270px) * .25)
+                width: calc((100% - 196px) * .15)
             &-stock
-                width: calc((100% - 270px) * .45)
+                width: calc((100% - 196px) * .40)
             &-price
                 width: 150px
                 text-align: right
@@ -5785,29 +5819,35 @@ body
         &__price
             font-size: 20px
         &__title
-            width: 50%
+            width: 65%
             order: 1
             font-size: 16px
             padding: 0 16px 0 0
             margin: 0
         &__city
-            width: 25%
+            width: 15%
             display: block
             order: 2
         &__top
-            width: 25%
+            width: 20%
             display: block
             order: 3
             margin: 0
         &__left
             width: calc(100% - 150px)
             display: flex
+            flex-wrap: wrap
             align-items: center
             padding: 0 120px 0 0
         &__art,
         &__ul,
         &__fav
             display: none
+        &__under
+            width: 65%
+            display: flex
+            order: 3
+            margin: 4px 0 0
         &_controls
             position: absolute
             right: 300px
