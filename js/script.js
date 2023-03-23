@@ -817,4 +817,9 @@ $(document).ready(function () {
         $(".modal_cart").addClass("active");
     });
 
+    // Открыть подсказку
+    $(".left_el__text").on("click", function() {
+        $(".left_el__content").toggleClass("active");
+    });
+
 });

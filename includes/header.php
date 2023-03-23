@@ -670,4 +670,21 @@
       </div>
     </div>
   </div>
+
+  <div class="left_el">
+    <div class="left_el__text">
+      ?
+      <span>Нужна помощь</span>
+    </div>
+    <div class="left_el__content">
+      <div class="left_el__title">Воспользуйтесь кнопками быстрого перехода</div>
+      <div class="left_el__links">
+        <a href="#" class="left_el__link left_el__link-1">Проверить наличие</a>
+        <a href="#" class="left_el__link left_el__link-2">Акции</a>
+        <a href="#" class="left_el__link left_el__link-3">Металлобработка</a>
+        <a href="#" class="left_el__link left_el__link-4">Контакты</a>
+        <a href="#" class="left_el__link left_el__link-5">Закажите обратный звонок</a>
+      </div>
+    </div>
+  </div>
   

@@ -6118,6 +6118,78 @@ body
         &:hover
             color: #56C8D1
 
+.left_el
+    width: 64px
+    height: 72px
+    background: #56C8D1
+    border-radius: 8px
+    z-index: 5
+    cursor: pointer
+    position: fixed
+    left: 20px
+    bottom: 80px
+    transition: box-shadow .3s ease-out
+    &:hover
+        box-shadow: 0 42px 56px 23px rgba(0, 0, 0, .1)
+    &__text
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        font-size: 28px
+        color: #fff
+        text-align: center
+        span
+            font-size: 11px
+            font-weight: 700
+    &__content
+        width: 380px
+        background: #fff
+        border-radius: 8px
+        box-shadow: 0 42px 56px 23px rgba(0, 0, 0, .1)
+        position: absolute
+        left: 84px
+        bottom: 0
+        padding: 10px 0
+        transform: scale(0)
+        transform-origin: left bottom
+        transition: transform .3s ease-out
+        &.active
+            transform: scale(1)
+    &__title
+        font-size: 20px
+        font-weight: 700
+        line-height: 130%
+        padding: 10px 20px
+    &__links
+        display: flex
+        flex-direction: column
+    &__link
+        background-position: 16px center
+        background-size: 20px
+        background-repeat: no-repeat
+        border-bottom: 1px solid #eee
+        font-size: 15px
+        cursor: pointer
+        padding: 20px 20px 20px 44px
+        transition: background .3s ease-out
+        &:hover
+            background-color: rgba(114, 203, 210, .1)
+        &:last-child
+            border-bottom: none
+        &-1
+            background-image: url(../img/left_el__link-1.svg)
+        &-2
+            background-image: url(../img/left_el__link-2.svg)
+        &-3
+            background-image: url(../img/left_el__link-3.svg)
+        &-4
+            background-image: url(../img/left_el__link-4.svg)
+        &-5
+            background-image: url(../img/left_el__link-5.svg)
+
+        
+
 @media (max-height: 700px)
     .banner
         &__title
@@ -7937,6 +8009,18 @@ body
         top: 130px
         &.short
             top: 80px
+
+    .left_el
+        bottom: 20px
+        &__content
+            width: 280px
+            left: 0
+            bottom: 82px
+        &__title
+            font-size: 16px
+            padding: 0 10px
+        &__link
+            padding: 14px 14px 14px 44px
 
 @media (max-width: 375px)
     .header
