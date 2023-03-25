@@ -5741,20 +5741,23 @@ body
 .table
     &_title
         display: none
+        position: relative
         padding: 0 140px 0 56px
         margin: 32px 0 16px
         &__col
             font-size: 13px
             color: #BEBEBE
             &-title
-                width: calc((100% - 196px) * .65)
+                width: calc((100% - 270px) * .65)
             &-city
-                width: calc((100% - 196px) * .15)
+                width: calc((100% - 270px) * .15)
             &-stock
-                width: calc((100% - 196px) * .40)
+                width: calc((100% - 270px) * .40)
             &-price
                 width: 150px
                 text-align: right
+                position: absolute
+                right: 140px
     .table
         &_title
             display: flex
@@ -5846,6 +5849,7 @@ body
         &__under
             width: 65%
             display: flex
+            flex-wrap: wrap
             order: 3
             margin: 4px 0 0
         &_controls
