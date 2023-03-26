@@ -671,6 +671,27 @@
     </div>
   </div>
 
+  <div class="modal modal_bottom">
+    <div class="modal__content">
+      <div class="modal__close"></div>
+      <div class="modal__title">Нашли дешевле?</div>
+      <div class="modal__und">Готовы обсудить и предложить<br> индивидуальные условия!</div>
+      <div class="modal__input">
+        <div class="modal__label">Цена (с учетом НДС) у другой компании<span>*</span></div>
+        <input id="b_price" name="b_price" placeholder="Введите" class="input" type="text">
+      </div>
+      <div class="modal__input">
+        <div class="modal__label">Ваш телефон<span>*</span></div>
+        <input id="b_phone" name="b_phone" placeholder="Введите" class="input" type="text">
+      </div>
+      <div class="modal__input">
+        <div class="modal__label">Комментарий<span>*</span></div>
+        <textarea id="b_comment" name="b_comment" class="textarea" placeholder="Опишите подробнее, что необходимо сделать"></textarea>
+      </div>
+      <div class="modal__button modal__button-dark modal__button-full">Отправить</div>
+    </div>
+  </div>
+
   <div class="left_el">
     <div class="left_el__text">
       ?
@@ -686,5 +707,9 @@
         <a href="#" class="left_el__link left_el__link-5">Закажите обратный звонок</a>
       </div>
     </div>
+  </div>
+
+  <div class="bottom_el">
+    <span>Нашли дешевле? Обсудим индивидуальные условия!</span>
   </div>
   

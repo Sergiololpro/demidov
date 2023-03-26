@@ -3714,6 +3714,11 @@ body
         color: #1E3B3E
         font-weight: 700
         margin: 0 0 30px
+    &__und
+        font-size: 18px
+        color: #1E3B3E
+        line-height: 150%
+        margin: 0 0 30px
     &__input
         position: relative
         margin: 0 0 30px
@@ -3861,6 +3866,9 @@ body
             &__content
                 width: 984px
                 min-height: 427px
+    &_bottom
+        align-items: flex-end
+        padding: 0 0 70px
     .select2
         &-container
             width: 100% !important
@@ -6192,6 +6200,33 @@ body
         &-5
             background-image: url(../img/left_el__link-5.svg)
 
+.bottom_el
+    width: 456px
+    max-width: 100%
+    height: 48px
+    display: flex
+    justify-content: center
+    align-items: center
+    background: #56C8D1
+    border-radius: 8px 8px 0 0
+    z-index: 11
+    cursor: pointer
+    position: fixed
+    left: 0
+    right: 0
+    bottom: 0
+    margin: 0 auto
+    transition: opacity .3s ease-out
+    &:hover
+        opacity: .8
+    span
+        background: url(../img/bottom_el.svg) left center no-repeat
+        background-size: 16px
+        font-size: 13px
+        color: #fff
+        font-weight: 700
+        text-align: center
+        padding: 0 0 0 24px
         
 
 @media (max-height: 700px)
@@ -7509,6 +7544,8 @@ body
         &__title
             font-size: 24px
             margin: 0 0 20px
+        &__und
+            font-size: 16px
         &__buttons
             flex-direction: column
             margin: 20px 0
@@ -8015,7 +8052,7 @@ body
             top: 80px
 
     .left_el
-        bottom: 20px
+        bottom: 58px
         &__content
             width: 280px
             left: 0
@@ -8030,6 +8067,10 @@ body
     .header
         &__phone
             font-size: 12px
+
+    .bottom_el
+        span
+            font-size: 10px
 
 @media (max-width: 320px)
     .header

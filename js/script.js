@@ -822,4 +822,9 @@ $(document).ready(function () {
         $(".left_el__content").toggleClass("active");
     });
 
+    // Открыть окно внизу
+    $(".bottom_el").on("click", function() {
+        $(".modal_bottom").addClass("active");
+    });
+
 });
