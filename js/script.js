@@ -827,4 +827,11 @@ $(document).ready(function () {
         $(".modal_bottom").addClass("active");
     });
 
+    // Выбрать тег
+    $(".ct_tags__el").on("click", function() {
+        var id = $(this).attr("id");
+
+        $("[for='" + id +"']").trigger("click");
+    });
+
 });
