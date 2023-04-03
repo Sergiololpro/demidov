@@ -705,6 +705,7 @@
       <span>Нужна помощь</span>
     </div>
     <div class="left_el__content">
+      <div class="left_el__close"></div>
       <div class="left_el__title">Воспользуйтесь кнопками быстрого перехода</div>
       <div class="left_el__links">
         <a href="#" class="left_el__link left_el__link-1">Проверить наличие</a>

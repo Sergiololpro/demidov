@@ -822,6 +822,11 @@ $(document).ready(function () {
         $(".left_el__content").toggleClass("active");
     });
 
+    // Закрыть подсказку
+    $(".left_el__close").on("click", function() {
+        $(".left_el__content").removeClass("active");
+    });
+
     // Открыть окно внизу
     $(".bottom_el").on("click", function() {
         $(".modal_bottom").addClass("active");
