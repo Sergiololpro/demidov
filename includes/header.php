@@ -720,4 +720,15 @@
   <div class="bottom_el">
     <span>Нашли дешевле? Обсудим индивидуальные условия!</span>
   </div>
+
+  <div class="modal modal_in">
+    <div class="modal__content">
+      <div class="modal__close"></div>
+      <img class="modal_in__img" src="img/modal_in.svg" alt="">
+      <div class="modal__title">Товар добавлен в корзину</div>
+      <div class="modal__text modal__text-full">Приятных вам покупок</div>
+      <div class="modal__button modal__button-full">Продолжить покупки</div>
+      <div class="modal__button modal__button-dark modal__button-full">Оформить заказ</div>
+    </div>
+  </div>
   
