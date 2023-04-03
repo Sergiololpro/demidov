@@ -101,6 +101,19 @@
                         </div>
                     </div>
                 </div>
+                <div class="contacts_slider">
+                    <div class="contacts_reqs__title">Фото склада</div>
+                    <div class="contacts_slider__wrp">
+                        <div class="contacts_slider__el" style="background-image: url(img/news__image-1.jpg)"></div>
+                        <div class="contacts_slider__el" style="background-image: url(img/news__image-2.jpg)"></div>
+                        <div class="contacts_slider__el" style="background-image: url(img/news__image-3.jpg)"></div>
+                        <div class="contacts_slider__el" style="background-image: url(img/news__image-4.jpg)"></div>
+                        <div class="contacts_slider__el" style="background-image: url(img/news__image-1.jpg)"></div>
+                        <div class="contacts_slider__el" style="background-image: url(img/news__image-2.jpg)"></div>
+                        <div class="contacts_slider__el" style="background-image: url(img/news__image-3.jpg)"></div>
+                        <div class="contacts_slider__el" style="background-image: url(img/news__image-4.jpg)"></div>
+                    </div>
+                </div>
                 <div class="contacts_reqs">
                     <div class="contacts_reqs__title">Реквизиты Москва</div>
                     <ul class="contacts_reqs__ul">

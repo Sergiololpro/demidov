@@ -87,29 +87,43 @@
                             Покупатель
                         </div>
                         <div class="order__buttons">
-                            <div class="order__button active">Физлицо</div>
-                            <div class="order__button">Юрлицо</div>
+                            <div data-id="1" class="order__button order__button-person active">Физлицо</div>
+                            <div data-id="2" class="order__button order__button-person">Юрлицо</div>
                         </div>
-                        <div class="modal__input">
-                            <div class="modal__label">Наименование компании<span>*</span></div>
-                            <input id="title" name="title" placeholder="Введите" class="input" type="text">
-                        </div>
-                        <div class="modal__input">
-                            <div class="modal__label">Контактное лицо<span>*</span></div>
-                            <input id="name" name="name" placeholder="Введите" class="input" type="text">
-                        </div>
-                        <div class="order__inputs">
+                        <div data-id="1" class="order__cont active">
                             <div class="modal__input">
-                                <div class="modal__label">Мобильный телефон<span>*</span></div>
-                                <input id="phone" name="phone" placeholder="Введите" class="input" type="text">
+                                <div class="modal__label">ФИО<span>*</span></div>
+                                <input id="f_name" name="f_name" placeholder="Введите" class="input" type="text">
+                            </div>
+                            <div class="order__inputs">
+                                <div class="modal__input">
+                                    <div class="modal__label">Телефон<span>*</span></div>
+                                    <input id="f_phone" name="f_phone" placeholder="Введите" class="input" type="text">
+                                </div>
+                                <div class="modal__input">
+                                    <div class="modal__label">E-mail<span>*</span></div>
+                                    <input id="f_email" name="f_email" placeholder="Введите" class="input" type="email">
+                                </div>
+                            </div>
+                        </div>
+                        <div data-id="2" class="order__cont">
+                            <div class="modal__input">
+                                <div class="modal__label">Наименование компании<span>*</span></div>
+                                <input id="u_title" name="u_title" placeholder="Введите" class="input" type="text">
                             </div>
                             <div class="modal__input">
-                                <div class="modal__label">E-mail<span>*</span></div>
-                                <input id="email" name="email" placeholder="Введите" class="input" type="email">
+                                <div class="modal__label">Контактное лицо<span>*</span></div>
+                                <input id="u_name" name="u_name" placeholder="Введите" class="input" type="text">
                             </div>
-                            <div class="modal__input">
-                                <div class="modal__label">Городской номер<span>*</span></div>
-                                <input id="city_phone" name="city_phone" placeholder="Введите" class="input" type="text">
+                            <div class="order__inputs">
+                                <div class="modal__input">
+                                    <div class="modal__label">Телефон<span>*</span></div>
+                                    <input id=u_phone" name="u_phone" placeholder="Введите" class="input" type="text">
+                                </div>
+                                <div class="modal__input">
+                                    <div class="modal__label">E-mail<span>*</span></div>
+                                    <input id="u_email" name="u_email" placeholder="Введите" class="input" type="email">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -213,6 +227,9 @@
                     <li>Общий вес: 21,5 т.</li>
                     <li>Максимальная длина: 6 м.</li>
                 </ul>
+                <div class="card__alert">
+                    Внимание! <span>Цены носят ознакомительный характер</span>. Окончательную стоимость сообщит менеджер после обработки заявки.
+                </div>
                 <div class="cart__button">Подтвердить заказ</div>
                 <div class="cart__under">
                     Нажимая кнопку «Подписаться» вы соглашаетесь с условиями <a href="#">Пользовательского соглашения</a> и <a href="#">Условиями обработки персональных данных</a>

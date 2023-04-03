@@ -834,4 +834,47 @@ $(document).ready(function () {
         $("[for='" + id +"']").trigger("click");
     });
 
+    //  Оформление заказа, переключение
+    $(".order__button-person").on("click", function() {
+        var id = $(this).data("id");
+
+        $(".order__button-person, .order__cont").removeClass("active");
+
+        $(this).addClass("active");
+        
+        $(".order__cont[data-id=" + id + "]").addClass("active");
+    });
+
+    // Слайдер контакты
+    if ($('.contacts_slider__wrp').length) {
+        $(".contacts_slider__wrp").slick({
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            prevArrow: '<div class="contacts_slider__nav contacts_slider__nav-prev"></div>',
+            nextArrow: '<div class="contacts_slider__nav contacts_slider__nav-next"></div>',
+            dots: true,
+            responsive: [{
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 641,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }]
+        });
+    }
+
 });

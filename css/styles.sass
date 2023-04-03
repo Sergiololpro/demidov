@@ -3113,6 +3113,8 @@ body
             &:hover
                 background: #56C8D1
                 color: #fff
+            &-full
+                width: 100%
         &__text
             font-size: 11px
             color: #BEBEBE
@@ -4006,6 +4008,10 @@ body
         span
             &:last-child
                 display: none
+    &__cont
+        display: none
+        &.active
+            display: block
     &__address
         background: url(../img/city.svg) left top no-repeat
         background-size: 12px 16px
@@ -4032,10 +4038,12 @@ body
             opacity: .7
     &__inputs
         display: flex
-        justify-content: space-between
         .modal
             &__input
-                width: calc((100% - 40px) / 3)
+                width: calc((100% - 20px) / 2)
+                margin: 0 20px 0 0
+                &:last-child
+                    margin: 0
     &_els
         margin: 30px 0 0
         &__title
@@ -4934,6 +4942,62 @@ body
             height: auto
             opacity: 1
             transform: translateX(0)
+    &_slider
+        margin: 0 0 40px
+        &__wrp
+            width: calc(100% + 30px)
+            position: relative
+            padding: 0 0 60px
+            margin: 0 0 0 -15px
+        &__el
+            width: 340px
+            height: 340px
+            background-position: center
+            background-size: cover
+            background-repeat: no-repeat
+            margin: 0 15px
+        &__nav
+            width: 24px
+            height: 24px
+            background: url(../img/nav-blue.svg) center no-repeat
+            background-size: contain
+            cursor: pointer
+            z-index: 1
+            position: absolute
+            bottom: 0
+            transition: opacity .3s ease-out
+            &:hover
+                opacity: .7
+            &-prev
+                right: 55px
+                transform: scale(-1, 1)
+            &-next
+                right: 15px
+        .slick
+            &-dots
+                display: flex
+                position: absolute
+                left: 15px
+                bottom: 0
+                li
+                    margin: 0 8px 0 0
+                    &:last-child
+                        margin: 0
+                button
+                    width: 8px
+                    height: 8px
+                    background: #eee
+                    border-radius: 16px
+                    font-size: 0
+                    cursor: pointer
+                    padding: 0
+                    transition: width .3s ease-out, background .3s ease-out
+                    &:hover
+                        background: #56C8D1
+            &-active
+                button
+                    width: 40px
+                    background: #56C8D1
     &_reqs
         margin: 50px 0 0
         &__title
@@ -7563,6 +7627,8 @@ body
         &_file
             &__button
                 width: 100%
+                &-full
+                    font-size: 12px
 
     .element
         flex-direction: column
@@ -7627,6 +7693,7 @@ body
             .modal
                 &__input
                     width: 100%
+                    margin: 0 0 30px
         &__button
             span
                 &:first-child

@@ -688,6 +688,13 @@
         <div class="modal__label">Комментарий<span>*</span></div>
         <textarea id="b_comment" name="b_comment" class="textarea" placeholder="Опишите подробнее, что необходимо сделать"></textarea>
       </div>
+      <div class="input_file">
+        <input id="file_bottom" name="file_bottom" class="input_file__input" type="file">
+        <label for="file_bottom" class="input_file__label">
+          <span class="input_file__button input_file__button-full">Приложить счет другой компании</span>
+          <span class="input_file__text">Не обязательно. Файлы jpeg, png, pdf не более 6 мб</span>
+        </label>
+      </div>
       <div class="modal__button modal__button-dark modal__button-full">Отправить</div>
     </div>
   </div>
