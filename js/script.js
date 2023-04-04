@@ -71,7 +71,7 @@ $(document).ready(function () {
             width = parseInt($(".map_window").css("width"));
     
         $(".map_window").css({
-            left: event.offsetX - width / 2 + 20,
+            left: event.offsetX,
             top: event.offsetY - height / 3 - 160
         });
 
