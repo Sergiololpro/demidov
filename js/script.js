@@ -72,14 +72,14 @@ $(document).ready(function () {
     
         $(".map_window").css({
             left: event.offsetX - width / 2 + 20,
-            top: event.offsetY - height / 3 - 120
+            top: event.offsetY - height / 3 - 160
         });
 
-        $(".map_window__city").html($(this).data("city"));
         $(".map_window__title").html($(this).data("title"));
         $(".map_window__phone").html($(this).data("phone")).attr("href", "tel:" + $(this).data("phone"));
         $(".map_window__email").html($(this).data("email")).attr("href", "mailto:" + $(this).data("email"));;
-        $(".map_window__address span").html($(this).data("address"));
+        $(".map_window__txt-office").html($(this).data("office"));
+        $(".map_window__txt-stock").html($(this).data("stock"));
         $(".map_window__link").attr("href", $(this).data("link"));
 
         $(".map_window").addClass("active");
