@@ -75,11 +75,22 @@ $(document).ready(function () {
             top: event.offsetY - height / 3 - 160
         });
 
+        $(".map_window__address").removeClass("active");
+
         $(".map_window__title").html($(this).data("title"));
         $(".map_window__phone").html($(this).data("phone")).attr("href", "tel:" + $(this).data("phone"));
-        $(".map_window__email").html($(this).data("email")).attr("href", "mailto:" + $(this).data("email"));;
-        $(".map_window__txt-office").html($(this).data("office"));
-        $(".map_window__txt-stock").html($(this).data("stock"));
+        $(".map_window__email").html($(this).data("email")).attr("href", "mailto:" + $(this).data("email"));
+
+        if ($(this).data("office")) {
+            $(".map_window__address-office").addClass("active");
+            $(".map_window__txt-office").html($(this).data("office"));
+        }
+
+        if ($(this).data("stock")) {
+            $(".map_window__address-stock").addClass("active");
+            $(".map_window__txt-stock").html($(this).data("stock"));
+        }
+    
         $(".map_window__link").attr("href", $(this).data("link"));
 
         $(".map_window").addClass("active");

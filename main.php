@@ -533,11 +533,11 @@
                 <div class="map_window__title"></div>
                 <a href="#" class="map_window__phone"></a>
                 <a href="#" class="map_window__email"></a>
-                <div class="map_window__address">
+                <div class="map_window__address map_window__address-office">
                     <div class="map_window__ttl">Офис:</div>
                     <div class="map_window__txt map_window__txt-office"></div>
                 </div>
-                <div class="map_window__address">
+                <div class="map_window__address map_window__address-stock">
                     <div class="map_window__ttl">Склад:</div>
                     <div class="map_window__txt map_window__txt-stock"></div>
                 </div>
