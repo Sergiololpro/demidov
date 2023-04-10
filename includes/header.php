@@ -418,7 +418,7 @@
         </label>
       </div>
       <div class="modal__buttons">
-        <div class="modal__button">Отмена</div>
+        <div class="modal__button close_modal">Отмена</div>
         <div class="modal__button modal__button-dark">Добавить</div>
       </div>
       <div class="modal__operator">После оформления заказа Менеджер клиентского сервиса свяжется с Вами для уточнения деталей задания</div>
