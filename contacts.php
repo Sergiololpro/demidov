@@ -104,14 +104,14 @@
                 <div class="contacts_slider">
                     <div class="contacts_reqs__title">Фото склада</div>
                     <div class="contacts_slider__wrp">
-                        <div class="contacts_slider__el" style="background-image: url(img/news__image-1.jpg)"></div>
-                        <div class="contacts_slider__el" style="background-image: url(img/news__image-2.jpg)"></div>
-                        <div class="contacts_slider__el" style="background-image: url(img/news__image-3.jpg)"></div>
-                        <div class="contacts_slider__el" style="background-image: url(img/news__image-4.jpg)"></div>
-                        <div class="contacts_slider__el" style="background-image: url(img/news__image-1.jpg)"></div>
-                        <div class="contacts_slider__el" style="background-image: url(img/news__image-2.jpg)"></div>
-                        <div class="contacts_slider__el" style="background-image: url(img/news__image-3.jpg)"></div>
-                        <div class="contacts_slider__el" style="background-image: url(img/news__image-4.jpg)"></div>
+                        <a href="img/news__image-1.jpg" rel="contacts" class="contacts_slider__el fancybox" style="background-image: url(img/news__image-1.jpg)"></a>
+                        <a href="img/news__image-2.jpg" rel="contacts" class="contacts_slider__el fancybox" style="background-image: url(img/news__image-2.jpg)"></a>
+                        <a href="img/news__image-3.jpg" rel="contacts" class="contacts_slider__el fancybox" style="background-image: url(img/news__image-3.jpg)"></a>
+                        <a href="img/news__image-4.jpg" rel="contacts" class="contacts_slider__el fancybox" style="background-image: url(img/news__image-4.jpg)"></a>
+                        <a href="img/news__image-1.jpg" rel="contacts" class="contacts_slider__el fancybox" style="background-image: url(img/news__image-1.jpg)"></a>
+                        <a href="img/news__image-2.jpg" rel="contacts" class="contacts_slider__el fancybox" style="background-image: url(img/news__image-2.jpg)"></a>
+                        <a href="img/news__image-3.jpg" rel="contacts" class="contacts_slider__el fancybox" style="background-image: url(img/news__image-3.jpg)"></a>
+                        <a href="img/news__image-4.jpg" rel="contacts" class="contacts_slider__el fancybox" style="background-image: url(img/news__image-4.jpg)"></a>
                     </div>
                 </div>
                 <div class="contacts_reqs">
