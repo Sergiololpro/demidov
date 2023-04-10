@@ -218,6 +218,16 @@
                         <div class="ct_tags__el">60х40</div>
                         <div class="ct_tags__el">100х50</div>
                         <div class="ct_tags__el">100х100</div>
+                        <div class="ct_tags__el">15х15</div>
+                        <div class="ct_tags__el">20х20</div>
+                        <div class="ct_tags__el">25х25</div>
+                        <div class="ct_tags__el">40х20</div>
+                        <div class="ct_tags__el">30х30</div>
+                        <div class="ct_tags__el">40х40</div>
+                        <div class="ct_tags__el">50х50</div>
+                        <div class="ct_tags__el">60х40</div>
+                        <div class="ct_tags__el">100х50</div>
+                        <div class="ct_tags__el">100х100</div>
                     </div>
                     <div class="ct_tags">
                         <div class="ct_tags__el">1 мм</div>
@@ -248,7 +258,12 @@
                     <div class="banner__button">Заказать</div>
                 </div>
                 <input class="ct__search" placeholder="Поиск по каталогу" type="text">
-                <div class="ct_tags_wrp"></div>
+                <div class="ct_tags__wrp">
+                    <div class="ct_tags_els">
+
+                    </div>
+                    <div class='ct_tags__more'>Показать все</div>
+                </div>
                 <div class="ct__line">
                     <div class="ct__left">
                         <div class="ct__filt"></div>

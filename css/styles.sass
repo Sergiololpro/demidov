@@ -2865,8 +2865,17 @@ body
     &_tags
         display: flex
         flex-wrap: wrap
+        overflow: hidden
         margin: 0 0 10px
-        &__el
+        &__wrp
+            &.hide
+                .ct
+                    &_tags
+                        height: 32px
+                        &__more
+                            display: inline-block
+        &__el,
+        &__more
             height: 32px
             background: #FAFAFA
             border-radius: 4px
@@ -2881,6 +2890,21 @@ body
             &.active
                 background: #56C8D1
                 color: #fff
+        &__more
+            height: 32px
+            display: none
+            background: #56C8D1
+            border-radius: 4px
+            font-size: 16px
+            color: #fff
+            font-weight: 700
+            line-height: 34px
+            cursor: pointer
+            padding: 0 10px
+            margin: 0 10px 10px 0
+            transition: opacity .3s ease-out
+            &:hover
+                opacity: .8
     &__els
         margin: 0 0 20px
     &__more

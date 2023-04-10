@@ -817,11 +817,22 @@ $(document).ready(function () {
     });
 
     // Перенос теггов
-    if ($(".ct_tags_wrp").length) {
+    if ($(".ct_tags__wrp").length) {
         $(".ct_tags").each(function() {
-            $($(this).detach()).appendTo(".ct_tags_wrp");
+            $($(this).detach()).appendTo(".ct_tags_els");
+        });
+
+        $(".ct_tags").each(function() {
+            if ($(this).height() > 42) {
+                $(".ct_tags__wrp").addClass("hide");
+            }
         });
     }
+
+    // Показать все теги
+    $(".ct_tags__more").on("click", function() {
+        $(".ct_tags__wrp").removeClass("hide");
+    });
 
     // Открыть окно
     $(".cart_el-add").on("click", function() {
