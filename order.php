@@ -75,6 +75,12 @@
                                         <option value="time_2">с 15:00 до 20:00</option>
                                     </select>
                                 </div>
+                                <div data-id="1" class="card__alert card__alert-order active">
+                                    Дату и время Вам сообщит менеджер после обработки заявки.
+                                </div>
+                                <div data-id="2" class="card__alert card__alert-order">
+                                    Стоимость доставки рассчитывается индивидуально. Дату, время и итоговую стоимость Вам сообщит менеджер после обработки заявки.
+                                </div>
                             </div>
                             <div class="order__rgt">
                                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af60fcafc04bbfa7137a2f05d6d3c58c30702dd3631a65aca38ff2230fb595196&amp;source=constructor"></iframe>

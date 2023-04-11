@@ -736,10 +736,11 @@ $(document).ready(function () {
     $(".order__button-address").on("click", function() {
         var id = $(this).data("id");
 
-        $(".order__button-address, .order__wrp").removeClass("active");
+        $(".order__button-address, .order__wrp, .card__alert-order").removeClass("active");
 
         $(this).addClass("active");
         $(".order__wrp[data-id=" + id + "]").addClass("active");
+        $(".card__alert-order[data-id=" + id + "]").addClass("active");
 
         if (id == 1) {
             $(".order__rgt").show();
