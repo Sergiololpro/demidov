@@ -729,6 +729,9 @@
       <div class="modal__text modal__text-full">Приятных вам покупок</div>
       <div class="modal__button modal__button-full close_modal">Продолжить покупки</div>
       <div class="modal__button modal__button-dark modal__button-full">Оформить заказ</div>
+      <div class="card__alert card__alert-modal">
+          Внимание! <span>Цены носят ознакомительный характер</span>. Окончательную стоимость сообщит менеджер после обработки заявки.
+      </div>
     </div>
   </div>
   
