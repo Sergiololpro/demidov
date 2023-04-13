@@ -859,7 +859,17 @@ $(document).ready(function () {
     $(".ct_tags__el").on("click", function() {
         var id = $(this).attr("id");
 
-        $("[for='" + id +"']").trigger("click");
+        $(".bx-filter-select-popup ." + id +"").click();
+
+        $("li.all_inp").each(function() {
+            $(this).trigger("click");
+        });
+
+        setTimeout(function() { 
+            var box_fl = document.querySelector('.bx-filter-container-modef a');
+            
+            box_fl.click();
+        }, 2000);
     });
 
     //  Оформление заказа, переключение
