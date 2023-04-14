@@ -726,6 +726,11 @@
       <div class="modal__close"></div>
       <img class="modal_in__img" src="img/modal_in.svg" alt="">
       <div class="modal__title">Товар добавлен в корзину</div>
+      <div class="modal_in_el">
+        <div class="modal_in_el__img" style="background-image: url(img/card__image-1.jpg)"></div>
+        <div class="modal_in_el__title">Труба профильная 25х25х3</div>
+        <div class="modal_in_el__count">1 шт</div>
+      </div>
       <div class="modal__text modal__text-full">Приятных вам покупок</div>
       <div class="modal__button modal__button-full close_modal">Продолжить покупки</div>
       <div class="modal__button modal__button-dark modal__button-full">Оформить заказ</div>
