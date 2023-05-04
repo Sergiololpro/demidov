@@ -51,6 +51,51 @@
                     <div class="services__title">Валы-шестерни</div>
                     <div class="services__link">Подробнее...</div>
                 </a>
+                <a href="#" class="services__el">
+                    <div class="services__image" style="background-image: url(img/services__image-1.jpg)"></div>
+                    <div class="services__title">Перфорирование</div>
+                    <div class="services__link">Подробнее...</div>
+                </a>
+                <a href="#" class="services__el">
+                    <div class="services__image" style="background-image: url(img/services__image-2.jpg)"></div>
+                    <div class="services__title">Токарная обработка</div>
+                    <div class="services__link">Подробнее...</div>
+                </a>
+                <a href="#" class="services__el">
+                    <div class="services__image" style="background-image: url(img/services__image-3.jpg)"></div>
+                    <div class="services__title">Гильотинные нодницы</div>
+                    <div class="services__link">Подробнее...</div>
+                </a>
+                <a href="#" class="services__el">
+                    <div class="services__image" style="background-image: url(img/services__image-1.jpg)"></div>
+                    <div class="services__title">Изготовление зубчатых колес</div>
+                    <div class="services__link">Подробнее...</div>
+                </a>
+                <a href="#" class="services__el">
+                    <div class="services__image" style="background-image: url(img/services__image-2.jpg)"></div>
+                    <div class="services__title">Валы-шестерни</div>
+                    <div class="services__link">Подробнее...</div>
+                </a>
+                <a href="#" class="services__el">
+                    <div class="services__image" style="background-image: url(img/services__image-2.jpg)"></div>
+                    <div class="services__title">Токарная обработка</div>
+                    <div class="services__link">Подробнее...</div>
+                </a>
+                <a href="#" class="services__el">
+                    <div class="services__image" style="background-image: url(img/services__image-3.jpg)"></div>
+                    <div class="services__title">Гильотинные нодницы</div>
+                    <div class="services__link">Подробнее...</div>
+                </a>
+                <a href="#" class="services__el">
+                    <div class="services__image" style="background-image: url(img/services__image-1.jpg)"></div>
+                    <div class="services__title">Изготовление зубчатых колес</div>
+                    <div class="services__link">Подробнее...</div>
+                </a>
+                <a href="#" class="services__el">
+                    <div class="services__image" style="background-image: url(img/services__image-2.jpg)"></div>
+                    <div class="services__title">Валы-шестерни</div>
+                    <div class="services__link">Подробнее...</div>
+                </a>
             </div>
         </div>
     </div>
