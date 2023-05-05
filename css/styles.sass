@@ -163,7 +163,11 @@ body
         color: #56C8D1
         font-weight: 700
         white-space: nowrap
+        cursor: pointer
         padding: 0 0 0 24px
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
     &__time
         background: url(../img/time.svg) left center no-repeat
         background-size: 16px
@@ -3963,6 +3967,33 @@ body
             &__button
                 &-full
                     margin: 0 0 15px
+    &_city
+        .modal
+            &__content
+                height: 380px
+        &__els
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+        &__el
+            width: 45%
+            font-size: 16px
+            color: #56C8D1
+            cursor: pointer
+            margin: 0 0 20px
+            transition: opacity .3s ease-out
+            &:hover
+                opacity: .7
+    &_city_choose
+        .modal
+            &__content
+                height: 200px
+        &__text
+            font-size: 28px
+            font-weight: 700
+            margin: 0 0 30px
+            span
+                color: #56C8D1
     .select2
         &-container
             width: 100% !important

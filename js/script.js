@@ -867,7 +867,7 @@ $(document).ready(function () {
 
         setTimeout(function() { 
             var box_fl = document.querySelector('.bx-filter-container-modef a');
-            
+
             box_fl.click();
         }, 2000);
     });
@@ -914,5 +914,10 @@ $(document).ready(function () {
             }]
         });
     }
+
+    // Открыть окно выбора города
+    $(".choose_city").on("click", function() {
+        $(".modal_city").addClass("active");
+    });
 
 });

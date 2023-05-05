@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="js/libs/modal_video/modal_video.min.css">
   <link rel="stylesheet" href="js/libs/datepicker/datepicker.css">
   <link rel="stylesheet" href="js/libs/fancybox/fancybox.css">
-  <link rel="stylesheet" href="css/styles.css?v=33">
+  <link rel="stylesheet" href="css/styles.css?v=34">
   <title>Demidov</title>
 </head>
 
@@ -26,7 +26,7 @@
             <div></div>
             <div></div>
           </div>
-          <div class="header__city">г. Москва</div>
+          <div class="header__city choose_city">г. Москва</div>
           <div class="header__time">Пн-Чт <span>9:00 - 18:00</span> Пт <span>9:00 - 17:00</span></div>
         </div>
         <div class="header__right">
@@ -736,6 +736,38 @@
       <div class="modal__button modal__button-dark modal__button-full">Оформить заказ</div>
       <div class="card__alert card__alert-modal">
           Внимание! <span>Цены носят ознакомительный характер</span>. Окончательную стоимость сообщит менеджер после обработки заявки.
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal_city_choose">
+    <div class="modal__content">
+      <div class="modal__close"></div>
+      <div class="modal_city_choose__text">Ваш город <span>Екатеринбург</span>?</div>
+      <div class="modal__buttons">
+        <div class="modal__button modal__button-dark close_modal">Да</div>
+        <div class="modal__button choose_city">Выбрать другой</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal_city">
+    <div class="modal__content">
+      <div class="modal__close"></div>
+      <div class="modal_city_choose__text">Выберите город</div>
+      <div class="modal_city__els">
+        <div class="modal_city__el">Москва</div>
+        <div class="modal_city__el">Санкт-Петербург</div>
+        <div class="modal_city__el">Новосибирск</div>
+        <div class="modal_city__el">Екатеринбург</div>
+        <div class="modal_city__el">Нижний Новгород</div>
+        <div class="modal_city__el">Казань</div>
+        <div class="modal_city__el">Москва</div>
+        <div class="modal_city__el">Санкт-Петербург</div>
+        <div class="modal_city__el">Новосибирск</div>
+        <div class="modal_city__el">Екатеринбург</div>
+        <div class="modal_city__el">Нижний Новгород</div>
+        <div class="modal_city__el">Казань</div>
       </div>
     </div>
   </div>
