@@ -246,7 +246,7 @@ $(document).ready(function () {
     }
 
     // Закрыть окно
-    $(".modal__close, .close_modal").on("click", function() {
+    $("body").on("click", ".modal__close, .close_modal", function() {
         $(this).closest(".modal").removeClass("active");
     });
 
