@@ -50,14 +50,14 @@
                 </div>
                 <div class="prod__wp">
                     <div class="prod__slider">
-                        <div class="prod__slide" style="background-image: url(img/prod__slide-1.jpg)"></div>
-                        <div class="prod__slide" style="background-image: url(img/prod__slide-2.jpg)"></div>
-                        <div class="prod__slide" style="background-image: url(img/prod__slide-3.jpg)"></div>
-                        <div class="prod__slide" style="background-image: url(img/prod__slide-4.jpg)"></div>
-                        <div class="prod__slide" style="background-image: url(img/prod__slide-1.jpg)"></div>
-                        <div class="prod__slide" style="background-image: url(img/prod__slide-2.jpg)"></div>
-                        <div class="prod__slide" style="background-image: url(img/prod__slide-3.jpg)"></div>
-                        <div class="prod__slide" style="background-image: url(img/prod__slide-4.jpg)"></div>
+                        <a href="img/prod__slide-1.jpg" rel="prod_1" style="background-image: url(img/prod__slide-1.jpg)" class="prod__slide fancybox"></a>
+                        <a href="img/prod__slide-2.jpg" rel="prod_1" style="background-image: url(img/prod__slide-2.jpg)" class="prod__slide fancybox"></a>
+                        <a href="img/prod__slide-3.jpg" rel="prod_1" style="background-image: url(img/prod__slide-3.jpg)" class="prod__slide fancybox"></a>
+                        <a href="img/prod__slide-4.jpg" rel="prod_1" style="background-image: url(img/prod__slide-4.jpg)" class="prod__slide fancybox"></a>
+                        <a href="img/prod__slide-1.jpg" rel="prod_1" style="background-image: url(img/prod__slide-1.jpg)" class="prod__slide fancybox"></a>
+                        <a href="img/prod__slide-2.jpg" rel="prod_1" style="background-image: url(img/prod__slide-2.jpg)" class="prod__slide fancybox"></a>
+                        <a href="img/prod__slide-3.jpg" rel="prod_1" style="background-image: url(img/prod__slide-3.jpg)" class="prod__slide fancybox"></a>
+                        <a href="img/prod__slide-4.jpg" rel="prod_1" style="background-image: url(img/prod__slide-4.jpg)" class="prod__slide fancybox"></a>
                     </div>
                 </div>
             </div>
