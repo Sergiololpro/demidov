@@ -920,4 +920,9 @@ $(document).ready(function () {
         $(".modal_city").addClass("active");
     });
 
+    // Открыть окно резюме
+    $(".open_resume").on("click", function() {
+        $(".modal_resume").addClass("active");
+    });
+
 });

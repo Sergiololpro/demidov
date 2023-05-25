@@ -254,7 +254,7 @@
                             с нашим HR отделом по номеру телефона : <a href="tel:+74912465028">+7 4912 46 50 28</a>
                         </div>
                     </div>
-                    <div class="banner__button">Отпарвить резюме</div>
+                    <div class="banner__button open_resume">Отпарвить резюме</div>
                 </div>
             </div>
         </div>

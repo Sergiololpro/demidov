@@ -771,4 +771,35 @@
       </div>
     </div>
   </div>
+
+  <div class="modal modal_resume">
+    <div class="modal__content">
+      <div class="modal__close"></div>
+      <div class="modal__title">Заявка</div>
+      <div class="modal__input">
+        <div class="modal__label">ФИО<span>*</span></div>
+        <input id="name_resume" name="name_resume" placeholder="Введите" class="input" type="text">
+      </div>
+      <div class="modal__input">
+        <div class="modal__label">Телефон<span>*</span></div>
+        <input id="phone_resume" name="phone_resume" placeholder="Введите" class="input" type="text">
+      </div>
+      <div class="modal__input">
+        <div class="modal__label">Почта<span>*</span></div>
+        <input id="email_resume" name="email_resume" placeholder="Введите" class="input" type="email">
+      </div>
+      <div class="modal__input">
+        <div class="modal__label">Комментарий</div>
+        <textarea name="comment_resume" class="textarea" placeholder=""></textarea>
+      </div>
+      <div class="input_file">
+        <input id="file_resume" name="file_resume" class="input_file__input" type="file">
+        <label for="file_resume" class="input_file__label">
+          <span class="input_file__button">Прикрепить резюме</span>
+          <span class="input_file__text">Не обязательно. Файлы jpeg, png, pdf не более 6 мб</span>
+        </label>
+      </div>
+      <div class="modal__button modal__button-dark modal__button-full">Отправить</div>
+    </div>
+  </div>
   
