@@ -535,7 +535,7 @@
     <div class="modal__content">
       <div class="modal__close"></div>
       <div class="modal_reviews__wrp">
-        <img class="modal_reviews__img" src="img/modal_reviews__img.jpg" alt="">
+        <a href="img/modal_reviews__img.jpg" style="background-image: url(img/modal_reviews__img.jpg)" class="modal_reviews__img fancybox lazyload"></a>
         <div class="modal_reviews__right">
           <div class="reviews__title">ООО «Липецкая металлургическая компания»</div>
           <div class="reviews__small">Генеральный директор</div>
