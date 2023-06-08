@@ -3717,6 +3717,13 @@ body
                 font-size: 13px
                 text-align: center
                 padding: 0 10px
+    &_empty_text
+        font-size: 28px
+        a
+            color: #56C8D1
+            transition: opacity .3s ease-out
+            &:hover
+                opacity: .7
     .select2
         &-selection
             &__rendered
@@ -4611,10 +4618,10 @@ body
                             padding: 10px 0
                         &__button
                             background: transparent
-                            border: 2px solid #0096EB
-                            color: #0096EB
+                            border: 2px solid #56C8D1
+                            color: #56C8D1
                             &:hover
-                                background: #0096EB
+                                background: #56C8D1
                                 color: #fff
                                 opacity: 1
                             span
@@ -6439,6 +6446,50 @@ body
         font-weight: 700
         text-align: center
         padding: 0 0 0 24px
+
+.cookies
+    width: 100%
+    background: rgba(20, 26, 30, .5)
+    z-index: 11
+    position: fixed
+    left: 0
+    right: 0
+    bottom: 0
+    padding: 40px 0
+    margin: 0 auto
+    transform: translateY(100%)
+    transition: transform .3s ease-out
+    &.active
+        transform: translateY(0)
+    &-grey
+        background: #2c3840
+    &__wrp
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__text
+        max-width: 980px
+        font-size: 12px
+        color: #fff
+        line-height: 150%
+        margin: 0 60px 0 0
+    &__button
+        min-width: 150px
+        height: 56px
+        display: flex
+        justify-content: center
+        align-items: center
+        background: #56C8D1
+        border-radius: 4px
+        font-size: 16px
+        color: #fff
+        font-weight: 700
+        text-align: center
+        cursor: pointer
+        padding: 0 10px
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
         
 
 @media (max-height: 700px)
@@ -8285,6 +8336,19 @@ body
             padding: 0 10px
         &__link
             padding: 14px 14px 14px 44px
+
+    .cart
+        &_empty_text
+            font-size: 20px
+
+    .cookies
+        &__wrp
+            flex-direction: column
+        &__text
+            max-width: 100%
+            margin: 0 0 30px
+        &__button
+            width: 100%
 
 @media (max-width: 375px)
     .header

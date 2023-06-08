@@ -925,4 +925,9 @@ $(document).ready(function () {
         $(".modal_resume").addClass("active");
     });
 
+     // Cookies
+	$('.cookies__button').on("click", function () {
+        $(this).closest(".cookies").removeClass("active");
+    });
+
 });

@@ -90,6 +90,9 @@
                     </div>
                 </div>
                 <div class="cart__more">Очистить корзину</div>
+                <div class="cart_empty_text">
+                    Ваша корзина пустая, вы можете перейти в <a href="#">каталог продукции</a>.
+                </div>
             </div>
             <div class="cart__right">
                 <div class="cart__title">Ваш заказ</div>

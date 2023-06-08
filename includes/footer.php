@@ -71,6 +71,17 @@
     </div>
   </footer>
 
+  <div class="cookies active">
+      <div class="wrapper">
+          <div class="cookies__wrp">
+              <div class="cookies__text">
+                Продолжая использовать наш сайт, вы даете согласие на обработку файлов cookie (пользовательских данных, содержащих сведения о местоположении; тип, язык и версию ОС; тип, язык и версию браузера; сайт или рекламный сервис, с которого пришел пользователь; тип, язык и разрешение экрана устройства, с которого пользователь обращается к сайту; ip-адрес, с которого пользователь обращается к сайту; сведения о взаимодействии пользователя с web-интерфейсом и службами сайта) в целях аутентификации пользователя на сайте, проведения ретаргетинга, статистических исследований и обзоров. Если вы не хотите, чтобы ваши данные обрабатывались, покиньте сайт.
+              </div>
+              <div class="cookies__button">Я согласен</div>
+          </div>
+      </div>
+  </div>
+
   <script src="js/libs/jquery/jquery.js"></script>
   <script src="js/libs/slick/slick.min.js"></script>
   <script src="js/libs/select2/select2.min.js"></script>
@@ -79,7 +90,7 @@
   <script src="js/libs/datepicker/datepicker.js"></script>
   <script src="js/libs/fancybox/fancybox.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js" integrity="sha512-PwQ5+jgXxxprNGc80ycHE3spgj6TuDieHe/yTkbEJ+U5aol7dTupi/4VbwHHzlQVW77Vb0GLOIsiYigHgC5vcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="js/script.js?v=34"></script>
+  <script src="js/script.js?v=35"></script>
 </body>
 
 </html>
