@@ -13,10 +13,30 @@
         </div>
     </div>
     <div class="wrapper">
-        <h1 class="title title-text">Рязанский трубный завод</h1>
-    
-        <div class="prod_text">
-            Компания имеет широкую региональную сеть от Краснодара до Новосибирска. Это позволяет налаживать сотрудничество с потенциальными партнерами по всей стране. Наши товары вы найдете на складах, которые расположены в городах: Новочеркасск, Ногинск, Рязань, Тверь, Тула, Воронеж, Казань, Уфа, Самара, Нижний Новгород, Пенза, Челябинск, Новосибирск, Краснодар, Ростов-на-Дону, Екатеринбург, Белгород
+
+        <div class="prod__el">
+            <div class="prod__top">
+                <div class="prod__title">Рязанский трубный завод</div>
+                <div class="prod__city">Россия</div>
+            </div>
+            <div class="prod__wrp">
+                <div class="prod__video modal_video" data-video-id="YXXyy7LVvd4" style="background-image: url(img/prod__slide-1.jpg)"></div>
+                <div class="prod__right">
+                    <div class="prod__text">Компания имеет широкую региональную сеть от Краснодара до Новосибирска. Это позволяет налаживать сотрудничество с потенциальными партнерами по всей стране. Наши товары вы найдете на складах, которые расположены в городах: Новочеркасск, Ногинск, Рязань, Тверь, Тула, Воронеж, Казань, Уфа, Самара, Нижний Новгород, Пенза, Челябинск, Новосибирск, Краснодар, Ростов-на-Дону, Екатеринбург, Белгород</div>
+                </div>
+            </div>
+            <div class="prod__wp">
+                <div class="prod__slider">
+                    <a href="img/prod__slide-1.jpg" rel="prod_1" style="background-image: url(img/prod__slide-1.jpg)" class="prod__slide fancybox"></a>
+                    <a href="img/prod__slide-2.jpg" rel="prod_1" style="background-image: url(img/prod__slide-2.jpg)" class="prod__slide fancybox"></a>
+                    <a href="img/prod__slide-3.jpg" rel="prod_1" style="background-image: url(img/prod__slide-3.jpg)" class="prod__slide fancybox"></a>
+                    <a href="img/prod__slide-4.jpg" rel="prod_1" style="background-image: url(img/prod__slide-4.jpg)" class="prod__slide fancybox"></a>
+                    <a href="img/prod__slide-1.jpg" rel="prod_1" style="background-image: url(img/prod__slide-1.jpg)" class="prod__slide fancybox"></a>
+                    <a href="img/prod__slide-2.jpg" rel="prod_1" style="background-image: url(img/prod__slide-2.jpg)" class="prod__slide fancybox"></a>
+                    <a href="img/prod__slide-3.jpg" rel="prod_1" style="background-image: url(img/prod__slide-3.jpg)" class="prod__slide fancybox"></a>
+                    <a href="img/prod__slide-4.jpg" rel="prod_1" style="background-image: url(img/prod__slide-4.jpg)" class="prod__slide fancybox"></a>
+                </div>
+            </div>
         </div>
 
         <div class="factory">
