@@ -71,7 +71,7 @@
     </div>
   </footer>
 
-  <div class="cookies active">
+  <!-- <div class="cookies active">
       <div class="wrapper">
           <div class="cookies__wrp">
               <div class="cookies__text">
@@ -80,7 +80,7 @@
               <div class="cookies__button">Я согласен</div>
           </div>
       </div>
-  </div>
+  </div> -->
 
   <script src="js/libs/jquery/jquery.js"></script>
   <script src="js/libs/slick/slick.min.js"></script>

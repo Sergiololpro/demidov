@@ -24,8 +24,23 @@
                 <a href="img/photos__el-4.jpg" rel="photo_1" class="photos__el fancybox" style="background-image: url(img/photos__el-4.jpg)"></a>
                 <a href="img/photos__el-5.jpg" rel="photo_1" class="photos__el fancybox" style="background-image: url(img/photos__el-5.jpg)"></a>
                 <a href="img/photos__el-6.jpg" rel="photo_1" class="photos__el fancybox" style="background-image: url(img/photos__el-6.jpg)"></a>
+                <a href="img/photos__el-1.jpg" rel="photo_1" class="photos__el fancybox" style="background-image: url(img/photos__el-1.jpg)"></a>
+                <a href="img/photos__el-2.jpg" rel="photo_1" class="photos__el fancybox" style="background-image: url(img/photos__el-2.jpg)"></a>
+                <a href="img/photos__el-3.jpg" rel="photo_1" class="photos__el fancybox" style="background-image: url(img/photos__el-3.jpg)"></a>
+                <a href="img/photos__el-4.jpg" rel="photo_1" class="photos__el fancybox" style="background-image: url(img/photos__el-4.jpg)"></a>
+                <a href="img/photos__el-5.jpg" rel="photo_1" class="photos__el fancybox" style="background-image: url(img/photos__el-5.jpg)"></a>
+                <a href="img/photos__el-6.jpg" rel="photo_1" class="photos__el fancybox" style="background-image: url(img/photos__el-6.jpg)"></a>
+                <a href="img/photos__el-1.jpg" rel="photo_1" class="photos__el fancybox" style="background-image: url(img/photos__el-1.jpg)"></a>
+                <a href="img/photos__el-2.jpg" rel="photo_1" class="photos__el fancybox" style="background-image: url(img/photos__el-2.jpg)"></a>
+                <a href="img/photos__el-3.jpg" rel="photo_1" class="photos__el fancybox" style="background-image: url(img/photos__el-3.jpg)"></a>
+                <a href="img/photos__el-4.jpg" rel="photo_1" class="photos__el fancybox" style="background-image: url(img/photos__el-4.jpg)"></a>
+                <a href="img/photos__el-5.jpg" rel="photo_1" class="photos__el fancybox" style="background-image: url(img/photos__el-5.jpg)"></a>
+                <a href="img/photos__el-6.jpg" rel="photo_1" class="photos__el fancybox" style="background-image: url(img/photos__el-6.jpg)"></a>
             </div>
-            <a href="#" class="photos__link">Еще 47 фото</a>
+            <div class="photos__link">
+                <span>Показать все</span>
+                <span>Свернуть</span>
+            </div>
         </div>
         <div class="photos">
             <h2 class="photos__title">Трубный прокат</h2>
@@ -37,7 +52,10 @@
                 <a href="img/photos__el-11.jpg" rel="photo_2" class="photos__el fancybox" style="background-image: url(img/photos__el-11.jpg)"></a>
                 <a href="img/photos__el-12.jpg" rel="photo_2" class="photos__el fancybox" style="background-image: url(img/photos__el-12.jpg)"></a>
             </div>
-            <a href="#" class="photos__link">Еще 47 фото</a>
+            <div class="photos__link">
+                <span>Показать все</span>
+                <span>Свернуть</span>
+            </div>
         </div>
         <div class="photos">
             <h2 class="photos__title">Трубный прокат</h2>
@@ -49,7 +67,10 @@
                 <a href="img/photos__el-17.jpg" rel="photo_3" class="photos__el fancybox" style="background-image: url(img/photos__el-17.jpg)"></a>
                 <a href="img/photos__el-18.jpg" rel="photo_3" class="photos__el fancybox" style="background-image: url(img/photos__el-18.jpg)"></a>
             </div>
-            <a href="#" class="photos__link">Еще 47 фото</a>
+            <div class="photos__link">
+                <span>Показать все</span>
+                <span>Свернуть</span>
+            </div>
         </div>
     </div>
 </div>

@@ -925,9 +925,13 @@ $(document).ready(function () {
         $(".modal_resume").addClass("active");
     });
 
-     // Cookies
+    // Cookies
 	$('.cookies__button').on("click", function () {
         $(this).closest(".cookies").removeClass("active");
     });
 
+    // Открыть фото
+	$('.photos__link').on("click", function () {
+        $(this).closest(".photos").toggleClass("active");
+    });
 });

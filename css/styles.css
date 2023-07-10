@@ -1407,6 +1407,8 @@ body {
     margin: 0 0 2px; }
   .pdf__text {
     font-size: 15px; }
+  .pdf-margin {
+    margin: 0 0 30px; }
 
 .you_can {
   width: 100%;
@@ -2136,6 +2138,12 @@ body {
 
 .photos {
   margin: 0 0 100px; }
+  .photos.active .photos__el:nth-child(n + 7) {
+    display: block; }
+  .photos.active .photos__link span:first-child {
+    display: none; }
+  .photos.active .photos__link span:last-child {
+    display: block; }
   .photos__title {
     font-size: 40px;
     font-weight: 700;
@@ -2162,12 +2170,17 @@ body {
       margin: -200px 20px 20px 0; }
     .photos__el:nth-child(6), .photos__el:nth-child(12), .photos__el:nth-child(18) {
       margin: -200px 0 20px; }
+    .photos__el:nth-child(n + 7) {
+      display: none; }
   .photos__link {
     font-size: 16px;
     color: #56C8D1;
+    cursor: pointer;
     transition: opacity 0.3s ease-out; }
     .photos__link:hover {
       opacity: 0.7; }
+    .photos__link span:last-child {
+      display: none; }
 
 .cat_slider {
   position: relative;

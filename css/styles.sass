@@ -1429,6 +1429,8 @@ body
         margin: 0 0 2px
     &__text
         font-size: 15px
+    &-margin
+        margin: 0 0 30px
 
 .you_can
     width: 100%
@@ -2174,6 +2176,17 @@ body
 
 .photos
     margin: 0 0 100px
+    &.active
+        .photos
+            &__el
+                &:nth-child(n + 7)
+                    display: block
+            &__link
+                span
+                    &:first-child
+                        display: none
+                    &:last-child
+                        display: block
     &__title
         font-size: 40px
         font-weight: 700
@@ -2220,12 +2233,18 @@ body
         &:nth-child(12),
         &:nth-child(18)
             margin: -200px 0 20px
+        &:nth-child(n + 7)
+            display: none
     &__link
         font-size: 16px
         color: #56C8D1
+        cursor: pointer
         transition: opacity .3s ease-out
         &:hover
             opacity: .7
+        span
+            &:last-child
+                display: none
 
 .cat_slider
     position: relative
