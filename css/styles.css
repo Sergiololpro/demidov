@@ -3569,20 +3569,20 @@ body {
       .cart_el__info span {
         color: #BEBEBE; }
     .cart_el__add {
-      height: 32px;
+      min-height: 32px;
       border: 1px solid #eee;
       font-size: 15px;
       color: #56C8D1;
-      line-height: 34px;
+      line-height: 140%;
       cursor: pointer;
-      padding: 0 10px;
+      padding: 6px 10px;
       transition: opacity 0.3s ease-out; }
       .cart_el__add:hover {
         opacity: 0.7; }
       .cart_el__add-del {
         background: url(../img/cross.svg) right 13px center no-repeat;
         background-size: 14px;
-        padding: 0 40px 0 10px; }
+        padding: 6px 40px 6px 10px; }
       .cart_el__add span {
         color: #444; }
     .cart_el__right {
@@ -8013,5 +8013,3 @@ body {
 
   .banner__slide {
     min-height: 600px; } }
-
-/*# sourceMappingURL=styles.css.map */
