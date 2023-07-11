@@ -934,4 +934,14 @@ $(document).ready(function () {
 	$('.photos__link').on("click", function () {
         $(this).closest(".photos").toggleClass("active");
     });
+
+
+    // Раскрытие меню 3-го уровня
+    var url = window.location.pathname;
+    var $el = $(".filters__link[href='" + url + "'][data-level='3']");
+
+    if ($el.length) {
+        $el.closest(".filters__level_2").addClass("active");
+        $el.closest(".filters__level_1").addClass("active");
+    }
 });

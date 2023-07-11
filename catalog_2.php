@@ -27,19 +27,19 @@
             <div class="ct__filters">
                 <div class="ct__filt_close"></div>
                 <div class="filters">
-                    <div class="filters__level_1 active">
+                    <div class="filters__level_1">
                         <div class="filters__label_1">
                             <div class="filters__arrow_1"></div>
                             <a href="#" class="filters__link_1">Трубный прокат</a>
                         </div>
-                        <div class="filters__level_2 active">
+                        <div class="filters__level_2">
                             <div class="filters__label_2">
                                 <div class="filters__img" style="background-image: url(img/card__image-1.jpg)"></div>
                                 <a href="#" class="filters__link_2">Трубы электросварные</a>
                                 <div class="filters__arrow_2"></div>
                             </div>
                             <div class="filters__level_3">
-                                <a href="#" class="filters__link">Трубы профильные г/к</a>
+                                <a href="/catalog_2.php" data-level="3" class="filters__link">Трубы профильные г/к</a>
                                 <a href="#" class="filters__link">Трубы профильные г/к</a>
                             </div>
                         </div>
