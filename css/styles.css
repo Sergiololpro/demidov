@@ -2189,12 +2189,13 @@ body {
     height: 400px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     align-items: flex-start;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    padding: 50px 40px; }
+    padding: 50px 40px 90px 40px; }
     .cat_slider__el:before {
       content: "";
       width: 100%;
@@ -7438,6 +7439,7 @@ body {
     margin: 0 0 50px; }
     .cat_slider__el {
       height: 300px;
+      justify-content: flex-start;
       padding: 25px 20px; }
     .cat_slider__title {
       font-size: 28px; }
