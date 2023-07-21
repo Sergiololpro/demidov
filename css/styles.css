@@ -4330,6 +4330,19 @@ body {
       opacity: 0.7; }
     .delivery__email:last-child {
       margin: 0; }
+  .delivery_payment {
+    margin: 0 0 20px; }
+    .delivery_payment__title {
+      color: #56C8D1;
+      font-weight: 700;
+      margin: 0 0 10px; }
+    .delivery_payment__els {
+      list-style-type: disc;
+      padding: 0 0 0 14px; }
+      .delivery_payment__els li {
+        margin: 0 0 10px; }
+        .delivery_payment__els li:last-child {
+          margin: 0; }
 
 .services {
   margin: 0 0 100px; }

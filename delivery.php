@@ -37,14 +37,22 @@
                     <div class="delivery__city">Москва</div>
                     <div class="delivery__text">
                         <p>Способы оплаты в Москве: предоплата и отсрочка платежа предоставляется надежным партнерам при предоставлении им полного пакета документа (<a href="#">Список документов для кредитного комитета</a>).</p>
-                        <p>Пакет документов, выдаваемый на складе:</p>
-                        <ul>
-                            <li>товарная накладная</li>
-                            <li>счет фактура</li>
-                            <li>акты на услуги(если присутствуют)</li>
-                            <li>сертификаты</li>
-                            <li>ТТН при необходимости</li>
-                        </ul>
+                        <div class="delivery_payment">
+                            <div class="delivery_payment__title">Способы оплаты для юр.лица:</div>
+                            <ul class="delivery_payment__els">
+                                <li>Оплата по счету</li>
+                                <li>Оплата наличными на месте</li>
+                                <li>Оплата картой на месте</li>
+                            </ul>
+                        </div>
+                        <div class="delivery_payment">
+                            <div class="delivery_payment__title">Способы оплаты для физ.лица:</div>
+                            <ul class="delivery_payment__els">
+                                <li>Оплата по счету</li>
+                                <li>Оплата наличными на месте</li>
+                                <li>Оплата картой на месте</li>
+                            </ul>
+                        </div>
                     </div>
                     <a href="tel:+7(495)775-38-96" class="delivery__phone">+7 (495) 775-38-96</a>
                     <a href="mailto:zakaz@demidovsteel.ru" class="delivery__email">zakaz@demidovsteel.ru</a>
