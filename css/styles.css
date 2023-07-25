@@ -6346,10 +6346,16 @@ body {
     align-items: center; }
   .cookies__text {
     max-width: 980px;
-    font-size: 12px;
+    font-size: 15px;
     color: #fff;
     line-height: 150%;
     margin: 0 60px 0 0; }
+    .cookies__text a {
+      color: #56C8D1;
+      text-decoration: underline;
+      transition: opacity 0.3s ease-out; }
+      .cookies__text a:hover {
+        opacity: 0.7; }
   .cookies__button {
     min-width: 150px;
     height: 56px;
@@ -6367,6 +6373,10 @@ body {
     transition: opacity 0.3s ease-out; }
     .cookies__button:hover {
       opacity: 0.7; }
+
+.popup-window {
+  max-height: 300px;
+  overflow: auto; }
 
 @media (max-height: 700px) {
   .banner__title {

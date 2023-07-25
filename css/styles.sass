@@ -6526,10 +6526,16 @@ body
         align-items: center
     &__text
         max-width: 980px
-        font-size: 12px
+        font-size: 15px
         color: #fff
         line-height: 150%
         margin: 0 60px 0 0
+        a
+            color: #56C8D1
+            text-decoration: underline
+            transition: opacity .3s ease-out
+            &:hover
+                opacity: .7
     &__button
         min-width: 150px
         height: 56px
@@ -6547,7 +6553,10 @@ body
         transition: opacity .3s ease-out
         &:hover
             opacity: .7
-        
+
+.popup-window
+    max-height: 300px
+    overflow: auto
 
 @media (max-height: 700px)
     .banner
