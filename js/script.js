@@ -832,7 +832,7 @@ $(document).ready(function () {
 
     // Показать все теги
     $(".ct_tags__more").on("click", function() {
-        $(".ct_tags__wrp").removeClass("hide");
+        $(".ct_tags__wrp").toggleClass("hide");
     });
 
     // Открыть окно

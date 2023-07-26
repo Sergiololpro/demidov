@@ -2912,7 +2912,11 @@ body
                     &_tags
                         height: 32px
                         &__more
-                            display: inline-block
+                            span
+                                &:first-child
+                                    display: inline-block
+                                &:last-child
+                                    display: none
         &__el,
         &__more
             height: 32px
@@ -2931,7 +2935,7 @@ body
                 color: #fff
         &__more
             height: 32px
-            display: none
+            display: inline-block
             background: #56C8D1
             border-radius: 4px
             font-size: 16px
@@ -2944,6 +2948,9 @@ body
             transition: opacity .3s ease-out
             &:hover
                 opacity: .8
+            span
+                &:first-child
+                    display: none
     &__els
         margin: 0 0 20px
     &__more

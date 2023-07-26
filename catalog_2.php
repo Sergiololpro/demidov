@@ -262,7 +262,10 @@
                     <div class="ct_tags_els">
 
                     </div>
-                    <div class='ct_tags__more'>Показать все</div>
+                    <div class='ct_tags__more'>
+                        <span>Показать все</span>
+                        <span>Скрыть</span>
+                    </div>
                 </div>
                 <div class="ct__line">
                     <div class="ct__left">

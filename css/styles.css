@@ -2824,8 +2824,10 @@ body {
     margin: 0 0 10px; }
     .ct_tags__wrp.hide .ct_tags {
       height: 32px; }
-      .ct_tags__wrp.hide .ct_tags__more {
+      .ct_tags__wrp.hide .ct_tags__more span:first-child {
         display: inline-block; }
+      .ct_tags__wrp.hide .ct_tags__more span:last-child {
+        display: none; }
     .ct_tags__el, .ct_tags__more {
       height: 32px;
       background: #FAFAFA;
@@ -2842,7 +2844,7 @@ body {
         color: #fff; }
     .ct_tags__more {
       height: 32px;
-      display: none;
+      display: inline-block;
       background: #56C8D1;
       border-radius: 4px;
       font-size: 16px;
@@ -2855,6 +2857,8 @@ body {
       transition: opacity 0.3s ease-out; }
       .ct_tags__more:hover {
         opacity: 0.8; }
+      .ct_tags__more span:first-child {
+        display: none; }
   .ct__els {
     margin: 0 0 20px; }
   .ct__more {
