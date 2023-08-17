@@ -109,7 +109,7 @@ body
 .header
     width: 100%
     background: rgba(0, 0, 0, .6)
-    z-index: 5
+    z-index: 6
     position: fixed
     left: 0
     right: 0
@@ -357,6 +357,10 @@ body
         transition: color .3s ease-out
         &:hover
             color: #56C8D1 !important
+        &-pc
+            display: block
+        &-tablet
+            display: none
     &__dots
         font-size: 16px
         color: #56C8D1
@@ -707,7 +711,7 @@ body
     background: #fff
     overflow-y: auto
     box-shadow: 0 -46px 39px rgba(0, 0, 0, .25)
-    z-index: 5
+    z-index: 6
     position: fixed
     left: -100%
     top: 0
@@ -6667,6 +6671,11 @@ body
                 overflow-y: auto
             &__els
                 width: 900px
+
+    .city
+        &_block
+            &__phone
+                font-size: 28px
     
 
 @media (max-width: 1200px)
@@ -6703,8 +6712,8 @@ body
             .nav
                 width: calc(100% - 40px)
     
-    .nav
-        &_search
+    .search
+        &_block
             width: calc(100% - 40px)
             height: 42px
             z-index: 5
@@ -6715,14 +6724,18 @@ body
             right: 0
             top: 100px
             margin: 0 20px
+        
+    .nav
+        &_search
             &.active
                 opacity: 1
                 pointer-events: auto
             .nav
                 &__el
-                    display: none
-                &__dots
-                    display: none
+                    &-pc
+                        display: none
+                    &-tablet
+                        display: block
 
     .utp
         display: block
@@ -6769,11 +6782,6 @@ body
             margin: 0 0 20px
             &:last-child
                 margin: 0
-
-    .city
-        &_block
-            &__phone
-                font-size: 36px
 
     .charter
         &__el
@@ -7401,9 +7409,6 @@ body
                     width: 30px
                     height: 30px
                     background-size: 16px
-            .nav
-                &_search
-                    top: 80px
         &__top
             height: 50px
         &__bottom
@@ -7439,6 +7444,15 @@ body
             font-size: 0
             padding: 0
             margin: 0 0 0 20px
+
+    .search
+        &_block
+            top: 70px
+
+    .nav
+        &__el,
+        &__dots
+            display: none !important
 
     .banner
         &__slide

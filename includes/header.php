@@ -47,63 +47,30 @@
         </a>
         <div class="header__search header__search-short"></div>
         <nav class="nav nav_search">
-          <a data-id="1" href="#" class="nav__el nav__el-1">Продукция</a>
-          <a data-id="2" href="#" class="nav__el">О компании</a>
-          <a href="#" class="nav__el">Доставка и оплата</a>
-          <a href="#" class="nav__el">Услуги</a>
-          <a data-id="3" href="#" class="nav__el">Покупателю</a>
-          <a href="#" class="nav__el">Вакансии</a>
-          <a href="#" class="nav__el">Электронная очередь</a>
-          <a href="#" class="nav__el">Контакты</a>
+          <a data-id="1" href="/catalog/" class="nav__el nav__el-pc">Продукция</a>
+          <a data-id="2" href="/about/" class="nav__el nav__el-pc">О компании</a>
+          <a href="/dostavka-i-oplata/" class="nav__el nav__el-pc">Доставка и оплата</a>
+          <a href="/services/" class="nav__el">Услуги</a>
+          <a data-id="3" href="/pokupatelyu/" class="nav__el nav__el-tablet">Покупателю</a>
+          <a href="/jobs/" class="nav__el">Вакансии</a>
+          <a href="/bronirovanie/" class="nav__el">Электронная очередь</a>
+          <a href="/contacts/" class="nav__el nav__el-tablet">Контакты</a>
           <div class="nav__dots">
             ...
             <div class="nav__drops">
-              <a href="#" class="nav__drop">Услуги</a>
-              <a href="#" class="nav__drop">Покупателю</a>
-              <a href="#" class="nav__drop">Вакансии</a>
-              <a href="#" class="nav__drop">Электронная очередь</a>
-              <a href="#" class="nav__drop">Контакты</a>
+              <a href="/services/" class="nav__drop">Услуги</a>
+              <a href="/pokupatelyu/" class="nav__drop nav__el-pc">Покупателю</a>
+              <a href="/jobs/" class="nav__drop">Вакансии</a>
+              <a href="/bronirovanie/" class="nav__drop">Электронная очередь</a>
+              <a href="/contacts/" class="nav__drop nav__el-pc">Контакты</a>
+              <a href="/catalog/" class="nav__drop nav__el-tablet">Продукция</a>
+              <a href="/about/" class="nav__drop nav__el-tablet">О компании</a>
+              <a href="/dostavka-i-oplata/" class="nav__drop nav__el-tablet">Доставка и оплата</a>
             </div>
-          </div>
+            </div>
           <div class="search_block active">
             <input name="search_row" placeholder="Поиск по сайту" class="search_block__input" type="text">
             <div class="search_block__close"></div>
-            <div class="search_block__wrp active">
-              <div class="search_block__block">
-                <div class="search_block__title">Категории</div>
-                <div class="search_block__els">
-                  <a href="#" class="search_block__el">
-                    <div class="search_block__img" style="background-image: url(img/card__image-1.jpg)"></div>
-                    <div class="search_block__text">Арматура рифленая</div>
-                  </a>
-                  <a href="#" class="search_block__el">
-                    <div class="search_block__img" style="background-image: url(img/card__image-1.jpg)"></div>
-                    <div class="search_block__text">Арматура рифленая</div>
-                  </a>
-                  <a href="#" class="search_block__el">
-                    <div class="search_block__img" style="background-image: url(img/card__image-1.jpg)"></div>
-                    <div class="search_block__text">Арматура рифленая</div>
-                  </a>
-                </div>
-              </div>
-              <div class="search_block__block">
-                <div class="search_block__title">Товары</div>
-                <div class="search_block__els">
-                  <a href="#" class="search_block__el">
-                    <div class="search_block__img" style="background-image: url(img/card__image-2.jpg)"></div>
-                    <div class="search_block__text">Арматура рифленая 12 2Ф а500С ГОСТ 34028-2016</div>
-                  </a>
-                  <a href="#" class="search_block__el">
-                    <div class="search_block__img" style="background-image: url(img/card__image-2.jpg)"></div>
-                    <div class="search_block__text">Арматура рифленая 12 2Ф а500С ГОСТ 34028-2016</div>
-                  </a>
-                  <a href="#" class="search_block__el">
-                    <div class="search_block__img" style="background-image: url(img/card__image-2.jpg)"></div>
-                    <div class="search_block__text">Арматура рифленая 12 2Ф а500С ГОСТ 34028-2016</div>
-                  </a>
-                </div>
-              </div>
-            </div>
           </div>
         </nav>
         <a href="tel:+7(495)775-38-96" class="header__phone header__phone-short">+7 (495) 775-38-96</a>
