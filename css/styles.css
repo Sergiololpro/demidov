@@ -5635,42 +5635,44 @@ body {
   .booking__right {
     width: 400px;
     max-width: 100%; }
-  .booking__calendar .date-picker-wrapper {
-    background: #fff;
-    border: 1px solid #eee;
-    border-radius: 8px;
-    box-shadow: none !important;
-    left: inherit !important;
-    right: 0 !important; }
-  .booking__calendar .month-wrapper {
-    width: 100% !important; }
-  .booking__calendar .month-name {
-    font-size: 20px;
-    color: #4E5F68; }
-  .booking__calendar .prev,
-  .booking__calendar .next {
-    color: #BBBBBB; }
-  .booking__calendar .week-name {
-    height: 60px !important;
-    font-size: 16px;
-    font-weight: 700;
-    color: #4E5F68 !important; }
-  .booking__calendar .day {
-    border-radius: 100% !important;
-    box-shadow: none !important;
-    font-size: 16px !important; }
-    .booking__calendar .day.real-today {
-      border: 2px solid #56C8D1 !important; }
-    .booking__calendar .day.checked {
-      background-color: #56C8D1 !important; }
-  .booking__calendar table {
-    width: 100% !important; }
-    .booking__calendar table .caption {
-      height: 52px;
-      background: #FAFAFA;
-      border-bottom: 1px solid #eee; }
-  .booking__calendar-static .date-picker-wrapper {
-    position: static !important; }
+  .booking__calendar {
+    margin: 0 0 20px; }
+    .booking__calendar .date-picker-wrapper {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      box-shadow: none !important;
+      left: inherit !important;
+      right: 0 !important; }
+    .booking__calendar .month-wrapper {
+      width: 100% !important; }
+    .booking__calendar .month-name {
+      font-size: 20px;
+      color: #4E5F68; }
+    .booking__calendar .prev,
+    .booking__calendar .next {
+      color: #BBBBBB; }
+    .booking__calendar .week-name {
+      height: 60px !important;
+      font-size: 16px;
+      font-weight: 700;
+      color: #4E5F68 !important; }
+    .booking__calendar .day {
+      border-radius: 100% !important;
+      box-shadow: none !important;
+      font-size: 16px !important; }
+      .booking__calendar .day.real-today {
+        border: 2px solid #56C8D1 !important; }
+      .booking__calendar .day.checked {
+        background-color: #56C8D1 !important; }
+    .booking__calendar table {
+      width: 100% !important; }
+      .booking__calendar table .caption {
+        height: 52px;
+        background: #FAFAFA;
+        border-bottom: 1px solid #eee; }
+    .booking__calendar-static .date-picker-wrapper {
+      position: static !important; }
   .booking__times {
     display: flex;
     flex-wrap: wrap;

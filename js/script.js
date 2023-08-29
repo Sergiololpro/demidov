@@ -400,41 +400,23 @@ $(document).ready(function () {
                     container: $(".booking__calendar")
                 }).bind('datepicker-change',function(event, obj) {
                     self.curDate = moment(obj.date1).format('DDMMYYYY');
-                    self.curDateFull = obj.date1;
-
-                    self.showTime();
-
-                    $(".booking__time").removeClass("active");
-                });
-            },
-            methods:{
-                showTime() {
-                    var self = this;
-
-                    self.activeTimes = [];
-
-                    self.dates.forEach((date) => {
-                        if (date.date == self.curDate) {
-                            self.times.forEach((time) => {
-                                if (!date.times.includes(time)) {
-                                    self.activeTimes.push(time)
-                                }
-                            });
-                        }
-                    });
-                },
-
-                chooseTime(time) {
-                    var self = this;
-
+                   
                     moment.locale('ru');
 
-                    self.dateRow = moment(self.curDateFull).format('D MMMM YYYY') + " в " + time;
-
-                    self.selectedDate = self.curDate;
-                    self.selectedTime = time;
-                },
-            }
+                    if(
+                        moment(obj.date1).day() !== 0 &&
+                        moment(obj.date1).day() !== 6 &&
+                        self.curDate === moment().add(1,'days').format('DDMMYYYY')
+                    ) {
+                        self.dateRow = moment(self.curDateFull).format('D MMMM YYYY');
+                        self.selectedDate = self.curDate;
+                    } else {
+                        self.dateRow = "Дата недоступна для записи";
+                        self.selectedDate = "";
+                    }
+                });
+            },
+            methods:{}
         });
     }
 

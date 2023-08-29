@@ -86,22 +86,11 @@
                     <div class="booking__calendar booking__calendar-static">
 
                     </div>
-                    <div class="booking__times">
-                        <div
-                            v-for="time in activeTimes"
-                            class="booking__time"
-                            :class="{ 'active' : selectedDate == curDate && selectedTime == time }"
-                            :data-time="time"
-                            @click="chooseTime(time)"
-                        >
-                            {{ time }}
-                        </div>
-                    </div>
+
                     <div v-if="dateRow" class="booking__t">
-                        Ваше вреямя: 
+                        Ваша дата: 
                         <span>{{ dateRow }}</span>
                         <input name="date" type="hidden" :value="selectedDate">
-                        <input name="time" type="hidden" :value="selectedTime">
                     </div>
                 </div>
                 <div class="booking__bottom">
@@ -119,47 +108,47 @@
 <script>
     var dates = [
         {
-            date: "21012023",
+            date: "30082023",
             times: ["12:00", "12:30", "13:00"],
         },
         {
-            date: "22012023",
+            date: "31082023",
             times: ["13:00", "13:30", "14:00"],
         },
         {
-            date: "23012023",
+            date: "23112023",
             times: ["15:00", "15:30", "16:00"],
         },
         {
-            date: "24012023",
+            date: "24112023",
             times: ["12:00", "12:30", "13:00"],
         },
         {
-            date: "25012023",
+            date: "25112023",
             times: ["13:00", "13:30", "14:00"],
         },
         {
-            date: "26012023",
+            date: "26112023",
             times: ["12:00", "12:30", "13:00"],
         },
         {
-            date: "27012023",
+            date: "27112023",
             times: ["13:00", "13:30", "14:00"],
         },
         {
-            date: "28012023",
+            date: "28112023",
             times: ["15:00", "15:30", "16:00"],
         },
         {
-            date: "29012023",
+            date: "29112023",
             times: ["15:00", "15:30", "16:00"],
         },
         {
-            date: "30012023",
+            date: "30112023",
             times: ["15:00", "15:30", "16:00"],
         },
         {
-            date: "31012023",
+            date: "31112023",
             times: ["15:00", "15:30", "16:00"],
         },
     ]
