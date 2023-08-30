@@ -5994,9 +5994,11 @@ body {
   line-height: 150%; }
   .seo_text h2 {
     font-size: 32px;
+    line-height: 150%;
     margin: 0 0 30px; }
   .seo_text h3 {
     font-size: 24px;
+    line-height: 150%;
     margin: 0 0 30px; }
   .seo_text p,
   .seo_text ul {
@@ -6017,6 +6019,7 @@ body {
   .seo_text img {
     width: auto;
     max-width: 100%;
+    height: auto;
     margin: 0 0 40px; }
   .seo_text a {
     color: #56C8D1;
@@ -7109,7 +7112,7 @@ body {
   .header__contacts {
     margin: 0 0 0 20px; }
   .header__phone {
-    font-size: 16px;
+    font-size: 13px;
     padding: 4px 0 0 24px; }
   .header__callback {
     display: none; }
@@ -7159,7 +7162,8 @@ body {
     padding: 0 20px 20px; }
 
   .footer {
-    padding: 40px 0; }
+    background: #444;
+    padding: 40px 0 140px; }
     .footer__top {
       padding: 0 0 50px; }
     .footer__logo img {
