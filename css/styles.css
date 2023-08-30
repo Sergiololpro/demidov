@@ -3704,10 +3704,10 @@ body {
     position: relative;
     padding: 40px; }
   .modal__close {
-    width: 16px;
-    height: 16px;
+    width: 30px;
+    height: 30px;
     background: url(../img/cross.svg) center no-repeat;
-    background-size: contain;
+    background-size: 16px;
     cursor: pointer;
     position: absolute;
     right: 20px;
@@ -7208,7 +7208,8 @@ body {
     .cats__link {
       font-size: 16px; }
       .cats__link-small {
-        font-size: 15px; }
+        font-size: 15px;
+        font-weight: 700; }
 
   .title {
     font-size: 32px;
@@ -7233,6 +7234,7 @@ body {
     align-items: flex-start;
     margin: 0 0 30px; }
   .map__link {
+    font-weight: 700;
     margin: 0; }
 
   .news__content {
@@ -7279,7 +7281,7 @@ body {
       margin: 0 6px 6px 0; }
 
   .about__banner {
-    min-height: 300px;
+    min-height: 200px;
     height: auto;
     padding: 20px 30px; }
   .about__text {
