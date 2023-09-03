@@ -3328,6 +3328,9 @@ body {
     transition: opacity 0.3s ease-out; }
     .element__fav:hover {
       opacity: 0.7; }
+    .element__fav.active {
+      background: url(../img/star-active.svg) center no-repeat #56C8D1;
+      background-size: 18px; }
   .element__city {
     font-size: 15px;
     display: none; }

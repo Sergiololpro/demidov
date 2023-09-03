@@ -432,9 +432,9 @@ $(document).ready(function () {
     }
 
     // Избранное
-    $(".card__fav").on("click", function() {
-        $(this).toggleClass("active");
-    });
+    // $(".card__fav").on("click", function() {
+    //     $(this).toggleClass("active");
+    // });
 
     // Сфера открыть
     $(".sfera__el").on("click", function() {
