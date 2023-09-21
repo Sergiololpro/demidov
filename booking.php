@@ -90,7 +90,7 @@
                     <div v-if="dateRow" class="booking__t">
                         Ваша дата: 
                         <span>{{ dateRow }}</span>
-                        <input name="date" type="hidden" :value="selectedDate">
+                        <input id="date" name="date" type="hidden" :value="selectedDate">
                     </div>
                 </div>
                 <div class="booking__bottom">

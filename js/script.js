@@ -399,17 +399,15 @@ $(document).ready(function () {
                     startDate: moment(),
                     container: $(".booking__calendar")
                 }).bind('datepicker-change',function(event, obj) {
-                    self.curDate = moment(obj.date1).format('DDMMYYYY');
-                   
                     moment.locale('ru');
 
                     if(
                         moment(obj.date1).day() !== 0 &&
                         moment(obj.date1).day() !== 6 &&
-                        self.curDate === moment().add(1,'days').format('DDMMYYYY')
+                        moment(obj.date1).format('D MMMM YYYY') === moment().add(1,'days').format('D MMMM YYYY')
                     ) {
-                        self.dateRow = moment(self.curDateFull).format('D MMMM YYYY');
-                        self.selectedDate = self.curDate;
+                        self.dateRow = moment(obj.date1).format('D MMMM YYYY');
+                        self.selectedDate = moment(obj.date1).format('DDMMYYYY');
                     } else {
                         self.dateRow = "Дата недоступна для записи";
                         self.selectedDate = "";
