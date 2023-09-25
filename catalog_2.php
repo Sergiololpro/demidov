@@ -319,8 +319,7 @@
                                     </div>
                                 </div>
                                 <div class="element__right">
-                                    <div class="element__old_price">85 500</div>
-                                    <div class="element__price">от 85 500 ₽/т</div>
+
                                 </div>
                                 <div class="element__bottom">
                                     <div class="element_controls">
@@ -328,9 +327,8 @@
                                         <input class="element_controls__input" value="0" type="text">
                                         <div class="element_controls__button element_controls__button-minus"></div>
                                     </div>
-                                    <div class="element__button">В корзину</div>
-                                    <div class="element__button element__button-click">
-                                        <span>Купить в один клик</span>
+                                    <div class="element__button element__button-request">
+                                        <span>Цена по запросу</span>
                                     </div>
                                     <div class="element__fav"></div>
                                 </div>

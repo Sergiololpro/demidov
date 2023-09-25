@@ -5987,23 +5987,28 @@ body
             margin: 0 0 20px
         &__right
             width: 100%
+            min-height: 32px
             padding: 0 0 0 130px
         &__price
             font-size: 20px
         &__bottom
             justify-content: space-between
         &__button
-            width: calc(100% - 90px)
-            max-width: 200px
-            order: 2
+            min-width: 32px
+            width: 32px
+            order: 3
+            background-position: center
+            font-size: 0
+            padding: 0
             margin: 0
-            &:not(.element__button-click)
-                min-width: 32px
-                width: 32px
-                order: 3
-                background-position: center
-                font-size: 0
-                padding: 0
+            &-click,
+            &-request,
+                width: calc(100% - 90px)
+                max-width: 200px
+                background-position: right 12px center
+                font-size: 16px
+                order: 2
+                padding: 0 40px 0 20px
         &__fav
             order: 1
         &_controls

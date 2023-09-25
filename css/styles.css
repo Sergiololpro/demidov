@@ -5814,23 +5814,27 @@ body {
     margin: 0 0 20px; }
   .tiles .element__right {
     width: 100%;
+    min-height: 32px;
     padding: 0 0 0 130px; }
   .tiles .element__price {
     font-size: 20px; }
   .tiles .element__bottom {
     justify-content: space-between; }
   .tiles .element__button {
-    width: calc(100% - 90px);
-    max-width: 200px;
-    order: 2;
+    min-width: 32px;
+    width: 32px;
+    order: 3;
+    background-position: center;
+    font-size: 0;
+    padding: 0;
     margin: 0; }
-    .tiles .element__button:not(.element__button-click) {
-      min-width: 32px;
-      width: 32px;
-      order: 3;
-      background-position: center;
-      font-size: 0;
-      padding: 0; }
+    .tiles .element__button-click, .tiles .element__button-request {
+      width: calc(100% - 90px);
+      max-width: 200px;
+      background-position: right 12px center;
+      font-size: 16px;
+      order: 2;
+      padding: 0 40px 0 20px; }
   .tiles .element__fav {
     order: 1; }
   .tiles .element_controls {

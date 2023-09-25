@@ -924,4 +924,9 @@ $(document).ready(function () {
         $el.closest(".filters__level_2").addClass("active");
         $el.closest(".filters__level_1").addClass("active");
     }
+
+    // Открыть "Цена по запросу"
+    $(".element__button-request").on("click", function() {
+        $(".modal_order_reqest").addClass("active");
+    });
 });

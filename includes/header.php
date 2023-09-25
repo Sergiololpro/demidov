@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="js/libs/modal_video/modal_video.min.css">
   <link rel="stylesheet" href="js/libs/datepicker/datepicker.css">
   <link rel="stylesheet" href="js/libs/fancybox/fancybox.css">
-  <link rel="stylesheet" href="css/styles.css?v=36">
+  <link rel="stylesheet" href="css/styles.css?v=37">
   <title>Demidov</title>
 </head>
 
@@ -619,6 +619,40 @@
     </div>
   </div>
 
+  <div class="modal modal_order_reqest">
+    <div class="modal__content">
+      <div class="modal__close"></div>
+      <div class="modal__title">Запрос стоимости</div>
+      <div class="modal__input">
+        <div class="modal__label">ФИО<span>*</span></div>
+        <input id="name" name="name" placeholder="Введите" class="input" type="text">
+      </div>
+      <div class="modal__input">
+        <div class="modal__label">Номер телефона<span>*</span></div>
+        <input id="phone" name="phone" placeholder="Введите" class="input" type="text">
+      </div>
+      <div class="modal__input">
+        <div class="modal__label">Ваш e-mail<span>*</span></div>
+        <input name="email" placeholder="Sample@sample.com" class="input" type="email">
+      </div>
+      <div class="modal__input">
+        <div class="modal__label">ИНН<span>*</span></div>
+        <input id="fast_inn" name="fast_inn" placeholder="Введите" class="input" type="text">
+      </div>
+      <div class="modal__input">
+        <div class="modal__label">Комментарий</div>
+        <textarea name="fast_comment" class="textarea" placeholder="Введите"></textarea>
+      </div>
+      <div class="modal__button modal__button-dark modal__button-full">Запросить цену</div>
+      <div class="checkbox">
+          <input id="agree_3" value="agree_3" name="agree_3" type="checkbox">
+          <label for="agree_3">
+            Нажимая кнопку «Оформить» вы соглашаетесь с условиями <a href="#" target="_blank">Пользовательского соглашения</a> и <a href="#" target="_blank">Условиями обработки персональных данных</a>
+          </label>
+      </div>
+    </div>
+  </div>
+
   <div class="modal change_address">
     <div class="modal__content">
       <div class="modal__close"></div>
@@ -652,6 +686,10 @@
         <input id="b_phone" name="b_phone" placeholder="Введите" class="input" type="text">
       </div>
       <div class="modal__input">
+        <div class="modal__label">Название компании (ИНН)</div>
+        <input id="callback_inn" name="b_inn" placeholder="Введите" class="input" type="text">
+      </div>
+      <div class="modal__input">
         <div class="modal__label">Комментарий<span>*</span></div>
         <textarea id="b_comment" name="b_comment" class="textarea" placeholder="Опишите подробнее, что необходимо сделать"></textarea>
       </div>
@@ -659,7 +697,7 @@
         <input id="file_bottom" name="file_bottom" class="input_file__input" type="file">
         <label for="file_bottom" class="input_file__label">
           <span class="input_file__button input_file__button-full">Приложить счет другой компании</span>
-          <span class="input_file__text">Не обязательно. Файлы jpeg, png, pdf не более 6 мб</span>
+          <span class="input_file__text">Файлы jpeg, png, pdf не более 6 мб</span>
         </label>
       </div>
       <div class="modal__button modal__button-dark modal__button-full">Отправить</div>
