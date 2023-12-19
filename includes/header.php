@@ -31,7 +31,7 @@
         </div>
         <div class="header__right">
           <div class="header__search"></div>
-          <div class="header__catalog">КАТАЛОГ</div>
+          <div class="header__catalog">ГКД.МАРКЕТ</div>
           <div class="header__contacts">
             <a href="mailto:zakaz@demidovsteel.ru" class="header__email">zakaz@demidovsteel.ru</a>
             <a href="tel:+7(495)775-38-96" class="header__phone">+7 (495) 775-38-96</a>

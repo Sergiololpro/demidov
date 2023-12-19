@@ -958,6 +958,7 @@ body {
 .map {
   background: url(../img/map.jpg) center no-repeat;
   background-size: 2200px auto;
+  overflow: hidden;
   padding: 0 0 200px; }
   .map__top {
     display: flex;
@@ -7113,7 +7114,7 @@ body {
     height: 80px; }
   .header__catalog {
     height: 32px;
-    font-size: 13px;
+    font-size: 11px;
     line-height: 36px;
     margin: 0 0 0 20px; }
   .header__contacts {
@@ -7126,7 +7127,7 @@ body {
   .header__logo img {
     width: 70px; }
   .header__calculator {
-    margin: 0 0 0 30px; }
+    margin: 0; }
   .header__cabinet {
     width: 40px;
     background: url(../img/cabinet.svg) center no-repeat #56C8D1;
@@ -7950,14 +7951,27 @@ body {
     background-image: none !important;
     padding: 20px; }
 
+  .table .table_title {
+    display: none; }
   .table .element {
-    flex-direction: row; }
+    flex-direction: row;
+    padding: 12px 0; }
     .table .element__image {
-      margin: 0; }
+      margin: 0;
+      position: absolute;
+      left: 0;
+      top: 12px; }
     .table .element__content {
-      flex-direction: row; }
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0; }
     .table .element__left {
+      width: 70%;
+      padding: 50px 0 0;
       margin: 0; }
+    .table .element__bottom {
+      top: inherit;
+      bottom: 12px; }
     .table .element__button {
       height: 40px;
       background-size: 16px;
@@ -7967,7 +7981,30 @@ body {
     .table .element__fav {
       position: static; }
     .table .element__right {
-      text-align: right; }
+      width: 30%;
+      text-align: right;
+      padding: 50px 0; }
+    .table .element__title {
+      width: 100%; }
+    .table .element__city {
+      width: 100%;
+      order: 5;
+      font-size: 13px;
+      padding: 0;
+      margin: 4px 0 0; }
+    .table .element__top {
+      width: auto;
+      position: absolute;
+      right: 0;
+      top: 24px; }
+    .table .element__price {
+      font-size: 13px; }
+    .table .element__old_price {
+      font-size: 11px; }
+    .table .element_controls {
+      display: none; }
+  .table .ct__els {
+    width: 100%; }
 
   .article {
     margin: 0 0 40px; }
@@ -8057,7 +8094,7 @@ body {
     width: 100%; } }
 @media (max-width: 375px) {
   .header__phone {
-    font-size: 12px; }
+    font-size: 11px; }
 
   .bottom_el span {
     font-size: 10px; } }

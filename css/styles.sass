@@ -974,6 +974,7 @@ body
 .map
     background: url(../img/map.jpg) center no-repeat
     background-size: 2200px auto
+    overflow: hidden
     padding: 0 0 200px
     &__top
         display: flex
@@ -7428,7 +7429,7 @@ body
             height: 80px
         &__catalog
             height: 32px
-            font-size: 13px
+            font-size: 11px
             line-height: 36px
             margin: 0 0 0 20px
         &__contacts
@@ -7442,7 +7443,7 @@ body
             img
                 width: 70px
         &__calculator
-            margin: 0 0 0 30px
+            margin: 0
         &__cabinet
             width: 40px
             background: url(../img/cabinet.svg) center no-repeat #56C8D1
@@ -8341,14 +8342,28 @@ body
             padding: 20px
 
     .table
+        .table
+            &_title
+                display: none
         .element
             flex-direction: row
+            padding: 12px 0
             &__image
                 margin: 0
+                position: absolute
+                left: 0
+                top: 12px
             &__content
                 flex-direction: row
+                align-items: flex-start
+                padding: 0
             &__left
+                width: 70%
+                padding: 50px 0 0
                 margin: 0
+            &__bottom
+                top: inherit
+                bottom: 12px
             &__button
                 height: 40px
                 background-size: 16px
@@ -8359,7 +8374,32 @@ body
             &__fav
                 position: static
             &__right
+                width: 30%
                 text-align: right
+                padding: 50px 0
+            &__title
+                width: 100%
+            &__city
+                width: 100%
+                order: 5
+                font-size: 13px
+                padding: 0
+                margin: 4px 0 0
+            &__top
+                width: auto
+                position: absolute
+                right: 0
+                top: 24px
+            &__price
+                font-size: 13px
+            &__old_price
+                font-size: 11px
+            &_controls
+                display: none
+
+        .ct
+            &__els
+                width: 100%
 
     .article
         margin: 0 0 40px
@@ -8457,7 +8497,7 @@ body
 @media (max-width: 375px)
     .header
         &__phone
-            font-size: 12px
+            font-size: 11px
 
     .bottom_el
         span
