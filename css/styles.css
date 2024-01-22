@@ -2177,6 +2177,8 @@ body {
       margin: -200px 0 20px; }
     .photos__el:nth-child(n + 7) {
       display: none; }
+    .photos__el:nth-child(10) {
+      margin: -100px 20px 20px 0; }
   .photos__link {
     font-size: 16px;
     color: #56C8D1;
@@ -6888,6 +6890,8 @@ body {
       margin: -100px 20px 20px 0; }
     .photos__el:nth-child(6), .photos__el:nth-child(12), .photos__el:nth-child(18) {
       margin: -100px 0 20px; }
+    .photos__el:nth-child(10) {
+      margin: -50px 20px 20px 0; }
 
   .treatment__els {
     display: block;
