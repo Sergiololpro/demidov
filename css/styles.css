@@ -4450,7 +4450,7 @@ body {
     content: "";
     width: 100%;
     height: 100%;
-    background: linear-gradient(3.79deg, rgba(0, 0, 0, 0.45) 17.62%, rgba(0, 0, 0, 0) 41.17%), url(factory-worker-wearing-hardhat-uniform-showing-new-metal-products-manager-supervisor.jpg), url(metal-bar-3d.jpg), transparent;
+    background: linear-gradient(3.79deg, rgba(0, 0, 0, 0.45) 17.62%, rgba(0, 0, 0, 0) 80%), url(factory-worker-wearing-hardhat-uniform-showing-new-metal-products-manager-supervisor.jpg), url(metal-bar-3d.jpg), transparent;
     position: absolute;
     left: 0;
     bottom: 0; }
@@ -5777,7 +5777,7 @@ body {
       content: "";
       width: 100%;
       height: 100%;
-      background: linear-gradient(3.79deg, rgba(0, 0, 0, 0.45) 17.62%, rgba(0, 0, 0, 0) 41.17%), linear-gradient(99.48deg, rgba(0, 0, 0, 0.45) 3.67%, rgba(0, 0, 0, 0) 57.16%);
+      background: linear-gradient(3.79deg, rgba(0, 0, 0, 0.45) 17.62%, rgba(0, 0, 0, 0) 80%), linear-gradient(99.48deg, rgba(0, 0, 0, 0.45) 3.67%, rgba(0, 0, 0, 0) 57.16%);
       position: absolute;
       left: 0;
       top: 0; }
@@ -6473,7 +6473,7 @@ body {
   .table .ct__wrp {
     overflow-y: auto; }
   .table .ct__els {
-    width: 900px; }
+    width: 840px; }
 
   .city_block__phone {
     font-size: 28px; } }
