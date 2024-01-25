@@ -2807,20 +2807,20 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #eee;
-    background-position: center;
-    background-size: auto 200%;
+    background-position: center bottom;
+    background-size: auto 95%;
     background-repeat: no-repeat;
     border-radius: 4px;
     padding: 30px 40px;
     margin: 0 0 30px; }
     .ct_banner__left {
-      max-width: 430px;
+      max-width: 340px;
       margin: 0 30px 0 0; }
     .ct_banner__title {
       font-size: 28px;
       color: #56C8D1;
       font-weight: 700;
-      margin: 0 0 4px; }
+      margin: 0 0 8px; }
     .ct_banner__text {
       font-size: 15px;
       line-height: 140%; }

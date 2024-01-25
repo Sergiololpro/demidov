@@ -248,13 +248,12 @@
                 </div>
                 <div class="vacancy_ban">
                     <div class="vacancy_ban__left">
-                        <div class="vacancy_ban__title">Не нашли подходящую вакансию?</div>
+                        <div class="vacancy_ban__title">Хотите стать частью нашей команды?</div>
                         <div class="vacancy_ban__text">
-                            Отправьте свое резюме или свяжитесь<br>
-                            с нашим HR отделом по номеру телефона : <a href="tel:+74912465028">+7 4912 46 50 28</a>
+                            Заполните форму, и мы свяжемся с Вами.
                         </div>
                     </div>
-                    <div class="banner__button open_resume">Отпарвить резюме</div>
+                    <div class="banner__button open_resume">Заполнить</div>
                 </div>
             </div>
         </div>
