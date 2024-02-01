@@ -6415,30 +6415,8 @@ body {
     bottom: 120px; } }
 @media (max-width: 1850px) {
   .header__cabinet {
-    margin: 0 0 0 30px; }
-
-  .nav__dots {
-    display: block; }
-  .nav__el:nth-last-child(3) {
-    display: none; }
-  .nav__drop:nth-last-child(1) {
-    display: block; } }
-@media (max-width: 1720px) {
-  .nav__el:nth-last-child(4) {
-    display: none; }
-  .nav__drop:nth-last-child(2) {
-    display: block; } }
-@media (max-width: 1550px) {
-  .nav__el:nth-last-child(5) {
-    display: none; }
-  .nav__drop:nth-last-child(3) {
-    display: block; } }
+    margin: 0 0 0 30px; } }
 @media (max-width: 1450px) {
-  .nav__el:nth-last-child(6) {
-    display: none; }
-  .nav__drop:nth-last-child(4) {
-    display: block; }
-
   .drop__col {
     margin: 0 60px 40px 0; }
 
@@ -6480,9 +6458,16 @@ body {
   .city_block__phone {
     font-size: 28px; } }
 @media (max-width: 1200px) {
-  .nav__el:nth-last-child(7) {
+  .nav__el:nth-last-child(4) {
     display: none; }
-  .nav__drop:nth-last-child(5) {
+  .nav__drop:nth-last-child(2) {
+    display: block; }
+  .nav__dots {
+    display: block; } }
+@media (max-width: 1100px) {
+  .nav__el:nth-child(2) {
+    display: none; }
+  .nav__drop:nth-last-child(1) {
     display: block; } }
 @media (max-width: 1024px) {
   .wrapper-utp {
@@ -6521,10 +6506,8 @@ body {
   .nav_search.active {
     opacity: 1;
     pointer-events: auto; }
-  .nav_search .nav__el-pc {
+  .nav_search .nav__el, .nav_search .nav__dots {
     display: none; }
-  .nav_search .nav__el-tablet {
-    display: block; }
 
   .utp {
     display: block;

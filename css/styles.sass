@@ -6604,43 +6604,7 @@ body
         &__cabinet
             margin: 0 0 0 30px
 
-    .nav
-        &__dots
-            display: block
-        &__el
-            &:nth-last-child(3),
-                display: none
-        &__drop
-            &:nth-last-child(1)
-                display: block
-
-@media (max-width: 1720px)
-    .nav
-        &__el
-            &:nth-last-child(4)
-                display: none
-        &__drop
-            &:nth-last-child(2)
-                display: block
-                
-@media (max-width: 1550px)
-    .nav
-        &__el
-            &:nth-last-child(5)
-                display: none
-        &__drop
-            &:nth-last-child(3)
-                display: block
-
 @media (max-width: 1450px)
-    .nav
-        &__el
-            &:nth-last-child(6)
-                display: none
-        &__drop
-            &:nth-last-child(4)
-                display: block
-
     .drop
         &__col
             margin: 0 60px 40px 0
@@ -6697,10 +6661,21 @@ body
 @media (max-width: 1200px)
     .nav
         &__el
-            &:nth-last-child(7)
+            &:nth-last-child(4)
                 display: none
         &__drop
-            &:nth-last-child(5)
+            &:nth-last-child(2)
+                display: block
+        &__dots
+            display: block
+
+@media (max-width: 1100px)
+    .nav
+        &__el
+            &:nth-child(2)
+                display: none
+        &__drop
+            &:nth-last-child(1)
                 display: block
 
 @media (max-width: 1024px)
@@ -6747,11 +6722,9 @@ body
                 opacity: 1
                 pointer-events: auto
             .nav
-                &__el
-                    &-pc
-                        display: none
-                    &-tablet
-                        display: block
+                &__el,
+                &__dots
+                    display: none
 
     .utp
         display: block

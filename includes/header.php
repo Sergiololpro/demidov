@@ -47,30 +47,25 @@
         </a>
         <div class="header__search header__search-short"></div>
         <nav class="nav nav_search">
-          <a data-id="1" href="/catalog/" class="nav__el nav__el-pc">Продукция</a>
-          <a data-id="2" href="/about/" class="nav__el nav__el-pc">О компании</a>
-          <a href="/dostavka-i-oplata/" class="nav__el nav__el-pc">Доставка и оплата</a>
-          <a href="/services/" class="nav__el">Услуги</a>
-          <a data-id="3" href="/pokupatelyu/" class="nav__el nav__el-tablet">Покупателю</a>
-          <a href="/jobs/" class="nav__el">Вакансии</a>
-          <a href="/bronirovanie/" class="nav__el">Электронная очередь</a>
-          <a href="/contacts/" class="nav__el nav__el-tablet">Контакты</a>
+          <a data-id="1" href="/catalog/" class="nav__el nav__el-pc">Продукция</a> 
+          <a data-id="2" href="/about/" class="nav__el nav__el-pc">О компании</a> 
+          <a data-id="3" href="/pokupatelyu/" class="nav__el nav__el-pc">Покупателю</a> 
+          <a href="/jobs/" class="nav__el">Вакансии</a> 
+          <a href="/contacts/" class="nav__el">Контакты</a> 
           <div class="nav__dots">
             ...
             <div class="nav__drops">
-              <a href="/services/" class="nav__drop">Услуги</a>
-              <a href="/pokupatelyu/" class="nav__drop nav__el-pc">Покупателю</a>
               <a href="/jobs/" class="nav__drop">Вакансии</a>
-              <a href="/bronirovanie/" class="nav__drop">Электронная очередь</a>
-              <a href="/contacts/" class="nav__drop nav__el-pc">Контакты</a>
-              <a href="/catalog/" class="nav__drop nav__el-tablet">Продукция</a>
-              <a href="/about/" class="nav__drop nav__el-tablet">О компании</a>
-              <a href="/dostavka-i-oplata/" class="nav__drop nav__el-tablet">Доставка и оплата</a>
+              <a href="/about/" class="nav__drop">О компании</a>
             </div>
-            </div>
+          </div>
           <div class="search_block active">
-            <input name="search_row" placeholder="Поиск по сайту" class="search_block__input" type="text">
-            <div class="search_block__close"></div>
+            <div id="title-search">
+            <form class="search_block" action="/search/">
+              <input id="title-search-input" class="search_block__input" type="text" name="q" value="" autocomplete="off">
+            </form>
+            </div>
+            <div class="search_block__close"></div>         
           </div>
         </nav>
         <a href="tel:+7(495)775-38-96" class="header__phone header__phone-short">+7 (495) 775-38-96</a>
