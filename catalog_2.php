@@ -250,7 +250,7 @@
             </div>
             <div class="ct__content table">
                 <div class="title title-ct">Трубы профильные</div>
-                <div class="ct_banner" style="background-image: url(img/form_back.png)">
+                <div class="ct_banner" style="background-image: url(img/form_back-2.png)">
                     <div class="ct_banner__left">
                         <div class="ct_banner__title">Экспресс-заявка</div>
                         <div class="ct_banner__text">Описательный краткий текст для быстрого заказа в пару строк для нагляждности</div>

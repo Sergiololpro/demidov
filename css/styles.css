@@ -7187,6 +7187,8 @@ body {
       min-height: auto;
       flex-direction: column;
       padding: 30px 30px 16px; }
+      .cats__el-3 .cats__img {
+        top: 20px !important; }
       .cats__el-small .cats__img {
         max-width: calc(100% - 240px);
         top: 60px; }
