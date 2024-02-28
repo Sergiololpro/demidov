@@ -929,4 +929,9 @@ $(document).ready(function () {
     $(".element__button-request").on("click", function() {
         $(".modal_order_reqest").addClass("active");
     });
+
+    // Открыть "Акция"
+    $(".open_action").on("click", function() {
+        $(".modal_action").addClass("active");
+    });
 });

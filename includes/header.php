@@ -795,4 +795,15 @@
       <div class="modal__button modal__button-dark modal__button-full submit_form_s">Отправить</div>
     </div>
   </div>
+
+  <div class="modal modal_action">
+    <div class="modal__content modal__content-center">
+      <div class="modal__close"></div>
+      <div class="modal__title">ВНИМАНИЕ, АКЦИЯ!</div>
+      <div class="modal__und">Примите участие в анкетировании и получите <span class="modal__ttl-colored">дополнительную скидку – 100 руб./тн!</span></div>
+      <div class="modal__und">Срок действия акции: 01.03.2024 – 31.03.2024.</div>
+      <a href="https://kazan.demidovsteel.ru/pokupatelyu/kontrol-kachestva/" class="modal__button modal__button-dark modal__button-full">ПРИНЯТЬ УЧАСТИЕ</a>
+    </div>
+  </div>
+
   

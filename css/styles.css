@@ -3709,6 +3709,8 @@ body {
     overflow-y: auto;
     position: relative;
     padding: 40px; }
+    .modal__content-center {
+      text-align: center; }
   .modal__close {
     width: 30px;
     height: 30px;
@@ -3824,6 +3826,8 @@ body {
     font-size: 15px;
     color: #1E3B3E;
     margin: 0 0 30px; }
+    .modal__ttl-colored {
+      color: #56C8D1; }
   .modal__under {
     font-size: 11px;
     color: #7A7A7A;
@@ -3939,6 +3943,12 @@ body {
     margin: 0 0 30px; }
     .modal_city_choose__text span {
       color: #56C8D1; }
+  .modal_action {
+    transform: scale(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out; }
+    .modal_action.active {
+      transform: scale(1); }
   .modal .select2-container {
     width: 100% !important; }
   .modal .select2-selection__rendered {

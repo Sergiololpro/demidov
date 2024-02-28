@@ -3819,6 +3819,8 @@ body
         overflow-y: auto
         position: relative
         padding: 40px
+        &-center
+            text-align: center
     &__close
         width: 30px
         height: 30px
@@ -3935,6 +3937,8 @@ body
         font-size: 15px
         color: #1E3B3E
         margin: 0 0 30px
+        &-colored
+            color: #56C8D1
     &__under
         font-size: 11px
         color: #7A7A7A
@@ -4061,6 +4065,12 @@ body
             margin: 0 0 30px
             span
                 color: #56C8D1
+    &_action
+        transform: scale(0)
+        transform-origin: bottom right
+        transition: transform 0.3s ease-out
+        &.active
+            transform: scale(1)
     .select2
         &-container
             width: 100% !important
