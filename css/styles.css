@@ -3949,6 +3949,8 @@ body {
     transition: transform 0.3s ease-out; }
     .modal_action.active {
       transform: scale(1); }
+    .modal_action br {
+      display: none; }
   .modal .select2-container {
     width: 100% !important; }
   .modal .select2-selection__rendered {
@@ -7576,6 +7578,8 @@ body {
       margin: 0; }
   .modal__question {
     margin: 0 0 20px; }
+  .modal_action br {
+    display: block; }
 
   .input_file__button {
     width: 100%; }
